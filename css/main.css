@@ -1,0 +1,129 @@
+
+body {
+    z-index: 10;
+}
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.menu {
+    position: fixed;
+    /*top: 0;*/
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 8999;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: table;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.3s ease-out, visibility 0.2s ease-out;
+       -moz-transition: opacity 0.3s ease-out, visibility 0.2s ease-out;
+         -o-transition: opacity 0.3s ease-out, visibility 0.2s ease-out;
+            transition: opacity 0.3s ease-out, visibility 0.2s ease-out;
+}
+
+.menu.visuallyhidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu ul {
+    width: 100%;
+    /*height: 100%;*/
+    text-align: left;
+    padding-top: 60px;
+}
+
+.menu ul li a {
+    display: block;
+    color: #000;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    /* font-size: 2.25rem; */
+    font-size: auto;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 18px 0 18px 45px;
+
+    -webkit-transition: background 0.2s ease, color 0.2s ease;
+       -moz-transition: background 0.2s ease, color 0.2s ease;
+         -o-transition: background 0.2s ease, color 0.2s ease;
+            transition: background 0.2s ease, color 0.2s ease;
+}
+
+.menu ul li a:hover {
+    color: #F10061;
+    background-color: #fff;
+}
+
+.navbar {
+    z-index: 9999;
+}
+
+
+/* background image */
+.backgroundimage {
+    -moz-flex-grow: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-grow: 0;
+    flex-grow: 0;
+    -moz-flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-shrink: 0;
+    flex-shrink: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 0;
+    opacity: 0.5;
+    z-index: -1;
+    background-attachment:fixed;
+}
+
+.backgroundimage img {
+    width: 100%;
+    height: inherit;
+    position: fixed;
+}
+
+/* Welcome board */
+#welcome {
+    padding-top: 12%;
+    padding-bottom: 12%;
+}
+
+#welcome h1,h2 {
+    text-align: center;
+}
+
+#welcome p {
+    font-size: 20px;   
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#welcome .panel {
+    background-color: rgba(255, 255, 255, 0.4)
+}
+
+.sectiontitle {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 0%;
+}
+
+.sectionpanel {
+    background-color: rgba(255, 255, 255, 0.4)
+}
+
+.sectioncontent {
+    margin-left: 17%;
+}
+
+#sponsors img{
+    height: 60px;
+}    
