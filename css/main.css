@@ -13,7 +13,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: 8999;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(69, 222, 233, 0.418);
     display: table;
     opacity: 1;
     visibility: visible;
@@ -55,6 +55,7 @@ body {
 .menu ul li a:hover {
     color: #F10061;
     background-color: #fff;
+    text-decoration: none;
 }
 
 .navbar {
