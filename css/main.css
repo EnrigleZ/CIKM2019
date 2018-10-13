@@ -13,7 +13,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: 8999;
-    background-color: rgba(69, 222, 233, 0.418);
+    background-color: rgb(69, 222, 233, 0.418);
     display: table;
     opacity: 1;
     visibility: visible;
@@ -60,6 +60,7 @@ body {
 
 .navbar {
     z-index: 9999;
+    align-content: center;
 }
 
 .navbar a {
