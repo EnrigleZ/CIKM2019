@@ -13,7 +13,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: 8999;
-    background-color: rgb(69, 222, 233, 0.418);
+    /* background-color: rgba(69, 222, 233, 0.418); */
     display: table;
     opacity: 1;
     visibility: visible;
@@ -146,3 +146,8 @@ body {
 #sponsors img{
     height: 60px;
 }    
+
+.menu .backgroundimage {
+    top: inherit;
+    opacity: 1;
+}
