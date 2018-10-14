@@ -13,6 +13,9 @@ jQuery(document).ready(function($) {
 	$(".menu ul li a").click(function(e) {
 		$('.menu').addClass("visuallyhidden");
 	});
+	$(".navbar-toggle").click(function(e) {
+		$('.menu').addClass("visuallyhidden");
+	});
     // $(".menubutton").click(function(e) {
     // 	if ($('.menu').hasClass("visuallyhidden")) {
 	// 		$('.menu').removeClass("visuallyhidden");
