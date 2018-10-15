@@ -146,9 +146,6 @@ body {
     margin-left: 110px;
 }
 
-#news dl dt {
-    font-size: 18px;
-}
 #sponsors img{
     height: 60px;
 }    
@@ -165,6 +162,24 @@ body {
     opacity: 1;
 }
 
+#keydates {
+    margin-top: 40px;
+}
+
+#keydates h2 {
+    text-align: center;
+    padding-left: 0;
+    font-weight: 900;
+}
+
+.date dl dt {
+    color: #777777;
+    font-size: 20px;
+    font-weight: 900;
+}
+.date dd {
+    font-size: 18px;
+}
 /* organizing */
 #organizing {
     margin-top: 40px;
