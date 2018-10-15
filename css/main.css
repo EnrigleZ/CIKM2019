@@ -33,9 +33,11 @@ body {
     width: 100%;
     /*height: 100%;*/
     text-align: left;
-    padding-top: 60px;
+    padding-top: 30px;
 }
-
+.menu ul li {
+    max-height: 1%;
+}
 .menu ul li a {
     display: block;
     color: #000;
@@ -66,6 +68,10 @@ body {
 
 .navbar a {
     font-size: 12px;   
+}
+
+.center {
+    text-align: center;
 }
 
 /* background image */
@@ -125,10 +131,6 @@ body {
     margin-right: 10%;
 }
 
-#welcome .panel {
-    background-color: rgba(255, 255, 255, 0.4)
-}
-
 .sectiontitle {
     font-size: 30px;
     font-weight: bold;
@@ -163,3 +165,62 @@ body {
     opacity: 1;
 }
 
+/* organizing */
+#organizing {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.imagepanel {
+    justify-content: center;
+    align-items: center;
+    display: flex;  /* important */
+}
+.hoveredimage {
+    max-height: 250px;
+    max-width: 250px;
+    cursor: pointer;
+    margin-bottom: 24px;
+    position: relative;
+    cursor: default;
+    overflow: hidden;
+    margin-left: 50px;
+}
+
+.hoveredimage img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    /* vertical-align: middle; */
+}
+
+.imagehover {
+    background-color: rgba(0, 0, 0, 1);
+    color: #fff;    
+    display: block;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+
+    -webkit-transition: opacity 0.3s ease-out, visibility 0.2s ease-out;
+       -moz-transition: opacity 0.3s ease-out, visibility 0.2s ease-out;
+         -o-transition: opacity 0.3s ease-out, visibility 0.2s ease-out;
+            transition: opacity 0.3s ease-out, visibility 0.2s ease-out;
+}
+
+.imagehover.visuallyshowed {
+    opacity: 1;
+    visibility: visible;
+}
+
+.imagehover h4 {
+    margin-top: 40%;
+    font-weight: 400;
+}

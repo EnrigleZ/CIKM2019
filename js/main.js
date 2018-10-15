@@ -24,17 +24,10 @@ jQuery(document).ready(function($) {
 	// 		$('.menu').addClass("visuallyhidden");
 	// 		$('.menu-icon').removeClass("close");
 	// 	}
-    // });
-
-   
-	// Nav
-
-	// Works
-	$(".work-item").hover(function(e){
-		$(this).children('.work-item-inside').addClass("visuallyshowed");
+	// });
+	$(".hoveredimage").hover(function(e){
+		$(this).children('.imagehover').addClass("visuallyshowed");
 	}, function(){ 
-		$(this).children('.work-item-inside').removeClass("visuallyshowed");
+		$(this).children('.imagehover').removeClass("visuallyshowed");
 	});
-	
-
 });
