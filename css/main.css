@@ -120,10 +120,10 @@ body {
 #welcome {
     padding-top: 80px;
     padding-bottom: 160px;
-    -webkit-transition: opacity 0.6s ease-out, visibility 0.2s ease-out;
-       -moz-transition: opacity 0.6s ease-out, visibility 0.2s ease-out;
-         -o-transition: opacity 0.6s ease-out, visibility 0.2s ease-out;
-            transition: opacity 0.6s ease-out, visibility 0.2s ease-out;
+    -webkit-transition: opacity 1s ease-out, visibility 1.5s ease-out;
+       -moz-transition: opacity 1s ease-out, visibility 1.5s ease-out;
+         -o-transition: opacity 1s ease-out, visibility 1.5s ease-out;
+            transition: opacity 1s ease-out, visibility 1.5s ease-out;
     
 }
 
