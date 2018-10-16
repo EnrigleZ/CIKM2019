@@ -1,6 +1,7 @@
 jQuery(document).ready(function($) {
    'use strict';
-
+	$('#welcome').removeClass('visuallyhidden');
+	
 	$("a.dropdown-toggle").click(function(e) {
 		$('.menu').addClass("visuallyhidden");
 

@@ -24,7 +24,7 @@ body {
     overflow: hidden;
 }
 
-.menu.visuallyhidden {
+.visuallyhidden {
     opacity: 0;
     visibility: hidden;
 }
@@ -120,6 +120,11 @@ body {
 #welcome {
     padding-top: 80px;
     padding-bottom: 160px;
+    -webkit-transition: opacity 0.6s ease-out, visibility 0.2s ease-out;
+       -moz-transition: opacity 0.6s ease-out, visibility 0.2s ease-out;
+         -o-transition: opacity 0.6s ease-out, visibility 0.2s ease-out;
+            transition: opacity 0.6s ease-out, visibility 0.2s ease-out;
+    
 }
 
 #welcome h1,h2 {
