@@ -1,6 +1,6 @@
 /* Welcome board */
 #welcome {
-    padding-top: 80px;
+    padding-top: 250px;
     padding-bottom: 160px;
     -webkit-transition: opacity 1s ease-out, visibility 1.5s ease-out;
        -moz-transition: opacity 1s ease-out, visibility 1.5s ease-out;

@@ -2,6 +2,12 @@
 body {
     z-index: 10;
 }
+
+.pagetitle {
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+
 /* ==========================================================================
    Header
    ========================================================================== */
@@ -34,6 +40,7 @@ body {
     /*height: 100%;*/
     text-align: left;
     padding-top: 30px;
+    list-style-type: none;
 }
 .menu ul li {
     max-height: 1%;
@@ -105,8 +112,10 @@ body {
 
 /* logo img */
 .logo {
+    z-index: 20;
     padding-top: 80px;
     padding-left: 20px;
+    position: absolute;
 }
 .logo img {
     max-height: 130px;
@@ -115,7 +124,7 @@ body {
 .logo h1,h2 {
     text-align: left;
     padding-left: 150px;
-    font-weight: 900;
+    /* font-weight: 900; */
 }
 
 .sectiontitle {
@@ -197,6 +206,35 @@ body {
     font-weight: 900;
 }
 
+.weight-900 {
+    font-weight: 900;
+}
+
+.organizingcommittee {
+    text-align: center;
+    padding-bottom: 60px;
+}
+.organizingcommittee h1,h2 {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 40px;
+}
+.organizingcommittee .img-responsive {
+    max-width: 166px;
+}
+
+.test-review h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.test-review h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin-top: 0px;
+
+}
 
 #text-page2,#text-page3,#text-page4{
     position:absolute;
