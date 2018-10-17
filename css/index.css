@@ -1,0 +1,52 @@
+/* Welcome board */
+#welcome {
+    padding-top: 80px;
+    padding-bottom: 160px;
+    -webkit-transition: opacity 1s ease-out, visibility 1.5s ease-out;
+       -moz-transition: opacity 1s ease-out, visibility 1.5s ease-out;
+         -o-transition: opacity 1s ease-out, visibility 1.5s ease-out;
+            transition: opacity 1s ease-out, visibility 1.5s ease-out;
+    
+}
+
+#welcome h1,h2 {
+    text-align: center;
+}
+
+#welcome p {
+    font-size: 20px;   
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#sponsors img{
+    height: 60px;
+}    
+#sponsors img:first-of-type{
+    margin-left: 30px;
+}
+#sponsors img:nth-of-type(2){
+    float: right;
+    margin-right: 30px;
+}
+
+
+#keydates {
+    margin-top: 40px;
+}
+
+#keydates h2 {
+    text-align: center;
+    padding-left: 0;
+    font-weight: 900;
+}
+
+.date dd {
+    font-size: 18px;
+}
+/* organizing */
+#organizing {
+    margin-top: 40px;
+    text-align: center;
+}
+

@@ -61,10 +61,11 @@ body {
     text-decoration: none;
 }
 
-/* .navbar {
-    z-index: 9999;
-    align-content: center;
-} */
+.menu .backgroundimage {
+    top: inherit;
+    opacity: 1;
+}
+
 
 .navbar a {
     font-size: 12px;   
@@ -93,13 +94,14 @@ body {
     opacity: 0.5;
     z-index: -1;
     background-attachment:fixed;
+    background-size: cover;
 }
 
-.backgroundimage img {
+/* .backgroundimage img {
     width: 100%;
     height: inherit;
     position: fixed;
-}
+} */
 
 /* logo img */
 .logo {
@@ -116,27 +118,6 @@ body {
     font-weight: 900;
 }
 
-/* Welcome board */
-#welcome {
-    padding-top: 80px;
-    padding-bottom: 160px;
-    -webkit-transition: opacity 1s ease-out, visibility 1.5s ease-out;
-       -moz-transition: opacity 1s ease-out, visibility 1.5s ease-out;
-         -o-transition: opacity 1s ease-out, visibility 1.5s ease-out;
-            transition: opacity 1s ease-out, visibility 1.5s ease-out;
-    
-}
-
-#welcome h1,h2 {
-    text-align: center;
-}
-
-#welcome p {
-    font-size: 20px;   
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
 .sectiontitle {
     font-size: 30px;
     font-weight: bold;
@@ -150,48 +131,6 @@ body {
 
 .sectioncontent {
     margin-left: 110px;
-}
-
-#sponsors img{
-    height: 60px;
-}    
-#sponsors img:first-of-type{
-    margin-left: 30px;
-}
-#sponsors img:nth-of-type(2){
-    float: right;
-    margin-right: 30px;
-}
-
-.menu .backgroundimage {
-    top: inherit;
-    opacity: 1;
-}
-
-#keydates {
-    margin-top: 40px;
-}
-
-#keydates h2 {
-    text-align: center;
-    padding-left: 0;
-    font-weight: 900;
-}
-.date dl:hover {
-    background-color: aliceblue;
-}
-.date dl dt {
-    color: #777777;
-    font-size: 20px;
-    font-weight: 900;
-}
-.date dd {
-    font-size: 18px;
-}
-/* organizing */
-#organizing {
-    margin-top: 40px;
-    text-align: center;
 }
 
 .imagepanel {
@@ -247,4 +186,51 @@ body {
 .imagehover h4 {
     margin-top: 40%;
     font-weight: 400;
+}
+
+.date dl:hover {
+    background-color: aliceblue;
+}
+.date dl dt {
+    color: #777777;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+
+#text-page2,#text-page3,#text-page4{
+    position:absolute;
+    font-family: 'open_sansregular';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size:15px;
+    height:350px;
+    top:0;
+    left:0;
+    line-height:35px;
+    color:#FFF;
+    text-align:center;
+    width:100%;
+    z-index:2;
+}
+#main-page2,#main-page3,#main-page4{
+	position:absolute;
+	width:35px;
+	height:35px;
+	top:300px;
+}
+
+#main-page2{left:38.5%;margin-left:-11.7px;}
+#main-page3{right:38.5%;margin-right:-11.7px;}
+#main-page4{right:15%;}
+
+#page2,#page3,#page4{
+	position:absolute;
+	left:0;
+	border-radius:50%;
+	height:35px;
+	width:35px;
+	background-color:#9C9C9C;
+	cursor:pointer;
+	border:solid 4px #9C9C9C;
 }
