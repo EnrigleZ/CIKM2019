@@ -19,6 +19,9 @@
     margin-right: 10%;
 }
 
+#sponsors {
+    padding: 0;
+}
 #sponsors img{
     height: 60px;
 }    
