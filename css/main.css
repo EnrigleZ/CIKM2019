@@ -105,6 +105,10 @@ a:hover {
     text-align: center;
 }
 
+.fullimage {
+    width: 100%;
+    margin-bottom: 30px;
+}
 /* background image */
 .backgroundimage {
     -moz-flex-grow: 0;
@@ -160,6 +164,10 @@ a:hover {
 .sectionpanel {
     background-color: rgba(255, 255, 255, 0.4);
     padding: 3em 2em;
+}
+
+.sectionpanel p {
+    margin: 2em auto;
 }
 
 .sectioncontent {
@@ -319,7 +327,7 @@ font-weight: 600;
     border-radius: 4em;
     padding: 1em 3em;
     min-width: 14em;
-    max-width: 20em;
+    /* max-width: 20em; */
     background-color: transparent;
     transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
     border: 0;
