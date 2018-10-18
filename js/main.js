@@ -17,15 +17,6 @@ jQuery(document).ready(function($) {
 	$(".navbar-toggle").click(function(e) {
 		$('.menu').addClass("visuallyhidden");
 	});
-    // $(".menubutton").click(function(e) {
-    // 	if ($('.menu').hasClass("visuallyhidden")) {
-	// 		$('.menu').removeClass("visuallyhidden");
-	// 		$('.menu-icon').addClass("close");
-	// 	} else {
-	// 		$('.menu').addClass("visuallyhidden");
-	// 		$('.menu-icon').removeClass("close");
-	// 	}
-	// });
 	$(".hoveredimage").hover(function(e){
 		$(this).children('.imagehover').addClass("visuallyshowed");
 	}, function(){ 
