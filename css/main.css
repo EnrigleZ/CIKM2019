@@ -260,3 +260,20 @@ body {
       font-size:0.9em;
       color: #555;
   }
+
+  .detail h3 {
+    color: #2ad2c9;
+    /* text-transform: uppercase; */
+    /* font-size: 1.4em; */
+    font-weight: 600;
+  }
+  .detail img {
+      width: 100%;
+  }
+  .detail p {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    font-size: 0.9em;
+    line-height: 2em!important;
+  }
