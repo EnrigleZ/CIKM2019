@@ -198,7 +198,7 @@ h1, h2 {
 
 #news {
 	width: 40%;
-	/* padding: 0 15px; */
+	min-height: 600px;  /*here to modify*/
 }
 
 .newslist {
@@ -235,6 +235,7 @@ h1, h2 {
 }
 #keynotespeakers {
 	width: 50%;
+	min-height: 600px;
 }
 
 .speaker {
@@ -248,4 +249,20 @@ h1, h2 {
 .speaker.right {
 	padding-left: 1.4rem;
 	padding-right: 0;
+}
+
+.speaker img {
+	width: 100%;
+}
+
+.speaker h2 {
+	font-size: 18px;
+	color: black;
+}
+.speaker h3 {
+	font-size: 14px;
+	color: rgb(124, 18, 0);;
+}
+.speaker p {
+	font-size: 14px;
 }
