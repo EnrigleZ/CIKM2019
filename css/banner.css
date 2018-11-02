@@ -1,0 +1,140 @@
+/* CSS Document */
+
+
+body {
+	font-size: 14px;
+}
+
+
+h1, h2 {
+	color: rgb(124, 18, 0);
+}
+
+#header {
+	background-color: rgb(124, 18, 0);
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+#header .logo {
+	width: 29%;
+	position: relative;
+	margin-top: 4%;
+	margin-bottom: 4px;
+	padding-left: 7%;
+}
+
+#header .fullwidth {
+	width: 100%;	
+}
+
+#header .rightdecoration {
+	right: 0px;
+	bottom: 0px;
+	height: 69%;
+	position: absolute;
+}
+
+#header .navbar {
+	position: relative;
+	display: inline-flex;
+	bottom: 0px;
+	padding-left: 6.5%;
+	min-height: inherit;
+	margin-bottom: 10px;
+}
+
+#header .navbar .nav > li .dropdown-menu {
+	margin: 0;
+}
+
+#header .navbar .nav > li:hover .dropdown-menu {
+	display: block;
+}
+
+#header .nav>li>a:focus, .nav>li>a:hover {
+	background-color: transparent;
+}
+
+#header .nav a {
+	font-size: 14px;
+	font-family: Calibri;
+	color: white;
+	padding: 0.5em 0.5em;
+}
+#header .nav a:hover,a:active {
+	color: #F9D358;
+}
+#header .nav ul a {
+	color: black;
+}
+
+
+#swiper {
+	width: 100%;
+	height: 456px;
+	background-image: url(../elements/swiper/Palace1.jpg)
+}
+
+#myCarousel .carousel-indicators {
+	right: 1em;
+	margin-left: 0%;
+	width: auto;
+	margin-right: 30px;
+	left: auto;
+	bottom: 0;
+}
+
+#myCarousel .carousel-indicators li {
+	background-color: red;
+	border-color: red;
+}
+
+#myCarousel .carousel-indicators li.active {
+	background-color: white;
+	border-color: white;
+}
+
+#myCarousel .item img {
+	width: 100%;
+}
+
+#myCarousel a img {
+	position: relative;
+	top: 50%;
+    width:  20% !important;
+    height: 20% !important;
+}
+
+#myCarousel a img {
+	position: relative;
+	top: 50%;
+    width:  20% !important;
+	height: 20% !important;
+	margin: auto 15%;
+}
+
+#myCarousel .left {
+	text-align: left;
+}
+#myCarousel .right {
+	text-align: right;
+}
+
+#myCarousel .footercap {
+	bottom: 0;
+	width: 100%;
+	position: absolute;
+	color: white;
+	padding-left: 3rem;
+	background-color: rgba(11, 11, 11, 0.5);
+}
+
+#myCarousel .footercap h3 {
+	margin: 1.5rem 0;
+}
+#welcome {
+	text-align: center;
+	margin-top: 2rem;
+}
