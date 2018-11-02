@@ -83,7 +83,8 @@ h1, h2 {
 	width: auto;
 	margin-right: 30px;
 	left: auto;
-	bottom: 0;
+	/* bottom: 0; */
+	top: 40%;
 }
 
 #myCarousel .carousel-indicators li {
@@ -109,7 +110,7 @@ h1, h2 {
 
 #myCarousel a img {
 	position: relative;
-	top: 50%;
+	top: 40%;
     width:  20% !important;
 	height: 20% !important;
 	margin: auto 15%;
@@ -134,7 +135,117 @@ h1, h2 {
 #myCarousel .footercap h3 {
 	margin: 1.5rem 0;
 }
+
+
 #welcome {
 	text-align: center;
-	margin-top: 2rem;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+}
+
+#welcome h2 {
+	margin-bottom: 2rem;
+}
+
+.textpanel {
+	padding: 0;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 10px;
+	border-bottom-color: black;
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+}
+
+.titlebar {
+	height: 43px;
+	background-color: rgb(124, 18, 0);
+	margin-bottom: 26px;
+	color: white;
+	line-height: 43px;
+}
+
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.titlebar .left {
+	margin-left: 13px;
+	font-size: 28px;
+}
+
+.titlebar .left img {
+	height: 28px;
+	margin-left: 13px;
+}
+
+.titlebar .right {
+	font-size: 18px;
+}
+.titlebar .right a{
+	color: white;
+	text-decoration: none;	
+}
+.titlebar .right a:hover {
+	color: yellow;
+}
+.titlebar .right img {
+	margin: 0 13px;
+	height: 25px;
+}
+
+#news {
+	width: 40%;
+	/* padding: 0 15px; */
+}
+
+.newslist {
+	display: grid;
+}
+.newslist dl {
+
+	margin-bottom: 0;
+	padding: 0.7em 0;
+	vertical-align: middle;
+	border-bottom-style: dashed;
+	border-width: thin;
+	border-bottom-color: rgb(184, 184, 184);
+	/* font-size: 20px; */
+}
+.newslist dt {
+	float: left;
+	width: 30%;
+}
+.newslist dd {
+	white-space: nowrap;
+    text-overflow: ellipsis;
+	overflow: hidden;
+	float: left;
+	width: 70%;
+}
+
+.newslist a {
+	text-decoration: none;
+	color: inherit;
+}
+.newslist a:hover {
+	color: #37B6E2;
+}
+#keynotespeakers {
+	width: 50%;
+}
+
+.speaker {
+	padding: 0 0.7rem;
+}
+
+.speaker.left {
+	padding-left: 0;
+	padding-right: 1.4rem;
+}
+.speaker.right {
+	padding-left: 1.4rem;
+	padding-right: 0;
 }
