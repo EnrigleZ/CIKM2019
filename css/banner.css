@@ -426,7 +426,7 @@ h1, h2 {
 	padding: 6px 24px;
 }
 #footer .part2 {
-	height: 60px;
+	height: auto;
 	background-size: cover;
 	vertical-align: middle;
 }
@@ -479,7 +479,16 @@ h1, h2 {
 
 /* Mobile display (except iPad) settings */
 @media screen and (max-width:750px){
-	
+	.extra {
+		display: none;
+	}
+	#keydates .five-board {
+		display: initial;
+	}
+	#keydates .five-board .part {
+		width: 100%;
+	}
+
 	.speakerlist {
 		display: block;
 	}
@@ -499,6 +508,9 @@ h1, h2 {
 }
 @media screen and (max-width:400px){
 	.titlebar .left {
-		font-size: 14px;
+		font-size: 10px;
+	}
+	.titlebar>.left>img{
+		height: 14px;
 	}
 }
