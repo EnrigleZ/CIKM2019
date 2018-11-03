@@ -5,11 +5,20 @@ body {
 	font-size: 14px;
 }
 
+a {
+	-webkit-transition: color .4s ease;
+    -moz-transition: color .4s ease;
+    -o-transition: color .4s ease;
+    transition: color .4s ease;
+}
 
 h1, h2 {
 	color: rgb(124, 18, 0);
 }
 
+.fullwidth {
+	width: 100%;
+}
 #header {
 	background-color: rgb(124, 18, 0);
 	width: 100%;
@@ -17,6 +26,9 @@ h1, h2 {
 	position: relative;
 }
 
+#header ul {
+	width: 
+}
 #header .logo {
 	width: 29%;
 	position: relative;
@@ -199,7 +211,8 @@ h1, h2 {
 
 #news {
 	width: 40%;
-	min-height: 600px;  /*here to modify*/
+	min-height: 550px;  /*here to modify*/
+	margin-bottom: 50px;
 }
 
 .newslist {
@@ -216,6 +229,8 @@ h1, h2 {
 	/* font-size: 20px; */
 }
 .newslist dt {
+	color: rgb(124, 18, 0);
+	font-weight: 100;
 	float: left;
 	width: 30%;
 }
@@ -236,7 +251,23 @@ h1, h2 {
 }
 #keynotespeakers {
 	width: 50%;
-	min-height: 600px;
+	min-height: 550px;
+	margin-bottom: 50px;
+}
+.img-container{
+	width: 100%;
+	height: 0px;
+	padding-bottom: 100%;
+	overflow:hidden;
+	margin: 0;
+	position:relative;
+}
+
+/* 采用绝对定位 */
+.img-wrap img{
+	position:absolute;
+	width: 100%;
+	height: 100%;
 }
 
 .speakerlist {
@@ -247,15 +278,6 @@ h1, h2 {
 	padding: 0 0.7rem;
 	width: 33%;
 }
-
-/* .speaker.left {
-	padding-left: 0;
-	padding-right: 1.4rem;
-}
-.speaker.right {
-	padding-left: 1.4rem;
-	padding-right: 0;
-} */
 
 .speaker img {
 	width: 100%;
@@ -273,10 +295,100 @@ h1, h2 {
 	font-size: 14px;
 }
 
+.extrawidth {
+	width: 120%;
+}
+
+#keydates {
+	border-bottom: none;
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+}
+
+/* #keydates .extrawidth {
+	margin-left: -8.33333%;
+} */
+
+#sponsors {
+	border-bottom: none;
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+}
+
+#footer {
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#footer .part1 {
+	height: 255px;
+	background-color: rgb(124, 18, 0);
+	padding: 2rem 15%;
+	color: rgb(71, 8, 0);
+	display: flex;
+	vertical-align: middle;
+}
+
+#footer .part1 .part {
+	width: 20%;
+}
+
+#footer .part1 h2 {
+	font-size: 60px;
+	margin: 0 auto;
+	line-height: 60px;
+	top: 60px;
+	position: relative;
+}
+#footer .part1 a {
+	color: rgb(71, 8, 0);
+}
+#footer .part a:hover {
+	color: white;
+	text-decoration: none;
+}
+#footer .part1 .part.mid {
+	border-left-style: solid;
+	border-left-width: thin;
+	border-left-color: rgb(71, 8, 0);
+	padding-left: 3%;
+	line-height: 30px;
+}
+
+#footer .part1 .part.right {
+	top: 50px;
+	position: relative;
+}
+
+#footer i {
+	font-size: 3.5rem;
+	padding: 6px 24px;
+}
+#footer .part2 {
+	height: 60px;
+	background-size: cover;
+	vertical-align: middle;
+}
+#footer .part2 p {
+	margin: 0;
+	line-height: 60px;
+	text-align: center;
+	font-size: 16px;
+	color: rgb(147, 147, 147);
+}
+
 /* iPad display settings */
 @media screen and (max-width: 1300px) {
 	.titlebar .left {
 		font-size: 18px;
+	}
+	#footer .part1 h2 {
+		font-size: 50px;
+	}
+	#footer i {
+		font-size: 2.4rem;
+		padding: 6px 20px;
 	}
 }
 
@@ -287,9 +399,21 @@ h1, h2 {
 	}
 	#keynotespeakers {
 		width: 100%;
+		float: left;
 	}
 	.textpanel {
 		padding-right: 15px;
+	}
+	#footer .part1 {
+		height: auto;
+		display: grid;
+	}
+	#footer .part1 h2 {
+		top: auto;
+		font-size: 30px;
+	}
+	#footer .part1 .part {
+		font-size: 12px;
 	}
 }
 
@@ -301,11 +425,17 @@ h1, h2 {
 	}
 	.speaker {
 		width: 100%;
+		margin-bottom: 30px;
+		padding-bottom: 30px;
+		border-bottom-style: dashed;
+		border-width: thin;
+		border-bottom-color: rgb(184, 184, 184);
 	}
 	#keynotespeakers {
 		width: 100%;
 		float: left;
 	}
+	
 }
 @media screen and (max-width:400px){
 	.titlebar .left {

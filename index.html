@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link id="bootstrap_221" rel="stylesheet" type="text/css" class="library" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
 	<script id="jquery_172" type="text/javascript" class="library" src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script id="bootstrap_221" type="text/javascript" class="library" src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
@@ -20,7 +20,7 @@
 			<img class="logo" src="elements/LOGO.png">
 		</div>
 
-		<div class="navbar fullwidth">
+		<div class="navbar">
 			<div class="navbar-inner">
 				<ul class="nav nav-pills">
 					<li class=""><a href="#">HOME</a></li>
@@ -90,6 +90,7 @@
 	</div>
 	<!-- Carousel -->
 
+	<!-- Welcome -->
 	<div class="col-md-12">
 		<div id="welcome">
 			<h2>WELCOME</h2>
@@ -107,8 +108,10 @@
 				future. </p>
 		</div>
 	</div>
-	<div class="col-md-1"></div>
-	<div class="col-md-10">
+	<!-- Welcome -->
+
+	<!-- News & KeynoteSpeakers -->
+	<div class="col-md-10 col-md-offset-1">
 		<div class="textpanel col-md-4" id="news">
 			<div class="titlebar">
 				<span class="left">
@@ -168,44 +171,149 @@
 			</div>
 			<div class="speakerlist">
 				<div class="speaker">
-					<img src="./elements/news/maarten-ks.jpg" alt="">
-					<h2>Maarten de Rijke</h2>
-					<h3 style="margin-bottom: 0;">Professor</h3>
-					<p>University of Amsterdam, Netherlands</p>
-					<h3>Time/Location</h3>
-					<p>
-						Tuesday, 23 October 2018, <br>
-						09:00AM-10:00AM - Room:Auditorium
-					</p>
+					<div class='img-wrap'>
+						<div class="img-container">
+							<a href=""><img src="./elements/news/maarten-ks.jpg" alt=""></a>
+						</div>
+					</div>
+					<div class="description">
+						<h2>Maarten de Rijke</h2>
+						<h3 style="margin-bottom: 0;">Professor</h3>
+						<p>University of Amsterdam, Netherlands</p>
+						<h3>Time/Location</h3>
+						<p>
+							Tuesday, 23 October 2018, <br>
+							09:00AM-10:00AM - Room:Auditorium
+						</p>
+					</div>
 				</div>
 
 				<div class="speaker">
-					<img src="./elements/news/edward-ks.jpg" alt="">
-					<h2>Edward Grefenstette</h2>
-					<h3 style="margin-bottom: 0;">Professor</h3>
-					<p>University College London, United Kindom</p>
-					<h3>Time/Location</h3>
-					<p>
-						Wednesday, 24 October 2018, <br>
-						09:00AM-10:00AM - Room:Auditorium
-					</p>
+					<div class='img-wrap'>
+						<div class="img-container">
+							<a href=""><img src="./elements/news/edward-ks.jpg" alt=""></a>
+						</div>
+					</div>	
+					<div class="description">
+						<h2>Edward Grefenstette</h2>
+						<h3 style="margin-bottom: 0;">Professor</h3>
+						<p>University College London, United Kindom</p>
+						<h3>Time/Location</h3>
+						<p>
+							Wednesday, 24 October 2018, <br>
+							09:00AM-10:00AM - Room:Auditorium
+						</p>
+					</div>
 				</div>
 
 				<div class="speaker">
-					<img src="./elements/news/yoelle-ks.jpg" alt="">
-					<h2>Yoelle Maarek</h2>
-					<h3 style="margin-bottom: 0;">Professor</h3>
-					<p>Alexa Amazon, Israel</p>
-					<h3>Time/Location</h3>
-					<p>
-						Thursday, 24 October 2018, <br>
-						09:00AM-10:00AM - Room:500
-					</p>
+					<div class='img-wrap'>
+						<div class="img-container">
+							<a href=""><img src="./elements/news/yoelle-ks.jpg" alt=""></a>
+						</div>
+					</div>
+					<div class="description">
+						<h2>Yoelle Maarek</h2>
+						<h3 style="margin-bottom: 0;">Professor</h3>
+						<p>Alexa Amazon, Israel</p>
+						<h3>Time/Location</h3>
+						<p>
+							Thursday, 24 October 2018, <br>
+							09:00AM-10:00AM - Room:500
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<!-- News & KeynoteSpeakers -->
+
+	<!-- Keydates -->
+	<div class="col-md-10 col-md-offset-1">
+		<div class="textpanel" id="keydates">
+			<div class="titlebar">
+				<span class="left">
+					KEY DATES
+					<img src="./elements/keydates/keydates.png">
+				</span>
+				<span class="right">
+					<a href="">more<img src="./elements/news/more.png" alt=""></a>
+				</span>
+			</div>
+			<div>
+				<img src="./elements/keydates/base.png" class="fullwidth extra">
+			</div>
+		</div>
 	</div>
+	<!-- Keydates -->
+
+	<!-- Sponsors -->
+	<div class="col-md-10 col-md-offset-1">
+		<div class="textpanel" id="sponsors">
+			<div class="titlebar">
+				<span class="left">
+					SPONSORS
+					<img src="./elements/keydates/sponsors.png">
+				</span>
+				<span class="right">
+					<a href="">more<img src="./elements/news/more.png" alt=""></a>
+				</span>
+			</div>
+			<div>
+				<img src="./elements/keydates/all_sponsors.png" alt="" class="fullwidth">
+			</div>
+		</div>
+	</div>
+	<!-- Keydates -->
+
+	<!-- footer -->
+	<div class="col-md-12" id="footer">
+		<div class="part1">
+			<div class="part">
+				<p>
+					<h2><a href="">CIKM</a></h2>
+				</p>
+			</div>
+			<div class="part mid">
+				<div>
+					<p><a href="">HOME</a></p>
+					<p><a href="">SUBMISSION</a></p>
+					<p><a href="">PROGRAM</a></p>
+					<p><a href="">ORGANIZERS</a></p>
+					<p><a href="">AWARDS</a></p>
+				</div>
+			</div>
+			<div class="part mid">
+				<p><a href="">HOME</a></p>
+				<p><a href="">SUBMISSION</a></p>
+				<p><a href="">PROGRAM</a></p>
+				<p><a href="">ORGANIZERS</a></p>
+				<p><a href="">AWARDS</a></p>
+			</div>
+			<div class="part mid">
+				<p><a href="">HOME</a></p>
+				<p><a href="">SUBMISSION</a></p>
+				<p><a href="">PROGRAM</a></p>
+				<p><a href="">ORGANIZERS</a></p>
+				<p><a href="">AWARDS</a></p>
+			</div>
+			<div class="part right">
+				<p>
+					<a href=""><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+					<a href=""><i class="fa fa-feed" aria-hidden="true"></i></a>
+				</p>
+				<p>
+					<a href=""><i class="fa fa-paperclip" aria-hidden="true"></i></a>
+					<a href=""><i class="fa fa-bus" aria-hidden="true"></i></a>
+				</p>
+			</div>
+		</div>
+		<div class="part2" style="background-image: url('./elements/keydates/ditu.png')">
+			<p style="line-height: 60px;">Piazzale Europa, 1 - 34127 - Trieste, Italia - Tel. +39 040 558 7111 - P.IVA
+				00211830328 - C.F. 80013890324 - P.E.C. ateneo@pec.units.it</p>
+		</div>
+	</div>
+	<!-- footer -->
 </body>
 
 </html>
