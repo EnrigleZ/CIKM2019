@@ -241,6 +241,7 @@ h1, h2 {
 
 .speakerlist {
 	display: -webkit-box;
+	width: 100%;
 }
 .speaker {
 	padding: 0 0.7rem;
@@ -272,9 +273,15 @@ h1, h2 {
 	font-size: 14px;
 }
 
+/* iPad display settings */
+@media screen and (max-width: 1300px) {
+	.titlebar .left {
+		font-size: 18px;
+	}
+}
 
-/**/
-@media screen and (max-width:800px){
+/* iPad display (vertical) settings */
+@media screen and (max-width:850px){
 	#news {
 		width: 100%;
 	}
@@ -284,11 +291,9 @@ h1, h2 {
 	.textpanel {
 		padding-right: 15px;
 	}
-	.titlebar .left {
-		font-size: 18px;;
-	}
-
 }
+
+/* Mobile display (except iPad) settings */
 @media screen and (max-width:750px){
 	
 	.speakerlist {
@@ -296,5 +301,14 @@ h1, h2 {
 	}
 	.speaker {
 		width: 100%;
+	}
+	#keynotespeakers {
+		width: 100%;
+		float: left;
+	}
+}
+@media screen and (max-width:400px){
+	.titlebar .left {
+		font-size: 14px;
 	}
 }
