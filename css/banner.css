@@ -155,6 +155,7 @@ h1, h2 {
 	border-bottom-color: black;
 	border-bottom-style: solid;
 	border-bottom-width: thin;
+	/* display: grid; */
 }
 
 .titlebar {
@@ -238,18 +239,22 @@ h1, h2 {
 	min-height: 600px;
 }
 
+.speakerlist {
+	display: -webkit-box;
+}
 .speaker {
 	padding: 0 0.7rem;
+	width: 33%;
 }
 
-.speaker.left {
+/* .speaker.left {
 	padding-left: 0;
 	padding-right: 1.4rem;
 }
 .speaker.right {
 	padding-left: 1.4rem;
 	padding-right: 0;
-}
+} */
 
 .speaker img {
 	width: 100%;
@@ -265,4 +270,31 @@ h1, h2 {
 }
 .speaker p {
 	font-size: 14px;
+}
+
+
+/**/
+@media screen and (max-width:800px){
+	#news {
+		width: 100%;
+	}
+	#keynotespeakers {
+		width: 100%;
+	}
+	.textpanel {
+		padding-right: 15px;
+	}
+	.titlebar .left {
+		font-size: 18px;;
+	}
+
+}
+@media screen and (max-width:750px){
+	
+	.speakerlist {
+		display: block;
+	}
+	.speaker {
+		width: 100%;
+	}
 }
