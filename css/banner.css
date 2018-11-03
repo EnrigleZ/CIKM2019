@@ -26,9 +26,7 @@ h1, h2 {
 	position: relative;
 }
 
-#header ul {
-	width: 
-}
+
 #header .logo {
 	width: 29%;
 	position: relative;
@@ -81,7 +79,30 @@ h1, h2 {
 #header .nav ul a {
 	color: black;
 }
+/* 那个导航栏的下拉 你把白色改成标准红设置透明度50或者30 就行 */
+/* 不要有描边 中间虚线或者实线间隔 字的颜色可以用我最后那个深红色 或者白色 移动时是黄色 */
 
+#header .dropdown-menu {
+	background-color: rgba(124, 18, 0, 0.7);
+}
+
+#header .dropdown-menu>li:last-of-type {
+	border-bottom-style: none;
+	padding-bottom: 5px;
+}
+#header .dropdown-menu>li {
+	padding: 10px;
+	border-bottom-style: solid;
+	border-bottom-color: rgba(184, 184, 184, 0.7);
+	border-bottom-width: thin;
+}
+#header .dropdown-menu>li>a {
+	color: white;
+
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+	background-color: rgba(124, 18, 0, 0.7);
+}
 
 #swiper {
 	width: 100%;
@@ -263,7 +284,6 @@ h1, h2 {
 	position:relative;
 }
 
-/* 采用绝对定位 */
 .img-wrap img{
 	position:absolute;
 	width: 100%;
@@ -305,6 +325,46 @@ h1, h2 {
 	margin-bottom: 30px;
 }
 
+
+#keydates .five-board {
+    display: inline-flex;
+    margin: auto 3%;
+}
+#keydates .five-board .part {
+	width: 18%;
+	margin: 6% auto 1% 1%;
+	text-align: left;
+}
+#keydates .five-board h4 {
+	font-size: 14px;
+	margin-bottom: 0;
+	font-weight: 600;
+	text-align: center;
+}
+#keydates .five-board h3 {
+	margin-top: 2%;
+	font-size: 16px;
+	text-align: center;
+	color: rgb(124, 18, 0);
+	font-weight: 600;
+}
+#keydates .board {
+	padding-top: 25%;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	background-image: url('../elements/keydates/board1.png');
+	background-size: cover;
+}
+#keydates dl {
+	margin-bottom: 0;
+	padding-bottom: 2rem;
+}
+#keydates dl>dt {
+	color: rgb(243,205,88);
+}
+#keydates dl>dd {
+	padding-left: 1rem;
+}
 /* #keydates .extrawidth {
 	margin-left: -8.33333%;
 } */
