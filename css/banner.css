@@ -240,9 +240,9 @@ h1, h2 {
 	display: grid;
 }
 .newslist dl {
-
+    padding: 0.5rem 0;
 	margin-bottom: 0;
-	padding: 0.7em 0;
+	/* padding: 0.7em 0; */
 	vertical-align: middle;
 	border-bottom-style: dashed;
 	border-width: thin;
@@ -328,7 +328,7 @@ h1, h2 {
 
 #keydates .five-board {
     display: inline-flex;
-    margin: auto 3%;
+    margin: auto 6%;
 }
 #keydates .five-board .part {
 	width: 18%;
@@ -461,6 +461,9 @@ h1, h2 {
 		width: 100%;
 		float: left;
 	}
+	#keydates .five-board {
+		margin: auto 1.2rem;
+	}
 	.textpanel {
 		padding-right: 15px;
 	}
@@ -481,6 +484,15 @@ h1, h2 {
 @media screen and (max-width:750px){
 	.extra {
 		display: none;
+	}
+	.textpanel {
+		padding-right: 0;
+	}
+	.col-xs-10 {
+		width: 100%;
+	}
+	.col-xs-offset-1 {
+		margin-left: auto;
 	}
 	#keydates .five-board {
 		display: initial;
@@ -504,9 +516,11 @@ h1, h2 {
 		width: 100%;
 		float: left;
 	}
-	
+	#footer .part1 {
+		padding-bottom: 20%;
+	}
 }
-@media screen and (max-width:400px){
+@media screen and (max-width:450px){
 	.titlebar .left {
 		font-size: 10px;
 	}
