@@ -141,6 +141,9 @@ h1, h2 {
 	width: 100%;
 }
 
+#myCarousel .item.left {
+	float: none;
+}
 #myCarousel a img {
 	position: relative;
 	top: 40%;
