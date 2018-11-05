@@ -354,10 +354,12 @@ h1, h2 {
 #keydates .board {
 	padding-top: 25%;
 	padding-left: 1rem;
+	margin-top: 19%;
 	padding-right: 1rem;
 	background-image: url('../elements/keydates/board1.png');
 	background-size: cover;
 }
+
 #keydates dl {
 	margin-bottom: 0;
 	padding-bottom: 2rem;
