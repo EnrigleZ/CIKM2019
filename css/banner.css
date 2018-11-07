@@ -144,6 +144,9 @@ h1, h2 {
 #myCarousel .item.left {
 	float: none;
 }
+#myCarousel .item.right {
+	float: none;
+}
 #myCarousel a img {
 	position: relative;
 	top: 40%;
@@ -449,7 +452,7 @@ h1, h2 {
 		font-size: 18px;
 	}
 	#footer .part1 h2 {
-		font-size: 50px;
+		font-size: 38px;
 	}
 	#footer i {
 		font-size: 2.4rem;
