@@ -369,6 +369,7 @@ h1, h2 {
 }
 #keydates dl>dt {
 	color: rgb(243,205,88);
+	padding-left: 1rem;
 }
 #keydates dl>dd {
 	padding-left: 1rem;
@@ -501,6 +502,13 @@ h1, h2 {
 	}
 	.col-xs-offset-1 {
 		margin-left: auto;
+	}
+	#myCarousel .footercap h3 {
+		margin: 12px auto;
+		font-size: 12px;
+	}
+	#myCarousel .carousel-indicators {
+		display: none;
 	}
 	#keydates .five-board {
 		display: initial;
