@@ -240,8 +240,8 @@ h1, h2 {
 }
 
 #news {
-	width: 40%;
-	min-height: 550px;  /*here to modify*/
+	/* width: 40%; */
+	min-height: 300px;  /* 550 here to modify*/
 	margin-bottom: 50px;
 	background-color: #7C1200;
 	color: white;
@@ -253,12 +253,8 @@ h1, h2 {
 .newslist dl {
     padding: 0.7rem 0;
 	margin-bottom: 0;
-	/* padding: 0.7em 0; */
 	vertical-align: middle;
-	/* border-bottom-style: dashed;
-	border-width: thin;
-	border-bottom-color: rgb(184, 184, 184); */
-	/* font-size: 20px; */
+	width: 40%;   	/* temp */
 }
 .newslist dt {
 	padding-left: 13px;
