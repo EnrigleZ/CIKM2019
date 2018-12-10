@@ -1,5 +1,8 @@
 /* CSS Document */
 
+.center {
+	text-align: center;
+}
 
 body {
 	font-size: 18px;
@@ -12,6 +15,7 @@ body {
 }
 
 .button {
+	color: white;
     text-decoration: none;
     min-height: 4em;
     border-radius: 4em;
@@ -27,7 +31,7 @@ body {
     letter-spacing: 0.125em;
     text-align: center;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 14px;
 	box-shadow: inset 0 0 0 1px #F3CD58;
 	max-width: 175px;
 }
@@ -244,6 +248,9 @@ h1, h2 {
 	margin-bottom: 20px;
 }
 
+.textpanel p {
+	margin-bottom: 30px;
+}
 
 .titlebar {
 	height: 43px;
@@ -393,34 +400,28 @@ h1, h2 {
 	margin-bottom: 50px;
 }
 
-#keydates a.active {
+.keydates a.active {
 	color: #F9D358;
 	text-decoration: underline;
 }
-/* #keydates .textpanel {
-	min-height: 300px;
-	background-color: #7C1200;
-	color: white;
-	padding-left: 0;
-	padding-right: 0;
-} */
 
-#keydates li{
+.keydates li{
 	list-style-type: none;
 	padding-bottom: 1.8rem;
 }
 
-#keydates dl {
+.keydates dl {
 	margin-bottom: 0;
 	margin-right: 50px;
 	padding-bottom: 1.5rem;
 }
-#keydates dl>dt {
+.keydates dl>dt {
+	color: white;
 	font-weight: 100;
 	padding-left: 1rem;
 	padding-bottom: 0.2rem;
 }
-#keydates dl>dd {
+.keydates dl>dd {
 	color: #B85612;
 	padding-left: 1rem;
 }
@@ -571,6 +572,48 @@ h1, h2 {
 	}
 }
 
+.title h1 {
+	font-size: 40px;
+}
+.title h1, .title h2 {
+	color: black;
+	margin-top: 10px;
+}
+.subtitle {
+	float: left;
+	background-color: #7C1200;
+	font-size: 25px;
+    padding: 5px 25px;
+}
+.subtitle li {
+	color: #F3CD58;
+}
+.subtitle span {
+	color: white;
+}
+.textcontent {
+	float: left;
+	text-align: left;
+	margin-bottom: 40px;
+}
+.textcontent p {
+}
+.list-item li{
+	/* text-align: left; */
+	color: #7C1200;
+}
+.list-item {
+	font-size: 18px;
+	margin-top: 20px;
+}
+.list-item span {
+	font-size: 16px;
+	color: #3D3D3D;
+}
+.list-item a {
+	color: #7C1200;
+	font-weight: bolder;
+}
 /* Mobile display (except iPad) settings */
 @media screen and (max-width:767px){
 	.extra {
