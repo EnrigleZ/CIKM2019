@@ -488,7 +488,7 @@ h1, h2 {
 
 #footer .part1 .part.left {
 	padding-left: 3%;
-	width: 18%;
+	/* width: 18%; */
 }
 #footer .part1 .part.right {
 	display: flex;
