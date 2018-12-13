@@ -236,7 +236,7 @@ h1, h2 {
 	margin-bottom: 50px;
 	position: relative;
 		/* font-size:  */
-	min-height: 450px;
+	min-height: 420px;
 	background-color: #7C1200;
 	color: white;
 }
@@ -286,9 +286,6 @@ h1, h2 {
 	height: 25px;
 }
 
-.textpanel{
-
-}
 
 #news {
 	/* width: 33%; */
