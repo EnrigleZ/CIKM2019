@@ -541,7 +541,7 @@ h1, h2 {
 .textcontent p {
 }
 .list-item li{
-	/* text-align: left; */
+	font-weight: bold;
 	color: #7C1200;
 }
 .list-item {
@@ -551,6 +551,7 @@ h1, h2 {
 .list-item span {
 	font-size: 16px;
 	color: #3D3D3D;
+	font-weight: normal;
 }
 .list-item a {
 	color: #7C1200;
