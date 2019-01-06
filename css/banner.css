@@ -70,6 +70,10 @@ h1, h2 {
 	width: 100%;
 }
 
+.container, .navbar-collapse {
+	padding-right: 0;
+}
+
 .imgdeco {
 	position: absolute;
 }
@@ -103,20 +107,32 @@ h1, h2 {
 
 #header .navbar {
 	position: relative;
-	display: inline-flex;
+	/* display: inline-flex; */
 	bottom: 0px;
-	padding-left: 6.5%;
+	padding: 10px 6.5%;
 	min-height: inherit;
-	margin-bottom: 10px;
+	margin-bottom: 0;
+	background-color: transparent;
+	border: none;
+}
+
+#header .navbar-default .navbar-nav>.open>a,
+#header .navbar-default .navbar-nav>.open>a:focus,
+#header .navbar-default .navbar-nav>.open>a:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
 }
 
 #header .navbar .nav > li .dropdown-menu {
 	margin: 0;
 }
-
+/* 
 #header .navbar .nav > li:hover .dropdown-menu {
 	display: block;
-}
+} */
 
 #header .nav>li>a:focus, .nav>li>a:hover {
 	background-color: transparent;
@@ -564,15 +580,6 @@ h1, h2 {
 	.titlebar .left {
 		font-size: 18px;
 	}
-
-	/* #news {
-		width: 100%;
-	}
-
-	#keydates {
-		width: 100%;
-	} */
-
 	#footer .part1 h2 {
 		font-size: 38px;
 	}
@@ -584,16 +591,6 @@ h1, h2 {
 
 /* iPad display (vertical) settings */
 @media screen and (max-width:991px){
-	#news {
-		/* width: 100%; */
-	}
-	#keynotespeakers {
-		/* width: 100%; */
-		float: left;
-	}
-	#keydates .five-board {
-		margin: auto 1.2rem;
-	}
 	.textpanel {
 		padding-right: 15px;
 	}
@@ -621,12 +618,34 @@ h1, h2 {
 	}
 	.textpanel {
 		padding-right: 0;
+		min-height: 420px;
 	}
-	.col-xs-10 {
-		width: 100%;
+	.container {
+		padding-right: 15px;
+		padding-left: 15px;
 	}
-	.col-xs-offset-1 {
-		margin-left: auto;
+	.navbar-collapse {
+		margin-right: 15px;
+		margin-left: 15px;
+	}
+	.navbar-nav {
+		margin: 7.5px 0;
+	}
+	#header .logo {
+		width: 60%;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	#header .rightdecoration {
+		right: 0px;
+		bottom: 0px;
+		height: auto;
+		max-width: 70%;
+		position: absolute;
+	}
+	#header .dropdown-menu {
+		background-color: transparent;
+		padding-left: 20px;
 	}
 	#myCarousel .footercap h3 {
 		margin: 12px auto;
@@ -635,35 +654,11 @@ h1, h2 {
 	#myCarousel .carousel-indicators {
 		display: none;
 	}
-	#keydates .five-board {
-		display: initial;
-	}
-	#keydates .five-board .part {
-		width: 100%;
-	}
+	
 	#keydates dl {
 		margin-right: 0;
 	}
-	.speakerlist {
-		display: block;
-	}
-	.speaker {
-		width: 100%;
-		margin-bottom: 30px;
-		padding-bottom: 30px;
-		border-bottom-style: dashed;
-		border-width: thin;
-		border-bottom-color: rgb(184, 184, 184);
-	}
-	#keynotespeakers {
-		width: 100%;
-		float: left;
-	}
-	.sponsor-item {
-		width: 50%;
-		padding: 1.2rem 0.5rem;
-		float: left;
-	}
+	
 	#footer .part1 .part.right{
 		/* display: none; */
 		/* padding-bottom: 20%; */
