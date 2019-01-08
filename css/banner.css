@@ -411,13 +411,21 @@ h1, h2 {
 }
 
 .keydates a.active {
-	color: #F9D358;
+	color: #B85612;
 	text-decoration: underline;
 }
 
 .keydates li{
 	list-style-type: none;
-	padding-bottom: 1.8rem;
+	margin-bottom: 1.8rem;
+	padding-left: 18px;
+}
+
+.keydates a.active li {
+	background-image: url(../elements/list-pointer.png);
+	background-repeat: no-repeat;
+	background-position-y: 50%;
+	/* padding-left: 0; */
 }
 
 .keydates dl {
@@ -594,6 +602,9 @@ h1, h2 {
 	.textpanel {
 		padding-right: 15px;
 	}
+	#header .logo {
+		width: 60%;
+	}
 	#footer .part1 {
 		height: auto;
 		display: grid;
@@ -632,7 +643,7 @@ h1, h2 {
 		margin: 7.5px 0;
 	}
 	#header .logo {
-		width: 60%;
+		width: 78%;
 		margin-top: 30px;
 		margin-bottom: 30px;
 	}
@@ -658,7 +669,9 @@ h1, h2 {
 	#keydates dl {
 		margin-right: 0;
 	}
-	
+	#keydates .textpanel>.left{
+		border-right: none !important;
+	}
 	#footer .part1 .part.right{
 		/* display: none; */
 		/* padding-bottom: 20%; */
