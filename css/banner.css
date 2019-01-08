@@ -430,7 +430,6 @@ h1, h2 {
 
 .keydates dl {
 	margin-bottom: 0;
-	margin-right: 50px;
 	padding-bottom: 1.5rem;
 }
 .keydates dl>dt {
@@ -441,6 +440,7 @@ h1, h2 {
 }
 .keydates dl>dd {
 	color: #B85612;
+	margin-right: 50px;
 	padding-left: 1rem;
 }
 
