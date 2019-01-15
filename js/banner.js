@@ -21,11 +21,14 @@ function openMap() {
 jQuery(document).ready(function($) {
     'use strict';
 
-    $('.hover-item').css("display", "none")
+    $('.hover-item').css("opacity", "0")
+    $('.hover-item').css("z-index", "-1")
     openSingleKeydate('#keydate_papers', '#a_papers');
     $('.map-button').hover(function() {
-        $('.hover-item').css("display", "unset");
+        $('.hover-item').css("z-index", "1000")
+        $('.hover-item').css("opacity", "1");
     }, function(){
-        $('.hover-item').css("display", "none")
+        $('.hover-item').css("opacity", "0")
+        $('.hover-item').css("z-index", "-1")
     })
  });
