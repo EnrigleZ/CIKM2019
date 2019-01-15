@@ -11,10 +11,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
 	<title>ACM CIKM2019: The 28th ACM International Conference on Information and Knowledge Management</title>
 	<style type="text/css">
-		@media screen and (min-width:768px){
+		@media screen and (min-width:768px) {
 			.textpanel {
 				height: 420px;
 			}
+		}
+
+		.map-hover .hover-item {
+			display: none;
+			position: absolute;
+			top: 20px;
+		}
+		.map-hover:hover .hover-item {
+			display: unset;
 		}
 	</style>
 </head>
@@ -148,10 +157,18 @@
 						</span> -->
 					</div>
 					<div class="col-xs-3 left" style="min-height: 70%; border-right: thin solid white;">
-						<a href="javascript:void(0)" onclick="openSingleKeydate('#keydate_papers', '#a_papers')" id="a_papers"><li>Research Papers</li></a>
-						<a href="javascript:void(0)" onclick="openSingleKeydate('#keydate_workshops', '#a_workshops')" id="a_workshops"><li>Workshops</li></a>
-						<a href="javascript:void(0)" onclick="openSingleKeydate('#keydate_tutorials', '#a_tutorials')" id="a_tutorials"><li>Tutorials</li></a>
-						<a href="javascript:void(0)" onclick="openSingleKeydate('#keydate_demos', '#a_demos')" id="a_demos"><li>Demos</li></a>
+						<a href="javascript:void(0)" onclick="openSingleKeydate('#keydate_papers', '#a_papers')" id="a_papers">
+							<li>Research Papers</li>
+						</a>
+						<a href="javascript:void(0)" onclick="openSingleKeydate('#keydate_workshops', '#a_workshops')" id="a_workshops">
+							<li>Workshops</li>
+						</a>
+						<a href="javascript:void(0)" onclick="openSingleKeydate('#keydate_tutorials', '#a_tutorials')" id="a_tutorials">
+							<li>Tutorials</li>
+						</a>
+						<a href="javascript:void(0)" onclick="openSingleKeydate('#keydate_demos', '#a_demos')" id="a_demos">
+							<li>Demos</li>
+						</a>
 					</div>
 					<div class="col-xs-9" style="padding-left: 10px;">
 						<img src="./elements/bg_keydates.png" alt="" class="imgdeco extra" style="top: 0; right: 20px; opacity: 0.5;">
@@ -510,9 +527,14 @@
 					<div class="col-md-3">
 						<a href="index.html">HOME</a>
 					</div>
-					<!-- <div class="col-md-3">
-						<a href="">PROGRAM</a>
+					<div class="col-md-3">
+						<div class="map-hover" href="">PROGRAM 
+							<div class="hover-item">
+								<a href='https://clustrmaps.com/site/1ahyh' title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=ffffff&w=240&t=n&d=AIJXyY77-9-1T_id8PBXQdF_gEYyoC_KjEEwiz7XtJM&co=7c1200&ct=ffffff' /></a>
+							</div>
+						</div>
 					</div>
+					<!-- 
 					<div class="col-md-3">
 						<a href="">AWARDS</a>
 					</div>
@@ -535,7 +557,6 @@
 					</div> -->
 				</div>
 			</div>
-
 			<!-- <div class="part right">
 				<p class="row">
 					<div>
@@ -548,12 +569,15 @@
 					</div>
 				</p>
 			</div> -->
+
 		</div>
 		<div class="part2" style="background-image: url('./elements/keydates/ditu.png')">
-			<p style="line-height: 60px;"> <br></p>
+			<div style="height: 60px;">
+
+			</div>
 		</div>
 	</div>
-	<!-- <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?d=AIJXyY77-9-1T_id8PBXQdF_gEYyoC_KjEEwiz7XtJM&cl=ffffff&w=a"></script> -->
+
 	<!-- footer -->
 	<script src="./js/banner.js"></script>
 </body>
