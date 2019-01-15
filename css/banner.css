@@ -203,7 +203,7 @@ h1, h2 {
 #myCarousel .item.right {
 	float: none;
 }
-#myCarousel a img {
+#myCarousel .carousel-control img {
 	position: relative;
 	top: 40%;
     width:  20% !important;

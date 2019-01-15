@@ -14,8 +14,18 @@ function openSingleKeydate(id1, id2) {
     $(id2).addClass('active');
 }
 
+function openMap() {
+
+}
+
 jQuery(document).ready(function($) {
     'use strict';
 
+    $('.hover-item').css("display", "none")
     openSingleKeydate('#keydate_papers', '#a_papers');
+    $('.map-button').hover(function() {
+        $('.hover-item').css("display", "unset");
+    }, function(){
+        $('.hover-item').css("display", "none")
+    })
  });

@@ -17,14 +17,15 @@
 			}
 		}
 
-		.map-hover .hover-item {
-			display: none;
+		.hover-item {
 			position: absolute;
 			top: 20px;
+			/* left: 50%;	 */
+			z-index: 1000;
+			width: 100%;
+			background-color: #7C1200;
 		}
-		.map-hover:hover .hover-item {
-			display: unset;
-		}
+
 	</style>
 </head>
 
@@ -33,6 +34,9 @@
 	<div id="header">
 		<img class="fullwidth" src="elements/top_deco.png" style="position: absolute">
 		<img class="imgdeco rightdecoration" src="elements/right_deco.png" alt="">
+		<div class="extra" style="position: absolute; right: 20px; bottom: 20px; z-index: 1000;">
+			<a href="javascript:void(0)" class="map-button"><img src="elements/map.png" alt="" style="width: 50px"></a>
+		</div>
 		<div>
 			<a href="index.html"><img class="logo" src="elements/LOGO.png"></a>
 		</div>
@@ -67,7 +71,9 @@
 
 	<!-- Carousel -->
 	<div id="myCarousel" class="carousel slide">
-
+		<div class="hover-item extra">
+			<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=991&t=n&d=AIJXyY77-9-1T_id8PBXQdF_gEYyoC_KjEEwiz7XtJM&co=7c1200&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script>
+		</div>
 		<div class="carousel-inner">
 			<div class="item active">
 				<img src="elements/swiper/Palace (1).jpg" alt="First slide">
@@ -528,11 +534,7 @@
 						<a href="index.html">HOME</a>
 					</div>
 					<div class="col-md-3">
-						<div class="map-hover" href="">PROGRAM 
-							<div class="hover-item">
-								<a href='https://clustrmaps.com/site/1ahyh' title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=ffffff&w=240&t=n&d=AIJXyY77-9-1T_id8PBXQdF_gEYyoC_KjEEwiz7XtJM&co=7c1200&ct=ffffff' /></a>
-							</div>
-						</div>
+						
 					</div>
 					<!-- 
 					<div class="col-md-3">
