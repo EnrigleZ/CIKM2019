@@ -26,6 +26,30 @@
 			background-color: #7C1200;
 		}
 
+		.date-button {
+			float: left;
+			padding-right: 2rem;
+			max-width: 14rem;
+		}
+
+		#keydates ul {
+			padding-left: 0;
+		}
+		#keydates dt {
+			float: left;
+			min-width: 120px;
+			margin-right: 10px;
+			margin-left: 20px;
+			background-color: #B85612;
+			height: 28px;
+		}
+		#keydates dd {
+			float: left;
+		}
+		#keydates dl {
+			min-height: 60px;
+			display: inline-flex;
+		}
 	</style>
 </head>
 
@@ -162,107 +186,115 @@
 							<a href="">more<img src="./elements/news/more.png" alt=""></a>
 						</span> -->
 					</div>
-					<div class="col-xs-3 left" style="min-height: 70%; border-right: thin solid white;">
-						<a href="javascript:void(0)" onclick="openSingleKeydate('#keydate_papers', '#a_papers')" id="a_papers">
-							<li>Research Papers</li>
-						</a>
-						<a href="javascript:void(0)" onclick="openSingleKeydate('#keydate_workshops', '#a_workshops')" id="a_workshops">
-							<li>Workshops</li>
-						</a>
-						<a href="javascript:void(0)" onclick="openSingleKeydate('#keydate_tutorials', '#a_tutorials')" id="a_tutorials">
-							<li>Tutorials</li>
-						</a>
-						<a href="javascript:void(0)" onclick="openSingleKeydate('#keydate_demos', '#a_demos')" id="a_demos">
-							<li>Demos</li>
-						</a>
+					<div class="row" style="margin-bottom: 40px; margin-left: 13px">
+						<div class="date-button">
+							<a href="javascript:void(0)" onclick="openSingleKeydate('#keydate_papers', '#a_papers')" id="a_papers">
+								Research Papers
+							</a>
+						</div>
+						<div class="date-button">
+							<a href="javascript:void(0)" onclick="openSingleKeydate('#keydate_workshops', '#a_workshops')" id="a_workshops">
+								Workshops
+							</a>
+						</div>
+						<div class="date-button">
+							<a href="javascript:void(0)" onclick="openSingleKeydate('#keydate_tutorials', '#a_tutorials')" id="a_tutorials">
+								Tutorials
+							</a>
+						</div>
+						<div class="date-button">
+							<a href="javascript:void(0)" onclick="openSingleKeydate('#keydate_demos', '#a_demos')" id="a_demos">
+								Demos
+							</a>
+						</div>
 					</div>
-					<div class="col-xs-9" style="padding-left: 10px;">
+					<div class="col-xs-12" style="padding-left: 10px;">
 						<img src="./elements/bg_keydates.png" alt="" class="imgdeco extra" style="top: 0; right: 20px; opacity: 0.5;">
 						<div id="keydate_papers">
-							<dl>
+							<ul><dl>
 								<dt>
 									May 15, 2019
 								</dt>
 								<dd>Research paper abstract submission deadline</dd>
-							</dl>
-							<dl>
+							</dl></ul>
+							<ul><dl>
 								<dt>
 									May 22, 2019
 								</dt>
 								<dd>Research paper submission deadline</dd>
-							</dl>
-							<dl>
+							</dl></ul>
+							<ul><dl>
 								<dt>
 									Aug 6, 2019
 								</dt>
 								<dd>Research paper acceptance notification</dd>
-							</dl>
-							<dl>
+							</dl></ul>
+							<ul><dl>
 								<dt>
 									Aug 27, 2019
 								</dt>
 								<dd>Research paper camera ready submission deadline</dd>
-							</dl>
+							</dl></ul>
 						</div>
 						<div class="" id="keydate_workshops">
-							<dl>
+							<ul><dl>
 								<dt>
 									Mar 20, 2019
 								</dt>
 								<dd>Workshop proposal deadline</dd>
-							</dl>
-							<dl>
+							</dl></ul>
+							<ul><dl>
 								<dt>
 									Apr 5, 2019
 								</dt>
 								<dd>Workshop acceptance notification</dd>
-							</dl>
-							<dl>
+							</dl></ul>
+							<ul><dl>
 								<dt>
 									Aug 27, 2019
 								</dt>
 								<dd>Workshop paper camera ready submission deadline</dd>
-							</dl>
+							</dl></ul>
 						</div>
 						<div class="" id="keydate_tutorials">
-							<dl>
+							<ul><dl>
 								<dt>
 									Jul 5, 2019
 								</dt>
 								<dd>Tutorial proposal deadline</dd>
-							</dl>
-							<dl>
+							</dl></ul>
+							<ul><dl>
 								<dt>
 									Aug 5, 2019
 								</dt>
 								<dd>Tutorial acceptance notification</dd>
-							</dl>
-							<dl>
+							</dl></ul>
+							<ul><dl>
 								<dt>
 									Aug 27, 2019
 								</dt>
 								<dd>Tutorial summary camera ready submission deadline</dd>
-							</dl>
+							</dl></ul>
 						</div>
 						<div class="" id="keydate_demos">
-							<dl>
+							<ul><dl>
 								<dt>
 									May 23, 2019
 								</dt>
 								<dd>Demo submission deadline</dd>
-							</dl>
-							<dl>
+							</dl></ul>
+							<ul><dl>
 								<dt>
 									Aug 6, 2019
 								</dt>
 								<dd>Demo acceptance notification</dd>
-							</dl>
-							<dl>
+							</dl></ul>
+							<ul><dl>
 								<dt>
 									Aug 27, 2019
 								</dt>
 								<dd>Demo camera ready submission deadline</dd>
-							</dl>
+							</dl></ul>
 						</div>
 					</div>
 
@@ -284,7 +316,7 @@
 					</p>
 					</div> -->
 					<div class="col-xs-12" style="">
-						<a href="callforpapers.html" style="">Call for Research Papers</a>
+						<a href="callforpapers.html" style="">Call for Full and Short Research Papers</a>
 					</div>
 					<img class="imgdeco" src="./elements/bg_submissions.png" alt="" style="width: 90%; bottom: 0; opacity: 0.5;position: absolute; right:0">
 					<!-- <div class="titlebar" style="bottom: 0;position: absolute;right: 7px;">

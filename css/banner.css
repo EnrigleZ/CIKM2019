@@ -410,9 +410,12 @@ h1, h2 {
 	/* margin-bottom: 50px; */
 }
 
+.keydates a {
+	padding-bottom: 5px;
+}
 .keydates a.active {
 	color: #B85612;
-	text-decoration: underline;
+	border-bottom: #B85612 solid;
 }
 
 .keydates li{
@@ -420,13 +423,12 @@ h1, h2 {
 	margin-bottom: 1.8rem;
 	padding-left: 18px;
 }
-
+/* 
 .keydates a.active li {
 	background-image: url(../elements/list-pointer.png);
 	background-repeat: no-repeat;
 	background-position-y: 50%;
-	/* padding-left: 0; */
-}
+} */
 
 .keydates dl {
 	margin-bottom: 0;
@@ -440,7 +442,6 @@ h1, h2 {
 }
 .keydates dl>dd {
 	color: #B85612;
-	margin-right: 50px;
 	padding-left: 1rem;
 }
 
