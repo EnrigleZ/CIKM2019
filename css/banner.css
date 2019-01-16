@@ -87,11 +87,11 @@ h1, h2 {
 
 
 #header .logo {
-	width: 29%;
+	width: 36%;
 	position: relative;
 	margin-top: 4%;
 	margin-bottom: 4px;
-	padding-left: 7%;
+	padding-left: 8.3333%;
 }
 
 #header .fullwidth {
@@ -206,8 +206,8 @@ h1, h2 {
 #myCarousel .carousel-control img {
 	position: relative;
 	top: 40%;
-    width:  20% !important;
-	height: 20% !important;
+    width:  10% !important;
+	height: 10% !important;
 	margin: auto 15%;
 }
 
@@ -284,7 +284,7 @@ h1, h2 {
 	float: right;
 }
 .titlebar .left {
-	margin-left: 13px;
+	margin-left: 20px;
 	font-size: 24px;
 }
 
@@ -321,7 +321,7 @@ h1, h2 {
 	/* width: 40%;   	temp */
 }
 .newslist dt {
-	padding-left: 13px;
+	padding-left: 20px;
 	font-weight: 100;
 	float: left;
 	width: 33%;
@@ -432,7 +432,7 @@ h1, h2 {
 
 .keydates dl {
 	margin-bottom: 0;
-	padding-bottom: 1.5rem;
+	padding-bottom: 1.12rem;
 }
 .keydates dl>dt {
 	color: white;

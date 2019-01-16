@@ -14,8 +14,7 @@
 		
 		.hover-item {
 			position: absolute;
-			top: 20px;
-			/* left: 50%;	 */
+			top: 0;
 			z-index: 1000;
 			width: 100%;
 			background-color: #7C1200;
@@ -29,7 +28,7 @@
 
 		.date-button-row {
 			margin-bottom: 40px; 
-			margin-left: 13px;
+			margin-left: 20px;
 		}
 		#keydates ul {
 			padding-left: 0;
@@ -56,6 +55,11 @@
 			}
 		}
 
+		@media screen and (max-width:991px) {
+			#submitpaper .imgdeco {
+				width: 300px !important;
+			}
+		}
 		@media screen and (max-width:767px) {
 			.date-button {
 				margin-bottom: 10px;
@@ -70,6 +74,7 @@
 				min-width: 40%;
 				margin-left: 0;
 			}
+			
 		}
 	</style>
 </head>
@@ -117,26 +122,23 @@
 	<!-- Carousel -->
 	<div id="myCarousel" class="carousel slide">
 		<div class="hover-item extra">
-			<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=991&t=n&d=AIJXyY77-9-1T_id8PBXQdF_gEYyoC_KjEEwiz7XtJM&co=7c1200&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script>
+			<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=600&t=n&d=AIJXyY77-9-1T_id8PBXQdF_gEYyoC_KjEEwiz7XtJM&co=7c1200'></script>
 		</div>
 		<div class="carousel-inner">
 			<div class="item active">
-				<img src="elements/swiper/Palace (1).jpg" alt="First slide">
+				<img src="elements/swiper/gg.jpg" alt="First slide">
 			</div>
 			<div class="item">
-				<img src="elements/swiper/Palace (2).jpg" alt="Second slide">
+				<img src="elements/swiper/cc.jpg" alt="Second slide">
 			</div>
 			<div class="item">
-				<img src="elements/swiper/Palace (3).jpg" alt="Third slide">
+				<img src="elements/swiper/cbd.jpg" alt="Third slide">
 			</div>
 			<div class="item">
-				<img src="elements/swiper/Palace (4).jpg" alt="Fourth slide">
+				<img src="elements/swiper/nc.jpg" alt="Fourth slide">
 			</div>
 			<div class="item">
-				<img src="elements/swiper/Palace (5).jpg" alt="Fifth slide">
-			</div>
-			<div class="item">
-				<img src="elements/swiper/Palace (6).jpg" alt="Sixth slide">
+				<img src="elements/swiper/tt.jpg" alt="Fifth slide">
 			</div>
 		</div>
 
@@ -154,7 +156,6 @@
 				<li data-target="#myCarousel" data-slide-to="2"></li>
 				<li data-target="#myCarousel" data-slide-to="3"></li>
 				<li data-target="#myCarousel" data-slide-to="4"></li>
-				<li data-target="#myCarousel" data-slide-to="5"></li>
 			</ol>
 		</div>
 	</div>
@@ -230,7 +231,7 @@
 						</div>
 					</div>
 					<div class="col-xs-12" style="padding-left: 10px;">
-						<img src="./elements/bg_keydates.png" alt="" class="imgdeco extra" style="top: 0; right: 20px; opacity: 0.5;">
+						<img src="./elements/bg_keydates.png" alt="" class="imgdeco extra" style="bottom: 30%; right: 20px; opacity: 0.5; width: 100px;">
 						<div id="keydate_papers">
 							<ul><dl>
 								<dt>
