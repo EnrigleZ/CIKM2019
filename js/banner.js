@@ -15,20 +15,30 @@ function openSingleKeydate(id1, id2) {
 }
 
 function openMap() {
-
+    $('.hover-item').css("z-index", "1000")
+    $('.hover-item').css("opacity", "1");
+}
+function closeMap() {
+    $('.hover-item').css("opacity", "0")
+    $('.hover-item').css("z-index", "-1")
 }
 
 jQuery(document).ready(function($) {
     'use strict';
-
-    $('.hover-item').css("opacity", "0")
-    $('.hover-item').css("z-index", "-1")
+    closeMap()
+    
+    var is_close = true;
     openSingleKeydate('#keydate_papers', '#a_papers');
-    $('.map-button').hover(function() {
-        $('.hover-item').css("z-index", "1000")
-        $('.hover-item').css("opacity", "1");
-    }, function(){
-        $('.hover-item').css("opacity", "0")
-        $('.hover-item').css("z-index", "-1")
+    $('.map-button').on('click', function(e){
+        e.stopPropagation();
+        is_close = !is_close;
+        if (is_close) closeMap();
+        else openMap();
     })
+    $('body').click(function(){
+        is_close = true;
+        closeMap();
+    })
+
+    console.log('Welcome to CIKM 2019 website!')
  });
