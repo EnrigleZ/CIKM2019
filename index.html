@@ -11,12 +11,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
 	<title>ACM CIKM2019: The 28th ACM International Conference on Information and Knowledge Management</title>
 	<style type="text/css">
-		@media screen and (min-width:768px) {
-			.textpanel {
-				height: 420px;
-			}
-		}
-
+		
 		.hover-item {
 			position: absolute;
 			top: 20px;
@@ -32,6 +27,10 @@
 			max-width: 14rem;
 		}
 
+		.date-button-row {
+			margin-bottom: 40px; 
+			margin-left: 13px;
+		}
 		#keydates ul {
 			padding-left: 0;
 		}
@@ -49,6 +48,28 @@
 		#keydates dl {
 			min-height: 60px;
 			display: inline-flex;
+		}
+
+		@media screen and (min-width:768px) {
+			.textpanel {
+				height: 420px;
+			}
+		}
+
+		@media screen and (max-width:767px) {
+			.date-button {
+				margin-bottom: 10px;
+			}
+			.date-button-row {
+				display: grid;
+			}
+			#keydates dl {
+				display: table;
+			}
+			#keydates dt {
+				min-width: 40%;
+				margin-left: 0;
+			}
 		}
 	</style>
 </head>
@@ -186,7 +207,7 @@
 							<a href="">more<img src="./elements/news/more.png" alt=""></a>
 						</span> -->
 					</div>
-					<div class="row" style="margin-bottom: 40px; margin-left: 13px">
+					<div class="row date-button-row" style="">
 						<div class="date-button">
 							<a href="javascript:void(0)" onclick="openSingleKeydate('#keydate_papers', '#a_papers')" id="a_papers">
 								Research Papers
