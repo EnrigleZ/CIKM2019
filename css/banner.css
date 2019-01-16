@@ -205,7 +205,7 @@ h1, h2 {
 }
 #myCarousel .carousel-control img {
 	position: relative;
-	top: 40%;
+	top: 40% !important;
     width:  10% !important;
 	height: 10% !important;
 	margin: auto 15%;
