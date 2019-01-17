@@ -78,6 +78,13 @@ h1, h2 {
 	position: absolute;
 }
 
+
+span.statcounter {
+	right: 0;
+	position: absolute;
+	bottom: 0;
+}
+
 #header {
 	background-color: #7C1200;
 	width: 100%;
@@ -129,10 +136,6 @@ h1, h2 {
 #header .navbar .nav > li .dropdown-menu {
 	margin: 0;
 }
-/* 
-#header .navbar .nav > li:hover .dropdown-menu {
-	display: block;
-} */
 
 #header .nav>li>a:focus, .nav>li>a:hover {
 	background-color: transparent;
@@ -147,9 +150,6 @@ h1, h2 {
 #header .nav ul a {
 	color: black;
 }
-/* 那个导航栏的下拉 你把白色改成标准红设置透明度50或者30 就行 */
-/* 不要有描边 中间虚线或者实线间隔 字的颜色可以用我最后那个深红色 或者白色 移动时是黄色 */
-
 #header .dropdown-menu {
 	background-color: rgba(124, 18, 0, 0.7);
 }
