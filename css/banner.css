@@ -74,6 +74,9 @@ h1, h2 {
 	padding-right: 0;
 }
 
+.container {
+	width: 100%;
+}
 .imgdeco {
 	position: absolute;
 }
@@ -98,7 +101,8 @@ span.statcounter {
 	position: relative;
 	margin-top: 4%;
 	margin-bottom: 4px;
-	padding-left: 8.3333%;
+	margin-left: 6.5%;
+	padding-left: 30px;
 }
 
 #header .fullwidth {
@@ -144,7 +148,9 @@ span.statcounter {
 #header .nav a {
 	font-size: 18px;
 	color: white;
-	padding: 0.5em 0.5em;
+	padding: 10px;
+	padding-left: 0;
+	padding-right: 15px;
 }
 
 #header .nav ul a {
@@ -161,6 +167,7 @@ span.statcounter {
 
 #header .dropdown-menu>li>a {
 	color: white;
+	padding-left: 15px;
 
 }
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
