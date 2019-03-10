@@ -497,16 +497,24 @@ span.statcounter {
 	font-size: 60px;
 	margin: 0 auto;
 	line-height: 60px;
-	/* top: 60px; */
 	position: relative;
 }
-#footer .part1 a {
-	color: rgb(71, 8, 0);
+
+#footer .footer-item {
+	float: left; 
+	width: 100%; 
+	text-align: center;
+	border-left: #3C0000 solid 1px;
+	font-size: 22px;
 }
-#footer .part a:hover {
-	color: white;
+#footer .footer-item a {
+	color: #3C0000;	
 }
-#footer .part1 .part.mid {
+#footer .footer-item a:hover {
+	color: #FFFFFF;
+}
+
+/* #footer .part1 .part.mid {
 	padding-left: 5%;
 	align-items: center;
 	line-height: 40px;
@@ -519,20 +527,18 @@ span.statcounter {
 
 #footer .part1 .part.left {
 	padding-left: 3%;
-	/* width: 18%; */
 }
 #footer .part1 .part.right {
 	display: flex;
 	vertical-align: middle;
 	width: 18%;
-	/* top: 50px; */
 	position: relative;
 }
 
 #footer i {
 	font-size: 3.5rem;
 	padding: 6px 24px;
-}
+} */
 #footer .part2 {
 	height: auto;
 	background-size: cover;
