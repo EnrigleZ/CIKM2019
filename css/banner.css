@@ -489,10 +489,10 @@ span.statcounter {
 	width: 100%;
 	height: auto;
 	background-color: #7C1200;
-	padding: 2rem 25%;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 	color: rgb(71, 8, 0);
-	display: flex;
-	vertical-align: middle;
+	text-align: center;
 }
 
 
@@ -504,14 +504,16 @@ span.statcounter {
 }
 
 #footer .footer-item {
-	float: left; 
-	width: 100%; 
+	/* float: left;  */
+	width: auto; 
+	padding: 0 10px;
 	text-align: center;
 	border-left: #3C0000 solid 1px;
 	font-size: 18px;
 }
 #footer .footer-item:first-of-type {
 	border-left: none;
+	width: auto;
 }
 #footer .footer-item a {
 	color: #3C0000;	
