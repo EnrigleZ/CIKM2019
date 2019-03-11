@@ -153,6 +153,9 @@ span.statcounter {
 	padding-left: 0;
 	padding-right: 15px;
 }
+#header .nav a:hover {
+	color: #F9D358;
+}
 
 #header .nav ul a {
 	color: black;
@@ -486,7 +489,7 @@ span.statcounter {
 	width: 100%;
 	height: auto;
 	background-color: #7C1200;
-	padding: 2rem 0;
+	padding: 2rem 20%;
 	color: rgb(71, 8, 0);
 	display: flex;
 	vertical-align: middle;
@@ -505,7 +508,10 @@ span.statcounter {
 	width: 100%; 
 	text-align: center;
 	border-left: #3C0000 solid 1px;
-	font-size: 22px;
+	font-size: 20px;
+}
+#footer .footer-item:first-of-type {
+	border-left: none;
 }
 #footer .footer-item a {
 	color: #3C0000;	
