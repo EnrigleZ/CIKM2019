@@ -489,7 +489,7 @@ span.statcounter {
 	width: 100%;
 	height: auto;
 	background-color: #7C1200;
-	padding: 2rem 20%;
+	padding: 2rem 25%;
 	color: rgb(71, 8, 0);
 	display: flex;
 	vertical-align: middle;
@@ -635,11 +635,8 @@ span.statcounter {
 		top: auto;
 		font-size: 30px;
 	}
-	#footer .part1 .part.right{
-		/* display: none; */
-		/* padding-bottom: 20%; */
-		width: auto;
-		margin: 10px 30px;
+	#footer .footer-item {
+		border-left: none;
 	}
 }
 
@@ -696,12 +693,6 @@ span.statcounter {
 	}
 	#keydates .textpanel>.left{
 		border-right: none !important;
-	}
-	#footer .part1 .part.right{
-		/* display: none; */
-		/* padding-bottom: 20%; */
-		width: auto;
-		margin: 10px 30px;
 	}
 }
 @media screen and (max-width:450px){
