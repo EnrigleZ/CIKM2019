@@ -5,6 +5,7 @@
 }
 
 body {
+	color: #000000;
 	font-size: 18px;
 	background-image: url(../elements/background.png);
 	font-family: Calibri;
@@ -561,6 +562,7 @@ span.statcounter {
 .title h1, .title h2 {
 	color: black;
 	margin-top: 10px;
+	font-weight: bold;
 }
 .subtitle {
 	float: left;
@@ -584,7 +586,7 @@ span.statcounter {
 }
 .list-item li{
 	font-weight: bold;
-	color: #7C1200;
+	color: #F3CD58;
 }
 .list-item {
 	font-size: 18px;
@@ -599,7 +601,10 @@ span.statcounter {
 	color: #7C1200;
 	font-weight: bolder;
 }
-
+.list-item text {
+	color: #4f4f4f;
+	font-weight: normal;
+}
 
 /* iPad display settings */
 @media screen and (max-width: 1199px){
