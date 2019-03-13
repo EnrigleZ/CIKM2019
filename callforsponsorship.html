@@ -59,10 +59,13 @@
 
         .textcontent {
             padding-left: 27px;
+            width: 100%;
         }
+
         .textcontent h3 {
             color: #7C1200;
         }
+
         .table {
             color: #000000;
             border-bottom: solid 8px #7C1200;
@@ -115,12 +118,40 @@
         .list-item span {
             font-size: 18px;
         }
+
         .textcontent {
             border-top: #C6C6C6 dashed 2px;
+            margin-bottom: 30px;
         }
+
+        .metacontainer {
+            max-width: 1760px;
+        }
+
+        #condition .list-item {
+            margin-top: 5px;
+        }
+
+        #condition h3 {
+            font-size: 26px;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+
+        #condition h4 {
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 24px;
+        }
+
+        #condition .textcontent.shorter {
+            margin-bottom: 24px;
+        }
+
         /*TODO:
             后半段的小标题不是普通的黑字，用h4吧，比普通的黑字号大一些
-            段内行距缩小些
+            段内行距缩小些 - done
+            footer
         */
     </style>
 </head>
@@ -312,276 +343,353 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="textcontent" id="diamond">
-                        <h3>Diamond – USD 60,000</h3>
-                        <div class="list-item">
-                            The Diamond supporter package includes all the standard sponsorship benefits and
-                            entitlements
-                            outlined on the Standard Benefits section, plus:
+                    <div id="condition">
+                        <div class="textcontent" id="diamond">
+                            <h3>Diamond – USD 60,000</h3>
+                            <h4>
+                                The Diamond supporter package includes all the standard sponsorship benefits and
+                                entitlements
+                                outlined on the Standard Benefits section, plus:
+                            </h4>
+                            <div class="list-item">
+                                <li><text><a>8</a> complimentary conference delegate registrations (full Passport to all
+                                        events).</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text><a>3</a> complimentary exhibitor (booth-only) registrations.</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text>The supporter may provide a freestanding banner that will be positioned in the
+                                        main conference registration area for the duration of the Conference <a>(max.
+                                            size
+                                            2m high x 1m wide)</a>.</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text><a>Verbal & Slides</a> acknowledgement as a Diamond Supporter during the
+                                        opening
+                                        and closing sessions of the Conference.</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text>One <a>large</a> exhibition booth located in a prominent conference location
+                                        (with
+                                        priority in booth selection).</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text><a>100-word</a> profile and supporter logo in the Conference Program.</text>
+                                </li>
+                            </div>
+                            <div class="list-item">
+                                <li><text><a>Full-page</a> advertising space in the Conference Program (with artwork
+                                        supplied by the supporter).</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text>A promotional <a>brochure</a> (max. A4 size, 4 pages folded per brochure),
+                                        <a>page</a> or <a>CD</a> (provided by the supporter) to be inserted the
+                                        registration
+                                        satchel (promotional item must be approved by CIKM).</text></li>
+                            </div>
                         </div>
-                        <div class="list-item">
-                            <li><text><a>8</a> complimentary conference delegate registrations (full Passport to all
-                                    events).</text></li>
+                        <div class="textcontent" id="platinum">
+                            <h3>Platinum – USD 45,000</h3>
+                            <h4>The Platinum supporter package includes all the standard sponsorship
+                                benefits and entitlements outlined on the Standard Benefits section, plus:</h4>
+                            <div class="list-item">
+                                <li><text><a>6</a> complimentary conference delegate registrations (full Passport to all
+                                        events).</text> </li>
+                            </div>
+                            <div class="list-item">
+                                <li><text><a>2</a> complimentary exhibitor (booth-only) registrations.</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text><a>Verbal & Slides</a> acknowledgement as a Platinum Supporter during the
+                                        opening
+                                        and closing sessions of the Conference.</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text>One <a>middle</a> exhibition booth located in the conference (with priority in
+                                        booth selection).</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text><a>100-word</a> profile and supporter logo in the Conference Program.</text>
+                                </li>
+                            </div>
+                            <div class="list-item">
+                                <li><text><a>Full-page</a> advertising space in the Conference Program (with artwork
+                                        supplied by the supporter).</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text>A promotional <a>brochure</a> (max. A4 size, 4 pages folded per brochure),
+                                        <a>page</a> or <a>CD</a> (provided by the supporter) to be inserted the
+                                        registration
+                                        satchel (promotional item must be approved by CIKM).</text></li>
+                            </div>
                         </div>
-                        <div class="list-item">
-                            <li><text><a>3</a> complimentary exhibitor (booth-only) registrations.</text></li>
+                        <div class="textcontent" id="gold">
+                            <h3>Gold – USD 30,000</h3>
+                            <h4>The Gold supporter package includes all the standard sponsorship
+                                benefits and entitlements outlined on the Standard Benefits section, plus:</h4>
+                            <div class="list-item">
+                                <li><text><a>4</a> complimentary conference delegate registrations (full Passport to all
+                                        events).</text> </li>
+                            </div>
+                            <div class="list-item">
+                                <li><text><a>1</a> complimentary exhibitor (booth-only) registrations.</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text><a>Slides</a> acknowledgement as a Platinum Supporter during the opening
+                                        and closing sessions of the Conference.</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text>One <a>small</a> exhibition booth located in the conference (with priority in
+                                        booth selection).</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text><a>75-word</a> profile and supporter logo in the Conference Program.</text>
+                                </li>
+                            </div>
+                            <div class="list-item">
+                                <li><text><a>Half-page</a> advertising space in the Conference Program (with artwork
+                                        supplied by the supporter).</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text>A promotional <a>page</a> (provided by the supporter) to be inserted the
+                                        registration satchel (promotional item must be approved by CIKM).</text></li>
+                            </div>
                         </div>
-                        <div class="list-item">
-                            <li><text>The supporter may provide a freestanding banner that will be positioned in the
-                                    main conference registration area for the duration of the Conference <a>(max. size
-                                        2m high x 1m wide)</a>.</text></li>
+                        <div class="textcontent" id="silver">
+                            <h3>Silver – USD 10,000</h3>
+                            <h4>The Silver supporter package includes all the standard sponsorship
+                                benefits and entitlements outlined on the Standard Benefits section, plus:</h4>
+                            <div class="list-item">
+                                <li><text><a>2</a> complimentary conference delegate registrations (full Passport to all
+                                        events).</text> </li>
+                            </div>
+                            <div class="list-item">
+                                <li><text><a>1</a> complimentary exhibitor (booth-only) registrations.</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text>One <a>small</a> exhibition booth located in the conference.</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text><a>75-word</a> profile and supporter logo in the Conference Program.</text>
+                                </li>
+                            </div>
+                            <div class="list-item">
+                                <li><text><a>Half-page</a> advertising space in the Conference Program (with artwork
+                                        supplied by the supporter).</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text>A promotional <a>page</a> (provided by the supporter) to be inserted the
+                                        registration satchel (promotional item must be approved by CIKM).</text></li>
+                            </div>
                         </div>
-                        <div class="list-item">
-                            <li><text><a>Verbal & Slides</a> acknowledgement as a Diamond Supporter during the opening
-                                    and closing sessions of the Conference.</text></li>
+                        <div class="textcontent" id="bronze">
+                            <h3>Bronze – USD 5,000</h3>
+                            <h4>The Bronze supporter package includes all the standard sponsorship
+                                benefits and entitlements outlined on the Standard Benefits section, plus:</h4>
+                            <div class="list-item">
+                                <li><text><a>1</a> complimentary conference delegate registrations (full Passport to all
+                                        events).</text> </li>
+                            </div>
+                            <div class="list-item">
+                                <li><text><a>50-word</a> profile and supporter logo in the Conference Program.</text>
+                                </li>
+                            </div>
+                            <div class="list-item">
+                                <li><text>A promotional <a>page</a> (provided by the supporter) to be inserted the
+                                        registration satchel (promotional item must be approved by CIKM).</text></li>
+                            </div>
                         </div>
-                        <div class="list-item">
-                            <li><text>One <a>large</a> exhibition booth located in a prominent conference location (with
-                                    priority in booth selection).</text></li>
+                        <div class="textcontent shorter">
+                            <h3>Event Sponsorship</h3>
+                            <h4>Sponsorship of Webcast of Keynote Lectures – USD 5,000 (max of 2
+                                sponsors)</h4>
+                            <div class="list-item">
+                                <li><text>Logo and advertisement links on page for webcast.</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text>Opportunity to reach global audience of several thousand people.</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text>Logo on website and conference materials (NOT conference bag).</text></li>
+                            </div>
                         </div>
-                        <div class="list-item">
-                            <li><text><a>100-word</a> profile and supporter logo in the Conference Program.</text></li>
+                        <div class="textcontent shorter">
+                            <h4>
+                                Wireless Access Sponsorship – USD 10,000 (max 1 sponsors)
+                            </h4>
+                            <div class="list-item">
+                                <li><text>Sponsor logo to be displayed on Internet landing page. Exclusive.</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text>Logo on website and conference materials (NOT conference bag).</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text>Opportunity to reach global audience of several thousand people.</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text>Logo on website and conference materials (NOT conference bag).</text></li>
+                            </div>
                         </div>
-                        <div class="list-item">
-                            <li><text><a>Full-page</a> advertising space in the Conference Program (with artwork
-                                    supplied by the supporter).</text></li>
+                        <div class="textcontent shorter">
+                            <h4>Media Sponsorships (for Media partners only)</h4>
+                            <div class="list-item">
+                                <li><text>Prominent branding on summit website, signage, conference bags, and
+                                        materials.</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text>CIKM will send 2 company tailored emails to all CIKM 2019 attendees before and
+                                        after the conference. Note: We are not giving out the attendee list. The sponsor
+                                        will provide the email to CIKM, and CIKM will approve and send it.</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text>Company profile (description, logo, link) in show-guide and website.</text>
+                                </li>
+                            </div>
+                            <div class="list-item">
+                                <li><text>2 complimentary full-conference press passes for staff members.</text></li>
+                            </div>
                         </div>
-                        <div class="list-item">
-                            <li><text>A promotional <a>brochure</a> (max. A4 size, 4 pages folded per brochure),
-                                    <a>page</a> or <a>CD</a> (provided by the supporter) to be inserted the registration
-                                    satchel (promotional item must be approved by CIKM).</text></li>
+                        <div class="textcontent shorter">
+                            <h4>Sponsored onsite recruitment events</h4>
+                            <div class="list-item">
+                                <li><text>CIKM has obtained several rooms at the conference venue for corporate
+                                        recruitment
+                                        events e.g. cocktails for the CIKM participants you invite, or rooms for onsite
+                                        interviews.</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text>Sizes and prices vary by room. Please contact us to discuss your needs.</text>
+                                </li>
+                            </div>
                         </div>
-                    </div>
-                    <div class="textcontent" id="platinum">
-                        <h3>Platinum – USD 45,000</h3>
-                        <div class="list-item">The Platinum supporter package includes all the standard sponsorship
-                            benefits and entitlements outlined on the Standard Benefits section, plus:</div>
-                        <div class="list-item">
-                            <li><text><a>6</a> complimentary conference delegate registrations (full Passport to all
-                                    events).</text> </li>
+                        <div class="textcontent shorter">
+                            <h4>Research Track Best Paper Awards – USD 3,000 (max 2 sponsors)</h4>
+                            <div class="list-item">
+                                <li><text>Publicity at conference</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text>Recognition on plaque/certificate handed to winner</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text>Logo on website and conference materials (NOT conference bag)</text></li>
+                            </div>
                         </div>
-                        <div class="list-item">
-                            <li><text><a>2</a> complimentary exhibitor (booth-only) registrations.</text></li>
+                        <div class="textcontent shorter">
+                            <h4>Best Student Paper Awards – USD 3,000 (max 2 sponsors)</h4>
+                            <div class="list-item">
+                                <li><text>Publicity at conference</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text>Recognition on plaque/certificate handed to winner</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text>Logo on website and conference materials (NOT conference bag)</text></li>
+                            </div>
                         </div>
-                        <div class="list-item">
-                            <li><text><a>Verbal & Slides</a> acknowledgement as a Platinum Supporter during the opening
-                                    and closing sessions of the Conference.</text></li>
+                        <div class="textcontent shorter">
+                            <h4>Dissertation Award – USD 3,000 (max 2 sponsors)</h4>
+                            <div class="list-item">
+                                <li><text>Publicity at conference</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text>Recognition on plaque/certificate handed to winner</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text>Logo on website and conference materials (NOT conference bag)</text></li>
+                            </div>
                         </div>
-                        <div class="list-item">
-                            <li><text>One <a>middle</a> exhibition booth located in the conference (with priority in
-                                    booth selection).</text></li>
+                        <div class="textcontent shorter">
+                            <h4>Named Student Travel Grant USD 1,000 per student (e.g., &lt;Company
+                                XXX&gt; Student Travel Grant)</h4>
+                            <div class="list-item">
+                                <li><text>Publicity at conference</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text>Recognition on plaque/certificate handed to winner</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text>Logo on website and conference materials (NOT conference bag)</text></li>
+                            </div>
                         </div>
-                        <div class="list-item">
-                            <li><text><a>100-word</a> profile and supporter logo in the Conference Program.</text></li>
+                        <div class="textcontent shorter">
+                            <h4>Advertisement in Conference Program Booklet USD 2,500 (max 3
+                                sponsors)</h4>
+                            <div class="list-item">
+                                <li><text>Logo on the inner side of front OR back cover</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text>1-page advertisement in the program booklet</text></li>
+                            </div>
                         </div>
-                        <div class="list-item">
-                            <li><text><a>Full-page</a> advertising space in the Conference Program (with artwork
-                                    supplied by the supporter).</text></li>
+                        <div class="textcontent shorter">
+                            <h4>Bag Inserts/Fliers USD 1,200</h4>
+                            <div class="list-item">
+                                <li><text>Distribution of fliers or USB/CD to all attendees of CIKM in conference
+                                        bag</text></li>
+                            </div>
                         </div>
-                        <div class="list-item">
-                            <li><text>A promotional <a>brochure</a> (max. A4 size, 4 pages folded per brochure),
-                                    <a>page</a> or <a>CD</a> (provided by the supporter) to be inserted the registration
-                                    satchel (promotional item must be approved by CIKM).</text></li>
+                        <div class="textcontent shorter">
+                            <h4>Exhibitor Booth – Tiered Pricing</h4>
+                            <div class="list-item">
+                                <li><text>Opportunity to reach entire CIKM audience, e.g., to sell books or
+                                        softwares</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text>Helps companies recruit leading practitioners & researchers</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text>2 complimentary booth-only exhibitor registrations</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text>Rate for exhibiting companies: USD 4,000</text></li>
+                            </div>
+                            <div class="list-item">
+                                <li><text>One-day rate for startups: USD 1,200 per day (must be present for 3
+                                        days)</text></li>
+                            </div>
                         </div>
-                    </div>
-                    <div class="textcontent" id="gold">
-                        <h3>Gold – USD 30,000</h3>
-                        <div class="list-item">The Gold supporter package includes all the standard sponsorship benefits
-                            and entitlements outlined on the Standard Benefits section, plus:</div>
-                        <div class="list-item">
-                            <li><text><a>4</a> complimentary conference delegate registrations (full Passport to all
-                                    events).</text> </li>
-                        </div>
-                        <div class="list-item">
-                            <li><text><a>1</a> complimentary exhibitor (booth-only) registrations.</text></li>
-                        </div>
-                        <div class="list-item">
-                            <li><text><a>Slides</a> acknowledgement as a Platinum Supporter during the opening
-                                    and closing sessions of the Conference.</text></li>
-                        </div>
-                        <div class="list-item">
-                            <li><text>One <a>small</a> exhibition booth located in the conference (with priority in
-                                    booth selection).</text></li>
-                        </div>
-                        <div class="list-item">
-                            <li><text><a>75-word</a> profile and supporter logo in the Conference Program.</text></li>
-                        </div>
-                        <div class="list-item">
-                            <li><text><a>Half-page</a> advertising space in the Conference Program (with artwork
-                                    supplied by the supporter).</text></li>
-                        </div>
-                        <div class="list-item">
-                            <li><text>A promotional <a>page</a> (provided by the supporter) to be inserted the
-                                    registration satchel (promotional item must be approved by CIKM).</text></li>
-                        </div>
-                    </div>
-                    <div class="textcontent" id="silver">
-                        <h3>Silver – USD 10,000</h3>
-                        <div class="list-item">The Silver supporter package includes all the standard sponsorship
-                            benefits and entitlements outlined on the Standard Benefits section, plus:</div>
-                        <div class="list-item">
-                            <li><text><a>2</a> complimentary conference delegate registrations (full Passport to all
-                                    events).</text> </li>
-                        </div>
-                        <div class="list-item">
-                            <li><text><a>1</a> complimentary exhibitor (booth-only) registrations.</text></li>
-                        </div>
-                        <div class="list-item">
-                            <li><text>One <a>small</a> exhibition booth located in the conference.</text></li>
-                        </div>
-                        <div class="list-item">
-                            <li><text><a>75-word</a> profile and supporter logo in the Conference Program.</text></li>
-                        </div>
-                        <div class="list-item">
-                            <li><text><a>Half-page</a> advertising space in the Conference Program (with artwork
-                                    supplied by the supporter).</text></li>
-                        </div>
-                        <div class="list-item">
-                            <li><text>A promotional <a>page</a> (provided by the supporter) to be inserted the
-                                    registration satchel (promotional item must be approved by CIKM).</text></li>
-                        </div>
-                    </div>
-                    <div class="textcontent" id="bronze">
-                        <h3>Bronze – USD 5,000</h3>
-                        <div class="list-item">The Bronze supporter package includes all the standard sponsorship
-                            benefits and entitlements outlined on the Standard Benefits section, plus:</div>
-                        <div class="list-item">
-                            <li><text><a>1</a> complimentary conference delegate registrations (full Passport to all
-                                    events).</text> </li>
-                        </div>
-                        <div class="list-item">
-                            <li><text><a>50-word</a> profile and supporter logo in the Conference Program.</text></li>
-                        </div>
-                        <div class="list-item">
-                            <li><text>A promotional <a>page</a> (provided by the supporter) to be inserted the
-                                    registration satchel (promotional item must be approved by CIKM).</text></li>
-                        </div>
-                    </div>
-                    <div class="textcontent">
-                        <h3>Event Sponsorship</h3>
-                        <div class="list-item">Sponsorship of Webcast of Keynote Lectures – USD 5,000 (max of 2
-                            sponsors)</div>
-                        <div class="list-item">
-                            <li><text>Logo and advertisement links on page for webcast.</text></li>
-                        </div>
-                        <div class="list-item">
-                            <li><text>Opportunity to reach global audience of several thousand people.</text></li>
-                        </div>
-                        <div class="list-item">
-                            <li><text>Logo on website and conference materials (NOT conference bag).</text></li>
-                        </div>
-                    </div>
-                    <div class="textcontent">
-                        <div class="list-item">
-                            Wireless Access Sponsorship – USD 10,000 (max 1 sponsors)
-                        </div>
-                        <div class="list-item">
-                            <li><text>Sponsor logo to be displayed on Internet landing page. Exclusive.</text></li>
-                        </div>
-                        <div class="list-item">
-                            <li><text>Logo on website and conference materials (NOT conference bag).</text></li>
-                        </div>
-                        <div class="list-item">
-                            <li><text>Opportunity to reach global audience of several thousand people.</text></li>
-                        </div>
-                        <div class="list-item">
-                            <li><text>Logo on website and conference materials (NOT conference bag).</text></li>
-                        </div>
-                    </div>
-                    <div class="textcontent">
-                        <div class="list-item">Media Sponsorships (for Media partners only)</div>
-                        <div class="list-item">
-                            <li><text>Prominent branding on summit website, signage, conference bags, and
-                                    materials.</text></li>
-                        </div>
-                        <div class="list-item">
-                            <li><text>CIKM will send 2 company tailored emails to all CIKM 2019 attendees before and
-                                    after the conference. Note: We are not giving out the attendee list. The sponsor
-                                    will provide the email to CIKM, and CIKM will approve and send it.</text></li>
-                        </div>
-                        <div class="list-item">
-                            <li><text>Company profile (description, logo, link) in show-guide and website.</text></li>
-                        </div>
-                        <div class="list-item">
-                            <li><text>2 complimentary full-conference press passes for staff members.</text></li>
-                        </div>
-                    </div>
-                    <div class="textcontent">
-                        <div class="list-item">Sponsored onsite recruitment events</div>
-                        <div class="list-item">
-                            <li><text>CIKM has obtained several rooms at the conference venue for corporate recruitment
-                                    events e.g. cocktails for the CIKM participants you invite, or rooms for onsite
-                                    interviews.</text></li>
-                        </div>
-                        <div class="list-item">
-                            <li><text>Sizes and prices vary by room. Please contact us to discuss your needs.</text>
-                            </li>
-                        </div>
-                    </div>
-                    <div class="textcontent">
-                        <div class="list-item">Research Track Best Paper Awards – USD 3,000 (max 2 sponsors)</div>
-                        <div class="list-item">
-                            <li><text>Publicity at conference</text></li>
-                        </div>
-                        <div class="list-item">
-                            <li><text>Recognition on plaque/certificate handed to winner</text></li>
-                        </div>
-                        <div class="list-item">
-                            <li><text>Logo on website and conference materials (NOT conference bag)</text></li>
-                        </div>
-                    </div>
-                    <div class="textcontent">
-                        <div class="list-item">Best Student Paper Awards – USD 3,000 (max 2 sponsors)</div>
-                        <div class="list-item">
-                            <li><text>Publicity at conference</text></li>
-                        </div>
-                        <div class="list-item">
-                            <li><text>Recognition on plaque/certificate handed to winner</text></li>
-                        </div>
-                        <div class="list-item">
-                            <li><text>Logo on website and conference materials (NOT conference bag)</text></li>
-                        </div>
-                    </div>
-                    <div class="textcontent">
-                        <div class="list-item">Dissertation Award – USD 3,000 (max 2 sponsors)</div>
-                        <div class="list-item">
-                            <li><text>Publicity at conference</text></li>
-                        </div>
-                        <div class="list-item">
-                            <li><text>Recognition on plaque/certificate handed to winner</text></li>
-                        </div>
-                        <div class="list-item">
-                            <li><text>Logo on website and conference materials (NOT conference bag)</text></li>
-                        </div>
-                    </div>
-                    <div class="textcontent">
-                        <div class="list-item">Named Student Travel Grant USD 1,000 per student (e.g., &lt;Company XXX&gt; Student Travel Grant)</div>
-                        <div class="list-item"><li><text>Publicity at conference</text></li></div>
-                        <div class="list-item"><li><text>Recognition on plaque/certificate handed to winner</text></li></div>
-                        <div class="list-item">
-                            <li><text>Logo on website and conference materials (NOT conference bag)</text></li>
-                        </div>
-                    </div>
-                    <div class="textcontent">
-                        <div class="list-item">Advertisement in Conference Program Booklet USD 2,500 (max 3 sponsors)</div>
-                        <div class="list-item"><li><text>Logo on the inner side of front OR back cover</text></li></div>
-                        <div class="list-item"><li><text>1-page advertisement in the program booklet</text></li></div>
-                    </div>
-                    <div class="textcontent">
-                        <div class="list-item">Bag Inserts/Fliers USD 1,200</div>
-                        <div class="list-item"><li><text>Distribution of fliers or USB/CD to all attendees of CIKM in conference bag</text></li></div>
-                    </div>
-                    <div class="textcontent">
-                        <div class="list-item">Exhibitor Booth – Tiered Pricing</div>
-                        <div class="list-item"><li><text>Opportunity to reach entire CIKM audience, e.g., to sell books or softwares</text></li></div>
-                        <div class="list-item"><li><text>Helps companies recruit leading practitioners & researchers</text></li></div>
-                        <div class="list-item"><li><text>2 complimentary booth-only exhibitor registrations</text></li></div>
-                        <div class="list-item"><li><text>Rate for exhibiting companies: USD 4,000</text></li></div>
-                        <div class="list-item"><li><text>One-day rate for startups: USD 1,200 per day (must be present for 3 days)</text></li></div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+	<!-- footer -->
+	<div class="col-xs-12" id="footer">
+		<div class="part1" style="position: relative">
+			<span class="footer-item">
+				<a href="index.html">HOME</a>
+			</span>
+			<span class="footer-item">
+				<a href="callforpapers.html">CONTIRBUTIONS</a>
+			</span>
+			<span class="footer-item">
+				<a href="organizingcommittee.html">ORGANIZERS</a>
+			</span>
+
+			<!-- Default Statcounter code for CIKM http://cikm2019.net -->
+			<script type="text/javascript">
+				var sc_project = 11928079;
+				var sc_invisible = 0;
+				var sc_security = "7538f521";
+				var sc_https = 1;
+				var scJsHost = (("https:" == document.location.protocol) ? "https://secure." :
+					"http://www.");
+				document.write("<sc" + "ript type='text/javascript' src='" + scJsHost +
+					"statcounter.com/counter/counter.js'></" + "script>");
+			</script>
+			<noscript>
+				<div class="statcounter"><a title="Web Analytics" href="http://statcounter.com/" target="_blank"><img
+							class="statcounter" src="//c.statcounter.com/11928079/0/7538f521/0/" alt="Web
+Analytics"></a></div>
+			</noscript>
+			<!-- End of Statcounter Code -->
+		</div>
+		<div class="part2" style="background-image: url('./elements/keydates/ditu.png')">
+			<p style="line-height: 60px;"> <br></p>
+		</div>
+	</div>
+	<!-- footer -->
 </body>
 
 </html>
