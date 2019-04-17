@@ -370,12 +370,22 @@ span.statcounter {
 	overflow:hidden;
 	margin: 0;
 	position:relative;
+	background-color: #FFFFFF;
+	/* border: #7C1200 4.2px solid; */
+	transition: all 1s;
+}
+.img-container:hover {
+	/* border-color: #F9D358; */
 }
 
 .img-wrap img{
 	position:absolute;
 	width: 100%;
 	height: 100%;
+	padding: 7%;
+}
+.img-wrap.wide .img-container {
+	padding-bottom: 50%;
 }
 
 .speakerlist {
@@ -458,8 +468,8 @@ span.statcounter {
 	background-image: url(../elements/keydates/ditu.png);
 	background-size: contain;
 	float: none;
-	padding-top: 0.4%;
-	padding-bottom: 150px;
+	padding-top: 20px; /*0.4%;*/
+	padding-bottom: 70px; /*150px*/
 }
 
 #sponsors .all-sponsors>.row {
@@ -469,6 +479,9 @@ span.statcounter {
 	width: 10%;
 	padding: 0.4% 0.3%;
 	float: left;
+}
+.sponsor-item.wide {
+	width: 20%;
 }
 
 #footer {
