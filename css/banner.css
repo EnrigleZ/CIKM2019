@@ -276,7 +276,7 @@ span.statcounter {
 	color: white;
 	line-height: 43px;
 	overflow: hidden;
-
+	user-select: none;
 }
 
 .left {
