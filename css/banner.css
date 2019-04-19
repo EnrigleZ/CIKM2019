@@ -4,6 +4,11 @@
 	text-align: center;
 }
 
+img {
+	user-select: none;
+    -webkit-user-drag: none;
+}
+
 body {
 	color: #000000;
 	font-size: 18px;
@@ -231,6 +236,8 @@ span.statcounter {
 	color: white;
 	padding-left: 3rem;
 	background-color: rgba(11, 11, 11, 0.5);
+	user-select: none;
+    -webkit-user-drag: none;
 }
 
 #myCarousel .footercap h3 {
