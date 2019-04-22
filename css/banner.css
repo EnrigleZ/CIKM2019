@@ -132,6 +132,7 @@ span.statcounter {
 	margin-bottom: 0;
 	background-color: transparent;
 	border: none;
+	user-select: none;
 }
 
 #header .navbar-default .navbar-nav>.open>a,
