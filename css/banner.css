@@ -323,6 +323,8 @@ span.statcounter {
 
 .newslist {
 	display: grid;
+	max-height: 300px;
+    overflow-y: hidden;
 }
 .newslist dl {
     padding: 0.7rem 0;
