@@ -339,9 +339,6 @@ span.statcounter {
 	width: 33%;
 }
 .newslist dd {
-	/* white-space: nowrap;
-    text-overflow: ellipsis;
-	overflow: hidden; */
 	float: left;
 	width: 67%;
 	padding-left: 12px;
