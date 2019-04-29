@@ -323,13 +323,14 @@ span.statcounter {
 
 .newslist {
 	display: grid;
-	max-height: 300px;
-    overflow-y: auto;
+	/* max-height: 300px; */
+    /* overflow-y: auto; */
 }
 .newslist dl {
     padding: 0.7rem 0;
 	margin-bottom: 0;
 	vertical-align: middle;
+	/* display: none; */
 	/* width: 40%;   	temp */
 }
 .newslist dt {
