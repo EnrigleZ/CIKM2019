@@ -52,7 +52,11 @@ jQuery(document).ready(function($) {
     $('.carousel .item').removeClass('active').on('click', nextPicture);
     $('.carousel-indicators li').eq(rand_index).addClass('active');
     $('.carousel .item').eq(rand_index).addClass('active');
-    
+
+    $('#myCarousel').css('min-height', $('#myCarousel').width()*106/320)
+    $(window).resize(()=>{
+        $('#myCarousel').css('min-height', $('#myCarousel').width()*106/320);
+    })
     window.setInterval(nextPicture, 5000);
     console.log('Welcome to CIKM 2019 website!')
  });
