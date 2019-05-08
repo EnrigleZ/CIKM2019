@@ -56,6 +56,7 @@ jQuery(document).ready(function($) {
     $('#myCarousel').css('min-height', $('#myCarousel').width()*106/320)
     $(window).resize(()=>{
         $('#myCarousel').css('min-height', $('#myCarousel').width()*106/320);
+        current_newslist_index = _adjustOverflow('#news .newslist', current_newslist_index);
     })
     window.setInterval(nextPicture, 5000);
     console.log('Welcome to CIKM 2019 website!')
