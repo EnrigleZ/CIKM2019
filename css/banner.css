@@ -1,5 +1,14 @@
 /* CSS Document */
 
+::selection {
+    background: #DDD;
+}
+
+::-moz-selection {
+    background: #DDD;
+}
+
+
 .center {
 	text-align: center;
 }
@@ -12,8 +21,8 @@ img {
 body {
 	color: #000000;
 	font-size: 18px;
-	background-image: url(../elements/background.png);
 	font-family: Calibri;
+	background-image: url(../elements/background.png);
 }
 
 .hidden {
