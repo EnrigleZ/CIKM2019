@@ -2,526 +2,529 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="bookmark" href="favicon.ico" />
-    <meta name="keywords" content="cikm2019,cikm,2019">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link id="bootstrap_221" rel="stylesheet" type="text/css" class="library"
-        href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
-    <script id="jquery_172" type="text/javascript" class="library"
-        src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script id="bootstrap_221" type="text/javascript" class="library"
-        src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <link href="css/banner.css?v=3.1" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
-    <title>ACM CIKM 2019: The 28th ACM International Conference on Information and Knowledge Management</title>
-    <meta name="google-site-verification" content="tqH5ib1uFZfu31uOIFS9zhcxs3t5qcdXbpei7Bl54wU" />
-    <style type="text/css">
-        .date-button {
-            float: left;
-            padding-right: 2rem;
-            max-width: 14rem;
-        }
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="bookmark" href="favicon.ico" />
+	<meta name="keywords" content="cikm2019,cikm,2019">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link id="bootstrap_221" rel="stylesheet" type="text/css" class="library"
+		href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script id="jquery_172" type="text/javascript" class="library"
+		src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script id="bootstrap_221" type="text/javascript" class="library"
+		src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<link href="css/banner.css?v=3.1" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+	<title>ACM CIKM 2019: The 28th ACM International Conference on Information and Knowledge Management</title>
+	<meta name="google-site-verification" content="tqH5ib1uFZfu31uOIFS9zhcxs3t5qcdXbpei7Bl54wU" />
+	<style type="text/css">
+		.date-button {
+			float: left;
+			padding-right: 2rem;
+			max-width: 14rem;
+		}
 
-        .date-button-row {
-            margin-top: 1.7rem;
-            margin-bottom: 40px;
-            margin-left: 20px;
-        }
+		.date-button-row {
+			margin-top: 1.7rem;
+			margin-bottom: 40px;
+			margin-left: 20px;
+		}
 
-        #keydates ul {
-            padding-left: 0;
-        }
+		#keydates ul {
+			padding-left: 0;
+		}
 
-        #keydates dt {
-            float: left;
-            min-width: 120px;
-            margin-right: 10px;
-            margin-left: 20px;
-            background-color: #C96C2D;
-            height: 28px;
-        }
+		#keydates dt {
+			float: left;
+			min-width: 120px;
+			margin-right: 10px;
+			margin-left: 20px;
+			background-color: #C96C2D;
+			height: 28px;
+		}
 
-        #keydates dd {
-            float: left;
-            color: #FFFFFF;
-        }
+		#keydates dd {
+			float: left;
+			color: #FFFFFF;
+		}
 
-        #keydates dl {
-            min-height: 60px;
-            display: inline-flex;
-        }
+		#keydates dl {
+			min-height: 60px;
+			display: inline-flex;
+		}
 
-        #keydates .textpanel {
-            background-image: url(./elements/bg_keydates.png);
-            background-repeat: no-repeat;
-            background-position: right center;
-            background-size: auto;
-        }
+		#keydates .textpanel {
+			background-image: url(./elements/bg_keydates.png);
+			background-repeat: no-repeat;
+			background-position: right center;
+			background-size: auto;
+		}
 
-        #news .textpanel {
-            background-image: url(./elements/bg_news.png);
-            background-repeat: no-repeat;
-            background-position: bottom left;
-            background-size: 80%;
-            overflow-y: hidden;
-        }
+		#news .textpanel {
+			background-image: url(./elements/bg_news.png);
+			background-repeat: no-repeat;
+			background-position: bottom left;
+			background-size: 80%;
+			overflow-y: hidden;
+		}
 
-        #submitpaper .textpanel {
-            background-image: url(./elements/bg_submissions.png);
-            background-repeat: no-repeat;
-            background-position: bottom right;
-            background-size: 200px;
-        }
+		#submitpaper .textpanel {
+			background-image: url(./elements/bg_submissions.png);
+			background-repeat: no-repeat;
+			background-position: bottom right;
+			background-size: 200px;
+		}
 
-        #news dd {
-            line-height: 1.2;
-        }
+		#news dd {
+			line-height: 1.2;
+		}
 
-        #news .notice {
-            color: #F9D358;
-        }
+		#news .notice {
+			color: #F9D358;
+		}
 
-        @media screen and (min-width: 992px) and (max-width: 1199px) {
-            #news {
-                margin-left: -8.33333%;
-                width: 33%;
-            }
+		@media screen and (min-width: 992px) and (max-width: 1199px) {
+			#news {
+				margin-left: -8.33333%;
+				width: 33%;
+			}
 
-            #keydates {
-                width: 58.333333%;
-            }
+			#keydates {
+				width: 58.333333%;
+			}
 
-            #submitpaper {
-                margin-right: -8.33333%;
-            }
-        }
+			#submitpaper {
+				margin-right: -8.33333%;
+			}
+		}
 
-        @media screen and (min-width:768px) {
-            .textpanel {
-                height: 420px;
-            }
-        }
+		@media screen and (min-width:768px) {
+			.textpanel {
+				height: 420px;
+			}
+		}
 
-        @media screen and (max-width:991px) {
-            #submitpaper .imgdeco {
-                width: 300px !important;
-            }
-        }
+		@media screen and (max-width:991px) {
+			#submitpaper .imgdeco {
+				width: 300px !important;
+			}
+		}
 
-        @media screen and (max-width:767px) {
-            .date-button {
-                margin-bottom: 10px;
-            }
+		@media screen and (max-width:767px) {
+			.date-button {
+				margin-bottom: 10px;
+			}
 
-            .date-button-row {
-                display: grid;
-            }
+			.date-button-row {
+				display: grid;
+			}
 
-            #keydates dl {
-                display: table;
-            }
+			#keydates dl {
+				display: table;
+			}
 
-            #keydates dt {
-                /* min-width: 40%; */
-                margin-left: 0;
-            }
+			#keydates dt {
+				/* min-width: 40%; */
+				margin-left: 0;
+			}
 
-        }
-    </style>
+		}
+	</style>
 </head>
 
 <body>
-    <div id="header">
-        <img class="fullwidth" src="elements/top_deco.png" style="position: absolute">
-        <img class="imgdeco rightdecoration" src="elements/right_deco.png" alt="">
-        <div>
-            <a href="index.html"><img class="logo" src="elements/LOGO.png"></a>
-        </div>
-        <nav class="navbar navbar-default">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="left navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#header-navbar" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse" id="header-navbar">
-                    <ul class="nav navbar-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbar-submissions" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Call for Contributions
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbar-submissions">
-                                <li><a class="dropdown-item" href="callforpapers.html">Research Papers</a></li>
-                                <li><a class="dropdown-item" href="callforworkshops.html">Workshops</a></li>
-                                <li><a class="dropdown-item" href="callfordemos.html">Demos</a></li>
-                                <li><a class="dropdown-item" href="callforappliedresearchpapers.html">Applied Research
-                                        Papers</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="organizingcommittee.html">Organizers</a></li>
-                        <li><a href="callforsponsorship.html">Sponsorship</a></li>
-                        <li><a href="accomodation.html">Attending</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
+	<div id="header">
+		<img class="fullwidth" src="elements/top_deco.png" style="position: absolute">
+		<img class="imgdeco rightdecoration" src="elements/right_deco.png" alt="">
+		<div>
+			<a href="index.html"><img class="logo" src="elements/LOGO.png"></a>
+		</div>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="left navbar-toggle collapsed" data-toggle="collapse"
+						data-target="#header-navbar" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="header-navbar">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Home</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbar-submissions" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Call for Contributions
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbar-submissions">
+								<li><a class="dropdown-item" href="callforpapers.html">Research Papers</a></li>
+								<li><a class="dropdown-item" href="callforworkshops.html">Workshops</a></li>
+								<li><a class="dropdown-item" href="callfordemos.html">Demos</a></li>
+								<li><a class="dropdown-item" href="callforappliedresearchpapers.html">Applied Research
+										Papers</a></li>
+							</ul>
+						</li>
+						<li><a href="organizingcommittee.html">Organizers</a></li>
+						<li><a href="callforsponsorship.html">Sponsorship</a></li>
+						<li><a href="workshops.html">Workshops</a></li>
+						<li><a href="accomodation.html">Attending</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
 
-    <!-- Carousel -->
-    <div id="myCarousel" class="carousel slide">
-        <div class="carousel-inner">
-            <div class="item active">
-                <img src="elements/swiper/gg.jpg" alt="First slide">
-            </div>
-            <div class="item">
-                <img src="elements/swiper/cc.jpg" alt="Second slide">
-            </div>
-            <div class="item">
-                <img src="elements/swiper/cbd.jpg" alt="Third slide">
-            </div>
-            <div class="item">
-                <img src="elements/swiper/nc.jpg" alt="Fourth slide">
-            </div>
-            <div class="item">
-                <img src="elements/swiper/tt.jpg" alt="Fifth slide">
-            </div>
-        </div>
-        <div class="footercap">
-            <h3>Scenic Spots and Historical Monuments, Beijing</h3>
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-                <li data-target="#myCarousel" data-slide-to="4"></li>
-            </ol>
-        </div>
-    </div>
-    <!-- Carousel -->
-    <div class="container metacontainer" id="main-container">
-        <!-- Welcome -->
-        <div class="col-xs-12">
-            <div id="welcome">
-                <h2>WELCOME</h2>
-                <p>The 28th ACM International Conference on Information and Knowledge Management (CIKM) takes place on
-                    November
-                    3rd-7th, 2019 in Beijing, China.</p>
-                <p>Our theme for 2019 is "AI for Future Life".</p>
-                <p>Strategically positioned at the intersection of research on the management of knowledge, information,
-                    and data,</p>
-                <p>CIKM is uniquely situated to highlight technologies and insights that materialize the Big Data and
-                    Artificial
-                    Intelligence vision of the future. </p>
-            </div>
-        </div>
-        <!-- Welcome -->
+	<!-- Carousel -->
+	<div id="myCarousel" class="carousel slide">
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="elements/swiper/gg.jpg" alt="First slide">
+			</div>
+			<div class="item">
+				<img src="elements/swiper/cc.jpg" alt="Second slide">
+			</div>
+			<div class="item">
+				<img src="elements/swiper/cbd.jpg" alt="Third slide">
+			</div>
+			<div class="item">
+				<img src="elements/swiper/nc.jpg" alt="Fourth slide">
+			</div>
+			<div class="item">
+				<img src="elements/swiper/tt.jpg" alt="Fifth slide">
+			</div>
+		</div>
+		<div class="footercap">
+			<h3>Scenic Spots and Historical Monuments, Beijing</h3>
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+				<li data-target="#myCarousel" data-slide-to="4"></li>
+			</ol>
+		</div>
+	</div>
+	<!-- Carousel -->
+	<div class="container metacontainer" id="main-container">
+		<!-- Welcome -->
+		<div class="col-xs-12">
+			<div id="welcome">
+				<h2>WELCOME</h2>
+				<p>The 28th ACM International Conference on Information and Knowledge Management (CIKM) takes place on
+					November
+					3rd-7th, 2019 in Beijing, China.</p>
+				<p>Our theme for 2019 is "AI for Future Life".</p>
+				<p>Strategically positioned at the intersection of research on the management of knowledge, information,
+					and data,</p>
+				<p>CIKM is uniquely situated to highlight technologies and insights that materialize the Big Data and
+					Artificial
+					Intelligence vision of the future. </p>
+			</div>
+		</div>
+		<!-- Welcome -->
 
-        <div class="col-md-10 col-xs-12 col-md-offset-1 col-xs-offset-0">
-            <div class="col-xs-12 col-md-3" id="news">
-                <div class="textpanel">
-                    <div class="titlebar">
-                        <span class="left">
-                            News
-                            <img src="./elements/news/news_icon.png">
-                        </span>
-                        <span class="right">
-                            <a href="javascript:void(0)">more<img src="./elements/news/more.png" alt=""></a>
-                        </span>
-                    </div>
-                    <div class="newslist">
-                        <dl>
-                            <dt>May 23, 2019</dt>
-                            <dd><a href="callfordemos.html" class="notice">Demo submission deadline! (23:59, AoE time)</a></dd>
-                        </dl>
-                        <dl>
-                            <dt>May 22, 2019</dt>
-                            <dd><a href="callforpapers.html" class="notice">Research paper submission deadline! (23:59, AoE time)</a></dd>
-                        </dl>
-                        <dl>
-                            <dt>May 14, 2019</dt>
-                            <dd><a href="callforappliedresearchpapers.html">The call for applied research papers is
-                                    online</a></dd>
-                        </dl>
-                        <dl>
-                            <dt>Apr 29, 2019</dt>
-                            <dd><a href="https://easychair.org/conferences/?conf=cikm2019">Submission page is online</a>
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt>Apr 19, 2019</dt>
-                            <dd><a href="callfordemos.html">The call for demos is online</a></dd>
-                        </dl>
-                        <dl>
-                            <dt>Apr 11, 2019</dt>
-                            <dd><a href="callforsponsorship.html">Sponsorship page is online</a></dd>
-                        </dl>
-                        <dl>
-                            <dt>Mar 06, 2019</dt>
-                            <dd><a href="callforworkshops.html">The call for workshop proposals is online</a></dd>
-                        </dl>
-                        <dl>
-                            <dt>Jan 17, 2019</dt>
-                            <dd><a href="organizingcommittee.html">Organizing Committee page is online</a></dd>
-                        </dl>
-                        <dl>
-                            <dt>Dec 02, 2018</dt>
-                            <dd><a href="callforpapers.html">The call for research papers is online</a></dd>
-                        </dl>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-6 keydates" id="keydates">
-                <div class="textpanel">
-                    <div class="titlebar">
-                        <span class="left">
-                            Important Dates
-                            <img src="./elements/keydates/keydates.png">
-                        </span>
-                        <!-- <span class="right">
+		<div class="col-md-10 col-xs-12 col-md-offset-1 col-xs-offset-0">
+			<div class="col-xs-12 col-md-3" id="news">
+				<div class="textpanel">
+					<div class="titlebar">
+						<span class="left">
+							News
+							<img src="./elements/news/news_icon.png">
+						</span>
+						<span class="right">
+							<a href="javascript:void(0)">more<img src="./elements/news/more.png" alt=""></a>
+						</span>
+					</div>
+					<div class="newslist">
+						<dl>
+							<dt>May 23, 2019</dt>
+							<dd><a href="callfordemos.html" class="notice">Demo submission deadline! (23:59, AoE
+									time)</a></dd>
+						</dl>
+						<dl>
+							<dt>May 22, 2019</dt>
+							<dd><a href="callforpapers.html" class="notice">Research paper submission deadline! (23:59,
+									AoE time)</a></dd>
+						</dl>
+						<dl>
+							<dt>May 14, 2019</dt>
+							<dd><a href="callforappliedresearchpapers.html">The call for applied research papers is
+									online</a></dd>
+						</dl>
+						<dl>
+							<dt>Apr 29, 2019</dt>
+							<dd><a href="https://easychair.org/conferences/?conf=cikm2019">Submission page is online</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt>Apr 19, 2019</dt>
+							<dd><a href="callfordemos.html">The call for demos is online</a></dd>
+						</dl>
+						<dl>
+							<dt>Apr 11, 2019</dt>
+							<dd><a href="callforsponsorship.html">Sponsorship page is online</a></dd>
+						</dl>
+						<dl>
+							<dt>Mar 06, 2019</dt>
+							<dd><a href="callforworkshops.html">The call for workshop proposals is online</a></dd>
+						</dl>
+						<dl>
+							<dt>Jan 17, 2019</dt>
+							<dd><a href="organizingcommittee.html">Organizing Committee page is online</a></dd>
+						</dl>
+						<dl>
+							<dt>Dec 02, 2018</dt>
+							<dd><a href="callforpapers.html">The call for research papers is online</a></dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 keydates" id="keydates">
+				<div class="textpanel">
+					<div class="titlebar">
+						<span class="left">
+							Important Dates
+							<img src="./elements/keydates/keydates.png">
+						</span>
+						<!-- <span class="right">
 							<a href="">more<img src="./elements/news/more.png" alt=""></a>
 						</span> -->
-                    </div>
-                    <div class="row date-button-row">
-                        <div class="date-button">
-                            <a href="javascript:void(0)" onclick="openSingleKeydate('#keydate_papers', '#a_papers')"
-                                id="a_papers">
-                                Research
-                            </a>
-                        </div>
-                        <div class="date-button">
-                            <a href="javascript:void(0)"
-                                onclick="openSingleKeydate('#keydate_workshops', '#a_workshops')" id="a_workshops">
-                                Workshops
-                            </a>
-                        </div>
-                        <div class="date-button">
-                            <a href="javascript:void(0)"
-                                onclick="openSingleKeydate('#keydate_tutorials', '#a_tutorials')" id="a_tutorials">
-                                Tutorials
-                            </a>
-                        </div>
-                        <div class="date-button">
-                            <a href="javascript:void(0)" onclick="openSingleKeydate('#keydate_demos', '#a_demos')"
-                                id="a_demos">
-                                Demos
-                            </a>
-                        </div>
-                        <div class="date-button">
-                            <a href="javascript:void(0)" onclick="openSingleKeydate('#keydate_applied', '#a_applied')"
-                                id="a_applied">
-                                Applied
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xs-12" style="padding-left: 10px;">
-                        <!-- <img src="./elements/bg_keydates.png" alt="" class="imgdeco extra"
+					</div>
+					<div class="row date-button-row">
+						<div class="date-button">
+							<a href="javascript:void(0)" onclick="openSingleKeydate('#keydate_papers', '#a_papers')"
+								id="a_papers">
+								Research
+							</a>
+						</div>
+						<div class="date-button">
+							<a href="javascript:void(0)"
+								onclick="openSingleKeydate('#keydate_workshops', '#a_workshops')" id="a_workshops">
+								Workshops
+							</a>
+						</div>
+						<div class="date-button">
+							<a href="javascript:void(0)"
+								onclick="openSingleKeydate('#keydate_tutorials', '#a_tutorials')" id="a_tutorials">
+								Tutorials
+							</a>
+						</div>
+						<div class="date-button">
+							<a href="javascript:void(0)" onclick="openSingleKeydate('#keydate_demos', '#a_demos')"
+								id="a_demos">
+								Demos
+							</a>
+						</div>
+						<div class="date-button">
+							<a href="javascript:void(0)" onclick="openSingleKeydate('#keydate_applied', '#a_applied')"
+								id="a_applied">
+								Applied
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12" style="padding-left: 10px;">
+						<!-- <img src="./elements/bg_keydates.png" alt="" class="imgdeco extra"
 							style="bottom: 30%; right: 20px; opacity: 0.5; width: 100px;"> -->
-                        <div id="keydate_papers">
-                            <ul>
-                                <dl>
-                                    <dt>
-                                        May 15, 2019
-                                    </dt>
-                                    <dd>Research paper abstract submission deadline</dd>
-                                </dl>
-                            </ul>
-                            <ul>
-                                <dl>
-                                    <dt>
-                                        May 22, 2019
-                                    </dt>
-                                    <dd>Research paper submission deadline (23:59, Anywhere on Earth time)</dd>
-                                </dl>
-                            </ul>
-                            <ul>
-                                <dl>
-                                    <dt>
-                                        Aug 6, 2019
-                                    </dt>
-                                    <dd>Research paper acceptance notification</dd>
-                                </dl>
-                            </ul>
-                            <ul>
-                                <dl>
-                                    <dt>
-                                        Aug 27, 2019
-                                    </dt>
-                                    <dd>Research paper camera ready submission deadline</dd>
-                                </dl>
-                            </ul>
-                        </div>
-                        <div class="hidden" id="keydate_workshops">
-                            <ul>
-                                <dl>
-                                    <dt>
-                                        Apr 15, 2019
-                                    </dt>
-                                    <dd>Workshop proposal deadline</dd>
-                                </dl>
-                            </ul>
-                            <ul>
-                                <dl>
-                                    <dt>
-                                        Apr 22, 2019
-                                    </dt>
-                                    <dd>Workshop acceptance notification</dd>
-                                </dl>
-                            </ul>
-                            <ul>
-                                <dl>
-                                    <dt>
-                                        Aug 31, 2019
-                                    </dt>
-                                    <dd>Workshop paper camera ready submission deadline</dd>
-                                </dl>
-                            </ul>
-                        </div>
-                        <div class="hidden" id="keydate_tutorials">
-                            <ul>
-                                <dl>
-                                    <dt>
-                                        Jul 5, 2019
-                                    </dt>
-                                    <dd>Tutorial proposal deadline</dd>
-                                </dl>
-                            </ul>
-                            <ul>
-                                <dl>
-                                    <dt>
-                                        Aug 5, 2019
-                                    </dt>
-                                    <dd>Tutorial acceptance notification</dd>
-                                </dl>
-                            </ul>
-                            <ul>
-                                <dl>
-                                    <dt>
-                                        Aug 27, 2019
-                                    </dt>
-                                    <dd>Tutorial summary camera ready submission deadline</dd>
-                                </dl>
-                            </ul>
-                        </div>
-                        <div class="hidden" id="keydate_demos">
-                            <ul>
-                                <dl>
-                                    <dt>
-                                        May 16, 2019
-                                    </dt>
-                                    <dd>Demo abstract submission</dd>
-                                </dl>
-                            </ul>
-                            <ul>
-                                <dl>
-                                    <dt>
-                                        May 23, 2019
-                                    </dt>
-                                    <dd>Demo submission deadline (23:59, Anywhere on Earth time)</dd>
-                                </dl>
-                            </ul>
-                            <ul>
-                                <dl>
-                                    <dt>
-                                        Aug 10, 2019
-                                    </dt>
-                                    <dd>Demo acceptance notification</dd>
-                                </dl>
-                            </ul>
-                            <ul>
-                                <dl>
-                                    <dt>
-                                        Aug 27, 2019
-                                    </dt>
-                                    <dd>Demo camera ready submission deadline</dd>
-                                </dl>
-                            </ul>
-                        </div>
-                        <div class="hidden" id="keydate_applied">
-                            <ul>
-                                <dl>
-                                    <dt>
-                                        June 17, 2019
-                                    </dt>
-                                    <dd>Applied research paper abstract submission deadline</dd>
-                                </dl>
-                            </ul>
-                            <ul>
-                                <dl>
-                                    <dt>
-                                        June 22, 2019
-                                    </dt>
-                                    <dd>Applied research paper submission deadline</dd>
-                                </dl>
-                            </ul>
-                            <ul>
-                                <dl>
-                                    <dt>
-                                        Aug 10, 2019
-                                    </dt>
-                                    <dd>Applied research paper acceptance notification</dd>
-                                </dl>
-                            </ul>
-                            <ul>
-                                <dl>
-                                    <dt>
-                                        Aug 27, 2019
-                                    </dt>
-                                    <dd>Applied research paper ready submission deadline</dd>
-                                </dl>
-                            </ul>
-                        </div>
-                    </div>
+						<div id="keydate_papers">
+							<ul>
+								<dl>
+									<dt>
+										May 15, 2019
+									</dt>
+									<dd>Research paper abstract submission deadline</dd>
+								</dl>
+							</ul>
+							<ul>
+								<dl>
+									<dt>
+										May 22, 2019
+									</dt>
+									<dd>Research paper submission deadline (23:59, Anywhere on Earth time)</dd>
+								</dl>
+							</ul>
+							<ul>
+								<dl>
+									<dt>
+										Aug 6, 2019
+									</dt>
+									<dd>Research paper acceptance notification</dd>
+								</dl>
+							</ul>
+							<ul>
+								<dl>
+									<dt>
+										Aug 27, 2019
+									</dt>
+									<dd>Research paper camera ready submission deadline</dd>
+								</dl>
+							</ul>
+						</div>
+						<div class="hidden" id="keydate_workshops">
+							<ul>
+								<dl>
+									<dt>
+										Apr 15, 2019
+									</dt>
+									<dd>Workshop proposal deadline</dd>
+								</dl>
+							</ul>
+							<ul>
+								<dl>
+									<dt>
+										Apr 22, 2019
+									</dt>
+									<dd>Workshop acceptance notification</dd>
+								</dl>
+							</ul>
+							<ul>
+								<dl>
+									<dt>
+										Aug 31, 2019
+									</dt>
+									<dd>Workshop paper camera ready submission deadline</dd>
+								</dl>
+							</ul>
+						</div>
+						<div class="hidden" id="keydate_tutorials">
+							<ul>
+								<dl>
+									<dt>
+										Jul 5, 2019
+									</dt>
+									<dd>Tutorial proposal deadline</dd>
+								</dl>
+							</ul>
+							<ul>
+								<dl>
+									<dt>
+										Aug 5, 2019
+									</dt>
+									<dd>Tutorial acceptance notification</dd>
+								</dl>
+							</ul>
+							<ul>
+								<dl>
+									<dt>
+										Aug 27, 2019
+									</dt>
+									<dd>Tutorial summary camera ready submission deadline</dd>
+								</dl>
+							</ul>
+						</div>
+						<div class="hidden" id="keydate_demos">
+							<ul>
+								<dl>
+									<dt>
+										May 16, 2019
+									</dt>
+									<dd>Demo abstract submission</dd>
+								</dl>
+							</ul>
+							<ul>
+								<dl>
+									<dt>
+										May 23, 2019
+									</dt>
+									<dd>Demo submission deadline (23:59, Anywhere on Earth time)</dd>
+								</dl>
+							</ul>
+							<ul>
+								<dl>
+									<dt>
+										Aug 10, 2019
+									</dt>
+									<dd>Demo acceptance notification</dd>
+								</dl>
+							</ul>
+							<ul>
+								<dl>
+									<dt>
+										Aug 27, 2019
+									</dt>
+									<dd>Demo camera ready submission deadline</dd>
+								</dl>
+							</ul>
+						</div>
+						<div class="hidden" id="keydate_applied">
+							<ul>
+								<dl>
+									<dt>
+										June 17, 2019
+									</dt>
+									<dd>Applied research paper abstract submission deadline</dd>
+								</dl>
+							</ul>
+							<ul>
+								<dl>
+									<dt>
+										June 22, 2019
+									</dt>
+									<dd>Applied research paper submission deadline</dd>
+								</dl>
+							</ul>
+							<ul>
+								<dl>
+									<dt>
+										Aug 10, 2019
+									</dt>
+									<dd>Applied research paper acceptance notification</dd>
+								</dl>
+							</ul>
+							<ul>
+								<dl>
+									<dt>
+										Aug 27, 2019
+									</dt>
+									<dd>Applied research paper ready submission deadline</dd>
+								</dl>
+							</ul>
+						</div>
+					</div>
 
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-3" id="submitpaper">
-                <div class="textpanel">
-                    <div class="titlebar">
-                        <span class="left">
-                            Call for Contributions
-                            <img src="./elements/icon/submit_icon.png">
-                        </span>
-                    </div>
-                    <!-- <div class="col-xs-12" style="padding-left: 20px;">
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-3" id="submitpaper">
+				<div class="textpanel">
+					<div class="titlebar">
+						<span class="left">
+							Call for Contributions
+							<img src="./elements/icon/submit_icon.png">
+						</span>
+					</div>
+					<!-- <div class="col-xs-12" style="padding-left: 20px;">
 						<h4>Theme:</h4>
 						<p>
 						<span>AI for<br>
 						Future Life </span>
 					</p>
 					</div> -->
-                    <div class="col-xs-12" style="padding: 0.7rem 20px;">
-                        <a href="callforpapers.html">Call for Full and Short Research Papers</a>
-                    </div>
-                    <div class="col-xs-12" style="padding: 0.7rem 20px">
-                        <a href="callforworkshops.html">Call for Workshop Proposals</a>
-                    </div>
-                    <div class="col-xs-12" style="padding: 0.7rem 20px">
-                        <a href="callfordemos.html">Call for Demos</a>
-                    </div>
-                    <div class="col-xs-12" style="padding: 0.7rem 20px;">
-                        <a href="callforappliedresearchpapers.html">Call for Applied Research Papers</a>
-                    </div>
-                    <!-- <img class="imgdeco" src="./elements/bg_submissions.png" alt=""
+					<div class="col-xs-12" style="padding: 0.7rem 20px;">
+						<a href="callforpapers.html">Call for Full and Short Research Papers</a>
+					</div>
+					<div class="col-xs-12" style="padding: 0.7rem 20px">
+						<a href="callforworkshops.html">Call for Workshop Proposals</a>
+					</div>
+					<div class="col-xs-12" style="padding: 0.7rem 20px">
+						<a href="callfordemos.html">Call for Demos</a>
+					</div>
+					<div class="col-xs-12" style="padding: 0.7rem 20px;">
+						<a href="callforappliedresearchpapers.html">Call for Applied Research Papers</a>
+					</div>
+					<!-- <img class="imgdeco" src="./elements/bg_submissions.png" alt=""
 						style="width: 90%; bottom: 0; opacity: 0.5;position: absolute; right:0"> -->
-                    <!-- <div class="titlebar" style="bottom: 0;position: absolute;right: 7px;">
+					<!-- <div class="titlebar" style="bottom: 0;position: absolute;right: 7px;">
 						<span class="right">
 							<a href="callforpapers.html">more<img src="./elements/news/more.png" alt=""></a>
 						</span>
 					</div> -->
-                </div>
-            </div>
-        </div>
-        <!-- News & KeynoteSpeakers -->
-        <div class="col-xs-10 col-xs-offset-1">
-            <!-- <div class="textpanel col-xs-8 right" id="keynotespeakers">
+				</div>
+			</div>
+		</div>
+		<!-- News & KeynoteSpeakers -->
+		<div class="col-xs-10 col-xs-offset-1">
+			<!-- <div class="textpanel col-xs-8 right" id="keynotespeakers">
 				<div class="titlebar">
 					<span class="left">KEYNOTE SPEAKERS<img src="./elements/news/speakers_icon.png"></span>
 					<span class="right">
@@ -584,48 +587,48 @@
 					</div>
 				</div>
 			</div> -->
-        </div>
-        <!-- News & KeynoteSpeakers -->
+		</div>
+		<!-- News & KeynoteSpeakers -->
 
-        <!-- Keydates -->
+		<!-- Keydates -->
 
-        <!-- Keydates -->
+		<!-- Keydates -->
 
-        <!-- Sponsors -->
-        <div class="col-xs-10 col-xs-offset-1">
-            <div id="sponsors">
-                <div class="titlebar" style="background-color: transparent; color: #7C1200">
-                    <span class="left">
-                        SPONSORS
-                        <img src="./elements/keydates/sponsors.png">
-                    </span>
-                    <!-- <span class="right">
+		<!-- Sponsors -->
+		<div class="col-xs-10 col-xs-offset-1">
+			<div id="sponsors">
+				<div class="titlebar" style="background-color: transparent; color: #7C1200">
+					<span class="left">
+						SPONSORS
+						<img src="./elements/keydates/sponsors.png">
+					</span>
+					<!-- <span class="right">
 						<a href="">more<img src="./elements/news/more.png" alt=""></a>
 					</span> -->
-                </div>
-                <div class="col-sm-12 all-sponsors">
-                    <div class="row">
-                        <div style="width: 20%; float: left;" class="extra col-md-1"></div>
-                        <div class="sponsor-item wide img-wrap">
-                            <div class="img-container">
-                                <a target="_blank" href="https://www.ubtrobot.com/"><img
-                                        src="./elements/sponsors/logo-ubtech.png" alt="UBTECH"></a>
-                            </div>
-                        </div>
-                        <div class="sponsor-item wide img-wrap">
-                            <div class="img-container">
-                                <a target="_blank" href="https://www.didiglobal.com/"><img
-                                        src="./elements/sponsors/logo-didi.png" alt="DIDI"></a>
-                            </div>
-                        </div>
-                        <div class="sponsor-item wide img-wrap">
-                            <div class="img-container">
-                                <a target="_blank" href="https://www.bytedance.com/en/"><img
-                                        src="./elements/sponsors/logo-bytedance.jpg" alt="BYTEDANCE"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="row">
+				</div>
+				<div class="col-sm-12 all-sponsors">
+					<div class="row">
+						<div style="width: 20%; float: left;" class="extra col-md-1"></div>
+						<div class="sponsor-item wide img-wrap">
+							<div class="img-container">
+								<a target="_blank" href="https://www.ubtrobot.com/"><img
+										src="./elements/sponsors/logo-ubtech.png" alt="UBTECH"></a>
+							</div>
+						</div>
+						<div class="sponsor-item wide img-wrap">
+							<div class="img-container">
+								<a target="_blank" href="https://www.didiglobal.com/"><img
+										src="./elements/sponsors/logo-didi.png" alt="DIDI"></a>
+							</div>
+						</div>
+						<div class="sponsor-item wide img-wrap">
+							<div class="img-container">
+								<a target="_blank" href="https://www.bytedance.com/en/"><img
+										src="./elements/sponsors/logo-bytedance.jpg" alt="BYTEDANCE"></a>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="row">
 						<div class="sponsor-item img-wrap">
 							<div class="img-container">
 								<a href=""><img src="./elements/sponsors/logo-visa-sp.jpg" alt=""></a>
@@ -737,55 +740,55 @@
 							</div>
 						</div>
 					</div> -->
-                </div>
-            </div>
-        </div>
-        <!-- Sponsors -->
-    </div>
+				</div>
+			</div>
+		</div>
+		<!-- Sponsors -->
+	</div>
 
-    <!-- footer -->
-    <div class="col-xs-12" id="footer">
-        <div class="part1" style="position: relative">
-            <span class="footer-item">
-                <a href="index.html">HOME</a>
-            </span>
-            <span class="footer-item">
-                <a href="callforpapers.html">CONTIRBUTIONS</a>
-            </span>
-            <span class="footer-item">
-                <a href="organizingcommittee.html">ORGANIZERS</a>
-            </span>
-            <span class="footer-item">
-                <a href="callforsponsorship.html">SPONSORSHIP</a>
-            </span>
-            <span class="footer-item">
-                <a href="accomodation.html">ATTENDING</a>
-            </span>
+	<!-- footer -->
+	<div class="col-xs-12" id="footer">
+		<div class="part1" style="position: relative">
+			<span class="footer-item">
+				<a href="index.html">HOME</a>
+			</span>
+			<span class="footer-item">
+				<a href="callforpapers.html">CONTIRBUTIONS</a>
+			</span>
+			<span class="footer-item">
+				<a href="organizingcommittee.html">ORGANIZERS</a>
+			</span>
+			<span class="footer-item">
+				<a href="callforsponsorship.html">SPONSORSHIP</a>
+			</span>
+			<span class="footer-item">
+				<a href="accomodation.html">ATTENDING</a>
+			</span>
 
-            <!-- Default Statcounter code for CIKM http://cikm2019.net -->
-            <script type="text/javascript">
-                var sc_project = 11928079;
-                var sc_invisible = 0;
-                var sc_security = "7538f521";
-                var sc_https = 1;
-                var scJsHost = (("https:" == document.location.protocol) ? "https://secure." :
-                    "http://www.");
-                document.write("<sc" + "ript type='text/javascript' src='" + scJsHost +
-                    "statcounter.com/counter/counter.js'></" + "script>");
-            </script>
-            <noscript>
-                <div class="statcounter"><a title="Web Analytics" href="http://statcounter.com/" target="_blank"><img
-                            class="statcounter" src="//c.statcounter.com/11928079/0/7538f521/0/" alt="Web
+			<!-- Default Statcounter code for CIKM http://cikm2019.net -->
+			<script type="text/javascript">
+				var sc_project = 11928079;
+				var sc_invisible = 0;
+				var sc_security = "7538f521";
+				var sc_https = 1;
+				var scJsHost = (("https:" == document.location.protocol) ? "https://secure." :
+					"http://www.");
+				document.write("<sc" + "ript type='text/javascript' src='" + scJsHost +
+					"statcounter.com/counter/counter.js'></" + "script>");
+			</script>
+			<noscript>
+				<div class="statcounter"><a title="Web Analytics" href="http://statcounter.com/" target="_blank"><img
+							class="statcounter" src="//c.statcounter.com/11928079/0/7538f521/0/" alt="Web
 	Analytics"></a></div>
-            </noscript>
-            <!-- End of Statcounter Code -->
-        </div>
-        <div class="part2" style="background-image: url('./elements/keydates/ditu.png')">
-            <p style="line-height: 60px;"> <br></p>
-        </div>
-    </div>
-    <!-- footer -->
-    <script src="./js/banner.js?v=3.1"></script>
+			</noscript>
+			<!-- End of Statcounter Code -->
+		</div>
+		<div class="part2" style="background-image: url('./elements/keydates/ditu.png')">
+			<p style="line-height: 60px;"> <br></p>
+		</div>
+	</div>
+	<!-- footer -->
+	<script src="./js/banner.js?v=3.1"></script>
 </body>
 
 </html>

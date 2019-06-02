@@ -53,7 +53,7 @@
 			position: relative;
 			display: flex;
 			overflow: hidden;
-			margin-bottom: 20px;			
+			margin-bottom: 20px;
 		}
 
 		.workshop-name {
@@ -116,6 +116,7 @@
 			font-size: 26px;
 			left: -2em;
 		}
+
 		.workshop-desc>dd {
 			max-height: 100px;
 			overflow-y: hidden;
@@ -125,6 +126,7 @@
 		.workshop-desc>dd.expanded {
 			max-height: 1000px;
 		}
+
 		.workshop-desc .more {
 			position: absolute;
 			right: 10px;
@@ -132,6 +134,7 @@
 			cursor: pointer;
 			font-weight: bold;
 		}
+
 		.workshop-desc .more i {
 			font-size: 18px;
 		}
@@ -139,6 +142,7 @@
 		.workshop-unit:hover .workshop-name {
 			background-color: #540600;
 		}
+
 		.workshop-unit:hover .workshop-info {
 			background-color: #E0E0E0;
 		}
@@ -181,6 +185,7 @@
 						</li>
 						<li><a href="organizingcommittee.html">Organizers</a></li>
 						<li><a href="callforsponsorship.html">Sponsorship</a></li>
+						<li><a href="workshops.html">Workshops</a></li>
 						<li><a href="accomodation.html">Attending</a></li>
 					</ul>
 				</div>
@@ -645,6 +650,9 @@
 				<a href="callforsponsorship.html">SPONSORSHIP</a>
 			</span>
 			<span class="footer-item">
+				<a href="workshops.html">WORKSHOPS</a>
+			</span>
+			<span class="footer-item">
 				<a href="accomodation.html">ATTENDING</a>
 			</span>
 
@@ -673,7 +681,7 @@
 	<!-- footer -->
 
 	<script>
-		jQuery(document).ready(function($) {
+		jQuery(document).ready(function ($) {
 			'use strict';
 			let units = $('.workshop-unit'),
 				descs = $('.workshop-desc dd')
@@ -694,7 +702,7 @@
 				})
 			}
 
-			$(".workshop-desc .more").on('click', function() {
+			$(".workshop-desc .more").on('click', function () {
 				let content = $(this).siblings('dd')
 				if (content.hasClass('expanded')) {
 					content.removeClass('expanded').css('max-height', 100)
@@ -702,13 +710,13 @@
 					$(this).children('a').children('i').removeClass('fa-chevron-up').addClass('fa-chevron-down')
 				}
 				else {
-					content.addClass('expanded').css('max-height', content[0].scrollHeight+20)
+					content.addClass('expanded').css('max-height', content[0].scrollHeight + 20)
 					$(this).children('a').children('span').text('Collapse')
 					$(this).children('a').children('i').addClass('fa-chevron-up').removeClass('fa-chevron-down')
 				}
 				alignWorkshopName($(".workshop-desc .more").index($(this)))
 			})
-			$(window).on('resize load', function() {
+			$(window).on('resize load', function () {
 				descs.map((index, element) => {
 					if (element.scrollHeight <= 100) {
 						descs.eq(index).siblings('.more').addClass('hidden')
