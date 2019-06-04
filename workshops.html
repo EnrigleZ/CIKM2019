@@ -106,6 +106,7 @@
 		.workshop-info i {
 			color: #7C1200;
 			font-size: 24px;
+            user-select: none;
 		}
 
 		.workshop-info li {
@@ -716,7 +717,7 @@
 				}
 				else {
 					content.addClass('expanded').css('max-height', content[0].scrollHeight + 20)
-					more.children('a').children('span').text('Collapse')
+					more.children('a').children('span').text('Close')
 					more.children('a').children('i').addClass('fa-chevron-up').removeClass('fa-chevron-down')
 				}
 				alignWorkshopName(descs.index(content))
