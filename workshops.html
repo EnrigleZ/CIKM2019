@@ -112,6 +112,10 @@
 			padding-bottom: 1.6em;
 		}
 
+        .workshop-desc {
+            cursor: pointer;
+        }
+        
 		.workshop-desc i {
 			font-size: 26px;
 			left: -2em;
@@ -131,7 +135,6 @@
 			position: absolute;
 			right: 10px;
 			bottom: 0;
-			cursor: pointer;
 			font-weight: bold;
 		}
 
@@ -702,26 +705,32 @@
 				})
 			}
 
-			$(".workshop-desc .more").on('click', function () {
-				let content = $(this).siblings('dd')
+			$(".workshop-desc").on('click', function () {
+				let content = $(this).children('dd'),
+                    more = $(this).children('.more')
+
 				if (content.hasClass('expanded')) {
 					content.removeClass('expanded').css('max-height', 100)
-					$(this).children('a').children('span').text('More')
-					$(this).children('a').children('i').removeClass('fa-chevron-up').addClass('fa-chevron-down')
+					more.children('a').children('span').text('More')
+					more.children('a').children('i').removeClass('fa-chevron-up').addClass('fa-chevron-down')
 				}
 				else {
 					content.addClass('expanded').css('max-height', content[0].scrollHeight + 20)
-					$(this).children('a').children('span').text('Collapse')
-					$(this).children('a').children('i').addClass('fa-chevron-up').removeClass('fa-chevron-down')
+					more.children('a').children('span').text('Collapse')
+					more.children('a').children('i').addClass('fa-chevron-up').removeClass('fa-chevron-down')
 				}
-				alignWorkshopName($(".workshop-desc .more").index($(this)))
+				alignWorkshopName(descs.index($(this)))
 			})
 			$(window).on('resize load', function () {
 				descs.map((index, element) => {
 					if (element.scrollHeight <= 100) {
 						descs.eq(index).siblings('.more').addClass('hidden')
+                        descs.eq(index).parent().css('cursor', 'auto')
 					}
-					else descs.eq(index).siblings('.more').removeClass('hidden')
+					else {
+                        descs.eq(index).siblings('.more').removeClass('hidden')
+                        descs.eq(index).parent().css('cursor', 'pointer')
+                    }
 				})
 			})
 			alignWorkshopName()
