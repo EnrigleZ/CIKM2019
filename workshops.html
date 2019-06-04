@@ -719,7 +719,7 @@
 					more.children('a').children('span').text('Collapse')
 					more.children('a').children('i').addClass('fa-chevron-up').removeClass('fa-chevron-down')
 				}
-				alignWorkshopName(descs.index($(this)))
+				alignWorkshopName(descs.index(content))
 			})
 			$(window).on('resize load', function () {
 				descs.map((index, element) => {
