@@ -2,741 +2,742 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<link rel="shortcut icon" href="favicon.ico" />
-	<link rel="bookmark" href="favicon.ico" />
-	<meta name="keywords" content="cikm2019,cikm,workshop">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link id="bootstrap_221" rel="stylesheet" type="text/css" class="library"
-		href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
-	<script id="jquery_172" type="text/javascript" class="library"
-		src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script id="bootstrap_221" type="text/javascript" class="library"
-		src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-	<link href="css/banner.css?v=3.1" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
-	<title>Workshops - CIKM 2019</title>
-	<style type="text/css">
-		.textpanel {
-			color: #B85612;
-			font-size: 18px;
-		}
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="bookmark" href="favicon.ico" />
+    <meta name="keywords" content="cikm2019,cikm,workshop">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link id="bootstrap_221" rel="stylesheet" type="text/css" class="library"
+        href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script id="jquery_172" type="text/javascript" class="library"
+        src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script id="bootstrap_221" type="text/javascript" class="library"
+        src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="css/banner.css?v=3.1" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+    <title>Workshops - CIKM 2019</title>
+    <style type="text/css">
+        .textpanel {
+            color: #B85612;
+            font-size: 18px;
+        }
 
-		.textpanel .button {
-			color: white;
-			margin-top: 40px;
-			margin-bottom: 20px;
-			/* max-width: unset; */
-		}
+        .textpanel .button {
+            color: white;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            /* max-width: unset; */
+        }
 
-		.textpanel ul {
-			padding-left: 0;
-			margin-bottom: 0;
-			overflow: hidden;
-			text-overflow: ellipsis;
-		}
+        .textpanel ul {
+            padding-left: 0;
+            margin-bottom: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
 
-		.textpanel a {
-			color: #F3CD58;
-		}
+        .textpanel a {
+            color: #F3CD58;
+        }
 
-		.textpanel .button:hover {
-			color: #F3CD58;
-		}
+        .textpanel .button:hover {
+            color: #F3CD58;
+        }
 
-		.metacontainer h1,
-		.metacontainer h2 {
-			font-weight: bold;
-		}
+        .metacontainer h1,
+        .metacontainer h2 {
+            font-weight: bold;
+        }
 
-		.workshop-unit {
-			position: relative;
-			display: flex;
-			overflow: hidden;
-			margin-bottom: 20px;
-		}
+        .workshop-unit {
+            position: relative;
+            display: flex;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
 
-		.workshop-name {
-			float: left;
-			position: relative;
-			height: 100%;
-			background: #7C1200;
-			width: 30%;
-			color: #FFF;
-			flex: 1;
-			padding-bottom: 9999px;
-			margin-bottom: -9999px;
-			transition: all 1s ease;
-			padding-top: 80px;
-		}
+        .workshop-name {
+            float: left;
+            position: relative;
+            height: 100%;
+            background: #7C1200;
+            width: 30%;
+            color: #FFF;
+            flex: 1;
+            padding-bottom: 9999px;
+            margin-bottom: -9999px;
+            transition: all 1s ease;
+            padding-top: 80px;
+        }
 
-		.workshop-name h3 {
-			font-size: 34px;
-			margin-top: 0;
-			margin-bottom: 20px;
-		}
+        .workshop-name h3 {
+            font-size: 34px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
 
-		.workshop-name p {
-			text-align: left;
-			margin: 0 10%;
-			font-size: 20px;
-		}
+        .workshop-name p {
+            text-align: left;
+            margin: 0 10%;
+            font-size: 20px;
+        }
 
-		.workshop-info {
-			float: left;
-			position: relative;
-			flex: none;
-			background: #EFEFEF;
-			text-align: left;
-			height: 100%;
-			width: 70%;
-			padding: 10px 15px;
-			transition: all 0.5s;
-		}
+        .workshop-info {
+            float: left;
+            position: relative;
+            flex: none;
+            background: #EFEFEF;
+            text-align: left;
+            height: 100%;
+            width: 70%;
+            padding: 10px 15px;
+            transition: all 0.5s;
+        }
 
-		.workshop-info ul {
-			padding-left: 0;
-		}
+        .workshop-info ul {
+            padding-left: 0;
+        }
 
-		.workshop-info a {
-			color: #7C1200;
-		}
+        .workshop-info a {
+            color: #7C1200;
+        }
 
-		.workshop-info dt,
-		.workshop-info i {
-			color: #7C1200;
-			font-size: 24px;
+        .workshop-info dt,
+        .workshop-info i {
+            color: #7C1200;
+            font-size: 24px;
             user-select: none;
-		}
+        }
 
-		.workshop-info li {
-			padding-bottom: 1.6em;
-		}
+        .workshop-info li {
+            padding-bottom: 1.6em;
+        }
 
         .workshop-desc {
             cursor: pointer;
         }
-        
-		.workshop-desc i {
-			font-size: 26px;
-			left: -2em;
-		}
 
-		.workshop-desc>dd {
-			max-height: 100px;
-			overflow-y: hidden;
-			transition: all 1s ease;
-		}
+        .workshop-desc i {
+            font-size: 26px;
+            left: -2em;
+        }
 
-		.workshop-desc>dd.expanded {
-			max-height: 1000px;
-		}
+        .workshop-desc>dd {
+            max-height: 100px;
+            overflow-y: hidden;
+            transition: all 1s ease;
+        }
 
-		.workshop-desc .more {
-			position: absolute;
-			right: 10px;
-			bottom: 0;
-			font-weight: bold;
-		}
+        .workshop-desc>dd.expanded {
+            max-height: 1000px;
+        }
 
-		.workshop-desc .more i {
-			font-size: 18px;
-		}
+        .workshop-desc .more {
+            position: absolute;
+            right: 10px;
+            bottom: 0;
+            font-weight: bold;
+        }
 
-		.workshop-unit:hover .workshop-name {
-			background-color: #540600;
-		}
+        .workshop-desc .more i {
+            font-size: 18px;
+        }
 
-		.workshop-unit:hover .workshop-info {
-			background-color: #E0E0E0;
-		}
-	</style>
+        .workshop-unit:hover .workshop-name {
+            background-color: #540600;
+        }
+
+        .workshop-unit:hover .workshop-info {
+            background-color: #E0E0E0;
+        }
+    </style>
 </head>
 
 <body>
-	<div id="header">
-		<img class="fullwidth" src="elements/top_deco.png" style="position: absolute">
-		<img class="imgdeco rightdecoration" src="elements/right_deco.png" alt="">
-		<div>
-			<a href="index.html"><img class="logo" src="elements/LOGO.png"></a>
-		</div>
-		<nav class="navbar navbar-default">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="left navbar-toggle collapsed" data-toggle="collapse"
-						data-target="#header-navbar" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-				</div>
-				<div class="collapse navbar-collapse" id="header-navbar">
-					<ul class="nav navbar-nav">
-						<li><a href="index.html">Home</a></li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbar-submissions" role="button"
-								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Call for Contributions
-							</a>
-							<ul class="dropdown-menu" aria-labelledby="navbar-submissions">
-								<li><a class="dropdown-item" href="callforpapers.html">Research Papers</a></li>
-								<li><a class="dropdown-item" href="callforworkshops.html">Workshops</a></li>
-								<li><a class="dropdown-item" href="callfordemos.html">Demos</a></li>
-								<li><a class="dropdown-item" href="callforappliedresearchpapers.html">Applied Research
-										Papers</a></li>
-							</ul>
-						</li>
-						<li><a href="organizingcommittee.html">Organizers</a></li>
-						<li><a href="callforsponsorship.html">Sponsorship</a></li>
-						<li><a href="workshops.html">Workshops</a></li>
-						<li><a href="accomodation.html">Attending</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</div>
+    <div id="header">
+        <img class="fullwidth" src="elements/top_deco.png" style="position: absolute">
+        <img class="imgdeco rightdecoration" src="elements/right_deco.png" alt="">
+        <div>
+            <a href="index.html"><img class="logo" src="elements/LOGO.png"></a>
+        </div>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="left navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#header-navbar" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="header-navbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbar-submissions" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Call for Contributions
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbar-submissions">
+                                <li><a class="dropdown-item" href="callforpapers.html">Research Papers</a></li>
+                                <li><a class="dropdown-item" href="callforworkshops.html">Workshops</a></li>
+                                <li><a class="dropdown-item" href="callfordemos.html">Demos</a></li>
+                                <li><a class="dropdown-item" href="callforappliedresearchpapers.html">Applied Research
+                                        Papers</a></li>
+                                <li><a class="dropdown-item" href="callfortutorials.html">Tutorials</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="organizingcommittee.html">Organizers</a></li>
+                        <li><a href="callforsponsorship.html">Sponsorship</a></li>
+                        <li><a href="workshops.html">Workshops</a></li>
+                        <li><a href="accomodation.html">Attending</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
 
-	<div class="container metacontainer" id="main-container" style="margin-top: 20px; margin-bottom: 20px">
-		<div class="col-lg-offset-1 col-xs-offset-0 col-lg-10">
-			<div class="col-md-12">
-				<div class="title">
-					<img src="./elements/workshops_title.png" alt="" class="left extra"
-						style="height: 70px; padding-left: 30px;">
-					<div class="left" style="margin-left: 5px;">
-						<h1>WORKSHOP INFORMATION</h1>
-						<div style="width:auto;height:3px; background:#262626;"></div>
-					</div>
-				</div>
-				<div class="col-md-12 center" style="float: left; margin-top:40px">
-					<div class="col-md-12 workshop-unit" id="eyre19">
-						<div class="workshop-name ">
-							<h3>EYRE 2019</h3>
-							<p>The 2nd International Workshop on EntitY REtrieval</p>
-						</div>
-						<div class="workshop-info ">
-							<ul class="fa-ul">
-								<li><i class="fa-li fa fa-users"></i>
-									<dt>Organizer</dt>
-									<dd>
-										<ul>Gong Cheng (Nanjing University, China)</ul>
-										<ul>Kalpa Gunaratna (Samsung Research America, USA)</ul>
-										<ul>Jun Wang (University College London, UK)</ul>
-									</dd>
-								</li>
-								<li class="workshop-desc"><i class="fa-li fa fa-bookmark"></i>
-									<dt>Description</dt>
-									<dd>
-										<p>The 2nd EYRE workshop welcomes contributions related to any aspect of entity
-											retrieval and semantic search. We also organize two shared tasks: entity
-											summarization and entity search.</p>
-									</dd>
-									<div class="more"><a><span style="margin-right: 5px;">More</span><i
-												class="fa fa-chevron-down" aria-hidden="true"></i></a></div>
-								</li>
-								<li><i class="fa-li fa fa-desktop"></i>
-									<dt><a href="https://sites.google.com/view/eyre19" target="_blank">URL
-											<i class="fa fa-angle-right" aria-hidden="true"></i></a></dt>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-12 workshop-unit" id="mostrec2019">
-						<div class="workshop-name ">
-							<h3>MoST-Rec 2019</h3>
-							<p>Workshop on Model Selection and Parameter Tuning in Recommender Systems</p>
-						</div>
-						<div class="workshop-info ">
-							<ul class="fa-ul">
-								<li><i class="fa-li fa fa-users"></i>
-									<dt>Organizer</dt>
-									<dd>
-										<ul>Sahin Albayrak (Berlin Institute of Technology, Germany)</ul>
-										<ul>Defu Lian (University of Science and Technology of China, China)</ul>
-										<ul>Fikret Sivrikaya (GT-ARC gGmbH, Germany)</ul>
-									</dd>
-								</li>
-								<li class="workshop-desc"><i class="fa-li fa fa-bookmark"></i>
-									<dt>Description</dt>
-									<dd>
-										<p>The first Workshop on Model Selection and Parameter Tuning in Recommender
-											Systems @ CIKM 2019 is a place for discussing and exchanging recent advances
-											and
-											open challenges between the Model-Selection and Parameter Tuning community
-											and
-											Recommendation Systems community. Recommender systems have attracted strong
-											attention of the machine learning community, especially within the last
-											decades.
-											Researchers have developed various algorithms proven to have good
-											performance in
-											the laboratory environment; however, applying them to real business cases is
-											typically more difficult. This workshop addresses the issues of algorithm
-											selection and parameter tuning for recommender systems. The goal is to bring
-											together researchers from the machine learning community with the industry
-											representatives in order to exchange information on current challenges,
-											constraints and ideas from both domains.</p>
-									</dd>
-									<div class="more"><a><span style="margin-right: 5px;">More</span><i
-												class="fa fa-chevron-down" aria-hidden="true"></i></a></div>
-								</li>
-								<li><i class="fa-li fa fa-desktop"></i>
-									<dt><a href="http://most-rec.gt-arc.com/" target="_blank">URL
-											<i class="fa fa-angle-right" aria-hidden="true"></i></a></dt>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-12 workshop-unit" id="ait2019">
-						<div class="workshop-name ">
-							<h3>AIT 2019</h3>
-							<p>Workshop on Artificial Intelligence in Transportation</p>
-						</div>
-						<div class="workshop-info ">
-							<ul class="fa-ul">
-								<li><i class="fa-li fa fa-users"></i>
-									<dt>Organizer</dt>
-									<dd>
-										<ul>Weinan Zhang (Shanghai Jiao Tong University)</ul>
-										<ul>Haiming Jin (Shanghai Jiao Tong University)</ul>
-										<ul>Lingyu Zhang (Didi Chuxing)</ul>
-										<ul>Hongtu Zhu (Didi Chuxing; University of North Carolina at Chapel Hill)</ul>
-										<ul>Zhenhui Jessie Li (Pennsylvania State University)</ul>
-										<ul>Jieping Ye (Didi Chuxing; University of Michigan)</ul>
-									</dd>
-								</li>
-								<li class="workshop-desc"><i class="fa-li fa fa-bookmark"></i>
-									<dt>Description</dt>
-									<dd>
-										<p>Data-enabled smart transportation has attracted a surge of interest from
-											machine
-											learning and data mining researchers nowadays due to the bloom of online
-											ride-hailing industry and rapid development of autonomous driving.
-											Large-scale
-											high quality route data and trading data (spatiotemporal data) have been
-											generated every day, which makes AI an urgent need and preferred solution
-											for
-											the decision making in intelligent transportation systems. While a large of
-											amount of work have been dedicated to traditional transportation problems,
-											they
-											are far from satisfactory for the rising need.</p>
-										<p>We propose a half-day workshop at CIKM 2019 for the professionals,
-											researchers, and practitioners who are interested in mining and
-											understanding
-											big and heterogeneous data generated in transportation, and AI applications
-											to
-											improve the transportation system.</p>
-									</dd>
-									<div class="more"><a><span style="margin-right: 5px;">More</span><i
-												class="fa fa-chevron-down" aria-hidden="true"></i></a></div>
-								</li>
-								<li><i class="fa-li fa fa-desktop"></i>
-									<dt><a href="https://outreach.didichuxing.com/cikm2019/workshop/AIT/"
-											target="_blank">URL
-											<i class="fa fa-angle-right" aria-hidden="true"></i></a></dt>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-12 workshop-unit" id="bigscholar2019">
-						<div class="workshop-name ">
-							<h3>BigScholar 2019</h3>
-							<p>The 6th Workshop on Big Scholarly Data</p>
-						</div>
-						<div class="workshop-info ">
-							<ul class="fa-ul">
-								<li><i class="fa-li fa fa-users"></i>
-									<dt>Organizer</dt>
-									<dd>
-										<ul>Feng Xia (Dalian University of Technology, China)</ul>
-										<ul>Huan Liu (Arizona State University, USA)</ul>
-										<ul>Irwin King (The Chinese University of Hong Kong, China)</ul>
-										<ul>Kuansan Wang (Microsoft Research, USA)</ul>
-									</dd>
-								</li>
-								<li class="workshop-desc"><i class="fa-li fa fa-bookmark"></i>
-									<dt>Description</dt>
-									<dd>
-										<p>The BigScholar 2019 workshop aims at bringing together academics and
-											practitioners from diverse fields to share ideas and experience with
-											management, analysis, mining, and applications of big scholarly data. The
-											goal is to contribute to the birth of a community having a shared interest
-											around big scholarly data and exploring it using knowledge discovery, data
-											science and analytics, network science, and other appropriate technologies.
-										</p>
-									</dd>
-									<div class="more"><a><span style="margin-right: 5px;">More</span><i
-												class="fa fa-chevron-down" aria-hidden="true"></i></a></div>
-								</li>
-								<li><i class="fa-li fa fa-desktop"></i>
-									<dt><a href="http://thealphalab.org/bigscholar/" target="_blank">URL
-											<i class="fa fa-angle-right" aria-hidden="true"></i></a></dt>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-12 workshop-unit" id="hena2019">
-						<div class="workshop-name ">
-							<h3>HENA 2019</h3>
-							<p>The 3rd Workshop of Heterogeneous Information Network Analysis and Applications</p>
-						</div>
-						<div class="workshop-info ">
-							<ul class="fa-ul">
-								<li><i class="fa-li fa fa-users"></i>
-									<dt>Organizer</dt>
-									<dd>
-										<ul>Chuan Shi (Beijing University of Posts and Telecommunications, China)</ul>
-										<ul>Yanfang (Fanny) Ye (West Virginia University, USA)</ul>
-										<ul>Jiawei Zhang (Florida State University, USA)</ul>
-									</dd>
-								</li>
-								<li class="workshop-desc"><i class="fa-li fa fa-bookmark"></i>
-									<dt>Description</dt>
-									<dd>
-										<p>Now we are living in an interconnected world - where most of the data,
-											informational objects, agents, or components are interconnected or interact
-											with each other - forming gigantic and sophisticated information networks.
-											Most real-world applications based on information networks can be structured
-											into heterogeneous information networks that include different types of
-											objects or links. Recent works on heterogeneous information network analysis
-											and its applications have led to a convergence of methodologies for network
-											modeling, graph mining, linking analysis, data semantics mining, and
-											incorporating classification, learning and reasoning with graphical models.
-											As a promising network analysis paradigm, heterogeneous information network
-											analysis also faces challenges, such as how to manage more complex
-											heterogonous data like RDF data and how to quickly handle large-scale
-											heterogonous information network. This workshop shall provide a forum for
-											researchers and practitioners to share new techniques and applications in
-											heterogonous information network analysis.</p>
-									</dd>
-									<div class="more"><a><span style="margin-right: 5px;">More</span><i
-												class="fa fa-chevron-down" aria-hidden="true"></i></a></div>
-								</li>
-								<li><i class="fa-li fa fa-desktop"></i>
-									<dt><a href="http://www.shichuan.org/HENA2019.html" target="_blank">URL
-											<i class="fa fa-angle-right" aria-hidden="true"></i></a></dt>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-12 workshop-unit" id="kdahcikm2019">
-						<div class="workshop-name ">
-							<h3>KDAH-CIKM 2019</h3>
-							<p>The 2nd Workshop on Knowledge-driven Analytics and Systems Impacting Human Quality of
-								Life</p>
-						</div>
-						<div class="workshop-info ">
-							<ul class="fa-ul">
-								<li><i class="fa-li fa fa-users"></i>
-									<dt>Organizer</dt>
-									<dd>
-										<ul>Arijit Ukil (Research and Innovation, Tata Consultancy Services, India)</ul>
-										<ul>Leandro Marin (University of Murcia, Spain)</ul>
-										<ul>Antonio Jara (University of Applied Sciences Western Switzerland (HES-SO),
-											Switzerland)</ul>
-										<ul>John Farserotu (Centre Suisse d'Electronique et de Microtechnique (CSEM),
-											Switzerland)</ul>
-									</dd>
-								</li>
-								<li class="workshop-desc"><i class="fa-li fa fa-bookmark"></i>
-									<dt>Description</dt>
-									<dd>
-										<p>The main focus of this workshop is to bring proposals and insights that
-											demonstrate the knowledge-driven technologies, developments and applications
-											for ensuring improvement of human quality of life. The intended thrust is to
-											promote the development of human-centric intelligent technologies like
-											precise and personalized medication and prognosis prediction, improved
-											elderly care, minimizing private data theft, knowledge-driven energy and
-											resource management, deep learning and artificial intelligence based
-											applications for risk prediction and augmented human capability generation.
-											We expect researchers in the field of knowledge management, information
-											retrieval, artificial intelligence, data mining, privacy analytics will
-											provide insights of technological aspects as well as application-specific
-											scenarios of human-centric knowledge-driven analytics and systems. The areas
-											of interest, not limited to: Clinical Analytics; Privacy Preserving Data
-											Mining; Recommender systems for retail, financial decision making; Fraud
-											detection and prevention system; Human cognition analysis; Knowledge-driven
-											human action understanding and decision making; Deep learning and artificial
-											intelligence based applications; Social network analysis and related others.
-										</p>
-									</dd>
-									<div class="more"><a><span style="margin-right: 5px;">More</span><i
-												class="fa fa-chevron-down" aria-hidden="true"></i></a></div>
-								</li>
-								<li><i class="fa-li fa fa-desktop"></i>
-									<dt><a href="https://sites.google.com/view/kdah-cikm-2019/home" target="_blank">URL
-											<i class="fa fa-angle-right" aria-hidden="true"></i></a></dt>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-12 workshop-unit" id="kars2019">
-						<div class="workshop-name ">
-							<h3>KARS 2019</h3>
-							<p>Knowledge-aware and Conversational Recommender Systems Workshop</p>
-						</div>
-						<div class="workshop-info ">
-							<ul class="fa-ul">
-								<li><i class="fa-li fa fa-users"></i>
-									<dt>Organizer</dt>
-									<dd>
-										<ul>Vito Walter Anelli (Polytechnic University of Bari, Italy)</ul>
-										<ul>Tommaso Di Noia (University of Murcia, Spain)</ul>
-										<ul>Antonio Jara (Polytechnic University of Bari, Italy)</ul>
-									</dd>
-								</li>
-								<li class="workshop-desc"><i class="fa-li fa fa-bookmark"></i>
-									<dt>Description</dt>
-									<dd>
-										<p>The workshop focuses on all the aspects related to the injection and adoption
-											of knowledge sources in Recommender Systems. More and more precise and
-											powerful recommendation algorithms and techniques have been proposed over
-											the last years able to effectively assess users' tastes and predict
-											information that would probably be of interest for them. Most of these
-											approaches rely on the collaborative paradigm (often exploiting machine
-											learning techniques) and do not take into account the huge amount of
-											knowledge, both structured and non-structured ones, describing the domain of
-											interest for the recommendation engine. The aim of knowledge-aware and
-											conversational recommender systems is to go beyond the traditional accuracy
-											goal and to start a new generation of algorithms and interactive approaches
-											which exploit the knowledge encoded in ontological and logic-based knowledge
-											bases, knowledge graphs as well as the semantics emerging from the analysis
-											and exploitation of semi-structured textual sources.</p>
-									</dd>
-									<div class="more"><a><span style="margin-right: 5px;">More</span><i
-												class="fa fa-chevron-down" aria-hidden="true"></i></a></div>
-								</li>
-								<li><i class="fa-li fa fa-desktop"></i>
-									<dt><a href="http://sisinflab.poliba.it/kars/2019/" target="_blank">URL
-											<i class="fa fa-angle-right" aria-hidden="true"></i></a></dt>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-12 workshop-unit" id="grla2019">
-						<div class="workshop-name ">
-							<h3>GRLA 2019</h3>
-							<p>The 1st International Workshop on Graph Representation Learning and its Applications</p>
-						</div>
-						<div class="workshop-info ">
-							<ul class="fa-ul">
-								<li><i class="fa-li fa fa-users"></i>
-									<dt>Organizer</dt>
-									<dd>
-										<ul>Huawei Shen (Institute of Computing Technology, Chinese Academy of Sciences,
-											China)</ul>
-										<ul>Jian Tang (HEC Montreal and Montreal Institute for Learning Algorithms,
-											Canada)</ul>
-										<ul>Peng Bao (Beijing Jiaotong University, China)</ul>
-									</dd>
-								</li>
-								<li class="workshop-desc"><i class="fa-li fa fa-bookmark"></i>
-									<dt>Description</dt>
-									<dd>
-										<p>Graph structured data are ubiquitous nowadays in a variety of disciplines and
-											domains ranging from computer science, social science, economics, medicine,
-											to bioinformatics. Examples include social networks, knowledge graph,
-											e-commerce networks, protein-protein interaction graphs, and molecular
-											structures. Recently, representation learning for graphs has attracted
-											considerable attention from researchers and communities, and led to
-											state-of-the-art results in numerous tasks including molecule
-											classification, new drug discovery, recommender systems, etc. This workshop
-											aims to provide a forum for industry and academia to discuss the latest
-											progress on graph representation learning and their applications in
-											different fields. We expect novel research works that address various
-											aspects of graph representation learning, including learning representations
-											of entire graph, knowledge graph embedding, graph neural networks,
-											applications in information network analysis, natural language
-											understanding, recommender systems, drug discovery, and so on.</p>
-									</dd>
-									<div class="more"><a><span style="margin-right: 5px;">More</span><i
-												class="fa fa-chevron-down" aria-hidden="true"></i></a></div>
-								</li>
-								<li><i class="fa-li fa fa-desktop"></i>
-									<dt><a href="https://cikm-grla.github.io/" target="_blank">URL
-											<i class="fa fa-angle-right" aria-hidden="true"></i></a></dt>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-12 workshop-unit" id="dtmbio2019">
-						<div class="workshop-name ">
-							<h3>DTMBIO 2019</h3>
-							<p>The 13th International Workshop on Data and Text Mining in Biomedical Informatics</p>
-						</div>
-						<div class="workshop-info ">
-							<ul class="fa-ul">
-								<li><i class="fa-li fa fa-users"></i>
-									<dt>Organizer</dt>
-									<dd>
-										<ul>Hyojung Paik (Korea Institute of Science and Technology)</ul>
-										<ul>Jian Tang (HEC Montreal and Montreal Institute for Learning Algorithms,
-											Canada)</ul>
-										<ul>Ruibion Xi (Peking University)</ul>
-										<ul>Sangwoo Kim (Yonsei University College of Medicine)</ul>
-										<ul>Dokyun Na (Chung-Ang University)</ul>
-									</dd>
-								</li>
-								<li class="workshop-desc"><i class="fa-li fa fa-bookmark"></i>
-									<dt>Description</dt>
-									<dd>
-										<p>The rapid growth of medical and health informatics field is tightly coupled
-											with developments within several areas in computer science, including data
-											and text mining, information extraction and database management systems,
-											among others. A fundamental topic of research within medical informatics is
-											how to make effective use of the tremendous amount of biological and
-											biomedical data to improve the understanding of biological systems. Such
-											data include, but are ot limited to, gene and protein sequences, gene
-											expression profiles, protein structure predictions resulting from
-											high-throughput computational methods, protein-protein interactions from
-											proteomic studies, Single Nucleotide Polymorphisms (SNPs) profiles, and
-											information from the literature and other textual resources. The need to
-											extract, understand, integrate, and make use of nformation embedded in such
-											heterogeneous unstructured data, automatically and effectively drives the
-											current research in medical and healthcare informatics. </p>
-										<p>The focus of this workshop is to bring together researchers that work in the
-											areas of data and text mining and computational biology, interested in
-											integrating such heterogeneous structured and unstructured data, while
-											effectively using literature information in medical informatics solutions.
-											The workshop will focus on: </p>
+    <div class="container metacontainer" id="main-container" style="margin-top: 20px; margin-bottom: 20px">
+        <div class="col-lg-offset-1 col-xs-offset-0 col-lg-10">
+            <div class="col-md-12">
+                <div class="title">
+                    <img src="./elements/workshops_title.png" alt="" class="left extra"
+                        style="height: 70px; padding-left: 30px;">
+                    <div class="left" style="margin-left: 5px;">
+                        <h1>WORKSHOP INFORMATION</h1>
+                        <div style="width:auto;height:3px; background:#262626;"></div>
+                    </div>
+                </div>
+                <div class="col-md-12 center" style="float: left; margin-top:40px">
+                    <div class="col-md-12 workshop-unit" id="eyre19">
+                        <div class="workshop-name ">
+                            <h3>EYRE 2019</h3>
+                            <p>The 2nd International Workshop on EntitY REtrieval</p>
+                        </div>
+                        <div class="workshop-info ">
+                            <ul class="fa-ul">
+                                <li><i class="fa-li fa fa-users"></i>
+                                    <dt>Organizer</dt>
+                                    <dd>
+                                        <ul>Gong Cheng (Nanjing University, China)</ul>
+                                        <ul>Kalpa Gunaratna (Samsung Research America, USA)</ul>
+                                        <ul>Jun Wang (University College London, UK)</ul>
+                                    </dd>
+                                </li>
+                                <li class="workshop-desc"><i class="fa-li fa fa-bookmark"></i>
+                                    <dt>Description</dt>
+                                    <dd>
+                                        <p>The 2nd EYRE workshop welcomes contributions related to any aspect of entity
+                                            retrieval and semantic search. We also organize two shared tasks: entity
+                                            summarization and entity search.</p>
+                                    </dd>
+                                    <div class="more"><a><span style="margin-right: 5px;">More</span><i
+                                                class="fa fa-chevron-down" aria-hidden="true"></i></a></div>
+                                </li>
+                                <li><i class="fa-li fa fa-desktop"></i>
+                                    <dt><a href="https://sites.google.com/view/eyre19" target="_blank">URL
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i></a></dt>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-12 workshop-unit" id="mostrec2019">
+                        <div class="workshop-name ">
+                            <h3>MoST-Rec 2019</h3>
+                            <p>Workshop on Model Selection and Parameter Tuning in Recommender Systems</p>
+                        </div>
+                        <div class="workshop-info ">
+                            <ul class="fa-ul">
+                                <li><i class="fa-li fa fa-users"></i>
+                                    <dt>Organizer</dt>
+                                    <dd>
+                                        <ul>Sahin Albayrak (Berlin Institute of Technology, Germany)</ul>
+                                        <ul>Defu Lian (University of Science and Technology of China, China)</ul>
+                                        <ul>Fikret Sivrikaya (GT-ARC gGmbH, Germany)</ul>
+                                    </dd>
+                                </li>
+                                <li class="workshop-desc"><i class="fa-li fa fa-bookmark"></i>
+                                    <dt>Description</dt>
+                                    <dd>
+                                        <p>The first Workshop on Model Selection and Parameter Tuning in Recommender
+                                            Systems @ CIKM 2019 is a place for discussing and exchanging recent advances
+                                            and
+                                            open challenges between the Model-Selection and Parameter Tuning community
+                                            and
+                                            Recommendation Systems community. Recommender systems have attracted strong
+                                            attention of the machine learning community, especially within the last
+                                            decades.
+                                            Researchers have developed various algorithms proven to have good
+                                            performance in
+                                            the laboratory environment; however, applying them to real business cases is
+                                            typically more difficult. This workshop addresses the issues of algorithm
+                                            selection and parameter tuning for recommender systems. The goal is to bring
+                                            together researchers from the machine learning community with the industry
+                                            representatives in order to exchange information on current challenges,
+                                            constraints and ideas from both domains.</p>
+                                    </dd>
+                                    <div class="more"><a><span style="margin-right: 5px;">More</span><i
+                                                class="fa fa-chevron-down" aria-hidden="true"></i></a></div>
+                                </li>
+                                <li><i class="fa-li fa fa-desktop"></i>
+                                    <dt><a href="http://most-rec.gt-arc.com/" target="_blank">URL
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i></a></dt>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-12 workshop-unit" id="ait2019">
+                        <div class="workshop-name ">
+                            <h3>AIT 2019</h3>
+                            <p>Workshop on Artificial Intelligence in Transportation</p>
+                        </div>
+                        <div class="workshop-info ">
+                            <ul class="fa-ul">
+                                <li><i class="fa-li fa fa-users"></i>
+                                    <dt>Organizer</dt>
+                                    <dd>
+                                        <ul>Weinan Zhang (Shanghai Jiao Tong University)</ul>
+                                        <ul>Haiming Jin (Shanghai Jiao Tong University)</ul>
+                                        <ul>Lingyu Zhang (Didi Chuxing)</ul>
+                                        <ul>Hongtu Zhu (Didi Chuxing; University of North Carolina at Chapel Hill)</ul>
+                                        <ul>Zhenhui Jessie Li (Pennsylvania State University)</ul>
+                                        <ul>Jieping Ye (Didi Chuxing; University of Michigan)</ul>
+                                    </dd>
+                                </li>
+                                <li class="workshop-desc"><i class="fa-li fa fa-bookmark"></i>
+                                    <dt>Description</dt>
+                                    <dd>
+                                        <p>Data-enabled smart transportation has attracted a surge of interest from
+                                            machine
+                                            learning and data mining researchers nowadays due to the bloom of online
+                                            ride-hailing industry and rapid development of autonomous driving.
+                                            Large-scale
+                                            high quality route data and trading data (spatiotemporal data) have been
+                                            generated every day, which makes AI an urgent need and preferred solution
+                                            for
+                                            the decision making in intelligent transportation systems. While a large of
+                                            amount of work have been dedicated to traditional transportation problems,
+                                            they
+                                            are far from satisfactory for the rising need.</p>
+                                        <p>We propose a half-day workshop at CIKM 2019 for the professionals,
+                                            researchers, and practitioners who are interested in mining and
+                                            understanding
+                                            big and heterogeneous data generated in transportation, and AI applications
+                                            to
+                                            improve the transportation system.</p>
+                                    </dd>
+                                    <div class="more"><a><span style="margin-right: 5px;">More</span><i
+                                                class="fa fa-chevron-down" aria-hidden="true"></i></a></div>
+                                </li>
+                                <li><i class="fa-li fa fa-desktop"></i>
+                                    <dt><a href="https://outreach.didichuxing.com/cikm2019/workshop/AIT/"
+                                            target="_blank">URL
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i></a></dt>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-12 workshop-unit" id="bigscholar2019">
+                        <div class="workshop-name ">
+                            <h3>BigScholar 2019</h3>
+                            <p>The 6th Workshop on Big Scholarly Data</p>
+                        </div>
+                        <div class="workshop-info ">
+                            <ul class="fa-ul">
+                                <li><i class="fa-li fa fa-users"></i>
+                                    <dt>Organizer</dt>
+                                    <dd>
+                                        <ul>Feng Xia (Dalian University of Technology, China)</ul>
+                                        <ul>Huan Liu (Arizona State University, USA)</ul>
+                                        <ul>Irwin King (The Chinese University of Hong Kong, China)</ul>
+                                        <ul>Kuansan Wang (Microsoft Research, USA)</ul>
+                                    </dd>
+                                </li>
+                                <li class="workshop-desc"><i class="fa-li fa fa-bookmark"></i>
+                                    <dt>Description</dt>
+                                    <dd>
+                                        <p>The BigScholar 2019 workshop aims at bringing together academics and
+                                            practitioners from diverse fields to share ideas and experience with
+                                            management, analysis, mining, and applications of big scholarly data. The
+                                            goal is to contribute to the birth of a community having a shared interest
+                                            around big scholarly data and exploring it using knowledge discovery, data
+                                            science and analytics, network science, and other appropriate technologies.
+                                        </p>
+                                    </dd>
+                                    <div class="more"><a><span style="margin-right: 5px;">More</span><i
+                                                class="fa fa-chevron-down" aria-hidden="true"></i></a></div>
+                                </li>
+                                <li><i class="fa-li fa fa-desktop"></i>
+                                    <dt><a href="http://thealphalab.org/bigscholar/" target="_blank">URL
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i></a></dt>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-12 workshop-unit" id="hena2019">
+                        <div class="workshop-name ">
+                            <h3>HENA 2019</h3>
+                            <p>The 3rd Workshop of Heterogeneous Information Network Analysis and Applications</p>
+                        </div>
+                        <div class="workshop-info ">
+                            <ul class="fa-ul">
+                                <li><i class="fa-li fa fa-users"></i>
+                                    <dt>Organizer</dt>
+                                    <dd>
+                                        <ul>Chuan Shi (Beijing University of Posts and Telecommunications, China)</ul>
+                                        <ul>Yanfang (Fanny) Ye (West Virginia University, USA)</ul>
+                                        <ul>Jiawei Zhang (Florida State University, USA)</ul>
+                                    </dd>
+                                </li>
+                                <li class="workshop-desc"><i class="fa-li fa fa-bookmark"></i>
+                                    <dt>Description</dt>
+                                    <dd>
+                                        <p>Now we are living in an interconnected world - where most of the data,
+                                            informational objects, agents, or components are interconnected or interact
+                                            with each other - forming gigantic and sophisticated information networks.
+                                            Most real-world applications based on information networks can be structured
+                                            into heterogeneous information networks that include different types of
+                                            objects or links. Recent works on heterogeneous information network analysis
+                                            and its applications have led to a convergence of methodologies for network
+                                            modeling, graph mining, linking analysis, data semantics mining, and
+                                            incorporating classification, learning and reasoning with graphical models.
+                                            As a promising network analysis paradigm, heterogeneous information network
+                                            analysis also faces challenges, such as how to manage more complex
+                                            heterogonous data like RDF data and how to quickly handle large-scale
+                                            heterogonous information network. This workshop shall provide a forum for
+                                            researchers and practitioners to share new techniques and applications in
+                                            heterogonous information network analysis.</p>
+                                    </dd>
+                                    <div class="more"><a><span style="margin-right: 5px;">More</span><i
+                                                class="fa fa-chevron-down" aria-hidden="true"></i></a></div>
+                                </li>
+                                <li><i class="fa-li fa fa-desktop"></i>
+                                    <dt><a href="http://www.shichuan.org/HENA2019.html" target="_blank">URL
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i></a></dt>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-12 workshop-unit" id="kdahcikm2019">
+                        <div class="workshop-name ">
+                            <h3>KDAH-CIKM 2019</h3>
+                            <p>The 2nd Workshop on Knowledge-driven Analytics and Systems Impacting Human Quality of
+                                Life</p>
+                        </div>
+                        <div class="workshop-info ">
+                            <ul class="fa-ul">
+                                <li><i class="fa-li fa fa-users"></i>
+                                    <dt>Organizer</dt>
+                                    <dd>
+                                        <ul>Arijit Ukil (Research and Innovation, Tata Consultancy Services, India)</ul>
+                                        <ul>Leandro Marin (University of Murcia, Spain)</ul>
+                                        <ul>Antonio Jara (University of Applied Sciences Western Switzerland (HES-SO),
+                                            Switzerland)</ul>
+                                        <ul>John Farserotu (Centre Suisse d'Electronique et de Microtechnique (CSEM),
+                                            Switzerland)</ul>
+                                    </dd>
+                                </li>
+                                <li class="workshop-desc"><i class="fa-li fa fa-bookmark"></i>
+                                    <dt>Description</dt>
+                                    <dd>
+                                        <p>The main focus of this workshop is to bring proposals and insights that
+                                            demonstrate the knowledge-driven technologies, developments and applications
+                                            for ensuring improvement of human quality of life. The intended thrust is to
+                                            promote the development of human-centric intelligent technologies like
+                                            precise and personalized medication and prognosis prediction, improved
+                                            elderly care, minimizing private data theft, knowledge-driven energy and
+                                            resource management, deep learning and artificial intelligence based
+                                            applications for risk prediction and augmented human capability generation.
+                                            We expect researchers in the field of knowledge management, information
+                                            retrieval, artificial intelligence, data mining, privacy analytics will
+                                            provide insights of technological aspects as well as application-specific
+                                            scenarios of human-centric knowledge-driven analytics and systems. The areas
+                                            of interest, not limited to: Clinical Analytics; Privacy Preserving Data
+                                            Mining; Recommender systems for retail, financial decision making; Fraud
+                                            detection and prevention system; Human cognition analysis; Knowledge-driven
+                                            human action understanding and decision making; Deep learning and artificial
+                                            intelligence based applications; Social network analysis and related others.
+                                        </p>
+                                    </dd>
+                                    <div class="more"><a><span style="margin-right: 5px;">More</span><i
+                                                class="fa fa-chevron-down" aria-hidden="true"></i></a></div>
+                                </li>
+                                <li><i class="fa-li fa fa-desktop"></i>
+                                    <dt><a href="https://sites.google.com/view/kdah-cikm-2019/home" target="_blank">URL
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i></a></dt>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-12 workshop-unit" id="kars2019">
+                        <div class="workshop-name ">
+                            <h3>KARS 2019</h3>
+                            <p>Knowledge-aware and Conversational Recommender Systems Workshop</p>
+                        </div>
+                        <div class="workshop-info ">
+                            <ul class="fa-ul">
+                                <li><i class="fa-li fa fa-users"></i>
+                                    <dt>Organizer</dt>
+                                    <dd>
+                                        <ul>Vito Walter Anelli (Polytechnic University of Bari, Italy)</ul>
+                                        <ul>Tommaso Di Noia (University of Murcia, Spain)</ul>
+                                        <ul>Antonio Jara (Polytechnic University of Bari, Italy)</ul>
+                                    </dd>
+                                </li>
+                                <li class="workshop-desc"><i class="fa-li fa fa-bookmark"></i>
+                                    <dt>Description</dt>
+                                    <dd>
+                                        <p>The workshop focuses on all the aspects related to the injection and adoption
+                                            of knowledge sources in Recommender Systems. More and more precise and
+                                            powerful recommendation algorithms and techniques have been proposed over
+                                            the last years able to effectively assess users' tastes and predict
+                                            information that would probably be of interest for them. Most of these
+                                            approaches rely on the collaborative paradigm (often exploiting machine
+                                            learning techniques) and do not take into account the huge amount of
+                                            knowledge, both structured and non-structured ones, describing the domain of
+                                            interest for the recommendation engine. The aim of knowledge-aware and
+                                            conversational recommender systems is to go beyond the traditional accuracy
+                                            goal and to start a new generation of algorithms and interactive approaches
+                                            which exploit the knowledge encoded in ontological and logic-based knowledge
+                                            bases, knowledge graphs as well as the semantics emerging from the analysis
+                                            and exploitation of semi-structured textual sources.</p>
+                                    </dd>
+                                    <div class="more"><a><span style="margin-right: 5px;">More</span><i
+                                                class="fa fa-chevron-down" aria-hidden="true"></i></a></div>
+                                </li>
+                                <li><i class="fa-li fa fa-desktop"></i>
+                                    <dt><a href="http://sisinflab.poliba.it/kars/2019/" target="_blank">URL
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i></a></dt>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-12 workshop-unit" id="grla2019">
+                        <div class="workshop-name ">
+                            <h3>GRLA 2019</h3>
+                            <p>The 1st International Workshop on Graph Representation Learning and its Applications</p>
+                        </div>
+                        <div class="workshop-info ">
+                            <ul class="fa-ul">
+                                <li><i class="fa-li fa fa-users"></i>
+                                    <dt>Organizer</dt>
+                                    <dd>
+                                        <ul>Huawei Shen (Institute of Computing Technology, Chinese Academy of Sciences,
+                                            China)</ul>
+                                        <ul>Jian Tang (HEC Montreal and Montreal Institute for Learning Algorithms,
+                                            Canada)</ul>
+                                        <ul>Peng Bao (Beijing Jiaotong University, China)</ul>
+                                    </dd>
+                                </li>
+                                <li class="workshop-desc"><i class="fa-li fa fa-bookmark"></i>
+                                    <dt>Description</dt>
+                                    <dd>
+                                        <p>Graph structured data are ubiquitous nowadays in a variety of disciplines and
+                                            domains ranging from computer science, social science, economics, medicine,
+                                            to bioinformatics. Examples include social networks, knowledge graph,
+                                            e-commerce networks, protein-protein interaction graphs, and molecular
+                                            structures. Recently, representation learning for graphs has attracted
+                                            considerable attention from researchers and communities, and led to
+                                            state-of-the-art results in numerous tasks including molecule
+                                            classification, new drug discovery, recommender systems, etc. This workshop
+                                            aims to provide a forum for industry and academia to discuss the latest
+                                            progress on graph representation learning and their applications in
+                                            different fields. We expect novel research works that address various
+                                            aspects of graph representation learning, including learning representations
+                                            of entire graph, knowledge graph embedding, graph neural networks,
+                                            applications in information network analysis, natural language
+                                            understanding, recommender systems, drug discovery, and so on.</p>
+                                    </dd>
+                                    <div class="more"><a><span style="margin-right: 5px;">More</span><i
+                                                class="fa fa-chevron-down" aria-hidden="true"></i></a></div>
+                                </li>
+                                <li><i class="fa-li fa fa-desktop"></i>
+                                    <dt><a href="https://cikm-grla.github.io/" target="_blank">URL
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i></a></dt>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-12 workshop-unit" id="dtmbio2019">
+                        <div class="workshop-name ">
+                            <h3>DTMBIO 2019</h3>
+                            <p>The 13th International Workshop on Data and Text Mining in Biomedical Informatics</p>
+                        </div>
+                        <div class="workshop-info ">
+                            <ul class="fa-ul">
+                                <li><i class="fa-li fa fa-users"></i>
+                                    <dt>Organizer</dt>
+                                    <dd>
+                                        <ul>Hyojung Paik (Korea Institute of Science and Technology)</ul>
+                                        <ul>Jian Tang (HEC Montreal and Montreal Institute for Learning Algorithms,
+                                            Canada)</ul>
+                                        <ul>Ruibion Xi (Peking University)</ul>
+                                        <ul>Sangwoo Kim (Yonsei University College of Medicine)</ul>
+                                        <ul>Dokyun Na (Chung-Ang University)</ul>
+                                    </dd>
+                                </li>
+                                <li class="workshop-desc"><i class="fa-li fa fa-bookmark"></i>
+                                    <dt>Description</dt>
+                                    <dd>
+                                        <p>The rapid growth of medical and health informatics field is tightly coupled
+                                            with developments within several areas in computer science, including data
+                                            and text mining, information extraction and database management systems,
+                                            among others. A fundamental topic of research within medical informatics is
+                                            how to make effective use of the tremendous amount of biological and
+                                            biomedical data to improve the understanding of biological systems. Such
+                                            data include, but are ot limited to, gene and protein sequences, gene
+                                            expression profiles, protein structure predictions resulting from
+                                            high-throughput computational methods, protein-protein interactions from
+                                            proteomic studies, Single Nucleotide Polymorphisms (SNPs) profiles, and
+                                            information from the literature and other textual resources. The need to
+                                            extract, understand, integrate, and make use of nformation embedded in such
+                                            heterogeneous unstructured data, automatically and effectively drives the
+                                            current research in medical and healthcare informatics. </p>
+                                        <p>The focus of this workshop is to bring together researchers that work in the
+                                            areas of data and text mining and computational biology, interested in
+                                            integrating such heterogeneous structured and unstructured data, while
+                                            effectively using literature information in medical informatics solutions.
+                                            The workshop will focus on: </p>
 
-										<p>1. Medical and health informatics-oriented data and text mining solutions
-											that utilize relevant background knowledge from text (including scientific
-											publications, EHRs, and database annotations). Such approaches range from
-											term/concept recognition, association mining to event or relation
-											extraction, i.e. gene-disease associations, protein-protein interactions,
-											drug-drug interactions, etc. </p>
+                                        <p>1. Medical and health informatics-oriented data and text mining solutions
+                                            that utilize relevant background knowledge from text (including scientific
+                                            publications, EHRs, and database annotations). Such approaches range from
+                                            term/concept recognition, association mining to event or relation
+                                            extraction, i.e. gene-disease associations, protein-protein interactions,
+                                            drug-drug interactions, etc. </p>
 
-										<p>2. Knowledge discovery methods, that consolidate and process heterogeneous
-											biomedical data collected from electronic bulletin boards, EHRs, scientific
-											publications, and other types of experiments. </p>
+                                        <p>2. Knowledge discovery methods, that consolidate and process heterogeneous
+                                            biomedical data collected from electronic bulletin boards, EHRs, scientific
+                                            publications, and other types of experiments. </p>
 
-										<p>3. Development of computational methods to solve a medical unmet issue via
-											big-data analytics and machine learning approaches.</p>
+                                        <p>3. Development of computational methods to solve a medical unmet issue via
+                                            big-data analytics and machine learning approaches.</p>
 
-										<p>Developing computational tools and methods mainly contribute to a better
-											understanding of biological systems is still challenging. However,
-											understanding of both omics data and text mining and biomedicine is
-											essential for realizing precision medicine, tailored therapy. Thus,
-											identification and definition of the relevant computational and biological
-											problems, as well as development of evaluation methods for related
-											text-mining tools are ongoing efforts.
-										</p>
-									</dd>
-									<div class="more"><a><span style="margin-right: 5px;">More</span><i
-												class="fa fa-chevron-down" aria-hidden="true"></i></a></div>
-								</li>
-								<li><i class="fa-li fa fa-desktop"></i>
-									<dt><a href="http://dtmbio.net/dtmbio2019/" target="_blank">URL
-											<i class="fa fa-angle-right" aria-hidden="true"></i></a></dt>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                                        <p>Developing computational tools and methods mainly contribute to a better
+                                            understanding of biological systems is still challenging. However,
+                                            understanding of both omics data and text mining and biomedicine is
+                                            essential for realizing precision medicine, tailored therapy. Thus,
+                                            identification and definition of the relevant computational and biological
+                                            problems, as well as development of evaluation methods for related
+                                            text-mining tools are ongoing efforts.
+                                        </p>
+                                    </dd>
+                                    <div class="more"><a><span style="margin-right: 5px;">More</span><i
+                                                class="fa fa-chevron-down" aria-hidden="true"></i></a></div>
+                                </li>
+                                <li><i class="fa-li fa fa-desktop"></i>
+                                    <dt><a href="http://dtmbio.net/dtmbio2019/" target="_blank">URL
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i></a></dt>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-	<!-- footer -->
-	<div class="col-xs-12" id="footer">
-		<div class="part1" style="position: relative">
-			<span class="footer-item">
-				<a href="index.html">HOME</a>
-			</span>
-			<span class="footer-item">
-				<a href="callforpapers.html">CONTIRBUTIONS</a>
-			</span>
-			<span class="footer-item">
-				<a href="organizingcommittee.html">ORGANIZERS</a>
-			</span>
-			<span class="footer-item">
-				<a href="callforsponsorship.html">SPONSORSHIP</a>
-			</span>
-			<span class="footer-item">
-				<a href="workshops.html">WORKSHOPS</a>
-			</span>
-			<span class="footer-item">
-				<a href="accomodation.html">ATTENDING</a>
-			</span>
+    <!-- footer -->
+    <div class="col-xs-12" id="footer">
+        <div class="part1" style="position: relative">
+            <span class="footer-item">
+                <a href="index.html">HOME</a>
+            </span>
+            <span class="footer-item">
+                <a href="callforpapers.html">CONTIRBUTIONS</a>
+            </span>
+            <span class="footer-item">
+                <a href="organizingcommittee.html">ORGANIZERS</a>
+            </span>
+            <span class="footer-item">
+                <a href="callforsponsorship.html">SPONSORSHIP</a>
+            </span>
+            <span class="footer-item">
+                <a href="workshops.html">WORKSHOPS</a>
+            </span>
+            <span class="footer-item">
+                <a href="accomodation.html">ATTENDING</a>
+            </span>
 
-			<!-- Default Statcounter code for CIKM http://cikm2019.net -->
-			<script type="text/javascript">
-				var sc_project = 11928079;
-				var sc_invisible = 0;
-				var sc_security = "7538f521";
-				var sc_https = 1;
-				var scJsHost = (("https:" == document.location.protocol) ? "https://secure." :
-					"http://www.");
-				document.write("<sc" + "ript type='text/javascript' src='" + scJsHost +
-					"statcounter.com/counter/counter.js'></" + "script>");
-			</script>
-			<noscript>
-				<div class="statcounter"><a title="Web Analytics" href="http://statcounter.com/" target="_blank"><img
-							class="statcounter" src="//c.statcounter.com/11928079/0/7538f521/0/" alt="Web
+            <!-- Default Statcounter code for CIKM http://cikm2019.net -->
+            <script type="text/javascript">
+                var sc_project = 11928079;
+                var sc_invisible = 0;
+                var sc_security = "7538f521";
+                var sc_https = 1;
+                var scJsHost = (("https:" == document.location.protocol) ? "https://secure." :
+                    "http://www.");
+                document.write("<sc" + "ript type='text/javascript' src='" + scJsHost +
+                    "statcounter.com/counter/counter.js'></" + "script>");
+            </script>
+            <noscript>
+                <div class="statcounter"><a title="Web Analytics" href="http://statcounter.com/" target="_blank"><img
+                            class="statcounter" src="//c.statcounter.com/11928079/0/7538f521/0/" alt="Web
 	Analytics"></a></div>
-			</noscript>
-			<!-- End of Statcounter Code -->
-		</div>
-		<div class="part2" style="background-image: url('./elements/keydates/ditu.png')">
-			<p style="line-height: 60px;"> <br></p>
-		</div>
-	</div>
-	<!-- footer -->
+            </noscript>
+            <!-- End of Statcounter Code -->
+        </div>
+        <div class="part2" style="background-image: url('./elements/keydates/ditu.png')">
+            <p style="line-height: 60px;"> <br></p>
+        </div>
+    </div>
+    <!-- footer -->
 
-	<script>
-		jQuery(document).ready(function ($) {
-			'use strict';
-			let units = $('.workshop-unit'),
-				descs = $('.workshop-desc dd')
+    <script>
+        jQuery(document).ready(function ($) {
+            'use strict';
+            let units = $('.workshop-unit'),
+                descs = $('.workshop-desc dd')
 
-			function alignWorkshopName(selected_index) {
-				units.map((index, element) => {
-					if (selected_index !== undefined && index !== selected_index) return;
+            function alignWorkshopName(selected_index) {
+                units.map((index, element) => {
+                    if (selected_index !== undefined && index !== selected_index) return;
 
-					let name = units.eq(index).children('.workshop-name'),
-						info = units.eq(index).children('.workshop-info'),
-						lis = info.children('ul').children('li'),
-						isExpanded = descs.eq(index).hasClass('expanded'),
-						height = lis[0].scrollHeight + (isExpanded ? lis.eq(1).children('dd')[0].scrollHeight : 100) + lis[2].scrollHeight,
-						nameHeight = name.children('h3').height() + name.children('p').height() + 20,
-						res = (height - nameHeight) / 2;
+                    let name = units.eq(index).children('.workshop-name'),
+                        info = units.eq(index).children('.workshop-info'),
+                        lis = info.children('ul').children('li'),
+                        isExpanded = descs.eq(index).hasClass('expanded'),
+                        height = lis[0].scrollHeight + (isExpanded ? lis.eq(1).children('dd')[0].scrollHeight : 100) + lis[2].scrollHeight,
+                        nameHeight = name.children('h3').height() + name.children('p').height() + 20,
+                        res = (height - nameHeight) / 2;
 
-					name.css('padding-top', res);
-				})
-			}
+                    name.css('padding-top', res);
+                })
+            }
 
-			$(".workshop-desc").on('click', function () {
-				let content = $(this).children('dd'),
+            $(".workshop-desc").on('click', function () {
+                let content = $(this).children('dd'),
                     more = $(this).children('.more')
 
-				if (content.hasClass('expanded')) {
-					content.removeClass('expanded').css('max-height', 100)
-					more.children('a').children('span').text('More')
-					more.children('a').children('i').removeClass('fa-chevron-up').addClass('fa-chevron-down')
-				}
-				else {
-					content.addClass('expanded').css('max-height', content[0].scrollHeight + 20)
-					more.children('a').children('span').text('Close')
-					more.children('a').children('i').addClass('fa-chevron-up').removeClass('fa-chevron-down')
-				}
-				alignWorkshopName(descs.index(content))
-			})
-			$(window).on('resize load', function () {
-				descs.map((index, element) => {
-					if (element.scrollHeight <= 100) {
-						descs.eq(index).siblings('.more').addClass('hidden')
+                if (content.hasClass('expanded')) {
+                    content.removeClass('expanded').css('max-height', 100)
+                    more.children('a').children('span').text('More')
+                    more.children('a').children('i').removeClass('fa-chevron-up').addClass('fa-chevron-down')
+                }
+                else {
+                    content.addClass('expanded').css('max-height', content[0].scrollHeight + 20)
+                    more.children('a').children('span').text('Close')
+                    more.children('a').children('i').addClass('fa-chevron-up').removeClass('fa-chevron-down')
+                }
+                alignWorkshopName(descs.index(content))
+            })
+            $(window).on('resize load', function () {
+                descs.map((index, element) => {
+                    if (element.scrollHeight <= 100) {
+                        descs.eq(index).siblings('.more').addClass('hidden')
                         descs.eq(index).parent().css('cursor', 'auto')
-					}
-					else {
+                    }
+                    else {
                         descs.eq(index).siblings('.more').removeClass('hidden')
                         descs.eq(index).parent().css('cursor', 'pointer')
                     }
-				})
-			})
-			alignWorkshopName()
-		});
-	</script>
+                })
+            })
+            alignWorkshopName()
+        });
+    </script>
 </body>
 
 </html>
