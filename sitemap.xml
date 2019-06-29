@@ -29,4 +29,28 @@
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>http://www.cikm2019.net/callfordemos.html</loc>
+        <lastmod>2019-03-06T16:14:00+08:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://www.cikm2019.net/callforsponsorship.html</loc>
+        <lastmod>2019-03-06T16:14:00+08:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://www.cikm2019.net/callfortutorials.html</loc>
+        <lastmod>2019-03-06T16:14:00+08:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://www.cikm2019.net/accomodation.html</loc>
+        <lastmod>2019-03-06T16:14:00+08:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>
