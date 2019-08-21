@@ -1,0 +1,476 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="bookmark" href="favicon.ico" />
+    <meta name="keywords" content="cikm2019,cikm,challenge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link id="bootstrap_221" rel="stylesheet" type="text/css" class="library"
+        href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script id="jquery_172" type="text/javascript" class="library"
+        src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script id="bootstrap_221" type="text/javascript" class="library"
+        src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="css/banner.css?v=3.1" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+    <title>CIKM 2019 E-Commerce AI Challenge - CIKM 2019</title>
+    <style type="text/css">
+        .textpanel {
+            color: #B85612;
+            font-size: 18px;
+        }
+
+        .textpanel .button {
+            color: white;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            /* max-width: unset; */
+        }
+
+        .textpanel ul {
+            padding-left: 0;
+            margin-bottom: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .textpanel a {
+            color: #F3CD58;
+        }
+
+        .textpanel .button:hover {
+            color: #F3CD58;
+        }
+
+        .metacontainer h1,
+        .metacontainer h2 {
+            font-weight: bold;
+        }
+
+        .border-bottom {
+            border-bottom: solid;
+            border-bottom-color: #F3CD58;
+            border-bottom-width: thin;
+            margin-bottom: 20px;
+        }
+
+
+        .track-unit {
+            position: relative;
+            display: flex;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .track-name {
+            float: left;
+            position: relative;
+            height: 100%;
+            background: #7C1200;
+            width: 30%;
+            color: #FFF;
+            flex: 1;
+            padding-bottom: 9999px;
+            margin-bottom: -9999px;
+            transition: all 1s ease;
+            padding-top: 80px;
+        }
+
+        .track-name h3 {
+            font-size: 34px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .track-name p {
+            margin: 0 10%;
+            font-size: 20px;
+        }
+
+        .track-info {
+            float: left;
+            position: relative;
+            flex: none;
+            background: #EFEFEF;
+            text-align: left;
+            height: 100%;
+            width: 70%;
+            padding: 30px 10px 15px;
+            transition: all 0.5s;
+        }
+
+        .track-info ul {
+            padding-left: 0;
+        }
+
+        .track-info a {
+            color: #7C1200;
+        }
+
+        .track-info dt,
+        .track-info i {
+            color: #7C1200;
+            font-size: 24px;
+            user-select: none;
+        }
+
+        .track-info li {
+            padding-bottom: 1.6em;
+        }
+
+        .track-desc {
+            cursor: pointer;
+        }
+
+        .track-desc i {
+            font-size: 26px;
+            left: -2em;
+        }
+
+        .track-desc>dd {
+            max-height: 100px;
+            overflow-y: hidden;
+            transition: all 1s ease;
+        }
+
+        .track-desc>dd.expanded {
+            max-height: 1000px;
+        }
+
+        .track-desc .more {
+            position: absolute;
+            right: 10px;
+            bottom: 0;
+            font-weight: bold;
+        }
+
+        .track-desc .more i {
+            font-size: 18px;
+        }
+
+        .track-unit:hover .track-name {
+            background-color: #540600;
+        }
+
+        .track-unit:hover .track-info {
+            background-color: #E0E0E0;
+        }
+
+        .list-item li {
+            font-weight: normal;
+            color: #000;
+        }
+
+        .agenda {
+            margin-top: 20px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .agenda-inner {
+            background: #efefef;
+            padding: 20px 10px;
+            transition: 1s;
+        }
+
+        .agenda-inner:hover {
+            background: #E0E0E0;
+        }
+
+        .agenda dd {
+            font-weight: bolder;
+            color: #7C1200;
+            font-size: 24px;
+        }
+
+        .agenda dt {
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <img class="fullwidth" src="elements/top_deco.png" style="position: absolute">
+        <img class="imgdeco rightdecoration" src="elements/right_deco.png" alt="">
+        <div>
+            <a href="index.html"><img class="logo" src="elements/LOGO.png"></a>
+        </div>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="left navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#header-navbar" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="header-navbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbar-submissions" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Call for Contributions
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbar-submissions">
+                                <li><a class="dropdown-item" href="callforpapers.html">Research Papers</a></li>
+                                <li><a class="dropdown-item" href="callforworkshops.html">Workshops</a></li>
+                                <li><a class="dropdown-item" href="callfordemos.html">Demos</a></li>
+                                <li><a class="dropdown-item" href="callforappliedresearchpapers.html">Applied Research
+                                        Papers</a></li>
+                                <li><a class="dropdown-item" href="callfortutorials.html">Tutorials</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="organizingcommittee.html">Organizers</a></li>
+                        <li><a href="callforsponsorship.html">Sponsorship</a></li>
+                        <li><a href="workshops.html">Workshops</a></li>
+                        <li><a href="challenge.html">Challenge</a></li>
+                        <li><a href="accomodation.html">Attending</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container metacontainer" id="main-container" style="margin-top: 20px; margin-bottom: 20px">
+        <div class="col-md-offset-1 col-xs-offset-0 col-md-10">
+            <div class="col-xs-12">
+                <div class="title">
+                    <img src="./elements/deco1_callforpapers.png" alt="" class="left extra" style="height: 130px;">
+                    <div class="left" style="margin-left: 1em">
+                        <h1>Alibaba E-Commerce AI Challenge</h1>
+                        <div style="height:3px; background:#262626;"></div>
+                        <h2><a style="color: #7C1200; font-size: 24px; font-weight: bold"
+                                href="https://tianchi.aliyun.com/markets/tianchi/cikm19_en_copy?spm=a2c22.265802.1380778.2.4cdb2b2cFZlc5l&wh_ttid=pc"
+                                target="_blank">Click here for more details</a></h2>
+                    </div>
+                </div>
+                <div class="col-md-12 center" style="float: left; margin-top: 40px;">
+                    <div class="fullwidth" style="float: left;">
+                        <div class="subtitle">
+                            <li><span>Introduction</span></li>
+                        </div>
+                    </div>
+                    <div class="textcontent">
+                        <div class="list-item" style="text-align: center">
+                            <div class="col-md-12 track-unit" id="track1">
+                                <div class="track-name ">
+                                    <h3>Track 1</h3>
+                                    <p>User Behavior Diversities Prediction</p>
+                                </div>
+                                <div class="track-info ">
+                                    <ul class="fa-ul">
+                                        <li><i class="fa-li fa fa-users"></i>
+                                            <dt>Description</dt>
+                                            <dd>
+                                                <p>
+                                                    If embedding users and items into a heterogeneous graph,
+                                                    user-to-item behaviors could be treated as directed edges and
+                                                    item-to-item similarities could be encoded into the graph. Then
+                                                    recommendation task could be transformed as the graph link
+                                                    prediction problem. Such transition may bring a new view of
+                                                    recommendation system and further trigger novel algorithms to solve
+                                                    the bottleneck of behavior prediction problem.
+                                                </p>
+                                            </dd>
+                                        </li>
+
+                                        <li><i class="fa-li fa fa-desktop"></i>
+                                            <dt><a href="https://tianchi.aliyun.com/competition/entrance/231719/introduction?spm=a2c22.265762.1380788.1.1a895940A7QToF&lang=en-us"
+                                                    target="_blank">Join Now
+                                                    <i class="fa fa-angle-right" aria-hidden="true"></i></a></dt>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-12 track-unit" id="track2">
+                                <div class="track-name ">
+                                    <h3>Track 2</h3>
+                                    <p>Efficient User Interests Retrieval</p>
+                                </div>
+                                <div class="track-info ">
+                                    <ul class="fa-ul">
+                                        <li><i class="fa-li fa fa-users"></i>
+                                            <dt>Description</dt>
+                                            <dd>
+                                                <p>
+                                                    In recent years, a lot of efforts have been made both in academy and
+                                                    industry to promote user preference prediction accuracy. However,
+                                                    large-scale recommender system has to trade-off between model
+                                                    effectiveness and efficiency as the response time limit. Our
+                                                    competition focuses on this problem, i.e., how to retrieve the top-k
+                                                    items for each user and avoid the exhausted calculation at the same
+                                                    time, which is very important and challenging.
+                                                </p>
+                                            </dd>
+                                        </li>
+
+                                        <li><i class="fa-li fa fa-desktop"></i>
+                                            <dt><a href="https://tianchi.aliyun.com/competition/entrance/231721/introduction?spm=a2c22.265762.1380788.2.1a895940A7QToF&lang=en-us"
+                                                    target="_blank">Join Now
+                                                    <i class="fa fa-angle-right" aria-hidden="true"></i></a></dt>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fullwidth" style="float: left;">
+                        <div class="subtitle">
+                            <li><span>Agenda</span></li>
+                        </div>
+                    </div>
+
+                    <div class="fullwidth textcontent" style="margin-bottom: 15px">
+                        <div class="agenda col-md-3 col-xs-12">
+                            <dl class="agenda-inner">
+                                <dd>Registration</dd>
+                                <dt>
+                                    Jun 12, 2019 - Aug 13, 2019
+                                </dt>
+                            </dl>
+                        </div>
+                        <div class="agenda col-md-3 col-xs-12">
+                            <dl class="agenda-inner">
+                                <dd>The Qualification</dd>
+                                <dt>
+                                    Jul 5, 2019 - Aug 15, 2019
+                                </dt>
+                            </dl>
+                        </div>
+                        <div class="agenda col-md-3 col-xs-12">
+                            <dl class="agenda-inner">
+                                <dd>The Semi-Finals</dd>
+                                <dt>
+                                    Aug 22, 2019 - Sep 25, 2019
+                                </dt>
+                            </dl>
+                        </div>
+                        <div class="agenda col-md-3 col-xs-12">
+                            <dl class="agenda-inner">
+                                <dd>The Finals</dd>
+                                <dt>
+                                    Sep, 2019
+                                </dt>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="fullwidth" style="float: left;">
+                        <div class="subtitle">
+                            <li><span>Award</span></li>
+                        </div>
+                    </div>
+                    <div class="textcontent fullwidth" id="proposalcontent">
+                        <div class="list-item">
+                            <div class="agenda col-md-4 col-xs-12">
+                                <dl class="agenda-inner">
+                                    <dd>First Prize</dd>
+                                    <dt>
+                                        Track 1 (<em>one team</em>): <span
+                                            style="color: #7C1200; font-weight: bold">$10,000 USD</span>
+                                    </dt>
+                                    <dt>
+                                        Track 2 (<em>one team</em>): <span
+                                            style="color: #7C1200; font-weight: bold">$10,000 USD</span>
+                                    </dt>
+                                </dl>
+                            </div>
+                            <div class="agenda col-md-4 col-xs-12">
+                                <dl class="agenda-inner">
+                                    <dd>Second Prize</dd>
+                                    <dt>
+                                        Track 1 (<em>two teams</em>): <span
+                                            style="color: #7C1200; font-weight: bold">$5,000 USD</span> for each
+                                    </dt>
+                                    <dt>
+                                        Track 2 (<em>two teams</em>): <span
+                                            style="color: #7C1200; font-weight: bold">$5,000 USD</span> for each
+                                    </dt>
+                                </dl>
+                            </div>
+                            <div class="agenda col-md-4 col-xs-12">
+                                <dl class="agenda-inner">
+                                    <dd>Third Prize</dd>
+                                    <dt>
+                                        Track 1 (<em>two teams</em>): <span
+                                            style="color: #7C1200; font-weight: bold">$2,500 USD</span> for each
+                                    </dt>
+                                    <dt>
+                                        Track 2 (<em>two teams</em>): <span
+                                            style="color: #7C1200; font-weight: bold">$2,500 USD</span> for each
+                                    </dt>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="textcontent fullwidth">
+                        <div class="list-item fullwidth" style="text-align: center; margin: 60px 0">
+                            <a style="color: #7C1200; font-size: 24px; font-weight: bold"
+                                href="https://tianchi.aliyun.com/markets/tianchi/cikm19_en_copy?spm=a2c22.265802.1380778.2.4cdb2b2cFZlc5l&wh_ttid=pc"
+                                target="_blank">
+                                - Enter Alibaba E-Commerce AI Challenge Website -
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="col-xs-12" id="footer">
+        <div class="part1" style="position: relative">
+            <span class="footer-item">
+                <a href="index.html">HOME</a>
+            </span>
+            <span class="footer-item">
+                <a href="callforpapers.html">CONTIRBUTIONS</a>
+            </span>
+            <span class="footer-item">
+                <a href="organizingcommittee.html">ORGANIZERS</a>
+            </span>
+            <span class="footer-item">
+                <a href="callforsponsorship.html">SPONSORSHIP</a>
+            </span>
+            <span class="footer-item">
+                <a href="workshops.html">WORKSHOPS</a>
+            </span>
+            <span class="footer-item">
+                <a href="challenge.html">CHALLENGE</a>
+            </span>
+            <span class="footer-item">
+                <a href="accomodation.html">ATTENDING</a>
+            </span>
+
+            <!-- Default Statcounter code for CIKM http://cikm2019.net -->
+            <script type="text/javascript">
+                var sc_project = 11928079;
+                var sc_invisible = 0;
+                var sc_security = "7538f521";
+                var sc_https = 1;
+                var scJsHost = (("https:" == document.location.protocol) ? "https://secure." :
+                    "http://www.");
+                document.write("<sc" + "ript type='text/javascript' src='" + scJsHost +
+                    "statcounter.com/counter/counter.js'></" + "script>");
+            </script>
+            <noscript>
+                <div class="statcounter"><a title="Web Analytics" href="http://statcounter.com/" target="_blank"><img
+                            class="statcounter" src="//c.statcounter.com/11928079/0/7538f521/0/" alt="Web
+            Analytics"></a></div>
+            </noscript>
+            <!-- End of Statcounter Code -->
+        </div>
+        <div class="part2" style="background-image: url('./elements/keydates/ditu.png')">
+            <p style="line-height: 60px;"> <br></p>
+        </div>
+    </div>
+    <!-- footer -->
+</body>
+
+</html>
