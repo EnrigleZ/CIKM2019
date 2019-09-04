@@ -155,17 +155,21 @@
             border-top: #AAA solid 1px !important;
         }
 
-        .button {
-            min-height: unset;
+        .reg-button {
+            width: 60%;
+            padding: 15px;
             background: #7C1200;
-            color: #FFF !important;
-            font-size: 16px;
-            font-weight: normal !important;
-            padding: 15px 20px;
+            font-size: 24px;
+            transition: 0.3s all ease-in-out;
         }
-        .button:hover {
-            background: #FFF;
-            color: #7C1200  !important;
+        .reg-button a {
+            color: #FFF !important;
+        }
+        .reg-button:hover {
+            background: transparent
+        }
+        .reg-button:hover a {
+            color: #7C1200 !important;
         }
     </style>
 </head>
@@ -563,9 +567,11 @@
                         <div class="list-item fullwidth" style="text-align: center; margin: 60px 0">
 
                             <div class="center">
-                                <a class="button big wide smooth-scroll-middle" target="_blank" href="http://www.cvent.com/d/7yqvt0">
-                                    Register Now!
-                                </a>
+                                <button type="button" class="btn reg-button">
+                                    <a target="_blank" href="http://www.cvent.com/d/7yqvt0">
+                                        Register Now!
+                                    </a>
+                                </button>
                             </div>
                             <!-- href="http://www.cvent.com/d/7yqvt0"  -->
                         </div>

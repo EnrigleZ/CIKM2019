@@ -29,7 +29,7 @@ body {
 	display: none;
 }
 
-.button {
+.button-deprecated {
 	color: white;
     text-decoration: none;
     min-height: 4em;
@@ -52,7 +52,7 @@ body {
 }
 
 
-.button:hover {
+.button-deprecated:hover {
 	box-shadow: inset 0 0 0 1px #F3CD58;
     /* color: #47D3E5 !important; */
     text-decoration: none;
