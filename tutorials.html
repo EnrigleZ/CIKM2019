@@ -1,0 +1,736 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="bookmark" href="favicon.ico" />
+    <meta name="keywords" content="cikm2019,cikm,tutorial">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link id="bootstrap_221" rel="stylesheet" type="text/css" class="library"
+        href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script id="jquery_172" type="text/javascript" class="library"
+        src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script id="bootstrap_221" type="text/javascript" class="library"
+        src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="css/banner.css?v=3.1" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+    <title>Tutorials - CIKM 2019</title>
+    <style type="text/css">
+        .textpanel {
+            color: #B85612;
+            font-size: 18px;
+        }
+
+        .textpanel .button {
+            color: white;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            /* max-width: unset; */
+        }
+
+        .textpanel ul {
+            padding-left: 0;
+            margin-bottom: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .textpanel a {
+            color: #F3CD58;
+        }
+
+        .textpanel .button:hover {
+            color: #F3CD58;
+        }
+
+        .metacontainer h1,
+        .metacontainer h2 {
+            font-weight: bold;
+        }
+
+        .workshop-unit {
+            position: relative;
+            display: flex;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .workshop-name {
+            float: left;
+            position: relative;
+            height: 100%;
+            background: #7C1200;
+            width: 30%;
+            color: #FFF;
+            flex: 1;
+            padding-bottom: 9999px;
+            margin-bottom: -9999px;
+            transition: all 1s ease;
+            padding-top: 80px;
+        }
+
+        .workshop-name h3 {
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .workshop-name p {
+            text-align: left;
+            margin: 0 10%;
+            font-size: 20px;
+        }
+
+        .workshop-info {
+            float: left;
+            position: relative;
+            flex: none;
+            background: #EFEFEF;
+            text-align: left;
+            height: 100%;
+            width: 70%;
+            padding: 10px 15px;
+            transition: all 0.5s;
+        }
+
+        .workshop-info ul {
+            padding-left: 0;
+        }
+
+        .workshop-info a {
+            color: #7C1200;
+        }
+
+        .workshop-info dt,
+        .workshop-info i {
+            color: #7C1200;
+            font-size: 24px;
+            user-select: none;
+        }
+
+        .workshop-info li {
+            padding-bottom: 1.6em;
+        }
+
+        .workshop-desc {
+            cursor: pointer;
+        }
+
+        .workshop-desc i {
+            font-size: 26px;
+            left: -2em;
+        }
+
+        .workshop-desc>dd {
+            max-height: 100px;
+            overflow-y: hidden;
+            transition: all 1s ease;
+        }
+
+        .workshop-desc>dd.expanded {
+            max-height: 1000px;
+        }
+
+        .workshop-desc .more {
+            position: absolute;
+            right: 10px;
+            bottom: 0;
+            font-weight: bold;
+        }
+
+        .workshop-desc .more i {
+            font-size: 18px;
+        }
+
+        .workshop-unit:hover .workshop-name {
+            background-color: #540600;
+        }
+
+        .workshop-unit:hover .workshop-info {
+            background-color: #E0E0E0;
+        }
+
+        .workshop-name p.contact-to {
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <img class="fullwidth" src="elements/top_deco.png" style="position: absolute">
+        <img class="imgdeco rightdecoration" src="elements/right_deco.png" alt="">
+        <div>
+            <a href="index.html"><img class="logo" src="elements/LOGO.png"></a>
+        </div>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="left navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#header-navbar" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="header-navbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbar-submissions" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Call for Contributions
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbar-submissions">
+                                <li><a class="dropdown-item" href="callforpapers.html">Research Papers</a></li>
+                                <li><a class="dropdown-item" href="callforworkshops.html">Workshops</a></li>
+                                <li><a class="dropdown-item" href="callfordemos.html">Demos</a></li>
+                                <li><a class="dropdown-item" href="callforappliedresearchpapers.html">Applied Research
+                                        Papers</a></li>
+                                <li><a class="dropdown-item" href="callfortutorials.html">Tutorials</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="organizingcommittee.html">Organizers</a></li>
+                        <li><a href="callforsponsorship.html">Sponsorship</a></li>
+                        <li><a href="workshops.html">Workshops</a></li>
+                        <li><a href="challenge.html">Challenge</a></li>
+                        <li><a href="registration.html">Registration</a></li>
+                        <li><a href="accomodation.html">Attending</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container metacontainer" id="main-container" style="margin-top: 20px; margin-bottom: 20px">
+        <div class="col-lg-offset-1 col-xs-offset-0 col-lg-10">
+            <div class="col-md-12">
+                <div class="title">
+                    <img src="./elements/workshops_title.png" alt="" class="left extra"
+                        style="height: 70px; padding-left: 30px;">
+                    <div class="left" style="margin-left: 5px;">
+                        <h1>TUTORIALS</h1>
+                        <div style="width:auto;height:3px; background:#262626;"></div>
+                    </div>
+                </div>
+                <div class="col-md-12 center" style="float: left; margin-top:40px">
+                    <div class="col-md-12 workshop-unit">
+                        <div class="workshop-name ">
+                            <h3>Enterprise Knowledge Graph From Specific Business Task to Enterprise Knowledge
+                                Management
+                            </h3>
+                            <p class="contact-to">Traditional Tutorial<br />contact: <a href="mailto:rong.duan@huawei.com">Rong Duan</a></p>
+                        </div>
+                        <div class="workshop-info ">
+                            <ul class="fa-ul">
+                                <li><i class="fa-li fa fa-users"></i>
+                                    <dt>Presenters</dt>
+                                    <dd>
+                                        <ul>Rong Duan(Huawei Technology)</ul>
+                                        <ul>Yanghua Xiao(Fudan University)</ul>
+
+                                    </dd>
+                                </li>
+                                <li class="workshop-desc"><i class="fa-li fa fa-bookmark"></i>
+                                    <dt>Description</dt>
+                                    <dd>
+                                        <p>Data driven Knowledge Graph is rapidly adapted by different societies. Many
+                                            open domain and specific domain knowledge graphs have been constructed, and
+                                            many industries have benefited from knowledge graph. Currently, enterprise
+                                            related knowledge graph is classified as specific domain, but the
+                                            applications span from solving a narrow specific problem to Enterprise
+                                            Knowledge Management system. With the digital transform of traditional
+                                            industry, Enterprise knowledge becomes more and more complicated, it
+                                            involves knowledge from common domain, multiple specific domains, and
+                                            corporate-specific in general. This tutorial provides an overview of current
+                                            Enterprise Knowledge Graph(EKG). It distinguishes the EKG from specific
+                                            domain according to the knowledge it covers, and provides the examples to
+                                            illustrate the difference between EKG and specific domain KG. The tutorial
+                                            further summarizes EKG into three types: Specific Business Task Enterprise
+                                            KG, Specific Business Unit Enterprise KG and Cross Business Unit Enterprise
+                                            KG, and illustrates the characteristics, steps, challenges, and future
+                                            research in constructing and consuming of each of these three types of EKG.
+                                        </p>
+                                    </dd>
+                                    <div class="more"><a><span style="margin-right: 5px;">More</span><i
+                                                class="fa fa-chevron-down" aria-hidden="true"></i></a></div>
+                                </li>
+                                <li><i class="fa-li fa fa-desktop"></i>
+                                    <dt><a href="https://github.com/snsxf/CIKM_Tutortial/blob/master/README.md"
+                                            target="_blank">URL
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i></a></dt>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-12 workshop-unit">
+                        <div class="workshop-name ">
+                            <h3>TAMING SOCIAL BOTS: DETECTION, EXPLORATION AND MEASUREMENT
+                            </h3>
+                            <p class="contact-to">Traditional Tutorial<br />contact: <a href="mailto:mueen@unm.edu">Abdullah Mueen</a></p>
+                        </div>
+                        <div class="workshop-info ">
+                            <ul class="fa-ul">
+                                <li><i class="fa-li fa fa-users"></i>
+                                    <dt>Presenters</dt>
+                                    <dd>
+                                        <ul>Abdullah Mueen (University of New Mexico)</ul>
+                                        <ul>Nikan Chavoshi (Oracle Corporation)</ul>
+                                        <ul>Amanda Minnich (Lawrence Livermore National Laboratories)</ul>
+                                    </dd>
+                                </li>
+                                <li class="workshop-desc"><i class="fa-li fa fa-bookmark"></i>
+                                    <dt>Description</dt>
+                                    <dd>
+                                        <p>Social bots have been around for over a decade now. Social bots are capable
+                                            of swaying political opinion, spreading false information, and recruiting
+                                            for terrorist organizations. Social bots use various sophisticated
+                                            techniques by adopting emotions, sympathy following, synchronous deletions,
+                                            and profile molting.</p>
+                                        <p>There are several approaches proposed in the literature for detection,
+                                            exploration, and measuring social bots. We will provide a comprehensive
+                                            overview of the existing work from data mining and machine learning
+                                            perspective, discuss relative strengths and weaknesses of various methods,
+                                            make recommendations for researchers and practitioners, and propose novel
+                                            directions for future research in taming the social bots. The tutorial will
+                                            also discuss pitfalls in collecting and sharing data on social bots.</p>
+
+                                    </dd>
+                                    <div class="more"><a><span style="margin-right: 5px;">More</span><i
+                                                class="fa fa-chevron-down" aria-hidden="true"></i></a></div>
+                                </li>
+                                <li><i class="fa-li fa fa-desktop"></i>
+                                    <dt><a href="https://www.cs.unm.edu/~mueen/Tutorial/TamingBots.html"
+                                            target="_blank">URL
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i></a></dt>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-12 workshop-unit">
+                        <div class="workshop-name ">
+                            <h3>Learning-Based Methods with Human-in-the-Loop for Entity Resolution
+                            </h3>
+                            <p class="contact-to">Traditional Tutorial<br />contact: <a href="mailto:qian.kun@ibm.com">Kun Qian</a></p>
+                        </div>
+                        <div class="workshop-info ">
+                            <ul class="fa-ul">
+                                <li><i class="fa-li fa fa-users"></i>
+                                    <dt>Presenters</dt>
+                                    <dd>
+                                        <ul>Sairam Gurajada (IBM Research)</ul>
+                                        <ul>Lucian Popa (IBM Research)</ul>
+                                        <ul>Kun Qian (IBM Research)</ul>
+                                        <ul>Prithviraj Sen (IBM Research)</ul>
+                                    </dd>
+                                </li>
+                                <li class="workshop-desc"><i class="fa-li fa fa-bookmark"></i>
+                                    <dt>Description</dt>
+                                    <dd>
+                                        <p>This tutorial is intended for researchers and practitioners working in the
+                                            data integration area and, in particular, entity resolution (ER), which is
+                                            the sub-area focused on linking entities across heterogeneous datasets. We
+                                            outline the ideal requirements of modern ER systems: (1) capture domain
+                                            knowledge via (minimal) human interaction, (2) provide as much automation as
+                                            possible via machine learning techniques, and (3) achieve high
+                                            explainability. We describe recent research trends towards bringing such
+                                            ideal ER systems closer to reality. We first overview human-in-the-loop
+                                            methods that are based on techniques such as crowdsourcing and active
+                                            learning. We then dive into recent trends that involve deep learning
+                                            techniques such as representation learning to automate feature engineering,
+                                            and combinations of transfer learning and active learning to reduce the
+                                            amount of required user labels. We also discuss how explainable AI is
+                                            related to ER, and overview some recent advances towards explainable ER.
+                                        </p>
+                                    </dd>
+                                    <div class="more"><a><span style="margin-right: 5px;">More</span><i
+                                                class="fa fa-chevron-down" aria-hidden="true"></i></a></div>
+                                </li>
+                                <li><i class="fa-li fa fa-desktop"></i>
+                                    <dt><a href="https://ertutorial-arc.github.io" target="_blank">URL
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i></a></dt>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-12 workshop-unit">
+                        <div class="workshop-name ">
+                            <h3>Learning and Reasoning on Graph for Recommendation
+                            </h3>
+                            <p class="contact-to">Traditional Tutorial<br />contact: <a href="mailto:xiangwang@u.nus.edu">Wang Xiang</a></p>
+                        </div>
+                        <div class="workshop-info ">
+                            <ul class="fa-ul">
+                                <li><i class="fa-li fa fa-users"></i>
+                                    <dt>Presenters</dt>
+                                    <dd>
+                                        <ul>Xiang Wang (National University of Singapore)</ul>
+                                        <ul>Xiangnan He (University of Science and Technology of China)</ul>
+                                        <ul>Tat-Seng Chua (National University of Singapore)</ul>
+                                    </dd>
+                                </li>
+                                <li class="workshop-desc"><i class="fa-li fa fa-bookmark"></i>
+                                    <dt>Description</dt>
+                                    <dd>
+                                        <p>Recommendation methods construct predictive models to estimate the likelihood
+                                            of a user-item interaction. Previous models largely follow a general
+                                            supervised learning paradigm — treating each interaction as a separate data
+                                            instance and performing prediction based on the “information isolated
+                                            island”. Such methods, however, overlook the relations among data instances,
+                                            which may result in suboptimal performance especially for sparse scenarios.
+                                            Moreover, the models built on a separate data instance only can hardly
+                                            exhibit the reasons behind a recommendation, making the recommendation
+                                            process opaque to understand.
+
+                                        </p>
+                                        <p>In this tutorial, we revisit the recommendation problem from the perspective
+                                            of graph learning. Common data sources for recommendation can be organized
+                                            into graphs, such as user-item interactions (bipartite graphs), social
+                                            networks, item knowledge graphs (heterogeneous graphs), among others. Such a
+                                            graph-based organization connects the isolated data instances, bringing
+                                            benefits for exploiting high-order connectivities that encode meaningful
+                                            patterns for collaborative filtering, content-based filtering, social
+                                            influence modeling and knowledge-aware reasoning. Together with the recent
+                                            success of graph neural networks (GNNs), graph-based models have exhibited
+                                            the potential to be the technologies for nextgeneration recommendation
+                                            systems. The tutorial provides a review on graph-based learning methods for
+                                            recommendation, with special focus on recent developments of GNNs and
+                                            knowledge graphenhanced recommendation. By introducing this emerging and
+                                            promising area in the tutorial, we expect the audience can get deep
+                                            understanding and accurate insight on the spaces, stimulate more ideas and
+                                            discussions, and promote developments of technologies.
+
+                                        </p>
+                                    </dd>
+                                    <div class="more"><a><span style="margin-right: 5px;">More</span><i
+                                                class="fa fa-chevron-down" aria-hidden="true"></i></a></div>
+                                </li>
+                                <li><i class="fa-li fa fa-desktop"></i>
+                                    <dt><a href="https://next-nus.github.io" target="_blank">URL
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i></a></dt>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-12 workshop-unit">
+                        <div class="workshop-name ">
+                            <h3>Recent Developments of Deep Heterogeneous Information Network Analysis
+                            </h3>
+                            <p class="contact-to">Traditional Tutorial<br />contact: <a href="mailto:shichuan@bupt.edu.cn">Shi Chuan</a></p>
+                        </div>
+                        <div class="workshop-info ">
+                            <ul class="fa-ul">
+                                <li><i class="fa-li fa fa-users"></i>
+                                    <dt>Presenters</dt>
+                                    <dd>
+                                        <ul>Chuan Shi(Beijing University of Posts and Telecommunications)</ul>
+                                        <ul>Philip Yu(University of Illinois at Chicago)</ul>
+                                    </dd>
+                                </li>
+                                <li class="workshop-desc"><i class="fa-li fa fa-bookmark"></i>
+                                    <dt>Description</dt>
+                                    <dd>
+                                        <p>Most real systems consist of a large number of interacting, multityped
+                                            components, while most contemporary researches model them as homogeneous
+                                            information networks, without distinguishing different types of objects and
+                                            links in the networks. Recently, more and more researchers begin to consider
+                                            these interconnected, multi-typed data as heterogeneous information networks
+                                            (HIN), and develop structural analysis approaches by leveraging the rich
+                                            semantic meaning of structural types of objects and links in the networks.
+                                            Furthermore, recent advancement on deep learning and network embedding poses
+                                            new opportunities and challenges to mining HIN, and heterogeneous network
+                                            embedding, even heterogeneous graph neural network, is becoming a hot topic.
+                                        </p>
+                                    </dd>
+                                    <div class="more"><a><span style="margin-right: 5px;">More</span><i
+                                                class="fa fa-chevron-down" aria-hidden="true"></i></a></div>
+                                </li>
+                                <li><i class="fa-li fa fa-desktop"></i>
+                                    <dt><a href="http://shichuan.org/CIKM19_Tutorial.html" target="_blank">URL
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i></a></dt>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-12 workshop-unit">
+                        <div class="workshop-name ">
+                            <h3>Synergy of Database Techniques and Machine Learning Models for String Similarity Search
+                                and Join
+                            </h3>
+                            <p class="contact-to">Traditional Tutorial<br />contact: <a href="mailto:jiaheng.lu@helsinki.fi">Jiaheng Lu</a></p>
+                        </div>
+                        <div class="workshop-info ">
+                            <ul class="fa-ul">
+                                <li><i class="fa-li fa fa-users"></i>
+                                    <dt>Presenters</dt>
+                                    <dd>
+                                        <ul>Jiaheng Lu (University of Helsinki)</ul>
+                                        <ul>Chunbin Lin (Amazon AWS)</ul>
+                                        <ul>Jin Wang (University of California Los Angeles)</ul>
+                                        <ul>Chen Li(University of California, Irvine)</ul>
+                                    </dd>
+                                </li>
+                                <li class="workshop-desc"><i class="fa-li fa fa-bookmark"></i>
+                                    <dt>Description</dt>
+                                    <dd>
+                                        <p>String data is ubiquitous and string similarity search and join are critical
+                                            to the applications of information retrieval, data integration, data
+                                            cleaning, and also big data analytics. To support these operations, many
+                                            techniques in the database and machine learning areas have been proposed
+                                            independently. More precisely, in the database research area, there are
+                                            techniques based on the filtering-and-verification framework that can not
+                                            only achieve a high performance, but also provide guaranteed quality of
+                                            results for given similarity functions. In the machine learning research
+                                            area, string similarity processing is modeled as a problem of identifying
+                                            similar text records; Specifically, the deep learning approaches use
+                                            embedding techniques that map text to a low-dimensional continuous vector
+                                            space.</p>
+                                        <p>In this tutorial, we review a large number of studies of string similarity
+                                            search and join in these two research areas. We divide the studies in each
+                                            area into different categories. For each category, we provide a
+                                            comprehensive review of the relevant works, and present the details of these
+                                            solutions. We conclude this tutorial by pinpointing promising directions for
+                                            future work to combine techniques in these two areas.</p>
+                                    </dd>
+                                    <div class="more"><a><span style="margin-right: 5px;">More</span><i
+                                                class="fa fa-chevron-down" aria-hidden="true"></i></a></div>
+                                </li>
+                                <li><i class="fa-li fa fa-desktop"></i>
+                                    <dt><a href="https://www.helsinki.fi/en/researchgroups/unified-database-management-systems-udbms/tutorial/cikm-2019-tutorial"
+                                            target="_blank">URL
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i></a></dt>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-12 workshop-unit">
+                        <div class="workshop-name ">
+                            <h3>Realtime object detection via deep learning-based pipelines
+                            </h3>
+                            <p class="contact-to">Hands-on Tutorial<br />contact: <a href="mailto:james.shanahan@gmail.com">James G. Shanahan</a></p>
+                        </div>
+                        <div class="workshop-info ">
+                            <ul class="fa-ul">
+                                <li><i class="fa-li fa fa-users"></i>
+                                    <dt>Presenters</dt>
+                                    <dd>
+                                        <ul>James G. Shanahan (Bryant University, RI; University of California,
+                                            Berkeley)</ul>
+                                        <ul>Liang Dai (Facebook, University of California Santa Cruz)</ul>
+                                    </dd>
+                                </li>
+                                <li class="workshop-desc"><i class="fa-li fa fa-bookmark"></i>
+                                    <dt>Description</dt>
+                                    <dd>
+                                        <p>
+                                            Ever wonder how the Tesla Autopilot works (or why it fails)? In this
+                                            tutorial we will look under the hood for self-driving cars and for other
+                                            applications of computer vision and review state-of-the-art tech pipelines
+                                            and their implementations, and challenges in Jupyter Notebooks using Python,
+                                            OpenCV, Keras, and Tensorflow.
+                                        </p>
+                                        <p>
+                                            Computer vision (CV) has been revolutionized by deep learning in the past
+                                            7-8 years. Exciting real world deployments of computer vision are appearing
+                                            in the cloud and on the edge. For example, autonomous vehicles, face
+                                            detection, checkout-less shopping, security systems, cancer detection, and
+                                            more.
+                                        </p>
+                                        <p>
+                                            In this tutorial, we will briefly overview the basics of computer vision
+                                            before focussing on object detection and other computer vision areas, from
+                                            the following perspectives: state-of-the-art research, key algorithms,
+                                            applications, and open challenges. We also present state-of-the-art
+                                            pipelines that are being used in application areas, such as, advanced driver
+                                            assistance systems (ADAS), driver monitoring systems (DMS), disease
+                                            detection, such as lung cancer and heart disease, and security and
+                                            surveillance systems. These pipelines are based on complex deep
+                                            convolutional neural network (CNN) architectures (often 50-60 layers deep or
+                                            more), multi-task loss functions, and are either two-stage (e.g., Faster
+                                            R-CNN) or single-stage (e.g., YOLO/SSD) in nature. We will demonstrate in a
+                                            Jupyter notebook how to build, train, and evaluate computer vision
+                                            applications with a primary focus on building an object detection
+                                            application from scratch to detect objects such as logos in images/video.
+                                            Recent developments in object detection such as panoptic segmentation will
+                                            also be reviewed.
+                                        </p>
+                                    </dd>
+                                    <div class="more"><a><span style="margin-right: 5px;">More</span><i
+                                                class="fa fa-chevron-down" aria-hidden="true"></i></a></div>
+                                </li>
+                                <li><i class="fa-li fa fa-desktop"></i>
+                                    <dt><a href="https://drive.google.com/open?id=19ZDoUh8RQbr4p9VkddnkCK8D6j2E3vTe"
+                                            target="_blank">URL
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i></a></dt>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-12 workshop-unit">
+                        <div class="workshop-name ">
+                            <h3>Recommendation for Multi-Stakeholders and through Neural Review Mining
+                            </h3>
+                            <p class="contact-to">Hands-on Tutorial<br />contact: <a href="mailto:muthusamy.c@flipkart.com">Muthusamy Chelliah</a></p>
+                        </div>
+                        <div class="workshop-info ">
+                            <ul class="fa-ul">
+                                <li><i class="fa-li fa fa-users"></i>
+                                    <dt>Presenters</dt>
+                                    <dd>
+                                        <ul>Muthusamy Chelliah (Flipkart, India)</ul>
+                                        <ul>Yong Zheng (Illinois Institute of Technology, USA)</ul>
+                                        <ul>Sudeshna Sarkar (IIT Kharagpur, India)</ul>
+                                        <ul>Vishal Kakkar (Flipkart, India)</ul>
+                                    </dd>
+                                </li>
+                                <!-- <li class="workshop-desc"><i class="fa-li fa fa-bookmark"></i>
+                                    <dt>Description</dt>
+                                    <dd>
+                                        <p>
+                                        </p>
+                                    </dd>
+                                    <div class="more"><a><span style="margin-right: 5px;">More</span><i
+                                                class="fa fa-chevron-down" aria-hidden="true"></i></a></div>
+                                </li> -->
+                                <li><i class="fa-li fa fa-desktop"></i>
+                                    <dt><a href="https://tutorialcikm.github.io" target="_blank">URL
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i></a></dt>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-12 workshop-unit">
+                            <div class="workshop-name ">
+                                <h3>Machine Learning on Graphs with Kernels
+                                </h3>
+                                <p class="contact-to">Hands-on Tutorial<br />contact: <a href="mailto:michalis.vazirgiannis@gmail.com">Michalis Vazirgiannis</a></p>
+                            </div>
+                            <div class="workshop-info " style="min-height: 240px">
+                                <ul class="fa-ul">
+                                    <li><i class="fa-li fa fa-users"></i>
+                                        <dt>Presenters</dt>
+                                        <dd>
+                                            <ul>G. Nikolentzos (LIX, École Polytechnique)</ul>
+                                            <ul>M. Vazirgiannis (LIX, École Polytechnique)</ul>
+                                            <ul>Giannis Siglidis (UPMC, France)</ul>
+                                        </dd>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <div class="col-xs-12" id="footer">
+        <div class="part1" style="position: relative">
+            <span class="footer-item">
+                <a href="index.html">HOME</a>
+            </span>
+            <span class="footer-item">
+                <a href="callforpapers.html">CONTIRBUTIONS</a>
+            </span>
+            <span class="footer-item">
+                <a href="organizingcommittee.html">ORGANIZERS</a>
+            </span>
+            <span class="footer-item">
+                <a href="callforsponsorship.html">SPONSORSHIP</a>
+            </span>
+            <span class="footer-item">
+                <a href="workshops.html">WORKSHOPS</a>
+            </span>
+            <span class="footer-item">
+                <a href="challenge.html">CHALLENGE</a>
+            </span>
+            <span class="footer-item">
+                <a href="registration.html">REGISTRATION</a>
+            </span>
+            <span class="footer-item">
+                <a href="accomodation.html">ATTENDING</a>
+            </span>
+
+            <!-- Default Statcounter code for CIKM http://cikm2019.net -->
+            <script type="text/javascript">
+                var sc_project = 11928079;
+                var sc_invisible = 0;
+                var sc_security = "7538f521";
+                var sc_https = 1;
+                var scJsHost = (("https:" == document.location.protocol) ? "https://secure." :
+                    "http://www.");
+                document.write("<sc" + "ript type='text/javascript' src='" + scJsHost +
+                    "statcounter.com/counter/counter.js'></" + "script>");
+            </script>
+            <noscript>
+                <div class="statcounter"><a title="Web Analytics" href="http://statcounter.com/" target="_blank"><img
+                            class="statcounter" src="//c.statcounter.com/11928079/0/7538f521/0/" alt="Web
+            Analytics"></a></div>
+            </noscript>
+            <!-- End of Statcounter Code -->
+        </div>
+        <div class="part2" style="background-image: url('./elements/keydates/ditu.png')">
+            <p style="line-height: 60px;"> <br></p>
+        </div>
+    </div>
+    <!-- footer -->
+
+    <script>
+        jQuery(document).ready(function ($) {
+            'use strict';
+            let units = $('.workshop-unit'),
+                descs = $('.workshop-desc dd')
+
+            function alignWorkshopName(selected_index) {
+                units.map((index, element) => {
+                    if (selected_index !== undefined && index !== selected_index) return;
+
+                    let name = units.eq(index).children('.workshop-name'),
+                        info = units.eq(index).children('.workshop-info'),
+                        lis = info.children('ul').children('li'),
+                        isExpanded = descs.eq(index).hasClass('expanded'),
+                        height = lis[0].scrollHeight + (isExpanded ? lis.eq(1).children('dd')[0].scrollHeight : 100) + lis[2].scrollHeight,
+                        nameHeight = name.children('h3').height() + name.children('p').height() + 20,
+                        res = (height - nameHeight) / 2;
+
+                    name.css('padding-top', res);
+                })
+            }
+
+            $(".workshop-desc").on('click', function () {
+                let content = $(this).children('dd'),
+                    more = $(this).children('.more')
+
+                if (content.hasClass('expanded')) {
+                    content.removeClass('expanded').css('max-height', 100)
+                    more.children('a').children('span').text('More')
+                    more.children('a').children('i').removeClass('fa-chevron-up').addClass('fa-chevron-down')
+                }
+                else {
+                    content.addClass('expanded').css('max-height', content[0].scrollHeight + 20)
+                    more.children('a').children('span').text('Close')
+                    more.children('a').children('i').addClass('fa-chevron-up').removeClass('fa-chevron-down')
+                }
+                alignWorkshopName(descs.index(content))
+            })
+            $(window).on('resize load', function () {
+                descs.map((index, element) => {
+                    if (element.scrollHeight <= 100) {
+                        descs.eq(index).siblings('.more').addClass('hidden')
+                        descs.eq(index).parent().css('cursor', 'auto')
+                    }
+                    else {
+                        descs.eq(index).siblings('.more').removeClass('hidden')
+                        descs.eq(index).parent().css('cursor', 'pointer')
+                    }
+                })
+            })
+            alignWorkshopName()
+        });
+    </script>
+</body>
+
+</html>
