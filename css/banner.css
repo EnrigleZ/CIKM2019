@@ -376,10 +376,15 @@ span.statcounter {
 } */
 
 #keynotespeakers {
-	width: 50%;
+	/* width: 50%; */
 	min-height: 550px;
 	margin-bottom: 50px;
 }
+
+#keynotespeakers .img-wrap {
+	width: 60%;
+}
+
 .img-container{
 	width: 100%;
 	height: 0px;
@@ -411,7 +416,7 @@ span.statcounter {
 }
 .speaker {
 	padding: 0 0.7rem;
-	width: 33%;
+	width: 25%;
 }
 
 .speaker img {
@@ -656,7 +661,9 @@ span.statcounter {
 }
 
 
-
+#proposalcontent .list-item {
+	display: flex
+}
 
 
 
@@ -746,7 +753,7 @@ span.statcounter {
 	#myCarousel .carousel-indicators {
 		display: none;
 	}
-	
+
 	#keydates dl {
 		margin-right: 0;
 	}
@@ -755,6 +762,10 @@ span.statcounter {
 	}
 	.sponsor-item.wide {
 		width: 100%;
+	}
+
+	#proposalcontent .list-item {
+		display: unset;
 	}
 }
 @media screen and (max-width:450px){
