@@ -47,6 +47,19 @@ jQuery(document).ready(function($) {
         current_newslist_index = _adjustOverflow('#news .newslist', current_newslist_index);
     })
 
+    $('#keynotespeakers .bottom-title>span').on('click', function() {
+        const s1 = $('#speakers1')
+        const s2 = $('#speakers2')
+
+        if (s1.hasClass('anti-extra')) {
+            s1.removeClass('anti-extra')
+            s2.addClass('anti-extra')
+        } else {
+            s2.removeClass('anti-extra')
+            s1.addClass('anti-extra')
+        }
+    })
+
     openSingleKeydate('#keydate_papers', '#a_papers');
     
     var rand_index = Math.floor(Math.random() * 5);

@@ -375,15 +375,14 @@ span.statcounter {
 	padding-right: 0;
 } */
 
-#keynotespeakers {
-	/* width: 50%; */
+/* #keynotespeakers {
 	min-height: 550px;
 	margin-bottom: 50px;
 }
 
 #keynotespeakers .img-wrap {
 	width: 60%;
-}
+} */
 
 .img-container{
 	width: 100%;
@@ -410,31 +409,80 @@ span.statcounter {
 	padding-bottom: 50%;
 }
 
-.speakerlist {
-	display: -webkit-box;
-	width: 100%;
+#keynotespeakers {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 0;
+	/* min-height: 270px; */
 }
+
+#keynotespeakers>.bottom-title {
+	padding: 0;
+	height: 30px;
+	background-image: url(../elements/keynote_bg.png);
+	background-size: cover;
+}
+#keynotespeakers .bottom-title-text {
+	text-align: center;
+	color: #99742B;
+	line-height: 30px;
+	font-size: 20px;
+}
+#keynotespeakers .bottom-title>span {
+	position: absolute;
+	right: 20px;
+	bottom: 2px;
+	color: #FFF;
+	cursor: pointer;
+}
+
 .speaker {
-	padding: 0 0.7rem;
-	width: 25%;
+	min-height: 120px;
+	background-color: #DBCCAD4d;
+	transition: all 0.3s ease-in-out;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.speaker:hover {
+	background-color: #DBCCAD99;
 }
 
-.speaker img {
-	width: 100%;
+.speaker h1 {
+	font-size: 24px;
+	color: #C09B43;
+	margin-top: 10px;
+	margin-bottom: 20px;
 }
-
 .speaker h2 {
+	margin-bottom: 0;
 	font-size: 18px;
-	color: black;
-}
-.speaker h3 {
-	font-size: 14px;
-	color: #7C1200;
-}
-.speaker p {
-	font-size: 14px;
+	color: #000000;
+	font-weight: bold;
 }
 
+.speaker h1>span {
+	font-size: 16px;
+	margin-left: 15px;
+}
+
+.speaker .speaker-desc {
+	font-size: 16px;
+	color: #707070;
+    max-height: 100px;
+	overflow-y: scroll;
+}
+
+.speaker .speaker-desc::-webkit-scrollbar-track {
+	background: #F5F5F5 !important;
+}
+
+.speaker .img-wrap {
+	padding: 0;
+}
+
+.speaker-wrapper {
+	display: flex;
+}
 .extrawidth {
 	width: 120%;
 }
@@ -665,7 +713,9 @@ span.statcounter {
 	display: flex
 }
 
-
+.anti-extra {
+	display: none !important;
+}
 
 
 
@@ -714,6 +764,16 @@ span.statcounter {
 @media screen and (max-width:767px){
 	.extra {
 		display: none;
+	}
+	.anti-extra {
+		display: unset !important;
+	}
+	.speaker-wrapper {
+		display: unset;
+	}
+	.speaker-desc {
+		max-height: unset !important;
+		overflow-y: unset !important;
 	}
 	.textpanel {
 		padding-right: 0;
