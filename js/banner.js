@@ -47,7 +47,7 @@ jQuery(document).ready(function($) {
         current_newslist_index = _adjustOverflow('#news .newslist', current_newslist_index);
     })
 
-    $('#keynotespeakers .bottom-title>span').on('click', function() {
+    function _nextSpeakers() {
         const s1 = $('#speakers1')
         const s2 = $('#speakers2')
 
@@ -58,11 +58,16 @@ jQuery(document).ready(function($) {
             s2.removeClass('anti-extra')
             s1.addClass('anti-extra')
         }
-    })
+    }
+
+    $('#keynotespeakers .bottom-title>span').on('click', _nextSpeakers)
 
     openSingleKeydate('#keydate_papers', '#a_papers');
-    
+
     var rand_index = Math.floor(Math.random() * 5);
+
+    if (rand_index > 2) _nextSpeakers()
+
     $('.carousel-indicators li').removeClass('active');
     $('.carousel .item').removeClass('active').on('click', nextPicture);
     $('.carousel-indicators li').eq(rand_index).addClass('active');
