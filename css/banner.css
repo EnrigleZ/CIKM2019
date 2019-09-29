@@ -473,7 +473,11 @@ span.statcounter {
 }
 
 .speaker .speaker-desc::-webkit-scrollbar-track {
-	background: #F5F5F5 !important;
+	background-color: #DBCCAD !important;
+}
+.speaker .speaker-desc::-webkit-scrollbar-thumb
+{
+	background-color: #CEB589 !important;
 }
 
 .speaker .img-wrap {
