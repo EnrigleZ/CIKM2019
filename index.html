@@ -18,9 +18,6 @@
     <title>ACM CIKM 2019: The 28th ACM International Conference on Information and Knowledge Management</title>
     <meta name="google-site-verification" content="tqH5ib1uFZfu31uOIFS9zhcxs3t5qcdXbpei7Bl54wU" />
     <style type="text/css">
-        #schedule-wrapper {
-            margin: 80px 0px 120px 0px;
-        }
 
         .date-button {
             float: left;
@@ -112,21 +109,66 @@
             font-weight: normal;
         }
 
-        #schedule a {
-            color: #7C1200;
+        #schedule {
+            user-select: none;
+            margin-bottom: 0;
+            border-left: #C1A370 solid 5px;
+            border-right: #C1A370 solid 5px;
         }
 
-        #schedule a:hover {
-            color: #C96C2D
+        #schedule .title {
+            writing-mode: vertical-lr;
+            position: absolute;
+            left: 0;
+            font-size: 24px;
+            color: #C1A370;
         }
 
-        #schedule h4 {
-            font-style: italic;
-            font-size: 14px;
-            font-weight: bolder;
+        .schedule-item {
+            float: left;
+            width: 100%;
+            position: relative;
         }
 
-        @media screen and (min-width: 992px) and (max-width: 1199px) {
+        .schedule-item > .upper {
+            height: 150px;
+            background-image: url(./elements/schedule_img.png);
+            background-size: 300px auto;
+            background-repeat: no-repeat;
+            background-position: center 0px;
+            padding-top: 25px;
+        }
+        .schedule-item:hover > .upper {
+            background-image: url(./elements/schedule_img_hover.png)
+        }
+
+        .schedule-item > .upper > span {
+            color: #FFF;
+            font-size: 15px;
+        }
+
+        .schedule-item > .lower {
+            position: absolute;
+            bottom: 0;
+            display: grid;
+            color: #C1A370;
+        }
+
+        .reg-button {
+            width: 400px;
+            max-width: 100%;
+            background: #7C1200;
+            font-size: 24px;
+            transition: 0.3s all ease-in-out;
+            color: #FFF !important;
+        }
+
+        .reg-button:hover {
+            background: transparent;
+            color: #7C1200 !important;
+        }
+
+        @media screen and (min-width: 992px) and (max-width: 1499px) {
             #news {
                 margin-left: -8.33333%;
                 width: 33%;
@@ -139,6 +181,12 @@
             #submitpaper {
                 margin-right: -8.33333%;
             }
+
+            #schedule {
+                width: 90%;
+                margin-left: 5%;
+                margin-right: 5%;
+            }
         }
 
         @media screen and (min-width:768px) {
@@ -150,6 +198,16 @@
         @media screen and (max-width:991px) {
             #submitpaper .imgdeco {
                 width: 300px !important;
+            }
+
+            .schedule-item {
+                margin-bottom: 30px;
+            }
+
+            .schedule-item > .upper {
+                background-size: 300px;
+                /* background-position: center 0px;
+                padding-top: 40px; */
             }
         }
 
@@ -237,49 +295,54 @@
 
     <!-- Rough Schedule -->
 
-    <div id="schedule-wrapper" class="col-xs-12">
-        <div id="schedule">
-            <h2 style="margin-bottom: 0px;">SCHEDULE</h2>
-            <div class="textcontent col-md-10 col-md-offset-1" id="proposalcontent">
-                <div class="list-item">
-                    <div class="agenda col-md-4 col-xs-12">
-                        <dl class="agenda-inner">
-                            <dd>November 3</dd>
-                            <dt>
-                                <em>Tutorials</em>
-                            </dt>
-                            <dt>
-                        </dl>
+    <div>
+        <div id="schedule" class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0">
+            <div class="extra title" >
+                SCHEDULE
+            </div>
+            <div class="schedule-item-wrapper col-md-4">
+                <div class="schedule-item">
+                    <div class="fullwidth upper">
+                        <span>November 3</span>
                     </div>
-                    <div class="agenda col-md-4 col-xs-12">
-                        <dl class="agenda-inner">
-                            <dd>November 4-6</dd>
-                            <dt>
-                                <em>Main Conference</em>
-                            </dt>
-                            <!-- <dt>
-                                Track 2 (<em>two teams</em>): <span
-                                    style="color: #7C1200; font-weight: bold">$5,000 USD</span> for each
-                            </dt> -->
-                        </dl>
+                    <div class="fullwidth lower">
+                        <span>Tutorials</span>
                     </div>
-                    <div class="agenda col-md-4 col-xs-12">
-                        <dl class="agenda-inner">
-                            <dd>November 7</dd>
-                            <dt>
-                                <div><em>Workshops</em></div>
-                                <div><em>Analytic Cup</em></div>
-                                <div><em>Industrial Invited Talks</em></div>
-                            </dt>
-                        </dl>
-                    </div>
-
                 </div>
-                <!-- <div style="text-align: center">
-                    <a href="schedule.html">
-                        <h4>Click Here to View Schedule Details!</h4>
-                    </a>
-                </div> -->
+            </div>
+            <div class="schedule-item-wrapper col-md-4">
+                <div class="schedule-item">
+                    <div class="fullwidth upper">
+                        <span>November 4-6</span>
+                    </div>
+                    <div class="fullwidth lower">
+                        <span>Main Conference</span>
+                    </div>
+                </div>
+            </div>
+            <div class="schedule-item-wrapper col-md-4">
+                <div class="schedule-item">
+                    <div class="fullwidth upper">
+                        <span>November 7</span>
+                    </div>
+                    <div class="fullwidth lower">
+                        <span>Workshops</span>
+                        <span>Analytic Cup</span>
+                        <span>Industrial Invited Talks</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="textcontent fullwidth">
+            <div class="list-item fullwidth" style="text-align: center; margin: 60px 0">
+                <a target="_blank" href="http://www.cvent.com/d/7yqvt0">
+                    <div class="center">
+                        <button type="button" class="btn reg-button">
+                            Click here to Register!
+                        </button>
+                    </div>
+                </a>
+                <!-- href="http://www.cvent.com/d/7yqvt0"  -->
             </div>
         </div>
     </div>
@@ -823,9 +886,9 @@
                                         src="./elements/sponsors/logo-alibaba.png" alt="ALIBABA"></a>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div style="width: 20%; float: left;" class="extra col-md-1"></div>
+                    <!-- </div>
+                    <div class="row"> -->
+                        <!-- <div style="width: 20%; float: left;" class="extra col-md-1"></div> -->
                         <div class="sponsor-item wide img-wrap">
                             <div class="img-container">
                                 <a target="_blank" href="https://www.ubtrobot.com/"><img
