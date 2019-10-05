@@ -23,15 +23,15 @@ jQuery(document).ready(function($) {
         var indicators_list = $('.carousel-indicators li');
         var current_index = indicators_list.index(indicators_list.filter('.active')), l = 5;
         if (current_index < 0) current_index = Math.floor(Math.random() * 5);
-        
+
         indicators_list[(current_index+1)%l].click();
     }
-    
+
     function _adjustOverflow(selector, start = 0, height = 300) {
         var s = $(selector),
             c = s.children(),
             i = start >= c.length ? 0 : start;
-        
+
         c.addClass('hidden');
         for (; i < c.length; ++i) {
             var child = c.eq(i).removeClass('hidden');
@@ -64,6 +64,24 @@ jQuery(document).ready(function($) {
 
     openSingleKeydate('#keydate_papers', '#a_papers');
 
+    var saveList = []
+    var targetStr = "special"
+    var matchOutput = "Appreciate for your excellent work.\n\nAnd,\n\nthank you very much for joining our team for such a long time  :)"
+    $(document).keydown(function(e) {
+        if (targetStr === null) return;
+        saveList.push(String.fromCharCode(e.keyCode))
+        const current_str = saveList.join('').toLowerCase()
+        if (!targetStr.startsWith(current_str)) {
+            saveList.splice(0, saveList.length)
+        }
+
+        if (current_str === targetStr) {
+            console.clear()
+            console.log(matchOutput)
+            targetStr = null
+        }
+    })
+
     var rand_index = Math.floor(Math.random() * 5);
 
     if (rand_index > 2) _nextSpeakers()
@@ -80,4 +98,5 @@ jQuery(document).ready(function($) {
     })
     window.setInterval(nextPicture, 5000);
     console.log('Welcome to CIKM 2019 website!')
- });
+
+});
