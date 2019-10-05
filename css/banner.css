@@ -431,7 +431,7 @@ span.statcounter {
 #keynotespeakers .bottom-title-text>a {
 	color: #99742B;
 }
-#keynotespeakers .bottom-title-text>a:hover {
+#keynotespeakers:hover .bottom-title-text>a {
 	color: #FFF;
 }
 
