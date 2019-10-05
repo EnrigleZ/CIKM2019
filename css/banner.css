@@ -424,10 +424,17 @@ span.statcounter {
 }
 #keynotespeakers .bottom-title-text {
 	text-align: center;
-	color: #99742B;
 	line-height: 30px;
 	font-size: 20px;
 }
+
+#keynotespeakers .bottom-title-text>a {
+	color: #99742B;
+}
+#keynotespeakers .bottom-title-text>a:hover {
+	color: #FFF;
+}
+
 #keynotespeakers .bottom-title>span {
 	position: absolute;
 	right: 20px;
