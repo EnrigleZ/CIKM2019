@@ -453,23 +453,28 @@ span.statcounter {
 .speaker:hover {
 	background-color: #DBCCAD99;
 }
+.speaker:hover h2 {
+	color: #C09B43;
+}
 
 .speaker h1 {
 	font-size: 24px;
 	color: #C09B43;
-	margin-top: 10px;
-	margin-bottom: 20px;
+	margin-top: 20px;
+	margin-bottom: 10px;
 }
 .speaker h2 {
 	margin-bottom: 0;
 	font-size: 18px;
 	color: #000000;
 	font-weight: bold;
+	transition: all 0.3s ease-in-out;
 }
 
-.speaker h1>span {
+.speaker .info {
 	font-size: 16px;
-	margin-left: 15px;
+	color: #C09B43;
+	/* margin-left: 15px; */
 }
 
 .speaker .speaker-desc {
@@ -479,16 +484,8 @@ span.statcounter {
 	overflow-y: scroll; */
 }
 
-.speaker .speaker-desc::-webkit-scrollbar-track {
-	background-color: #DBCCAD !important;
-}
-.speaker .speaker-desc::-webkit-scrollbar-thumb
-{
-	background-color: #CEB589 !important;
-}
-
 .speaker .img-wrap {
-	padding: 0;
+	padding: 0 25%;
 }
 
 .speaker-wrapper {
