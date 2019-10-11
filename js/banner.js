@@ -84,7 +84,7 @@ jQuery(document).ready(function($) {
 
     var rand_index = Math.floor(Math.random() * 5);
 
-    if (rand_index > 2) _nextSpeakers()
+    // if (rand_index > 2) _nextSpeakers()
 
     $('.carousel-indicators li').removeClass('active');
     $('.carousel .item').removeClass('active').on('click', nextPicture);

@@ -475,8 +475,8 @@ span.statcounter {
 .speaker .speaker-desc {
 	font-size: 16px;
 	color: #707070;
-    max-height: 100px;
-	overflow-y: scroll;
+    /* max-height: 100px;
+	overflow-y: scroll; */
 }
 
 .speaker .speaker-desc::-webkit-scrollbar-track {
@@ -493,6 +493,7 @@ span.statcounter {
 
 .speaker-wrapper {
 	display: flex;
+	padding: 0;
 }
 .extrawidth {
 	width: 120%;
