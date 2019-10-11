@@ -409,6 +409,14 @@ span.statcounter {
 	padding-bottom: 50%;
 }
 
+.img-wrap img.date {
+    width: 30%;
+    right: 2%;
+    top: -7%;
+    height: auto;
+    z-index: 1000;
+}
+
 #keynotespeakers {
 	margin-top: 30px;
 	margin-bottom: 30px;
@@ -486,6 +494,7 @@ span.statcounter {
 
 .speaker .img-wrap {
 	padding: 0 25%;
+	padding-top: 10%;
 }
 
 .speaker-wrapper {
