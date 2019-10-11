@@ -774,12 +774,12 @@ span.statcounter {
 	}
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
 	.nav > li:hover .dropdown-menu {display: block;}
 }
 
 /* Mobile display (except iPad) settings */
-@media screen and (max-width:767px){
+@media screen and (max-width:768px){
 	.extra {
 		display: none;
 	}
