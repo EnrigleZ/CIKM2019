@@ -64,7 +64,6 @@
 
         .program-table>table {
             width: 100%;
-            text-align: left;
         }
 
         .program-table>table th,
@@ -73,6 +72,12 @@
             padding-left: 15px;
             font-size: 14px;
             transition: 300ms all ease-in-out;
+            width: 29%;
+            text-align: left;
+        }
+
+        .program-table>table td.center {
+            text-align: center;
         }
 
         .program-table>table th.transparent,
@@ -81,13 +86,15 @@
         }
 
         .program-table>table th {
+            background-color: #E0E0E0;
             color: #7C1200;
             font-size: 20px;
             height: 48px;
+            text-align: center;
         }
 
-        .program-table>table td:first-child,
-        .program-table>table th:first-child {
+        .program-table>table td:first-of-type,
+        .program-table>table th:first-of-type {
             min-width: 100px;
             text-align: center !important;
             background-color: #7C1200 !important;
@@ -96,7 +103,31 @@
             width: 13% !important;
         }
 
-        .program-table>table:nth-child(odd) td:nth-child(even),
+        .program-table>table tr:nth-child(even) {
+            background-color: #F4F4F4;
+        }
+        .program-table>table tr:nth-child(odd) {
+            background-color: #E0E0E0;
+        }
+
+        .program-table>table tr:nth-child(even):hover {
+            background-color: #F4F4F4AA;
+        }
+        .program-table>table tr:nth-child(odd):hover {
+            background-color: #E0E0E0AA;
+        }
+        .program-table>table tr:hover td:first-of-type {
+            background-color: #540600 !important;
+        }
+
+        .program-table>table .hands-on {
+            color: #777;
+            font-size: 14px;
+            font-weight: normal;
+            font-style: italic;
+        }
+
+        /* .program-table>table:nth-child(odd) td:nth-child(even),
         .program-table>table:nth-child(odd) th:nth-child(even),
         .program-table>table:nth-child(even) td:nth-child(odd),
         .program-table>table:nth-child(even) th:nth-child(odd) {
@@ -124,9 +155,9 @@
         .program-table>table:nth-child(odd) tr:hover th:nth-child(odd),
         .program-table>table:nth-child(even) tr:hover td:nth-child(even),
         .program-table>table:nth-child(even) tr:hover th:nth-child(even) {
-            /* width: 29%; */
+            width: 29%;
             background-color: #F4F4F4B3;
-        }
+        } */
 
         .program-table>table .color-font-wrapper {
             width: 100px;
@@ -148,6 +179,7 @@
         .program-table a {
             color: inherit !important;
         }
+
         .program-table a:hover {
             color: #7C1200 !important;
         }
@@ -212,9 +244,11 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbar-submissions">
                                 <li><a class="dropdown-item" href="callforpapers.html">Call for Research Papers</a></li>
-                                <li><a class="dropdown-item" href="callforworkshops.html">Call for Workshop Proposals</a></li>
+                                <li><a class="dropdown-item" href="callforworkshops.html">Call for Workshop
+                                        Proposals</a></li>
                                 <li><a class="dropdown-item" href="callfordemos.html">Call for Demos</a></li>
-                                <li><a class="dropdown-item" href="callforappliedresearchpapers.html">Call for Applied Research
+                                <li><a class="dropdown-item" href="callforappliedresearchpapers.html">Call for Applied
+                                        Research
                                         Papers</a></li>
                                 <li><a class="dropdown-item" href="callfortutorials.html">Call for Tutorials</a></li>
                             </ul>
@@ -244,62 +278,406 @@
                             <tr>
                                 <th>
                                     <div class="color-font-wrapper extra">
+                                        <img src="elements/color-font/3.png" alt="">
+                                    </div>
+                                    <span class="anti-extra">
+                                        Nov 4
+                                    </span>
+                                </th>
+                                <th>Program</th>
+                                <th>Program</th>
+                            </tr>
+                            <tr>
+                                <td>7.30am-5.00am</td>
+                                <td colspan="2" class="center">Registration</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    8.30am-10am
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            T1: Enterprise Knowledge Graph From Specific Business Task to
+                                            Enterprise Knowledge Management
+                                            <em>(Room 301A)</em>
+                                        </a>
+
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            T2: Taming Social Bots: Detection, Exploration And Measurement
+                                            <em>(Room 301B)</em>
+                                        </a>
+
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            T3: Learning and Reasoning on Graph for Recommendation <em>(Room
+                                                302A)</em>
+                                        </a>
+
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            T4: Synergy of Database Techniques and Machine Learning Models for
+                                            String Similarity Search and
+                                            Join <em>(Room 302B)</em>
+                                        </a>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>10.00am-10.30am</td>
+                                <td colspan="2" class="center">
+                                    <div>Morning Break</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    10.30am-12pm
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            T5: Enterprise Knowledge Graph From Specific Business Task to
+                                            Enterprise Knowledge Management
+                                            <em>(Room 301A)</em>
+                                        </a>
+
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            T6: Taming Social Bots: Detection, Exploration And Measurement
+                                            <em>(Room 301B)</em>
+                                        </a>
+
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            T7: Learning and Reasoning on Graph for Recommendation <em>(Room
+                                                302A)</em>
+                                        </a>
+
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            T8: Synergy of Database Techniques and Machine Learning Models for
+                                            String Similarity Search and
+                                            Join <em>(Room 302B)</em>
+                                        </a>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>12.00pm-1.30pm</td>
+                                <td colspan="2" class="center">
+                                    <div>Lunch</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    1.30pm-3.00pm
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            T9: Learning-Based Methods with Human-in-the-Loop for Entity
+                                            Resolution <em>(Room 301A)</em>
+                                        </a>
+
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            T10: Recent Developments of Deep Heterogeneous Information Network
+                                            Analysis <em>(Room 301B)</em>
+                                        </a>
+
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            <span class="hands-on">(Hands-on)</span> T11: Recommendation for Multi-Stakeholders and through Neural
+                                            Review Mining <em>(Room
+                                                302A)</em>
+                                        </a>
+
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            <span class="hands-on">(Hands-on)</span> T12: MachineLearning on Graphs with Kernels <em>(Room 302B)</em>
+                                        </a>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>10.00am-10.30am</td>
+                                <td colspan="2" class="center">
+                                    <div>Afternoon Break</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    3.30pm-5.00pm
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            T13: Learning-Based Methods with Human-in-the-Loop for Entity
+                                            Resolution <em>(Room 301A)</em>
+                                        </a>
+
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            T14: Recent Developments of Deep Heterogeneous Information Network
+                                            Analysis <em>(Room 301B)</em>
+                                        </a>
+
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            <span class="hands-on">(Hands-on)</span> T15: Recommendation for Multi-Stakeholders and through Neural
+                                            Review Mining <em>(Room
+                                                302A)</em>
+                                        </a>
+
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            <span class="hands-on">(Hands-on)</span> T16: MachineLearning on Graphs with Kernels <em>(Room 302B)</em>
+                                        </a>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="program-table">
+                        <table>
+                            <tr>
+                                <th>
+                                    <div class="color-font-wrapper extra">
                                         <img src="elements/color-font/4.png" alt="">
                                     </div>
                                     <span class="anti-extra">
                                         Nov 4
                                     </span>
                                 </th>
-                                <th><!--Room 301AB--></th>
-                                <th><!--Room 302AB--></th>
-                                <th><!--Room 303A--></th>
+                                <th>Program</th>
+                                <th>Program</th>
                             </tr>
                             <tr>
-                                <td>10.30am-12.00am</td>
-                                <td><a href="session.html#long-e-commerce-and-advertising-i">Long-E-Commerce and Advertising I  <em>(Room 301AB)</em></a></td>
-                                <td><a href="session.html#long-network-embedding-i">Long-Network Embedding I <em>(Room 302AB)</em></a></td>
-                                <td><a href="session.html#long-machine-learning-themes-i">Long-Machine Learning Themes I <em>(Room 303A)</em></a></td>
+                                <td>7.30am-5.00am</td>
+                                <td colspan="2" class="center">Registration</td>
                             </tr>
                             <tr>
-                                <td>1.30pm – 3.00pm</td>
-                                <td><a href="session.html#long-question-answering-and-dialogue-systems-i">Long-Question Answering and Dialogue Systems I <em>(Room 301AB)</em></a></td>
-                                <td><a href="session.html#long-natural-language-processing-i">Long-Natural Language Processing I <em>(Room 302A)</em> </a></td>
-                                <td><a href="session.html#long-machine-learning-themes-ii">Long-Machine Learning Themes II <em>(Room 303A)</em></a></td>
+                                <td>8.00am-9.00am</td>
+                                <td colspan="2" class="center">
+                                    <div>Conference Opening</div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>3.30pm – 5.00pm</td>
-                                <td><a href="session.html#long-network-science">Long-Network Science <em>(Room 301AB)</em></a></td>
-                                <td><a href="session.html#long-online-and-real-time">Long-Online and Real-Time <em>(Room 302AB)</em></a></td>
-                                <td><a href="session.html#long-machine-learning-themes-iii">Long-Machine Learning Themes III <em>(Room 303A)</em></a></td>
-                            </tr>
-                        </table>
-                        <table>
-                            <tr>
-                                <th></th>
-                                <th><!--Room 303B--></th>
-                                <th><!--Room 305--></th>
-                                <th><!--Room 302B--></th>
+                                <td>9.00am-10.00am</td>
+                                <td colspan="2" class="center">
+                                    <div>Keynote: Dr. Steve Maybank | Title: The Fisher-Rao metric in computer vision
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>10.30am-12.00am</td>
-                                <td><a href="session.html#long-recommendation-system-i">Long-Recommendation System I <em>(Room 303B)</em></a></td>
-                                <td><a href="session.html#long-urban-computing-i">Long-Urban Computing I <em>(Room 305)</em></a></td>
-                                <td></td>
+                                <td>10.00am-10.30am</td>
+                                <td colspan="2" class="center">
+                                    <div>Morning Break</div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>1.30pm – 3.00pm</td>
-                                <td><a href="session.html#long-mining-in-emerging-applications-i">Long-Mining in Emerging Applications I <em>(Room 303B)</em></a></td>
-                                <td><a href="session.html#long-knowledge-graph-i">Long-Knowledge Graph I <em>(Room 305)</em></a></td>
-                                <td><a>Demo Presentation (1:30pm-3:15pm) <em>(Room 302B)</em></a></td>
+                                <td>
+                                    10.30am-12.00pm
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            LR:E-Commerce and Advertising I <em>(Room 301AB)</em>
+                                        </a>
+
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            LR: Network Embedding I <em>(Room 302AB)</em>
+                                        </a>
+
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            LR: Machine Learning Themes I <em>(Room 303A)</em>
+                                        </a>
+
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            LR: Recommendation System I <em>(Room 303B)</em>
+                                        </a>
+
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            LR: Urban Computing I <em>(Room 305)</em>
+                                        </a>
+
+                                    </div>
+
+                                </td>
+
                             </tr>
                             <tr>
-                                <td>3.30pm – 5.00pm</td>
-                                <td><a href="session.html#long-privacy">Long-Privacy <em>(Room 303B)</em></a></td>
-                                <td><a href="session.html#long-search-&-retrieval">Long-Search & Retrieval <em>(Room 305)</em></a></td>
-                                <td></td>
+                                <td>12.00pm-1.30pm</td>
+                                <td colspan="2" class="center">
+                                    <div>Lunch</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    1.30pm-3.00pm
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            LR: Question Answering and Dialogue Systems I <em>(Room 301A)</em>
+                                        </a>
+
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            LR: Natural Language Processing I <em>(Room 302A)</em>
+                                        </a>
+
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            LR: Machine Learning Themes II <em>(Room 303A)</em>
+                                        </a>
+
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            LR: Mining in Emerging Applications I <em>(Room 303B)</em>
+                                        </a>
+
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            LR: Knowledge Graph I <em>(Room 305)</em>
+                                        </a>
+
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            Demo Presentation (1:30pm-3:15pm) <em>(Room 302B)</em>
+                                        </a>
+
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            <span class="hands-on">(Hands-on)</span> T17: Realtime Object Detection via Deep Learning-based
+                                            Pipelines <em>(Room 301B)</em>
+                                        </a>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>10.00am-10.30am</td>
+                                <td colspan="2" class="center">
+                                    <div>Afternoon Break</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    3.30pm-5.00pm
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            LR: Network Science <em>(Room 301AB)</em>
+                                        </a>
+
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            LR: Online and Real-Time <em>(Room 302AB)</em>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            LR: Machine Learning Themes III <em>(Room 303A)</em>
+                                        </a>
+
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            LR: Privacy <em>(Room 303B)</em>
+                                        </a>
+
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            LR: Search & Retrieval <em>(Room 305)</em>
+                                        </a>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>6.30pm-9.00pm</td>
+                                <td>
+                                    <div><a href="">Poster Session</a></div>
+                                    <div><a href="">Demo Session</a></div>
+                                </td>
+                                <td>
+                                    <div><a href="">Reception</a></div>
+                                </td>
                             </tr>
                         </table>
                     </div>
+
+
                     <div class="program-table">
                         <table>
                             <tr>
@@ -311,80 +689,263 @@
                                         Nov 5
                                     </span>
                                 </th>
-                                <th><!--Room 301AB--></th>
-                                <th><!--Room 302AB--></th>
-                                <th><!--Room 303A--></th>
+                                <th>Program</th>
+                                
+                                <th>Program</th>
                             </tr>
                             <tr>
-                                <td>9.30am – 10.30am</td>
-                                <td><a href="session.html#long-biomedical-informatics">Long-Biomedical Informatics <em>(Room 301AB)</em></a></td>
-                                <td><a href="session.html#long-deep-nerual-network-i">Long-Deep Neural Network I <em>(Room 302AB)</em></a></td>
-                                <td><a href="session.html#long-heterogeneous-data">Long-Heterogeneous Data <em>(Room 303A)</em></a></td>
+                                <td>7.45am-5.00am</td>
+                                <td colspan="2" class="center">Registration</td>
                             </tr>
                             <tr>
-                                <td>11.00am – 12.30pm</td>
-                                <td><a href="session.html#long-analyzing-spatio-temporal-data-">Long-Analyzing Spatio-Temporal Data <em>(Room 301AB)</em></a></td>
-                                <td><a href="session.html#long-deep-nerual-network-ii">Long-Deep Neural Network II <em>(Room 302AB)</em></a></td>
-                                <td><a href="session.html#long-recommendation-system-ii">Long-Recommendation System II <em>(Room 303A)</em></a></td>
+                                <td>8.30am-9.30am</td>
+                                <td colspan="2" class="center">
+                                    <div>Keynote: Dr. Jian Pei | Title: Practicing the Art of Data Science
+                                    </div>
+                                </td> 
                             </tr>
                             <tr>
-                                <td>2:00pm – 3.30pm</td>
-                                <td><a href="session.html#long-graph-nerual-network-i">Long-Graph Neural Network I <em>(Room 301AB)</em></a></td>
-                                <td><a href="session.html#long-sequential-data-analysis">Long-Sequential Data Analysis <em>(Room 302AB)</em></a></td>
-                                <td><a href="session.html#long-social-network">Long-Social Network <em>(Room 303A)</em></a></td>
+                                <td>
+                                    9.30am-10.30am
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            LR: Biomedical Informatics <em>(Room 301AB)</em>
+                                        </a>
+
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            LR: Deep Nerual Network I <em>(Room 302AB)</em>
+                                        </a>
+
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            LR: Heterogeneous Data <em>(Room 303A)</em>
+                                        </a>
+
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            LR: Database and System <em>(Room 303B)</em>
+                                        </a>
+
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            LR: Algorithmic Techniques <em>(Room 305)</em>
+                                        </a>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>10.30am-11.00am</td>
+                                <td colspan="2" class="center">
+                                    <div>Morning Break</div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>4.00pm – 5.30pm</td>
-                                <td><a href="session.html#long-graph-nerual-network-ii">Long-Graph Neural Network II <em>(Room 301AB)</em></a></td>
-                                <td><a href="session.html#long-question-answering-and-dialogue-systems-ii">Long-Question Answering and Dialogue Systems II <em>(Room 302AB)</em></a></td>
-                                <td><a href="session.html#long-e-commerce-and-advertising-ii">Long-E-Commerce and Advertising II <em>(Room 303A)</em></a></td>
+                                <td>
+                                    11.00am-12.30pm
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            LR: Analyzing Spatio-Temporal Data <em>(Room 301AB)</em>
+                                        </a>
+
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            LR: Deep Nerual Network II <em>(Room 302AB)</em>
+                                        </a>
+
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            LR: Recommendation System II <em>(Room 303A)</em>
+                                        </a>
+
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            LR: Understanding and Interpretability I <em>(Room 303B)</em>
+                                        </a>
+
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            LR: User Behavior <em>(Room 305)</em>
+                                        </a>
+
+                                    </div>
+
+                                </td>
+
                             </tr>
                             <tr>
-                                <td>5:30pm-6:30pm</td>
-                                <td><a href="session.html#short-graph-neural-networks">Short-Graph Neural Networks <em>(Room 301AB)</em></a></td>
-                                <td><a href="session.html#short-search">Short-Search <em>(Room 302AB)</em></a></td>
-                                <td><a href="session.html#short-e-commerce-&-production">Short-E-commerce & Production <em>(Room 303A)</em></a></td>
-                            </tr>
-                        </table>
-                        <table>
-                            <tr>
-                                <th></th>
-                                <th><!--Room 303B--></th>
-                                <th><!--Room 305--></th>
-                                <th class="transparent"></th>
+                                <td>12.30pm-2.00pm</td>
+                                <td colspan="2" class="center">
+                                    <div>Lunch</div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>9.30am – 10.30am</td>
-                                <td><a href="session.html#long-database-and-system">Long-Database and System <em>(Room 303B)</em></a></td>
-                                <td><a href="session.html#long-algorithmic-techniques">Long-Algorithmic Techniques <em>(Room 305)</em></a></td>
-                                <td class="transparent"></td>
+                                <td>
+                                    2:00pm-3.30pm
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            LR: Graph Nerual Network I <em>(Room 301AB)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            LR: Sequential Data Analysis <em>(Room 302AB)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            LR: Social Network <em>(Room 303A)</em>
+                                        </a>
+                            
+                                    </div>
+                            
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            LR: Natural Language Processing II <em>(Room 303B)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            LR: Mining in Emerging Applications II <em>(Room 305)</em>
+                                        </a>
+                            
+                                    </div>
+                            
+                                </td>
+                            
                             </tr>
                             <tr>
-                                <td>11.00am – 12.30pm</td>
-                                <td><a href="session.html#long-understanding-and--interpretability-i">Long-Understanding and Interpretability I <em>(Room 303B)</em></a></td>
-                                <td><a href="session.html#long-user-behavior">Long-User Behavior <em>(Room 305)</em></a></td>
-                                <td class="transparent"></td>
+                                <td>3.30pm – 4.00pm</td>
+                                <td colspan="2" class="center">
+                                    <div>Afternoon Break</div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>2:00pm – 3.30pm</td>
-                                <td><a href="session.html#long-natural-language-processing-ii">Long-Natural Language Processing II</a></td>
-                                <td><a href="session.html#long-mining-in-emerging-applications-ii">Long-Mining in Emerging Applications II</a></td>
-                                <td class="transparent"></td>
+                                <td>
+                                    4.00pm-5.30pm
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            LR: Graph Nerual Network II <em>(Room 301AB)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            LR: Question Answering and Dialogue Systems II <em>(Room 302AB)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            LR: E-Commerce and Advertising II <em>(Room 303A)</em>
+                                        </a>
+                            
+                                    </div>
+                            
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            Applied-Language Models <em>(Room 303B)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            Applied-Online and User bahaviors <em>(Room 305)</em>
+                                        </a>
+                            
+                                    </div>
+                            
+                                </td>
+                            
                             </tr>
                             <tr>
-                                <td>4.00pm – 5.30pm</td>
-                                <td><a href="session.html#applied-language-models">Applied-Language Models</a></td>
-                                <td><a href="session.html#applied-online-and-user-behaviors">Applied-Online and User behaviors</a></td>
-                                <td class="transparent"></td>
+                                <td>
+                                    5:30pm-6:30pm
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            Short-Graph Neural Networks <em>(Room 301AB)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            Short-Search <em>(Room 302AB)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            Short-E-commerce & Production <em>(Room 303A)</em>
+                                        </a>
+                            
+                                    </div>
+                            
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            Short-Recommendation <em>(Room 303B)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            Short-Health & Sentiment <em>(Room 305)</em>
+                                        </a>
+                            
+                                    </div>
+                            
+                                </td>
+                            
                             </tr>
                             <tr>
-                                <td>5:30pm-6:30pm</td>
-                                <td><a href="session.html#short-recommendation">Short-Recommendation <em>(Room 303B)</em></a></td>
-                                <td><a href="session.html#short-health-&-sentiment">Short-Health & Sentiment <em>(Room 305)</em></a></td>
-                                <td class="transparent"></td>
+                                <td>6.30pm-9.00pm</td>
+                                <td>
+                                    <div><a href="">Banquet</a></div>
+                                </td>
+                                <td>
+                                    <div><a href="">Presentation of awards</a></div>
+                                </td>
                             </tr>
+
                         </table>
                     </div>
+
                     <div class="program-table">
                         <table>
                             <tr>
@@ -396,118 +957,269 @@
                                         Nov 6
                                     </span>
                                 </th>
-                                <th><!--Room 301AB--></th>
-                                <th><!--Room 302AB--></th>
-                                <th><!--Room 303A--></th>
+                                <th>Program</th>
+                                <th>Program</th>
                             </tr>
                             <tr>
-                                <td>9.30am – 10.30am</td>
-                                <td><a href="session.html#short-machine-learning">Short-Machine Learning <em>(Room 301A)</em> </a></td>
-                                <td><a href="session.html#short-time-sequences-&-dynamics">Short-Time Sequences & Dynamics <em>(Room 301B)</em> </a></td>
-                                <td><a href="session.html#short-embeddings">Short-Embeddings <em>(Room 302A)</em> </a></td>
+                                <td>7.45am-5.00am</td>
+                                <td colspan="2" class="center">Registration</td>
                             </tr>
                             <tr>
-                                <td>11.00am – 12.30pm</td>
-                                <td><a href="session.html#long-network-embedding-ii">Long-Network Embedding II <em>(Room 301AB)</em></a></td>
-                                <td><a href="session.html#long-urban-computing-ii">Long-Urban Computing II <em>(Room 302AB)</em></a></td>
-                                <td><a href="session.html#long-understanding-and-interpretability-ii">Long-Understanding and Interpretability II <em>(Room 303A)</em></a></td>
+                                <td>8.30am-9.30am</td>
+                                <td colspan="2" class="center">
+                                    <div>Keynote: Dr. Jiawei Han | Title: From Unstructured Text to TextCube: Automated Construction and Multidimensional Exploration
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>2:00pm – 3.30pm</td>
-                                <td><a href="session.html#long-computer-vision">Long-Computer Vision <em>(Room 301AB)</em></a></td>
-                                <td><a href="session.html#applied-urbanism-and-mobility">Applied-Urbanism and Mobility <em>(Room 302AB)</em></a></td>
-                                <td><a href="session.html#applied-graph-applications">Applied-Graph Applications <em>(Room 303A)</em></a></td>
+                                <td>
+                                    9.30am-10.30am
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            Short-Machine Learning <em>(Room 301A)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            Short-Time Sequences & Dynamics <em>(Room 301B)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            Short-Embeddings <em>(Room 302A)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            Short-Interpretability & Reasoning <em>(Room 302B)</em>
+                                        </a>
+                            
+                                    </div>
+                            
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            Short-Anomaly Detection <em>(Room 303A)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            Short-Urbanism and Mobility <em>(Room 303B)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            Short-System & Database <em>(Room 305)</em>
+                                        </a>
+                            
+                                    </div>
+                            
+                                </td>
+                            
+                            </tr>
+
+                            <tr>
+                                <td>10.30am-11.00am</td>
+                                <td colspan="2" class="center">
+                                    <div>Morning Break</div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>4.00pm – 5.30pm</td>
-                                <td><a href="session.html#long-recommendation-system-iii">Long-Recommendation System III <em>(Room 301AB)</em></a></td>
-                                <td><a href="session.html#long-knowledge-graph-ii">Long-Knowledge Graph II <em>(Room 302AB)</em></a></td>
-                                <td><a href="session.html#long-domain-adaptation-and-transfer-learning">Long-Domain Adaptation and Transfer Learning <em>(Room 303A)</em></a></td>
+                                <td>
+                                    11.00am-12.30pm
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            LR: Network Embedding II <em>(Room 301AB)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            LR: Urban Computing II <em>(Room 302AB)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            LR: Understanding and Interpretability II <em>(Room 303A)</em>
+                                        </a>
+                            
+                                    </div>
+                            
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            LR: Reinforcement Learning <em>(Room 303B)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            Applied-Recommendation and Advertising <em>(Room 305)</em>
+                                        </a>
+                            
+                                    </div>
+                            
+                                </td>
+                            
                             </tr>
                             <tr>
-                                <td>5:30pm-6:30pm</td>
-                                <td><a href="session.html#short-algorithm">Short-Algorithm <em>(Room 301AB)</em></a></td>
-                                <td><a href="session.html#short-recognition">Short-Recognition <em>(Room 302AB)</em></a></td>
-                                <td><a href="session.html#short-information-retrieval">Short-Information Retrieval <em>(Room 303A)</em></a></td>
-                            </tr>
-                        </table>
-                        <table>
-                            <tr>
-                                <th></th>
-                                <th><!--Room 303B--></th>
-                                <th><!--Room 305--></th>
-                                <th><!--Room 302B--></th>
+                                <td>12.30pm-2.00pm</td>
+                                <td colspan="2" class="center">
+                                    <div>Lunch</div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>9.30am – 10.30am</td>
-                                <td><a href="session.html#short-urbanism-and-mobility">Short-Urbanism and Mobility <em>(Room 303B)</em></a></td>
-                                <td><a href="session.html#short-anomaly-detection">Short-Anomaly Detection <em>(Room 303A)</em> </a></td>
-                                <td><a href="session.html#short-interpretability-&-reasoning">Short-Interpretability & Reasoning <em>(Room 302B)</em></a></td>
+                                <td>
+                                    2:00pm-3.30pm
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            LR: Computer Vision <em>(Room 301AB)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            Applied-Urbanism and Mobility <em>(Room 302AB)</em>
+                                        </a>
+                            
+                                    </div>
+                            
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            Applied-Graph Applications <em>(Room 303A)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            Short-Theory <em>(Room 303B)</em>
+                                        </a>
+                            
+                                    </div>
+                            
+                                </td>   
+                            
                             </tr>
                             <tr>
-                                <td>11.00am – 12.30pm</td>
-                                <td><a href="session.html#long-reinforcement-learning">Long-Reinforcement Learning <em>(Room 303B)</em></a></td>
-                                <td><a href="session.html#applied-recommendation-and-advertising">Applied-Recommendation and Advertising <em>(Room 305)</em></a></td>
-                                <td></td>
+                                <td>3.30pm – 4.00pm</td>
+                                <td colspan="2" class="center">
+                                    <div>Afternoon Break</div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>2:00pm – 3.30pm</td>
-                                <td><a href="session.html#short-theory">Short-Theory <em>(Room 303B)</em></a></td>
-                                <td></td>
-                                <td></td>
+                                <td>
+                                    4.00pm-5.30pm
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            LR: Recommendation System III <em>(Room 301AB)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            LR: Knowledge Graph II <em>(Room 302AB)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            LR: Domain Adaptation and Transfer Learning <em>(Room 303A)</em>
+                                        </a>
+                            
+                                    </div>
+                            
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            Applied-Novel Applications <em>(Room 303B)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            Applied-E-commerce <em>(Room 305)</em>
+                                        </a>
+                            
+                                    </div>
+                            
+                                </td>
+                            
                             </tr>
                             <tr>
-                                <td>4.00pm – 5.30pm</td>
-                                <td><a href="session.html#applied-novel-applications">Applied-Novel Applications <em>(Room 303B)</em></a></td>
-                                <td><a href="session.html#applied-e-commerce">Applied-E-commerce <em>(Room 305)</em></a></td>
-                                <td></td>
+                                <td>
+                                    5:30pm-6:30pm
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            Short-Algorithm <em>(Room 301AB)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            Short-Recognition <em>(Room 302AB)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            Short-Information Retrieval <em>(Room 303A)</em>
+                                        </a>
+                            
+                                    </div>
+                            
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            Short-Classification <em>(Room 303B)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            Short-Knowledge Extraction & Generation <em>(Room 305)</em>
+                                        </a>
+                            
+                                    </div>
+                            
+                                </td>
+                            
                             </tr>
                             <tr>
-                                <td>5:30pm-6:30pm</td>
-                                <td><a href="session.html#short-classification">Short-Classification <em>(Room 303B)</em></a></td>
-                                <td><a href="session.html#short-knowledge-extraction-&-generation">Short-Knowledge Extraction & Generation <em>(Room 305)</em></a></td>
-                                <td></td>
+                                <td>6.30pm-9.00pm</td>
+                                <td>
+                                    <div><a href="">Poster Session</a></div>
+                                    <div><a href="">Demo Session</a></div>
+                                </td>
+                                <td>
+                                    <div><a href="">Reception</a></div>
+                                </td>
                             </tr>
-                        </table>
-                        <table>
-                            <tr>
-                                <th></th>
-                                <th><!--Room 305--></th>
-                                <th class="transparent"></th>
-                                <th class="transparent"></th>
-                            </tr>
-                            <tr>
-                                <td>9.30am – 10.30am</td>
-                                <td><a href="session.html#short-system-&-database">Short-System & Database <em>(Room 305)</em></a></td>
-                                <td class="transparent"></td>
-                                <td class="transparent"></td>
-                            </tr>
-                            <tr>
-                                <td>11.00am – 12.30pm</td>
-                                <td></td>
-                                <td class="transparent"></td>
-                                <td class="transparent"></td>
-                            </tr>
-                            <tr>
-                                <td>2:00pm – 3.30pm</td>
-                                <td></td>
-                                <td class="transparent"></td>
-                                <td class="transparent"></td>
-                            </tr>
-                            <tr>
-                                <td>4.00pm – 5.30pm</td>
-                                <td></td>
-                                <td class="transparent"></td>
-                                <td class="transparent"></td>
-                            </tr>
-                            <tr>
-                                <td>5:30pm-6:30pm</td>
-                                <td></td>
-                                <td class="transparent"></td>
-                                <td class="transparent"></td>
-                            </tr>
+
                         </table>
                     </div>
+                    
                     <div class="program-table">
                         <table>
                             <tr>
@@ -519,66 +1231,234 @@
                                         Nov 7
                                     </span>
                                 </th>
-                                <th><!--Room 301AB--></th>
-                                <th><!--Room 305--></th>
-                                <th><!--Room 302A--></th>
+                                <th>Program</th>
+                                
+                                <th>Program</th>
                             </tr>
                             <tr>
-                                <td>9.30am – 10.30am</td>
-                                <td><a>Industrial Invited Talks <em>(Room 301AB)</em></a></td>
-                                <td><a>Workshop DTMBIO 2019 <em>(Room 305)</em></a></td>
-                                <td><a>Workshop BigScholar 2019 <em>(Room 302A)</em></a></td>
+                                <td>7.45am-5.00am</td>
+                                <td colspan="2" class="center">Registration</td>
                             </tr>
                             <tr>
-                                <td>11.00am – 12.30pm</td>
-                                <td><a>Industrial Invited Talks <em>(Room 301AB)</em></a></td>
-                                <td><a>Workshop DTMBIO 2019 <em>(Room 305)</em></a></td>
-                                <td><a>Workshop BigScholar 2019 <em>(Room 302A)</em></a></td>
+                                <td>8.30am-9.30am</td>
+                                <td colspan="2" class="center">
+                                    <div>Keynote: Dr. Jianping Shi | Title: Autonomous Driving Towards Mass Production
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>2:00pm – 3.30pm</td>
-                                <td><a>Industrial Invited Talks <em>(Room 301AB)</em></a></td>
-                                <td><a>Workshop DTMBIO 2019 <em>(Room 305)</em></a></td>
-                                <td><a>Workshop GRLA 2019 <em>(Room 302A)</em></a></td>
+                                <td>
+                                    9.30am-10.30am
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            Industrial Invited Talks <em>(Room 301AB)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            Workshop DTMBIO 2019 <em>(Room 305)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            Workshop BigScholar 2019 <em>(Room 302A)</em>
+                                        </a>
+                            
+                                    </div>
+                            
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            Workshop KDAH-CIKM 2019 <em>(Room 302B)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            Workshop EYRE 2019 <em>(Room 303A)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            Workshop KARS 2019 <em>(Room 303B)</em>
+                                        </a>
+                            
+                                    </div>
+                            
+                                </td>
+                            
+                            </tr>
+
+                            <tr>
+                                <td>10.30am-11.00am</td>
+                                <td colspan="2" class="center">
+                                    <div>Morning Break</div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>4.00pm – 5.00pm</td>
-                                <td><a>Industrial Invited Talks <em>(Room 301AB)</em></a></td>
-                                <td><a>Workshop DTMBIO 2019 <em>(Room 305)</em></a></td>
-                                <td><a>Workshop GRLA 2019 <em>(Room 302A)</em></a></td>
+                                <td>
+                                    11.00am-12.30pm
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            Industrial Invited Talks <em>(Room 301AB)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            Workshop DTMBIO 2019 <em>(Room 305)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            Workshop BigScholar 2019 <em>(Room 302A)</em>
+                                        </a>
+                            
+                                    </div>
+                            
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            Workshop KDAH-CIKM 2019 <em>(Room 302B)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            Workshop EYRE 2019 <em>(Room 303A)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            Workshop KARS 2019 <em>(Room 303B)</em>
+                                        </a>
+                            
+                                    </div>
+                            
+                                </td>
+                            
                             </tr>
-                        </table>
-                        <table>
                             <tr>
-                                <th></th>
-                                <th><!--Room 302B--></th>
-                                <th><!--Room 303A--></th>
-                                <th><!--Room 303B--></th>
+                                <td>12.30pm-2.00pm</td>
+                                <td colspan="2" class="center">
+                                    <div>Lunch</div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>9.30am – 10.30am</td>
-                                <td><a>Workshop KDAH-CIKM 2019 <em>(Room 302B)</em></a></td>
-                                <td><a>Workshop EYRE 2019 <em>(Room 303A)</em></a></td>
-                                <td><a>Workshop KARS 2019 <em>(Room 303B)</em></a></td>
+                                <td>
+                                    2:00pm-3.30pm
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            Industrial Invited Talks <em>(Room 301AB)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            Workshop DTMBIO 2019 <em>(Room 305)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            Workshop GRLA 2019 <em>(Room 302A)</em>
+                                        </a>
+                            
+                                    </div>
+                            
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            Workshop HENA 2019 <em>(Room 302B)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            Workshop MoST-Rec <em>(Room 303A)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            Workshop AIT 2019 <em>(Room 303B)</em>
+                                        </a>
+                            
+                                    </div>
+                            
+                                </td>
+                            
+                            </tr>
+                            
+                            <tr>
+                                <td>3.30pm – 4.00pm</td>
+                                <td colspan="2" class="center">
+                                    <div>Afternoon Break</div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>11.00am – 12.30pm</td>
-                                <td><a>Workshop KDAH-CIKM 2019 <em>(Room 302B)</em></a></td>
-                                <td><a>Workshop EYRE 2019 <em>(Room 303A)</em></a></td>
-                                <td><a>Workshop KARS 2019 <em>(Room 303B)</em></a></td>
+                                <td>
+                                    4.00pm-5.00pm
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            Industrial Invited Talks <em>(Room 301AB)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            Workshop DTMBIO 2019 <em>(Room 305)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            Workshop GRLA 2019 <em>(Room 302A)</em>
+                                        </a>
+                            
+                                    </div>
+                            
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="">
+                                            Workshop HENA 2019 <em>(Room 302B)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            Workshop MoST-Rec <em>(Room 303A)</em>
+                                        </a>
+                            
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            Workshop AIT 2019 <em>(Room 303B)</em>
+                                        </a>
+                            
+                                    </div>
+                            
+                                </td>
+                            
                             </tr>
-                            <tr>
-                                <td>2:00pm – 3.30pm</td>
-                                <td><a>Workshop HENA 2019 <em>(Room 302B)</em></a></td>
-                                <td><a>Workshop MoST-Rec <em>(Room 303A)</em></a></td>
-                                <td><a>Workshop AIT 2019 <em>(Room 303B)</em></a></td>
-                            </tr>
-                            <tr>
-                                <td>4.00pm – 5.00pm</td>
-                                <td><a>Workshop HENA 2019 <em>(Room 302B)</em></a></td>
-                                <td><a>Workshop MoST-Rec <em>(Room 303A)</em></a></td>
-                                <td><a>Workshop AIT 2019 <em>(Room 303B)</em></a></td>
-                            </tr>
+
                         </table>
                     </div>
                 </div>
