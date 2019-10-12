@@ -723,10 +723,10 @@
                         info = units.eq(index).children('.workshop-info'),
                         lis = info.children('ul').children('li'),
                         isExpanded = descs.eq(index).hasClass('expanded'),
-                        height = lis[0].scrollHeight + (isExpanded ? lis.eq(1).children('dd')[0].scrollHeight : 100) + lis[2].scrollHeight,
+                        height = lis[0].scrollHeight + (isExpanded ? lis.eq(1).children('dd')[0].scrollHeight : 100) + lis[2] ? lis[2].scrollHeight : 0,
                         nameHeight = name.children('h3').height() + name.children('p').height() + 20,
                         res = (height - nameHeight) / 2;
-
+                    console.log(height)
                     name.css('padding-top', res);
                 })
             }
