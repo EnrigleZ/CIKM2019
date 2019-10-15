@@ -60,15 +60,13 @@
         li.huge {
             margin-top: 40px;
             margin-bottom: 20px;
-            /* font-weight: bolder; */
             text-align: left;
-            /* color: #F3CD58; */
             font-size: 36px;
-            background-color: #7C1200;
+            /* background-color: #7C1200; */
             list-style-type: none;
-            /* padding-left: 1em; */
             padding: 5px 1em;
-            color: #FFF;
+            color: #000;
+            /* color: #FFF; */
         }
 
         li.huge>span {
@@ -77,22 +75,11 @@
 
         li.huge>b {
             /* color: #777; */
-            font-size: 24px;
-            font-style: italic;
-            font-weight: normal;
-            margin-left: 1em;
         }
 
         .paper-table {
+            margin-top: 40px;
             width: 100%;
-        }
-
-        .paper-table th {
-            text-align: center;
-            background-color: #7C1200;
-            color: #FFF;
-            font-weight: normal;
-            padding: 10px;
         }
 
         .paper-table tr:nth-child(odd) td {
@@ -121,15 +108,22 @@
             color: #9B9B9B;
         }
 
-        .paper-table th span {
-            color: #9B9B9B;
-            font-weight: bolder;
+        .paper-table thead th {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            text-align: left;
+            font-size: 36px;
+            background-color: #7C1200;
+            list-style-type: none;
+            padding: 5px 1em;
+            color: #FFF;
         }
 
-        .paper-table th b {
+        .paper-table thead th b {
+            font-size: 24px;
+            font-style: italic;
             font-weight: normal;
-            margin-left: 0.6rem;
-            margin-right: 2rem;
+            margin-left: 1em;
         }
     </style>
 </head>
@@ -214,19 +208,12 @@
             <div class="col-md-12 center" style="margin-top: 20px;">
 
                 <div id="list-part">
-                    <div class="title" id="Poster-I">
-                        <li class="huge">
-                            <span>
-                                Poster Session I
-                            </span>
-                            <b>
-                                Nov 6
-                            </b>
-
-                        </li>
-
-                    </div>
-                    <table class="paper-table">
+                    <table class="paper-table" id="Poster-I">
+                        <thead>
+                            <tr>
+                                <th>Poster Session I<b>Nov 6</b></th>
+                            </tr>
+                        </thead>
                         <tbody>
                             <tr>
                                 <td>
@@ -3330,19 +3317,12 @@
                         </tbody>
 
                     </table>
-                    <div class="title" id="Poster-II">
-                        <li class="huge">
-                            <span>
-                                Poster Session II
-                            </span>
-                            <b>
-                                Nov 7
-                            </b>
-
-                        </li>
-
-                    </div>
                     <table class="paper-table">
+                        <thead>
+                            <tr>
+                                <th>Poster Session II<b>Nov 6</b></th>
+                            </tr>
+                        </thead>
                         <tbody>
                             <tr>
                                 <td>
