@@ -194,12 +194,13 @@
             font-style: italic;
             text-decoration: underline;
         }
+
         #register a:hover {
             color: #C96C2D;
         }
 
         @media screen and (min-width: 992px) and (max-width: 1499px) {
-            #news {
+            /* #news {
                 margin-left: -8.33333%;
                 width: 33%;
             }
@@ -210,7 +211,7 @@
 
             #submitpaper {
                 margin-right: -8.33333%;
-            }
+            } */
 
             #schedule {
                 width: 90%;
@@ -358,9 +359,11 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbar-submissions">
                                 <li><a class="dropdown-item" href="callforpapers.html">Call for Research Papers</a></li>
-                                <li><a class="dropdown-item" href="callforworkshops.html">Call for Workshop Proposals</a></li>
+                                <li><a class="dropdown-item" href="callforworkshops.html">Call for Workshop
+                                        Proposals</a></li>
                                 <li><a class="dropdown-item" href="callfordemos.html">Call for Demos</a></li>
-                                <li><a class="dropdown-item" href="callforappliedresearchpapers.html">Call for Applied Research
+                                <li><a class="dropdown-item" href="callforappliedresearchpapers.html">Call for Applied
+                                        Research
                                         Papers</a></li>
                                 <li><a class="dropdown-item" href="callfortutorials.html">Call for Tutorials</a></li>
                             </ul>
@@ -397,7 +400,7 @@
             <div class="textcontent fullwidth" style="border: none">
                 <div class="list-item fullwidth" style="text-align: center; margin: 60px 0">
 
-                    <div class="center" id="register" >
+                    <div class="center" id="register">
                         <a target="_blank" href="http://www.cvent.com/d/7yqvt0">
                             Click to Register Now!
                         </a>
@@ -489,7 +492,7 @@
         <!-- News & KeynoteSpeakers -->
 
         <div class="col-md-10 col-xs-12 col-md-offset-1 col-xs-offset-0">
-            <div class="col-xs-12 col-md-3" id="news">
+            <div class="col-xs-12 col-md-5" id="news">
                 <div class="textpanel">
                     <div class="titlebar">
                         <span class="left">
@@ -511,7 +514,7 @@
                         </dl>
                         <dl>
                             <dt>Oct 13, 2019</dt>
-                            <dd><a href="session.html">Program detail page is online</a></dd>
+                            <dd><a href="session.html">Detailed program page is online</a></dd>
                         </dl>
                         <dl>
                             <dt>Oct 3, 2019</dt>
@@ -604,110 +607,109 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xs-12 col-md-6 keydates" id="keydates">
+            <div class="col-xs-12 col-md-7 keydates" id="keydates">
                 <div class="textpanel">
                     <div class="titlebar">
                         <span class="left">
-                            Important Dates
+                            Program Overview
                             <img src="./elements/keydates/keydates.png">
                         </span>
-                        <!-- <span class="right">
-                        <a href="">more<img src="./elements/news/more.png" alt=""></a>
-                    </span> -->
+                        <span class="right">
+                            <a href="programoverview.html">more<img src="./elements/news/more.png" alt=""></a>
+                        </span>
                     </div>
                     <div class="row date-button-row">
                         <div class="date-button">
                             <a href="javascript:void(0)" onclick="openSingleKeydate('#keydate_papers', '#a_papers')"
                                 id="a_papers">
-                                Research
+                                Keynote
                             </a>
                         </div>
                         <div class="date-button">
                             <a href="javascript:void(0)"
                                 onclick="openSingleKeydate('#keydate_workshops', '#a_workshops')" id="a_workshops">
-                                Workshops
+                                Research
                             </a>
                         </div>
                         <div class="date-button">
                             <a href="javascript:void(0)"
                                 onclick="openSingleKeydate('#keydate_tutorials', '#a_tutorials')" id="a_tutorials">
-                                Tutorials
+                                Poster
                             </a>
                         </div>
-                        <div class="date-button">
+                        <!-- <div class="date-button">
                             <a href="javascript:void(0)" onclick="openSingleKeydate('#keydate_demos', '#a_demos')"
                                 id="a_demos">
-                                Demos
+                                Tutorials
                             </a>
-                        </div>
+                        </div> -->
                         <div class="date-button">
                             <a href="javascript:void(0)" onclick="openSingleKeydate('#keydate_applied', '#a_applied')"
                                 id="a_applied">
-                                Applied
+                                Other
                             </a>
                         </div>
                     </div>
                     <div class="col-xs-12" style="padding-left: 10px;">
                         <!-- <img src="./elements/bg_keydates.png" alt="" class="imgdeco extra"
-                        style="bottom: 30%; right: 20px; opacity: 0.5; width: 100px;"> -->
-                        <div id="keydate_papers">
-                            <ul>
-                                <dl>
-                                    <dt>
-                                        May 15, 2019
-                                    </dt>
-                                    <dd>Research paper abstract submission deadline</dd>
-                                </dl>
-                            </ul>
-                            <ul>
-                                <dl>
-                                    <dt>
-                                        May 22, 2019
-                                    </dt>
-                                    <dd>Research paper submission deadline</dd>
-                                </dl>
-                            </ul>
-                            <ul>
-                                <dl>
-                                    <dt>
-                                        Aug 8, 2019
-                                    </dt>
-                                    <dd>Research paper acceptance notification <span class="notice">(postponed to Aug
-                                            8)</span></dd>
-                                </dl>
-                            </ul>
-                            <ul>
-                                <dl>
-                                    <dt>
-                                        Aug 27, 2019
-                                    </dt>
-                                    <dd>Research paper camera ready submission deadline</dd>
-                                </dl>
-                            </ul>
-                        </div>
+                            style="bottom: 30%; right: 20px; opacity: 0.5; width: 100px;"> -->
                         <div class="hidden" id="keydate_workshops">
                             <ul>
                                 <dl>
                                     <dt>
-                                        Apr 15, 2019
+                                        Nov 4, 2019
                                     </dt>
-                                    <dd>Workshop proposal deadline</dd>
+                                    <dd>Long Research Paper Sessions</dd>
                                 </dl>
                             </ul>
                             <ul>
                                 <dl>
                                     <dt>
-                                        Apr 22, 2019
+                                        Nov 5, 2019
                                     </dt>
-                                    <dd>Workshop acceptance notification</dd>
+                                    <dd>Long, Short and Applied Research Paper Sessions</dd>
                                 </dl>
                             </ul>
                             <ul>
                                 <dl>
                                     <dt>
-                                        Aug 31, 2019
+                                        Nov 6, 2019
                                     </dt>
-                                    <dd>Workshop paper camera ready submission deadline</dd>
+                                    <dd>Long, Short and Applied Research Paper Sessions</span></dd>
+                                </dl>
+                            </ul>
+                        </div>
+                        <div id="keydate_papers">
+                            <ul>
+                                <dl>
+                                    <dt>
+                                        Nov 4, 2019
+                                    </dt>
+                                    <dd>Dr. Steve Maybank: The Fisher-Rao metric in computer vision</dd>
+                                </dl>
+                            </ul>
+                            <ul>
+                                <dl>
+                                    <dt>
+                                        Nov 5, 2019
+                                    </dt>
+                                    <dd>Dr. Jian Pei: Practicing the Art of Data Science</dd>
+                                </dl>
+                            </ul>
+                            <ul>
+                                <dl>
+                                    <dt>
+                                        Nov 6, 2019
+                                    </dt>
+                                    <dd>Dr. Jiawei Han: Automated Construction and Multidimensional Exploration</dd>
+                                </dl>
+                            </ul>
+                            <ul>
+                                <dl>
+                                    <dt>
+                                        Nov 5, 2019
+                                    </dt>
+                                    <dd>Dr. Jianping Shi: Autonomous Driving Towards Mass Production</dd>
                                 </dl>
                             </ul>
                         </div>
@@ -715,102 +717,61 @@
                             <ul>
                                 <dl>
                                     <dt>
-                                        Jul 20, 2019
+                                        Nov 6, 2019
                                     </dt>
-                                    <dd>Tutorial proposal deadline</dd>
+                                    <dd>Poster Session</dd>
                                 </dl>
                             </ul>
                             <ul>
                                 <dl>
                                     <dt>
-                                        Aug 5, 2019
+                                        Nov 7, 2019
                                     </dt>
-                                    <dd>Tutorial acceptance notification</dd>
-                                </dl>
-                            </ul>
-                            <ul>
-                                <dl>
-                                    <dt>
-                                        Aug 27, 2019
-                                    </dt>
-                                    <dd>Tutorial summary camera ready submission deadline</dd>
-                                </dl>
-                            </ul>
-                            <ul>
-                                <dl>
-                                    <dt>
-                                        Aug 29, 2019
-                                    </dt>
-                                    <dd>Website due (slides, program outline)</dd>
+                                    <dd>Poster Session</dd>
                                 </dl>
                             </ul>
                         </div>
                         <div class="hidden" id="keydate_demos">
-                            <ul>
-                                <dl>
-                                    <dt>
-                                        May 16, 2019
-                                    </dt>
-                                    <dd>Demo abstract submission</dd>
-                                </dl>
-                            </ul>
-                            <ul>
-                                <dl>
-                                    <dt>
-                                        May 23, 2019
-                                    </dt>
-                                    <dd>Demo submission deadline (23:59, Anywhere on Earth time)</dd>
-                                </dl>
-                            </ul>
-                            <ul>
-                                <dl>
-                                    <dt>
-                                        Aug 10, 2019
-                                    </dt>
-                                    <dd>Demo acceptance notification</dd>
-                                </dl>
-                            </ul>
-                            <ul>
-                                <dl>
-                                    <dt>
-                                        Sep 1, 2019
-                                    </dt>
-                                    <dd>Demo camera ready submission deadline</dd>
-                                </dl>
-                            </ul>
                         </div>
                         <div class="hidden" id="keydate_applied">
                             <ul>
                                 <dl>
                                     <dt>
-                                        June 17, 2019
+                                        Nov 3, 2019
                                     </dt>
-                                    <dd>Applied research paper abstract submission deadline</dd>
+                                    <dd>Tutorial and Hands-on Tutorial Sessions</dd>
                                 </dl>
                             </ul>
                             <ul>
                                 <dl>
                                     <dt>
-                                        June 22, 2019
+                                        Nov 4, 2019
                                     </dt>
-                                    <dd>Applied research paper submission deadline</dd>
+                                    <dd>Conference Opening, Demo Session and Reception</dd>
                                 </dl>
                             </ul>
                             <ul>
                                 <dl>
                                     <dt>
-                                        Aug 15, 2019
+                                        Nov 5, 2019
                                     </dt>
-                                    <dd>Applied research paper acceptance notification <span class="notice">(postponed
-                                            to Aug 15)</span></dd>
+                                    <dd>Analyticup Workshop, Presentation of Awards and Banquet</dd>
                                 </dl>
                             </ul>
+                            <!-- <ul>
+                                    <dl>
+                                        <dt>
+                                            Nov 6, 2019
+                                        </dt>
+                                        <dd>Poster Session</dd>
+                                    </dl>
+                                </ul> -->
                             <ul>
                                 <dl>
                                     <dt>
-                                        Aug 27, 2019
+                                        Nov 7, 2019
                                     </dt>
-                                    <dd>Applied research paper ready submission deadline</dd>
+                                    <dd>Industrial Plenary Speeches and Workshop Sessions</dd>
                                 </dl>
                             </ul>
                         </div>
@@ -818,7 +779,7 @@
 
                 </div>
             </div>
-            <div class="col-xs-12 col-md-3" id="submitpaper">
+            <div style="display: none" class="col-xs-12 col-md-3" id="submitpaper">
                 <div class="textpanel">
                     <div class="titlebar">
                         <span class="left">
