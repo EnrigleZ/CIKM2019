@@ -126,6 +126,66 @@
             font-weight: normal;
             margin-left: 1em;
         }
+
+
+        .paper-table .highlight {
+            background-color: beige;
+        }
+        .paper-table .highlight .desc {
+            color: #000;
+        }
+
+        #search {
+            z-index: 1000;
+            float: right;
+            margin-top: 30px;
+            margin-right: 15px;
+        }
+
+        #search input {
+            height: 35px;
+        }
+
+        #search button {
+            height: 35px;
+            margin-top: 1px;
+            padding-left: 20px;
+            padding-right: 20px;
+            box-shadow:inset 0px 34px 0px -15px #b54b3a;
+            background-color:#a73f2d;
+            border:1px solid #241d13;
+            display:inline-block;
+            cursor:pointer;
+            color:#ffffff;
+            font-family:Arial;
+            font-size:15px;
+            font-weight:bold;
+            text-decoration:none;
+            text-shadow:0px -1px 0px #7a2a1d;
+        }
+        #search button:hover {
+            background-color:#b34332;
+        }
+        #search button:active {
+            position:relative;
+            top:1px;
+        }
+        #top {
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            background-color: #7C1200;
+            z-index: 1000;
+        }
+        #top div {
+            width: 100%;
+            height: 100%;
+            background-image: url(elements/top.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
     </style>
 </head>
 
@@ -217,6 +277,18 @@
                     <div style="width:auto;height:3px; background:#262626;"></div>
                 </div>
             </div>
+
+
+            <div class="col-md-12" style="z-index: 1000">
+                <div id="search">
+                    <input type="text" name="search" placeholder="Search by title or author">
+                    <button>Search</button>
+                </div>
+            </div>
+
+            <a href="#" id="top">
+                <div></div>
+            </a>
             <div class="col-md-12 center" style="margin-top: 20px;">
 
                 <div id="list-part">
@@ -6386,6 +6458,7 @@
         </div>
     </div>
     <!-- footer -->
+    <script src="./js/search.js?v=1"></script>
 </body>
 
 </html>
