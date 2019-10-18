@@ -7,15 +7,19 @@ jQuery(document).ready(function($) {
 
     $('#search button').on('click', function() {
         const window_h = $(window).height()
+        var match_str = 'hidden trick'
         html.stop()
 
         if (results === null) {
             results = []
 
             const str = $('#search input').val().trim().toLowerCase()
-
+            if (str && str === match_str) {
+                alert('Congratulations!  O O')
+                results = null
+                return
+            }
             if (str.length === 0) return
-
 
             for (let i = 0; i < infos.length; ++i) {
                 const node = infos.eq(i)
