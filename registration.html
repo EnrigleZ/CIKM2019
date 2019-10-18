@@ -163,11 +163,18 @@
             font-size: 24px;
             transition: 0.3s all ease-in-out;
             color: #FFF !important;
+            z-index: 9999;
         }
 
         .reg-button:hover {
             background: transparent;
             color: #7C1200 !important;
+        }
+
+        @media screen and (max-width:768px) {
+            .reg-button {
+                /* width:  */
+            }
         }
     </style>
 </head>
@@ -263,10 +270,10 @@
                 </div>
                 <div class="col-md-12 center" style="float: left; margin-top: 40px;">
                     <h2 style="margin-bottom: 30px;">CIKM 2019 Registration</h2>
-                    <div class="textcontent fullwidth" style="border: none">
-                        <div class="list-item fullwidth" style="text-align: center; margin: 60px 0">
+                    <!-- <div class="textcontent fullwidth" style="border: none">
+                        <div class="list-item fullwidth" style="text-align: center; margin: 60px 0"> -->
 
-                            <div class="center">
+                            <div class="center" style="margin-bottom: 40px;">
                                 <a target="_blank" href="http://www.cvent.com/d/7yqvt0">
                                     <button type="button" class="btn reg-button">
                                         Register Now!
@@ -274,8 +281,8 @@
                                 </a>
                             </div>
                             <!-- href="http://www.cvent.com/d/7yqvt0"  -->
-                        </div>
-                    </div>
+                        <!-- </div>
+                    </div> -->
                     <div class="fullwidth" style="float: left;">
                         <div class="subtitle">
                             <li><span>Instructions</span></li>
