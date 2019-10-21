@@ -405,9 +405,6 @@ span.statcounter {
 	height: 100%;
 	/* padding: 7%; */
 }
-.img-wrap.wide .img-container {
-	padding-bottom: 50%;
-}
 
 .img-wrap img.date {
     width: 30%;
@@ -424,26 +421,33 @@ span.statcounter {
 	/* min-height: 270px; */
 }
 
-#keynotespeakers>.bottom-title {
+.bottom-title {
 	padding: 0;
 	height: 45px;
 	background-image: url(../elements/keynote_bg.png);
 	background-size: cover;
 }
-#keynotespeakers .bottom-title-text {
+
+#sponsors .bottom-title {
+	background-image: url(../elements/sponsor_bg.png)
+}
+
+.bottom-title-text {
 	text-align: center;
 	line-height: 45px;
 	font-size: 30px;
 }
 
-#keynotespeakers .bottom-title-text>a {
+.bottom-title-text>a {
 	color: #99742B;
 }
-#keynotespeakers:hover .bottom-title-text>a {
+
+#keynotespeakers:hover .bottom-title-text>a,
+#sponsors:hover .bottom-title-text>a {
 	color: #FFF;
 }
 
-#keynotespeakers .bottom-title>span {
+.bottom-title>span {
 	position: absolute;
 	right: 20px;
 	bottom: 2px;
@@ -564,13 +568,16 @@ span.statcounter {
 	margin: auto 0.3%;
 }
 .sponsor-item {
-	width: 10%;
-	padding: 0.4% 0.3%;
+	width: 33.333333%;
+	padding: 20px;
 	float: left;
 }
-.sponsor-item.wide {
-	width: 12%;
+.sponsor-item>.img-container {
+	padding-bottom: 20%;
 }
+/* .sponsor-item.wide {
+	width: 50%;
+} */
 
 #footer {
 	width: 100%;
@@ -735,7 +742,41 @@ span.statcounter {
 	display: none !important;
 }
 
+.sponsor-type {
+	width: 100%;
+	display: inline-block;
+	margin-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: #BBB dashed 2px;
+}
+.sponsor-type:last-of-type {
+	border: none;
+}
 
+.sponsor-type .sponsor-type-title {
+	color: #99742B;
+	min-height: 60px;
+	background-size: 60px 60px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 70px;
+    padding-top: 13px;
+    font-size: 25px;
+
+}
+
+.sponsor-type-title.platinum {
+	background-image: url(../elements/sponsors/cup-platinum.png)
+}
+.sponsor-type-title.gold {
+	background-image: url(../elements/sponsors/cup-gold.png)
+}
+.sponsor-type-title.sliver {
+	background-image: url(../elements/sponsors/cup-silver.png)
+}
+.sponsor-type-title.bronze {
+	background-image: url(../elements/sponsors/cup-bronze.png)
+}
 
 
 /* ------------------  */
@@ -838,7 +879,7 @@ span.statcounter {
 	#keydates .textpanel>.left{
 		border-right: none !important;
 	}
-	.sponsor-item.wide {
+	.sponsor-item {
 		width: 100%;
 	}
 
