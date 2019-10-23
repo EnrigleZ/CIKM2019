@@ -188,6 +188,71 @@
         .agenda dt {
             font-weight: normal;
         }
+
+        .paper-table {
+            margin-top: 40px;
+            width: 100%;
+        }
+
+        .paper-table tr:nth-child(odd) td {
+            background-color: #E0E0E0;
+        }
+
+        .paper-table td {
+            text-align: left;
+            padding: 15px 30px;
+            font-size: 14px;
+            background-color: #FFF;
+        }
+
+        .paper-table td .name {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 4px;
+            transition: 0.3s all ease-in-out;
+        }
+
+        .paper-table td .time {
+            color: #7C1200;
+            font-size: 22px;
+            font-style: italic;
+        }
+
+        .paper-table tr:hover td .name {
+            color: #D8853A;
+        }
+
+        .paper-table td .desc {
+            color: #9B9B9B;
+        }
+
+        .paper-table thead th {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            text-align: left;
+            font-size: 36px;
+            background-color: #7C1200;
+            list-style-type: none;
+            padding: 5px 1em;
+            color: #FFF;
+            font-weight: normal;
+        }
+
+        .paper-table thead th b {
+            font-size: 24px;
+            font-style: italic;
+            font-weight: normal;
+            margin-left: 1em;
+        }
+
+
+        .paper-table .highlight {
+            background-color: beige;
+        }
+
+        .paper-table .highlight .desc {
+            color: #000;
+        }
     </style>
 </head>
 
@@ -254,16 +319,18 @@
                                 <li><a class="dropdown-item" href="callfortutorials.html">Call for Tutorials</a></li>
                             </ul>
                         </li>
-                        <li><a href="callforsponsorship.html">Sponsorship</a></li><li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbar-attendings" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Organizers
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbar-attendings">
-                                    <li><a class="dropdown-item" href="organizingcommittee.html">Organizing Committee</a></li>
-                                    <li><a class="dropdown-item" href="pcmembers.html">Program Committee</a></li>
-                                </ul>
-                            </li>
+                        <li><a href="callforsponsorship.html">Sponsorship</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbar-attendings" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Organizers
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbar-attendings">
+                                <li><a class="dropdown-item" href="organizingcommittee.html">Organizing Committee</a>
+                                </li>
+                                <li><a class="dropdown-item" href="pcmembers.html">Program Committee</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -439,6 +506,366 @@
                                     </dt>
                                 </dl>
                             </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 center" style="margin-top: 20px; padding: 0;">
+
+                        <div id="list-part">
+                            <table class="paper-table" id="Poster-I">
+                                <thead>
+                                    <tr>
+                                        <th>Alibaba Session Day Schedule<b>9:30AM – 6:30PM, Nov 5, Room 302B</b></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="info">
+                                                <div class="time">
+                                                    9:30AM - 10:30AM
+                                                </div>
+                                                <div class="name">
+                                                    Knowledge Graph Construction and Application in Practice
+                                                </div>
+                                                <div class="desc">
+                                                    Yanghua Xiao (Fudan University)
+                                                </div>
+                                                <div class="abstract">
+                                                    Since its birth in 2012, Knowledge Graph has achieved enormous
+                                                    progress and become one of the most important knowledge
+                                                    representation methods in the era of big data. It has been
+                                                    recognized as one of the most typical knowledge representations of
+                                                    knowledge engineering in big data and a core technology for the
+                                                    realization of cognitive intelligence, which significantly helps
+                                                    promote the development and application of artificial intelligence.
+                                                    In the past few years, knowledge graph has been widely used in a
+                                                    variety of large-scale applications. In this talk, I will introduce
+                                                    the main endeavors and key technologies in the automated
+                                                    construction and application of large-scale knowledge graphs. In
+                                                    particular, I will focus on low-cost automated knowledge acquisition
+                                                    and knowledge-guided applications including semantic search and
+                                                    intelligent recommendation in specific scenarios such as e-commerce.
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="info">
+                                                <div class="time">
+                                                    10:30AM - 11:00AM
+                                                </div>
+                                                <div class="name">
+                                                    Large-scale Image Search and Recognition </div>
+                                                <div class="desc">
+                                                    Pan Pan (Alibaba Group, DAMO Academy) </div>
+                                                <div class="abstract">
+                                                    Large scale image search and recognition are the fundamental topics
+                                                    in computer vision, and have wide range of applications in
+                                                    industries. In this talk, first we will introduce the motivation and
+                                                    challenges in large scale image search and recognition. After that
+                                                    we will illustrate our technology innovations. In the end, the
+                                                    applications of those technologies in Alibaba will be shown.
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="info">
+                                                <div class="time">
+                                                    11:00AM - 11:30AM
+                                                </div>
+                                                <div class="name">
+                                                    Multi-View Multi-Label Learning with View-Specific Information
+                                                    Extraction
+                                                </div>
+                                                <div class="desc">
+                                                    Xiaobo Wang (Alibaba Group, Youku) </div>
+                                                <div class="abstract">
+                                                    Multi-view multi-label learning serves an important framework to
+                                                    learn from objects with diverse representations and rich semantics.
+                                                    Existing multi-view multi-label learning techniques focus on
+                                                    exploiting shared subspace for fusing multi-view representations,
+                                                    where helpful view-specific information for discriminative modeling
+                                                    is usually ignored. We proposed a novel multi-view multi-label
+                                                    learning approach named SIMM which leverages shared subspace
+                                                    exploitation and view-specific information extraction. For shared
+                                                    subspace exploitation, SIMM jointly minimizes confusion adversarial
+                                                    loss and multi-label loss to utilize shared information from all
+                                                    views. For view-specific information extraction, SIMM enforces an
+                                                    orthogonal constraint w.r.t. the shared subspace to utilize
+                                                    view-specific discriminative information. Extensive experiments on
+                                                    youku and several public data sets clearly show the favorable
+                                                    performance of SIMM against other state-of-the-art multi-view
+                                                    multi-label learning approaches.
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="info">
+                                                <div class="time">
+                                                    11:30AM -12:00PM
+                                                </div>
+                                                <div class="name">
+                                                    The Technology and Application of Machine Translation Technology for
+                                                    E-Commerce in Alibaba </div>
+                                                <div class="desc">
+                                                    Weihua Luo (Alibaba Group, DAMO Academy)
+                                                </div>
+                                                <div class="abstract">
+                                                    Machine translation is an essential service for cross-border
+                                                    e-commerce. The international business of Alibaba, such as
+                                                    Alibaba.com, AliExpress, LAZADA, have diverse demands for
+                                                    translation service which is developed by the translation technology
+                                                    team of Alibaba. In this talk, the speaker will explain the
+                                                    algorithm and engineering method of machine translation developed by
+                                                    Alibaba, as well as the best practice for the typical application
+                                                    scenarios of different BUs. Specifically, he will introduce the
+                                                    innovative methods for specific problems arising in e-commerce,
+                                                    explain the comprehensive solutions applied in product translation,
+                                                    search translation, IM, etc.. At last, he will introduce the main
+                                                    challenges and the future work. </div>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="info">
+                                                <div class="time">
+                                                    12:00PM - 12:30PM
+                                                </div>
+                                                <div class="name">
+                                                    When AI meets security: How do we successfully leverage this synergy
+                                                    in Alibaba
+                                                </div>
+                                                <div class="desc">
+                                                    Quan Lu (Alibaba Group, Security Department)
+                                                </div>
+                                                <div class="abstract">
+                                                    Artificial intelligence is the major technology that leads the
+                                                    innovation and changes almost every industry in the world.
+                                                    Cybersecurity is the key technology used in day-to-day business
+                                                    practices to protect systems, networks, data, and programs from
+                                                    digital attacks. In security department of Alibaba, we have seen the
+                                                    real revolution happening in the interaction between these two
+                                                    areas. In particular, we make smarter security & risk management
+                                                    system by leveraging new developed AI technologies, and we also
+                                                    protect AI system more effectively with advanced security concepts
+                                                    and tactics. In this talk, I will describe how we apply the latest
+                                                    developments in computer vision, natural language processing, and
+                                                    knowledge representation in bot traffic detection, online fraud
+                                                    identification, and intellectual property protection in e-commerce
+                                                    environment. I will also talk about our recent research on improving
+                                                    the robustness of AI system to attacks through self-supervised
+                                                    adversarial training.
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="info">
+                                                <div class="time">
+                                                    12:30PM - 2:00PM
+                                                </div>
+                                                <div class="name">
+                                                    Poster Sessions
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="info">
+                                                <div class="time">
+                                                    2:00PM - 3:00PM
+                                                </div>
+                                                <div class="name">
+                                                    Stable Learning: The Convergence of Causal Inference and Machine
+                                                    Learning
+                                                </div>
+                                                <div class="desc">
+                                                    Peng Cui (Tsinghua University)
+                                                </div>
+                                                <div class="abstract">
+                                                    Predicting future outcome values based on their observed features
+                                                    using a model estimated on a training data set in a common machine
+                                                    learning problem. Many learning algorithms have been proposed and
+                                                    shown to be successful when the test data and training data come
+                                                    from the same distribution. However, the best-performing models for
+                                                    a given distribution of training data typically exploit subtle
+                                                    statistical relationships among features, making them potentially
+                                                    more prone to prediction error when applied to test data whose
+                                                    distribution differs from that in training data. How to develop
+                                                    learning models that are stable and robust to shifts in data is of
+                                                    paramount importance for both academic research and real
+                                                    applications. Causal inference, which refers to the process of
+                                                    drawing a conclusion about a causal connection based on the
+                                                    conditions of the occurrence of an effect, is a powerful statistical
+                                                    modeling tool for explanatory and stable learning. In this talk, we
+                                                    focus on causal inference and stable learning, aiming to explore
+                                                    causal knowledge from observational data to improve the
+                                                    interpretability and stability of machine learning algorithms.
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="info">
+                                                <div class="time">
+                                                    3:00PM - 3:30PM
+                                                </div>
+                                                <div class="name">
+                                                    XDL+AI·OS: An End-to-End AI Platform in Alibaba for Search,
+                                                    Recommendation and Ads
+                                                </div>
+                                                <div class="desc">
+                                                    Ralph Shen (Alibaba Group, Search and Alimama Department)
+                                                </div>
+                                                <div class="abstract">
+                                                    XDL is an open-sourced DL framework designed for high dimensional
+                                                    sparse data. AI·OS (AI Online Serving) is a big data serving
+                                                    platform with DL inference capabilities. XDL+AI·OS is being
+                                                    developed into an end-2-end AI experiment, training and serving
+                                                    platform.
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="info">
+                                                <div class="time">
+                                                    3:30PM - 4:00PM
+                                                </div>
+                                                <div class="name">
+                                                    AliGraph: An Industrial Graph Neural Network Platform
+                                                </div>
+                                                <div class="desc">
+                                                    Kun Zhao (Alibaba Group, AliCloud)
+                                                </div>
+                                                <div class="abstract">
+                                                    Graph Neural Network (GNN) has become an effective way to address
+                                                    the graph learning problem. To promote graph data into the framework
+                                                    of deep learning, new programming pattern and interfaces,
+                                                    large-scale heterogeneous graph data, and diversified neural network
+                                                    representation need to be resolved. We introduce AliGraph, a
+                                                    distributed computation system that bridges graph and neural
+                                                    network. It empowers end-to-end solutions for GNN researchers. As an
+                                                    independent and portable system, the interfaces of AliGraph can be
+                                                    integrated with any tensor engine that is used for expressing neural
+                                                    network models. By co-designing the flexible Gremlin-like interfaces
+                                                    for both graph query and sampling, users can customize data
+                                                    accessing pattern freely. Moreover, AliGraph shows excellent
+                                                    performance and scalability. It allows pluggable operators to adapt
+                                                    to the fast development of GNN community and outperforms existing
+                                                    systems an order of magnitude in terms of graph building and
+                                                    sampling. A heterogeneous and attributed graph with tens of billions
+                                                    of edges and billions of nodes can be well trained based on
+                                                    AliGraph.
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="info">
+                                                <div class="time">
+                                                    4:00PM - 4:30PM
+                                                </div>
+                                                <div class="name">
+                                                    TDM: Learned Tree-based Index and Deep Retrieval Model for
+                                                    Large-scale Recommendation
+                                                </div>
+                                                <div class="desc">
+                                                    Han Li (Alibaba Group, Alimama Department)
+                                                </div>
+                                                <div class="abstract">
+                                                    For the main Internet service providers like search engine or
+                                                    recommender system, the exponentially increasing data volume brings
+                                                    big challenges for accurate matching between users and contents.
+                                                    Large-scale recommender systems, for example, are usually confronted
+                                                    with computational problems due to the enormous corpus size. To
+                                                    retrieve and recommend the most relevant items to users under
+                                                    response time limits, resorting to efficient index structure is an
+                                                    effective and practical solution. In Alibaba display advertising
+                                                    team, we propose a framework to use the learned tree-based index
+                                                    along with powerful deep retrieval models to provide fast and
+                                                    accurate user interests matching from the enormous entire corpus.
+                                                    The remarkable progress makes it possible to perform one-stage
+                                                    recommendation from large corpus with advanced deep models without
+                                                    network structure limitation.
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="info">
+                                                <div class="time">
+                                                    4:30PM - 5:00PM
+                                                </div>
+                                                <div class="name">
+                                                    A Large Scale Distributed Graph Learning System (Euler) and Its
+                                                    Applications in Alibaba’s Sponsored Search Platform
+                                                </div>
+                                                <div class="desc">
+                                                    Liang Wang (Alibaba Group, Alimama Department)
+                                                </div>
+                                                <div class="abstract">
+                                                    Graph is an important data representation which has been extensively
+                                                    studied in the literature. However, existing methods are mostly
+                                                    deployed on small scale data containing less than millions of edges.
+                                                    In this talk, we will present our effort to apply graph learning
+                                                    methods to Alibaba’s sponsored search platform. The graph data
+                                                    contains billions of nodes representing the users, products (and
+                                                    advertisers) and search queries, and hundreds of billions of edge
+                                                    linking them together reflecting various relations (e.g.
+                                                    click/purchase behaviour, semantic similarity, relevance) between
+                                                    these nodes. We propose an efficient sampling method to make the
+                                                    training/inference procedure computationally feasible on such a
+                                                    large graph. And parallel deep neural network architecture with
+                                                    attention mechanism is leveraged to make fully use of the
+                                                    heterogeneous graph structure. By exploring the graph structural
+                                                    information, we largely improve the performance of our sponsored
+                                                    search system. Our work has been published as an open source project
+                                                    Euler available at <a href="https://github.com/alibaba/euler" target="_blank" style="color: #7C1200;">https://github.com/alibaba/euler</a>.
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="info">
+                                                <div class="time">
+                                                    5:00PM - 6:00PM
+                                                </div>
+                                                <div class="name">
+                                                    AnalytiCup: Alibaba E-Commerce AI Challenge<br />
+                                                    Award Ceremony and Finalists Reports
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
 
