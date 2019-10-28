@@ -1,0 +1,515 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="bookmark" href="favicon.ico" />
+    <meta name="keywords" content="speakers,cikm,industry">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link id="bootstrap_221" rel="stylesheet" type="text/css" class="library"
+        href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script id="jquery_172" type="text/javascript" class="library"
+        src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script id="bootstrap_221" type="text/javascript" class="library"
+        src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="css/banner.css?v=6.2" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+    <title>Industry Speakers - CIKM 2019</title>
+    <style type="text/css">
+        .textpanel {
+            color: #B85612;
+            font-size: 18px;
+        }
+
+        .textpanel .button {
+            color: white;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            /* max-width: unset; */
+        }
+
+        .textpanel ul {
+            padding-left: 0;
+            margin-bottom: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .textpanel a {
+            color: #F3CD58;
+        }
+
+        .textpanel .button:hover {
+            color: #F3CD58;
+        }
+
+        .metacontainer h1,
+        .metacontainer h2 {
+            font-weight: bold;
+        }
+
+        .title h1 {
+            margin: 0;
+        }
+
+        .speaker-unit {
+            margin-bottom: 60px;
+        }
+
+        .speak-title {
+            position: relative;
+            color: #7C1200;
+            margin: 30px 0;
+        }
+
+        .speak-title>span {
+            /* padding: 5px 35px; */
+            font-size: 24px;
+        }
+
+        .speaker-info {
+            position: relative;
+            float: left;
+        }
+
+        .speaker-info img {
+            width: 100%;
+        }
+
+        .speaker-info h1 {
+            color: #000;
+            font-size: 26px;
+        }
+
+        .speaker-info h1>span {
+            padding-left: 10px;
+            font-size: 14px;
+        }
+
+        .speaker-info .sub-title>li {
+            color: #F3CD58;
+        }
+
+        .speaker-info .sub-title>li>span {
+            color: #000;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <img class="fullwidth" src="elements/top_deco.png" style="position: absolute">
+        <img class="imgdeco rightdecoration" src="elements/right_deco.png" alt="">
+        <div>
+            <a href="index.html"><img class="logo" src="elements/LOGO.png"></a>
+        </div>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="left navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#header-navbar" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="header-navbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbar-program" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Program
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbar-program">
+                                <li><a class="dropdown-item" href="programoverview.html">Program Overview</a></li>
+                                <li><a class="dropdown-item" href="session.html">Detailed Program</a></li>
+                                <li><a class="dropdown-item" href="keynotespeakers.html">Keynote Speakers</a></li>
+                                <li><a class="dropdown-item" href="workshops.html">Workshops</a></li>
+                                <li><a class="dropdown-item" href="tutorials.html">Tutorials</a></li>
+                                <li><a class="dropdown-item" href="posters.html">Posters</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbar-attendings" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Attending
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbar-attendings">
+                                <li><a class="dropdown-item" href="registration.html">Registration</a></li>
+                                <li><a class="dropdown-item" href="accomodation.html">Accommodation</a></li>
+                                <li><a class="dropdown-item" href="venue.html">Venue Information</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="challenge.html">AnalytiCup Challenge</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbar-submissions" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Call for Contributions
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbar-submissions">
+                                <li><a class="dropdown-item" href="callforpapers.html">Call for Research Papers</a></li>
+                                <li><a class="dropdown-item" href="callforworkshops.html">Call for Workshop
+                                        Proposals</a></li>
+                                <li><a class="dropdown-item" href="callfordemos.html">Call for Demos</a></li>
+                                <li><a class="dropdown-item" href="callforappliedresearchpapers.html">Call for Applied
+                                        Research
+                                        Papers</a></li>
+                                <li><a class="dropdown-item" href="callfortutorials.html">Call for Tutorials</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="callforsponsorship.html">Sponsorship</a></li><li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbar-attendings" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Organizers
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbar-attendings">
+                                    <li><a class="dropdown-item" href="organizingcommittee.html">Organizing Committee</a></li>
+                                    <li><a class="dropdown-item" href="pcmembers.html">Program Committee</a></li>
+                                </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <div class="container metacontainer" id="main-container" style="margin-top: 20px; margin-bottom: 20px">
+        <div class="col-md-offset-1 col-xs-offset-0 col-md-10">
+            <div class="title col-md-12">
+                <img src="./elements/oc_title.png" alt="" class="left extra" style="height: 70px; padding-left: 30px;">
+                <div class="left" style="margin-left: 5px;">
+                    <h1>INDUSTRY SPEAKERS</h1>
+                    <div style="width:auto;height:3px; background:#262626;"></div>
+                    <!-- <div><span style="line-height: 1; font-weight: 600; font-size: 16px">Location: Plenary Hall B</span>
+                    </div> -->
+                </div>
+            </div>
+            <div class="col-md-12" style="margin-top: 40px">
+                <div class="speaker-unit col-md-12" id="">
+                    <div class="speaker-info">
+                        <div class="col-sm-2 col-xs-12">
+                            <img src="elements/industryspeakers/shumingshi.png" alt="">
+                        </div>
+                        <div class="col-sm-10 col-xs-12">
+                            <h1>Shuming Shi <span>Director of Natural Language Processing Center, Tencent AI Lab</span>
+                            </h1>
+                            <div class="speak-title">
+                                <span>Title: Text Understanding and Generation for Chatbots</span>
+                            </div>
+                            <div class="sub-title">
+                                <li><span>Abstract</span></li>
+                            </div>
+                            <div>
+                                <p>
+                                    In this talk, we present recent research progress at Tencent AI Lab in natural language understanding (NLU) and natural language generation (NLG), with the goal of enhancing open-domain conversation systems.
+                                </p>
+                            </div>
+                            <div class="sub-title">
+                                <li><span>Short Bio</span></li>
+                            </div>
+                            <div>
+                                <p>
+                                    Dr. Shuming Shi is a principal researcher of Tencent and Director of Natural Language Processing Center, Tencent AI Lab. His research interests include knowledge mining, natural language understanding, and chatbots. He has published over 60 research papers in leading conferences and journals, such as ACL, EMNLP, AAAI, IJCAI, WWW, SIGIR, TACL. He has been serving in the program committee of many conferences including ACL, EMNLP, WWW, AAAI, etc.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="speaker-unit col-md-12" id="">
+                    <div class="speaker-info">
+                        <div class="col-sm-2 col-xs-12">
+                            <img src="elements/industryspeakers/weicui.png" alt="">
+                        </div>
+                        <div class="col-sm-10 col-xs-12">
+                            <h1>Wei Cui <span>Squirrel AI Chief Scientist & Co-Founder</span>
+                            </h1>
+                            <div class="speak-title">
+                                <span>Title: Developing a Super One-on-One Tutor with AI and Big data</span>
+                            </div>
+                            <div class="sub-title">
+                                <li><span>Abstract</span></li>
+                            </div>
+                            <div>
+                                <p>
+                                    Yixue Squirrel AI is the leading AI + adaptive education innovator at the forefront of AI revolution. Squirrel AI Learning has established more than 2,300 learning centres in China within 4 years, and is included in the TOP 20 Chinese AI Unicorn Companies in 2019.
+                                </p>
+                                <p>
+                                    In our talk, we will introduce the related AI techniques used by Squirrel AI and the product evaluation process. The system is composed of student model, pedagoy model, domain model, and prediction model. The techniques used by Squirrel AI include machine learning, information theory, bayesian theory, neural networks, genetic algorithm, graph theory, probabilistic graphical model.
+                                </p>
+                            </div>
+                            <!-- <div class="sub-title">
+                                <li><span>Short Bio</span></li>
+                            </div>
+                            <div>
+                                <p>
+                                    
+                                </p>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="speaker-unit col-md-12" id="">
+                    <div class="speaker-info">
+                        <div class="col-sm-2 col-xs-12">
+                            <img src="elements/industryspeakers/ruishuasong.png" alt="">
+                        </div>
+                        <div class="col-sm-10 col-xs-12">
+                            <h1>Ruihua Song <span>Principle Data and Applied Science Lead</span>
+                            </h1>
+                            <div class="speak-title">
+                                <span>Title: Research and Practice in Xiaoice: How We Make an AI Human-Like</span>
+                            </div>
+                            <div class="sub-title">
+                                <li><span>Abstract</span></li>
+                            </div>
+                            <div>
+                                <p>
+                                    Xiaoice is an AI system originally developed by Microsoft in China, based on an emotional computing framework. Since the launch in 2014, Xiaoice has become one of the most popular AI products in China. To many real-world users of Xiaoice, she (Xiaoice) is a virtual, and meanwhile, a “real” friend. They are willing to open up to her and share their thoughts and feelings. Xiaoice is always there for them and feedbacks in her unique styles. According to our records, a user had continued talking with Xiaoice for about 30 hours in a session. Xiaoice is an artist, a singer, and a storyteller. She learns to compose poems and published her first poetry collection in 2017. She paints her “heart” with a brush and releases new songs. Also, she is a “celebrity”. In China and Japan, she has been involved in about 7,000 hours of television and radio programming. By revealing our work in creating Xiaoice, I will discuss how we make an AI human-like in two aspects: communication as a human being and being independent as a creator. Furthermore, inspired by the work in cognition science and psychology, we are trying to build the inner world of Xiaoice. Finally, I will discuss future opportunities and challenges in building next generation human-like AI.
+                                </p>
+                            </div>
+                            <div class="sub-title">
+                                <li><span>Short Bio</span></li>
+                            </div>
+                            <div>
+                                <p>
+                                    Dr. Ruihua Song is Principle Data and Applied Science Lead of Microsoft XiaoIce. Before joining XiaoIce, she worked for Microsoft Research Asia from 2003 to 2017 as a lead researcher. In May 2017, her works on image inspired poetry generation was used to generate the first AI created and published collection of poems, "The Sunshine Lost Windows". Her research interests include information retrieval, data mining and artificial intelligence, in particular AI based creation and multi-modality. She served international conferences, such as CIKM (as area chair), SIGIR (as a senior PC), WWW, KDD, AAAI, etc., and journals, such as Information Retrieval (as editorial board), TOIS, TKDE, etc. She has published more than 50 papers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="speaker-unit col-md-12" id="">
+                    <div class="speaker-info">
+                        <div class="col-sm-2 col-xs-12">
+                            <img src="elements/industryspeakers/zhongyuanwang.png" alt="">
+                        </div>
+                        <div class="col-sm-10 col-xs-12">
+                            <h1>Zhongyuan Wang <span>Senior Researcher & Senior Director, Head of Search and NLP Department, Meituan-Dianping</span>
+                            </h1>
+                            <div class="speak-title">
+                                <span>Title: Meituan Brain: A Knowledge Graph Helping People Eat Better and Live Better</span>
+                            </div>
+                            <div class="sub-title">
+                                <li><span>Abstract</span></li>
+                            </div>
+                            <div>
+                                <p>
+                                    In China, people are familiar with some transactional super apps such as Meituan and Dianping, which are amalgamations of lifestyle services that connect hundreds of millions of customers to local businesses. These apps have reshaped life for hundreds of millions of people throughout China’s cities, expediting the booking and delivery of services such as food, hotel stays, and movie tickets. Artificial intelligence techniques play a critical role behind these apps. In this talk, I will introduce how we build the world’s largest food and entertainment knowledge graph called “Meituan Brain”. Upon this knowledge graph, I will showcase some intelligent scenarios such as a personal assistant and a merchant assistant to help people eat better and live better.
+                                </p>
+                            </div>
+                            <div class="sub-title">
+                                <li><span>Short Bio</span></li>
+                            </div>
+                            <div>
+                                <p>
+                                    Zhongyuan Wang currently is a Senior Researcher and Senior Director of Meituan-Dianping, a Chinese leading e-commerce platform for location-based food delivery services, broad lifestyle, and travel services. He is also the head of Search and NLP Department of Meituan-Dianping. His team builds the location-based search system, knowledge graph, and NLP platform. Before Meituan-Dianping, he was a Research Scientist at Facebook, and led Facebook Query Understanding & Document Understanding (NLP) efforts. More specifically, his team built the world’s largest query entity linking and document entity linking production services. These services handle billions of Facebook queries and posts every day. Before Facebook, He was a Lead Researcher at Microsoft Research. He led several projects: Probase (a.k.a. Microsoft Concept Graph, knowledge mining from Web), Enterprise Dictionary (knowledge mining from Enterprise), and Digital ME (a personal artificial intelligent assistant). He has published 30+ papers (including ICDE 2015 Best Paper Award) in referred international conferences, such as VLDB, ICDE, IJCAI, AAAI, CIKM, etc. He was invited to serve as an expert reviewer of papers in top conferences and journals, including CIKM, SIGKDD, IJCAI, TKDE, WWWJ, etc. His research interests include knowledge graph, natural language processing, information retrieval, and deep learning.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="speaker-unit col-md-12" id="">
+                    <div class="speaker-info">
+                        <div class="col-sm-2 col-xs-12">
+                            <img src="elements/industryspeakers/Yandong Liu.png" alt="">
+                        </div>
+                        <div class="col-sm-10 col-xs-12">
+                            <h1>Yandong Liu <span>Chief Technology Officer, Strava</span>
+                            </h1>
+                            <div class="speak-title">
+                                <span>Title: The Discovery Challenge: AI + ML and the Future of Sport</span>
+                            </div>
+                            <div class="sub-title">
+                                <li><span>Abstract</span></li>
+                            </div>
+                            <div>
+                                <p>
+                                    Strava is the world’s largest sports participation platform, adding 1 million new athletes every month, and a leader in its category, solving hard technical and scientific problems (geospatial + mapping) using algorithms and AI. In this presentation, Yandong Liu, Chief Technology Officer of Strava will share how the social network for athletes understands content from the platform’s 15 million weekly uploads, how it understands its athletes across 195 home countries, and how Strava is using machine learning to personalize members’ experiences and connect athletes with content that motivates them and fosters discovery - both now and in the future. 
+                                </p>
+                            </div>
+                            <div class="sub-title">
+                                <li><span>Short Bio</span></li>
+                            </div>
+                            <div>
+                                <p>
+                                    Yandong Liu is the CTO of Strava,  the social network for athletes, based in San Francisco, California. Liu is passionate about using artificial intelligence and machine learning to enhance personalization and build a richer experience for new athletes.
+                                </p>
+                                <p>
+                                    Prior to Strava, Yandong was VP Engineering at NetEase, a leading tech company in Beijing, China where he worked with teams to leverage latest machine learning technologies to deliver the most personalized news reading experience. Before that he spent 3 years at Uber leading the development of its Machine Learning platform. 
+                                </p>
+                                <p>
+                                    He holds a B.S. from China and a M.S. from Emory University in computer science, and was studying towards a Ph.D at Carnegie Mellon University before devoting himself to his professional career in 2011.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="speaker-unit col-md-12" id="">
+                    <div class="speaker-info">
+                        <div class="col-sm-2 col-xs-12">
+                            <img src="elements/industryspeakers/leili.png" alt="">
+                        </div>
+                        <div class="col-sm-10 col-xs-12">
+                            <h1>Lei Li <span>ByteDance AI Lab</span>
+                            </h1>
+                            <div class="speak-title">
+                                <span>Title: Multi-lingual cross-modal machine translation at global scale</span>
+                            </div>
+                            <div class="sub-title">
+                                <li><span>Abstract</span></li>
+                            </div>
+                            <div>
+                                <p>
+                                    With the rise of global content sharing platforms such as Tiktok, Twitter, and Instagram, content sharing across many languages has been a real need. Machine translation provides essential tools for cross-lingual online content sharing and communication. In this talk, we will highlight a few key problems and challenges: namely resource scarcity, the lack of benchmarks for certain domains, and the call for high performance translation algorithms. We will present an end-to-end speech-to-text translation model. We will present two new tasks along with benchmarks, document-to-document machine translation and video guided machine translation. We will establish metrics to evaluate coherence for long text translation in addition to the traditional BLEU score. We will present novel and scalable methods with linear-time translation and non-autoregressive decoding. Finally, we will present the applications of machine translation for Tiktok and Topbuzz platforms.
+                                </p>
+                            </div>
+                            <div class="sub-title">
+                                <li><span>Short Bio</span></li>
+                            </div>
+                            <div>
+                                <p>
+                                    Dr. Lei Li is Director and a research scientist of ByteDance AI Lab. His research interest is on machine learning and natural language understanding and generation. Lei received his B.S. in Computer Science and Engineering from Shanghai Jiao Tong University (ACM class) and Ph.D. in Computer Science from Carnegie Mellon University, respectively. His dissertation work on fast algorithms for mining co-evolving time series was awarded ACM KDD best dissertation (runner up). His recent work on AI writer Xiaomingbot received 2nd-class award of WU Wenjun AI prize (the top AI award in China) in 2017. He is a recipient of CCF distinguished speaker in 2017, and CCF Young Elite award in 2019. Before ByteDance, he worked at EECS department of UC Berkeley and Baidu's Institute of Deep Learning in Silicon Valley. He has served in the Program Committee for ICML 2014, ECML/PKDD 2014/2015, SDM 2013/2014, IJCAI 2011/2013/2016/2019, KDD 2015/2016/2019, 2017 KDD Cup co-Chair, KDD 2018 hands-on tutorial co-chair, EMNLP 2018/2019, AAAI 2019 senior PC, and as a lecturer in 2014 summer school on Probabilistic Programming for Advancing Machine Learning. He has published over 50 technical papers and holds 3 US patents.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="speaker-unit col-md-12" id="">
+                    <div class="speaker-info">
+                        <div class="col-sm-2 col-xs-12">
+                            <img src="elements/industryspeakers/ChulLee.png" alt="">
+                        </div>
+                        <div class="col-sm-10 col-xs-12">
+                            <h1>Chul Lee <span>Vice President of Engineering in Visual Display</span>
+                            </h1>
+                            <div class="speak-title">
+                                <span>Title: Technical challenges of implementing AI algorithms for consumer electronic devices</span>
+                            </div>
+                            <div class="sub-title">
+                                <li><span>Abstract</span></li>
+                            </div>
+                            <div>
+                                <p>
+                                    Recent advances in AI has enabled consumer & mobile device companies to greatly automate its existing operations while creating more seamless and compelling user experiences around different interaction points. In this talk, I will provide a technical overview of recent trends and algorithmic advances in personalization, data analytics, audience science, and human-computer-interactions related to IoT, personal assistance, device interaction/control, media discovery and logistics. In addition, I will present technical challenges that are particular about AI and data mining algorithms in a large set of devices using massive amount of data.
+                                </p>
+                            </div>
+                            <div class="sub-title">
+                                <li><span>Short Bio</span></li>
+                            </div>
+                            <div>
+                                <p>
+                                    Chul is head of AI & data services for the visual display division of Samsung Electronics, currently leading different service & data intelligence projects using various ML/AI, data science, and computer vision techniques to solve different technical problems in IofT, device experience and media consumption. Prior to Samsung, he led different teams and projects related to health & fitness at Under Amour, and content personalization at LinkedIn. He obtained his Ph.D in Computer Science at the University of Toronto.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="speaker-unit col-md-12" id="">
+                    <div class="speaker-info">
+                        <div class="col-sm-2 col-xs-12">
+                            <img src="elements/industryspeakers/ZuoPeng.png" alt="">
+                        </div>
+                        <div class="col-sm-10 col-xs-12">
+                            <h1>Zuo Peng <span>Sr. Engineering Manager, Duolingo</span>
+                            </h1>
+                            <div class="speak-title">
+                                <span>Title: A sneak peek into the future of language education: Overview of AI application in Duolingo</span>
+                            </div>
+                            <!-- <div class="sub-title">
+                                <li><span>Abstract</span></li>
+                            </div>
+                            <div>
+                                <p>
+                                    
+                                </p>
+                            </div>
+                            <div class="sub-title">
+                                <li><span>Short Bio</span></li>
+                            </div>
+                            <div>
+                                <p>
+                                    
+                                </p>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="col-xs-12" id="footer">
+        <div class="part1" style="position: relative">
+            <span class="footer-item">
+                <a href="index.html">HOME</a>
+            </span>
+            <span class="footer-item">
+                <a href="programoverview.html">PROGRAM</a>
+            </span>
+            </span>
+            <span class="footer-item">
+                <a href="session.html">SESSION</a>
+            </span>
+            <span class="footer-item">
+                <a href="accomodation.html">ACCOMMODATION</a>
+            </span>
+            <span class="footer-item">
+                <a href="venue.html">VENUE</a>
+            </span>
+            <span class="footer-item">
+                <a href="registration.html">REGISTRATION</a>
+            </span>
+            <span class="footer-item">
+                <a href="workshops.html">WORKSHOPS</a>
+            </span>
+            <span class="footer-item">
+                <a href="tutorials.html">TUTORIALS</a>
+            </span>
+            <span class="footer-item">
+                <a href="challenge.html">ANALYTICUP</a>
+            </span>
+            <span class="footer-item">
+                <a href="callforpapers.html">CONTRIBUTIONS</a>
+            </span>
+            <span class="footer-item">
+                <a href="organizingcommittee.html">ORGANIZERS</a>
+            </span>
+            <span class="footer-item">
+                <a href="callforsponsorship.html">SPONSORSHIP</a>
+            </span>
+
+            <!-- Default Statcounter code for CIKM http://cikm2019.net -->
+            <script type="text/javascript">
+                var sc_project = 11928079;
+                var sc_invisible = 0;
+                var sc_security = "7538f521";
+                var sc_https = 1;
+                var scJsHost = (("https:" == document.location.protocol) ? "https://secure." :
+                    "http://www.");
+                document.write("<sc" + "ript type='text/javascript' src='" + scJsHost +
+                    "statcounter.com/counter/counter.js'></" + "script>");
+            </script>
+            <noscript>
+                <div class="statcounter"><a title="Web Analytics" href="http://statcounter.com/" target="_blank"><img
+                            class="statcounter" src="//c.statcounter.com/11928079/0/7538f521/0/" alt="Web
+            Analytics"></a></div>
+            </noscript>
+            <!-- End of Statcounter Code -->
+        </div>
+        <div class="part2" style="background-image: url('./elements/keydates/ditu.png')">
+            <p style="line-height: 60px;"> <br></p>
+        </div>
+    </div>
+    <!-- footer -->
+
+</body>
+
+</html>
