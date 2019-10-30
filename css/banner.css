@@ -442,6 +442,7 @@ span.statcounter {
 	color: #99742B;
 }
 
+#industrial:hover .bottom-title-text>a,
 #keynotespeakers:hover .bottom-title-text>a,
 #sponsors:hover .bottom-title-text>a {
 	color: #FFF;

@@ -13,6 +13,7 @@
         src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
     <script id="bootstrap_221" type="text/javascript" class="library"
         src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="libs/swiper.min.css" rel="stylesheet">
     <link href="css/banner.css?v=6.2.2" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
     <title>ACM CIKM 2019: The 28th ACM International Conference on Information and Knowledge Management</title>
@@ -203,6 +204,70 @@
             color: #C96C2D;
         }
 
+        /* */
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            height: unset;
+        }
+
+        #industrial {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .industrial-speaker {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            float: left;
+            position: relative;
+            margin: 20px 0;
+        }
+
+        .industrial-speaker-image {
+            padding: 0;
+            max-width: 33.3333%;
+        }
+
+        .industrial-speaker-image img {
+            width: 100%;
+        }
+
+        .industrial-speaker-desc h1 {
+            color: #C09B43;
+            text-align: left;
+            font-size: 24px;
+        }
+
+        .industrial-speaker-desc h2 {
+            color: #000;
+            text-align: left;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+
         @media screen and (min-width: 992px) and (max-width: 1499px) {
             /* #news {
                 margin-left: -8.33333%;
@@ -234,6 +299,18 @@
             .speaker .info {
                 font-size: 12px;
                 min-height: 80px;
+            }
+
+            .industrial-speaker {
+                display: unset;
+            }
+
+            .industrial-speaker-desc h1 {
+                font-size: 18px;
+            }
+
+            .industrial-speaker-desc h2 {
+                font-size: 12px;
             }
         }
 
@@ -308,6 +385,32 @@
             .sponsor-item .img-container {
                 margin: 0 !important;
             }
+
+            #industrial .bottom-title-text a {
+                font-size: 20px;
+            }
+
+            .industrial-speaker-image {
+                width: 100%;
+                max-width: unset;
+            }
+
+            .industrial-speaker-desc {
+                width: 100%;
+            }
+
+            .industrial-speaker-desc h1 {
+                font-size: 19px;
+            }
+
+            .industrial-speaker-desc h2 {
+                display: none;
+            }
+
+            .industrial-speaker {
+                display: unset;
+            }
+
             /* .sponsor-item.wider {
                 width: 100%;
             } */
@@ -350,7 +453,8 @@
                                 <li><a class="dropdown-item" href="tutorials.html">Tutorials</a></li>
                                 <li><a class="dropdown-item" href="posters.html">Posters</a></li>
                                 <li><a class="dropdown-item" href="industry-speakers.html">Industrial Speakers</a></li>
-                                <li><a class="dropdown-item" href="presentation-instruction.html">Presentation Instructions</a></li>
+                                <li><a class="dropdown-item" href="presentation-instruction.html">Presentation
+                                        Instructions</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -381,16 +485,18 @@
                                 <li><a class="dropdown-item" href="callfortutorials.html">Call for Tutorials</a></li>
                             </ul>
                         </li>
-                        <li><a href="callforsponsorship.html">Sponsorship</a></li><li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbar-attendings" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Organizers
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbar-attendings">
-                                    <li><a class="dropdown-item" href="organizingcommittee.html">Organizing Committee</a></li>
-                                    <li><a class="dropdown-item" href="pcmembers.html">Program Committee</a></li>
-                                </ul>
-                            </li>
+                        <li><a href="callforsponsorship.html">Sponsorship</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbar-attendings" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Organizers
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbar-attendings">
+                                <li><a class="dropdown-item" href="organizingcommittee.html">Organizing Committee</a>
+                                </li>
+                                <li><a class="dropdown-item" href="pcmembers.html">Program Committee</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -512,6 +618,150 @@
         </div>
         <!-- News & KeynoteSpeakers -->
 
+        <div class="col-xs-10 col-xs-offset-1" id="industrial">
+            <div class="bottom-title col-md-12" style="padding: 0 10%;">
+                <div class="bottom-title-text">
+                    <a href="industry-speakers.html"
+                        >INDUSTRIAL&nbsp;&nbsp;INVITED&nbsp;&nbsp;SPEAKERS</a>
+                </div>
+            </div>
+            <div class="col-md-12" style="">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="margin-right: 30px;">
+                            <a href="industry-speakers.html">
+                                <div class="industrial-speaker">
+                                    <div class="industrial-speaker-image col-md-4">
+                                        <img src="elements/industryspeakers/shumingshi.png" alt="" style="">
+                                    </div>
+                                    <div class="industrial-speaker-desc col-md-8">
+                                        <h1>Shuming Shi</h1>
+                                        <h2>Title: Text Understanding and Generation for Chatbots</h2>
+                                    </div>
+                                </div>
+                                </a>
+                            </a>
+                        </div>
+                        <div class="swiper-slide" style="margin-right: 30px;">
+                            <a href="industry-speakers.html">
+                            <div class="industrial-speaker">
+                                <div class="industrial-speaker-image col-md-4">
+                                    <img src="elements/industryspeakers/weicui.png" alt="" style="">
+                                </div>
+                                <div class="industrial-speaker-desc col-md-8">
+                                    <h1>Wei Cui</h1>
+                                    <h2>Title: Developing a Super One-on-One Tutor with AI and Big data</h2>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide" style="margin-right: 30px;">
+                            <a href="industry-speakers.html">
+                            <div class="industrial-speaker">
+                                <div class="industrial-speaker-image col-md-4">
+                                    <img src="elements/industryspeakers/ruishuasong.png" alt="" style="">
+                                </div>
+                                <div class="industrial-speaker-desc col-md-8">
+                                    <h1>Ruihua Song</h1>
+                                    <h2>Title: Research and Practice in Xiaoice: How We Make an AI Human-Like</h2>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide" style="margin-right: 30px;">
+                            <a href="industry-speakers.html">
+                            <div class="industrial-speaker">
+                                <div class="industrial-speaker-image col-md-4">
+                                    <img src="elements/industryspeakers/zhongyuanwang.png" alt="" style="">
+                                </div>
+                                <div class="industrial-speaker-desc col-md-8">
+                                    <h1>Zhongyuan Wang</h1>
+                                    <h2>Title: Meituan Brain: A Knowledge Graph Helping People Eat Better and Live
+                                        Better</h2>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide" style="margin-right: 30px;">
+                            <a href="industry-speakers.html">
+                            <div class="industrial-speaker">
+                                <div class="industrial-speaker-image col-md-4">
+                                    <img src="elements/industryspeakers/Yandong Liu.png" alt="" style="">
+                                </div>
+                                <div class="industrial-speaker-desc col-md-8">
+                                    <h1>Yandong Liu</h1>
+                                    <h2>Title: The Discovery Challenge: AI + ML and the Future of Sport</h2>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide" style="margin-right: 30px;">
+                            <a href="industry-speakers.html">
+                            <div class="industrial-speaker">
+                                <div class="industrial-speaker-image col-md-4">
+                                    <img src="elements/industryspeakers/leili.png" alt="" style="">
+                                </div>
+                                <div class="industrial-speaker-desc col-md-8">
+                                    <h1>Lei Li</h1>
+                                    <h2>Title: Multi-lingual Cross-modal Machine Translation at Global Scale</h2>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide" style="margin-right: 30px;">
+                            <a href="industry-speakers.html">
+                            <div class="industrial-speaker">
+                                <div class="industrial-speaker-image col-md-4">
+                                    <img src="elements/industryspeakers/ChulLee.png" alt="" style="">
+                                </div>
+                                <div class="industrial-speaker-desc col-md-8">
+                                    <h1>Chul Lee</h1>
+                                    <h2>Title: Technical challenges of implementing AI algorithms for consumer
+                                        electronic devices</h2>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide" style="margin-right: 30px;">
+                            <a href="industry-speakers.html">
+                            <div class="industrial-speaker">
+                                <div class="industrial-speaker-image col-md-4">
+                                    <img src="elements/industryspeakers/ZuoPeng.png" alt="" style="">
+                                </div>
+                                <div class="industrial-speaker-desc col-md-8">
+                                    <h1>Zuo Peng</h1>
+                                    <h2>Title: A sneak peek into the future of language education: Overview of AI
+                                        application in Duolingo</h2>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+                        <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0"
+                            role="button" aria-label="Go to slide 1"></span>
+                        <span class="swiper-pagination-bullet" tabindex="0" role="button"
+                            aria-label="Go to slide 2"></span>
+                        <span class="swiper-pagination-bullet" tabindex="0" role="button"
+                            aria-label="Go to slide 3"></span>
+                        <span class="swiper-pagination-bullet" tabindex="0" role="button"
+                            aria-label="Go to slide 4"></span>
+                        <span class="swiper-pagination-bullet" tabindex="0" role="button"
+                            aria-label="Go to slide 5"></span>
+                        <span class="swiper-pagination-bullet" tabindex="0" role="button"
+                            aria-label="Go to slide 6"></span>
+                        <span class="swiper-pagination-bullet" tabindex="0" role="button"
+                            aria-label="Go to slide 7"></span>
+                        <span class="swiper-pagination-bullet" tabindex="0" role="button"
+                            aria-label="Go to slide 8"></span>
+                    </div>
+
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                </div>
+            </div>
+        </div>
+
         <div class="col-md-10 col-xs-12 col-md-offset-1 col-xs-offset-0">
             <div class="col-xs-12 col-md-5" id="news" style="padding-left: 0">
                 <div class="textpanel">
@@ -527,7 +777,8 @@
                     <div class="newslist">
                         <dl>
                             <dt>Oct 24, 2019</dt>
-                            <dd><a href="presentation-instruction.html" class="notice">Click here to view Presentation Instructions</a></dd>
+                            <dd><a href="presentation-instruction.html" class="notice">Click here to view Presentation
+                                    Instructions</a></dd>
                         </dl>
                         <dl>
                             <dt>Oct 19, 2019</dt>
@@ -867,37 +1118,37 @@
                 </div>
                 <div class="col-lg-12 all-sponsors">
                     <div class="sponsor-type col-md-12">
-                            <div class="col-lg-4  sponsor-type-title series">
-                                <span><b>Serie</b> Sponsors</span>
+                        <div class="col-lg-4  sponsor-type-title series">
+                            <span><b>Serie</b> Sponsors</span>
+                        </div>
+                        <div class="col-lg-8 ">
+                            <div class="sponsor-item wider img-wrap">
+                                <div class="img-container" style="padding-bottom: 100%;">
+                                    <a target="_blank" href="https://www.acm.org/"><img
+                                            src="./elements/sponsors/logo-acm.png" alt="ACM"></a>
+                                </div>
                             </div>
-                            <div class="col-lg-8 ">
-                                <div class="sponsor-item wider img-wrap">
-                                    <div class="img-container" style="padding-bottom: 100%;" >
-                                        <a target="_blank" href="https://www.acm.org/"><img
-                                                src="./elements/sponsors/logo-acm.png" alt="ACM"></a>
-                                    </div>
+                            <div class="sponsor-item wider img-wrap">
+                                <div class="img-container" style="padding-bottom: 100%;">
+                                    <a target="_blank" href="https://sigir.org/"><img
+                                            src="./elements/sponsors/logo-sigir.png" alt="SIGIR"></a>
                                 </div>
-                                <div class="sponsor-item wider img-wrap">
-                                    <div class="img-container" style="padding-bottom: 100%;" >
-                                        <a target="_blank" href="https://sigir.org/"><img
-                                                src="./elements/sponsors/logo-sigir.png" alt="SIGIR"></a>
-                                    </div>
-                                </div>
-                                <div class="sponsor-item wider img-wrap">
-                                    <div class="img-container" style="padding-bottom: 100%;" >
-                                        <a target="_blank" href="https://www.sigweb.org/"><img
-                                                src="./elements/sponsors/logo-sigweb.png" alt="SIGWEB"></a>
-                                    </div>
+                            </div>
+                            <div class="sponsor-item wider img-wrap">
+                                <div class="img-container" style="padding-bottom: 100%;">
+                                    <a target="_blank" href="https://www.sigweb.org/"><img
+                                            src="./elements/sponsors/logo-sigweb.png" alt="SIGWEB"></a>
                                 </div>
                             </div>
                         </div>
+                    </div>
                     <div class="sponsor-type col-md-12">
                         <div class="col-lg-4  sponsor-type-title platinum">
                             <span><b>Platinum</b> Sponsors</span>
                         </div>
                         <div class="col-lg-8 ">
                             <div class="sponsor-item wider img-wrap">
-                                <div class="img-container" style="padding-bottom: 34%;" >
+                                <div class="img-container" style="padding-bottom: 34%;">
                                     <a target="_blank" href="https://www.ubtrobot.com/"><img
                                             src="./elements/sponsors/logo-ubtech.png" alt="UBTECH"></a>
                                 </div>
@@ -910,13 +1161,13 @@
                         </div>
                         <div class="col-lg-8 col-md-12">
                             <div class="sponsor-item wider img-wrap">
-                                <div class="img-container" >
+                                <div class="img-container">
                                     <a target="_blank" href="https://about.meituan.com/en.html"><img
                                             src="./elements/sponsors/logo-meituan.jpg" alt="MEITUAN"></a>
                                 </div>
                             </div>
                             <div class="sponsor-item wider img-wrap">
-                                <div class="img-container" >
+                                <div class="img-container">
                                     <a target="_blank" href="https://www.alibabagroup.com"><img
                                             src="./elements/sponsors/logo-alibaba.png" alt="ALIBABA"></a>
                                 </div>
@@ -955,7 +1206,8 @@
                             <div class="sponsor-item wide img-wrap" style="padding-bottom: 10px;">
                                 <div class="img-container" style="padding-bottom: 40%">
                                     <a target="_blank" href="http://ai.sjtu.edu.cn/"><img
-                                            src="./elements/sponsors/logo-sjtu.png" alt="SHANGHAI JIAOTONG UNIVERSITY"></a>
+                                            src="./elements/sponsors/logo-sjtu.png"
+                                            alt="SHANGHAI JIAOTONG UNIVERSITY"></a>
                                 </div>
                             </div>
                             <div class="sponsor-item wide img-wrap" style="padding-bottom: 10px; padding-top: 2%;">
@@ -1062,6 +1314,17 @@
     </div>
     <!-- footer -->
     <script src="./js/banner.js?v=7.1"></script>
+    <script src="./libs/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 
 </html>
