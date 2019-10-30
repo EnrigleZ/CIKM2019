@@ -19,13 +19,13 @@ function openSingleKeydate(id1, id2) {
 jQuery(document).ready(function($) {
     'use strict';
 
-    // function nextPicture() {
-    //     var indicators_list = $('.carousel-indicators li');
-    //     var current_index = indicators_list.index(indicators_list.filter('.active')), l = 5;
-    //     if (current_index < 0) current_index = Math.floor(Math.random() * 5);
+    function nextPicture() {
+        var indicators_list = $('.carousel-indicators li');
+        var current_index = indicators_list.index(indicators_list.filter('.active')), l = 5;
+        if (current_index < 0) current_index = Math.floor(Math.random() * 5);
 
-    //     indicators_list[(current_index+1)%l].click();
-    // }
+        indicators_list[(current_index+1)%l].click();
+    }
 
     function _adjustOverflow(selector, start = 0, height = 300) {
         var s = $(selector),
@@ -64,39 +64,65 @@ jQuery(document).ready(function($) {
 
     openSingleKeydate('#keydate_papers', '#a_papers');
 
-    var saveList = []
-    var targetStr = "special"
-    var matchOutput = "Appreciate for your excellent work.\n\nAnd,\n\nthank you very much for joining our team for such a long time  :)"
+    const revertHomePage = () => {
+        alert('Sorry for your home page :(')
+        $('#myCarousel').removeClass('hidden')
+        $('#register').addClass('hidden')
+        $('#keynotespeakers').addClass('hidden')
+        $('#industrial').addClass('hidden')
+        $('#sponsors').addClass('hidden')
+    }
+
+    var saveList = ""
+    var targetStrings = {
+        special: "Appreciate for your excellent work.\n\nAnd,\n\nthank you very much for joining our team for such a long time  :)",
+        rochelle: revertHomePage
+    }
+
     $(document).keydown(function(e) {
-        if (targetStr === null) return;
-        saveList.push(String.fromCharCode(e.keyCode))
-        const current_str = saveList.join('').toLowerCase()
-        if (!targetStr.startsWith(current_str)) {
-            saveList.splice(0, saveList.length)
+        if (targetStrings === null) return;
+        // saveList.push(String.fromCharCode(e.keyCode))
+        saveList = saveList + String.fromCharCode(e.keyCode).toLowerCase()
+        // const current_str = saveList.join('').toLowerCase()
+        // console.log(saveList)
+        let isAnyPrefix = false
+        for (let targetString in targetStrings){
+            if (targetStrings.hasOwnProperty(targetString) && targetString.startsWith(saveList)) {
+                isAnyPrefix = true
+            }
+        }
+        if (!isAnyPrefix) {
+            saveList = ""
+            return
         }
 
-        if (current_str === targetStr) {
-            console.clear()
-            console.log(matchOutput)
-            targetStr = null
+        if (targetStrings.hasOwnProperty(saveList)) {
+            let output = targetStrings[saveList]
+            if (typeof(output) === 'string') {
+                console.clear()
+                console.log()
+            } else if (typeof(output) === 'function') {
+                output()
+            }
+            // targetStrings = null
+            saveList = ""
         }
     })
 
-    // var rand_index = Math.floor(Math.random() * 5);
+    var rand_index = Math.floor(Math.random() * 5);
 
-    // // if (rand_index > 2) _nextSpeakers()
 
-    // $('.carousel-indicators li').removeClass('active');
-    // $('.carousel .item').removeClass('active').on('click', nextPicture);
-    // $('.carousel-indicators li').eq(rand_index).addClass('active');
-    // $('.carousel .item').eq(rand_index).addClass('active');
+    $('.carousel-indicators li').removeClass('active');
+    $('.carousel .item').removeClass('active').on('click', nextPicture);
+    $('.carousel-indicators li').eq(rand_index).addClass('active');
+    $('.carousel .item').eq(rand_index).addClass('active');
 
-    // $('#myCarousel').css('min-height', $('#myCarousel').width()*106/320)
-    // $(window).resize(()=>{
-    //     $('#myCarousel').css('min-height', $('#myCarousel').width()*106/320);
-    //     current_newslist_index = _adjustOverflow('#news .newslist', current_newslist_index);
-    // })
-    // window.setInterval(nextPicture, 5000);
+    $('#myCarousel').css('min-height', $('#myCarousel').width()*106/320)
+    $(window).resize(()=>{
+        $('#myCarousel').css('min-height', $('#myCarousel').width()*106/320);
+        current_newslist_index = _adjustOverflow('#news .newslist', current_newslist_index);
+    })
+    window.setInterval(nextPicture, 5000);
     console.log('Welcome to CIKM 2019 website!')
 
 });
