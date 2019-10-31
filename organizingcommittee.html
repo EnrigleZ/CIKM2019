@@ -151,6 +151,9 @@
             float: left;
             width: 100%;
             display: none;
+            /* new */
+            margin-top: 40px;
+            background-color: #540600;
         }
 
         .right-menu h2 {
@@ -158,6 +161,7 @@
             float: right;
             font-weight: normal;
             color: #FFFFFF;
+            padding-right: 30px;
         }
 
         .right-menu.active {
@@ -168,8 +172,8 @@
             float: left;
             position: relative;
             padding: 30px;
-            padding-left: 0;
-            margin-left: 30px;
+            /* padding-left: 30; */
+            /* margin-left: 30px; */
             color: #FFFFFF;
             width: 100%;
             transition: 0.2s all ease-in-out;
@@ -649,7 +653,7 @@
                     </table>
                 </div>
                 <div id="grid-part" style="display: -webkit-box;">
-                    <div class="col-md-2 " id="left-part" style="width: 20%">
+                    <!-- <div class="col-md-2 " id="left-part" style="width: 20%">
                         <div class="left-menu">
                             <ul><a data-target="#honorable" class="active">Honorable Chairs</a></ul>
                             <ul><a data-target="#general">General Chairs</a></ul>
@@ -668,9 +672,9 @@
                             <ul><a data-target="#web">Web Chair</a></ul>
                             <ul><a data-target="#registration">Registration Chair</a></ul>
                         </div>
-                    </div>
-                    <div class="col-md-10 " id="right-part"
-                        style="width: 80%; background-color: #540600;padding-right: 30px;">
+                    </div> -->
+                    <div class="col-md-12 " id="right-part"
+                        style="padding-right: 30px; padding: 0;">
                         <div class="right-menu active" id="honorable">
                             <h2>Honorable Chairs</h2>
                             <div class="oc">
@@ -720,7 +724,7 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="right-menu" id="general">
+                        <div class="right-menu active" id="general">
                             <h2>General Chairs</h2>
                             <div class="oc">
                                 <div class="image">
@@ -769,7 +773,7 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="right-menu" id="associate">
+                        <div class="right-menu active" id="associate">
                             <h2>Associate General Chair</h2>
                             <div class="oc">
                                 <div class="image">
@@ -790,7 +794,7 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="right-menu" id="program">
+                        <div class="right-menu active" id="program">
                             <h2>Program Chairs</h2>
                             <div class="oc">
                                 <div class="image">
@@ -884,29 +888,7 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="right-menu" id="registration">
-                            <h2>Registration Chair</h2>
-                            <div class="oc">
-                                <div class="image">
-                                    <img src="elements/oc/ChuanShi.jpg" alt=" ">
-                                </div>
-                                <div class="desc">
-                                    <h3>Chuan Shi</h3>
-                                    <div class="status">
-
-                                        <div>Beijing University of Posts and Telecommunications</div>
-                                        <a href="mailto:shichuan@bupt.edu.cn "
-                                            target="_parent">shichuan@bupt.edu.cn </a>
-                                    </div>
-                                </div>
-                                <span class="more">
-                                    <a href="http://www.shichuan.org" target="_blank">Homepage
-                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                    </a>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="right-menu" id="industry">
+                        <div class="right-menu active" id="industry">
                             <h2>Industry Track Chairs</h2>
                             <div class="oc">
                                 <div class="image">
@@ -947,7 +929,7 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="right-menu" id="tutorial">
+                        <div class="right-menu active" id="tutorial">
                             <h2>Tutorial Chairs</h2>
                             <div class="oc">
                                 <div class="image">
@@ -987,7 +969,7 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="right-menu" id="workshop">
+                        <div class="right-menu active" id="workshop">
                             <h2>Workshop Chairs</h2>
                             <div class="oc">
                                 <div class="image">
@@ -1026,7 +1008,7 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="right-menu" id="demo">
+                        <div class="right-menu active" id="demo">
                             <h2>Demo Chairs</h2>
                             <div class="oc">
                                 <div class="image">
@@ -1066,7 +1048,7 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="right-menu" id="student">
+                        <div class="right-menu active" id="student">
                             <h2>Student Travel Grant Chair</h2>
                             <div class="oc">
                                 <div class="image">
@@ -1087,7 +1069,7 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="right-menu" id="publicity">
+                        <div class="right-menu active" id="publicity">
                             <h2>Publicity Chairs</h2>
                             <div class="oc">
                                 <div class="image">
@@ -1127,7 +1109,7 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="right-menu" id="publication">
+                        <div class="right-menu active" id="publication">
                             <h2>Publication Chairs</h2>
                             <div class="oc">
                                 <div class="image">
@@ -1167,7 +1149,7 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="right-menu" id="local">
+                        <div class="right-menu active" id="local">
                             <h2>Local Chairs</h2>
                             <div class="oc">
                                 <div class="image">
@@ -1242,7 +1224,7 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="right-menu" id="finance">
+                        <div class="right-menu active" id="finance">
                             <h2>Finance Chair</h2>
                             <div class="oc">
                                 <div class="image">
@@ -1265,7 +1247,7 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="right-menu" id="sponsor">
+                        <div class="right-menu active" id="sponsor">
                             <h2>Sponsor Chairs</h2>
                             <div class="oc">
                                 <div class="image">
@@ -1305,7 +1287,7 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="right-menu" id="web">
+                        <div class="right-menu active" id="web">
                             <h2>Web Chair</h2>
                             <div class="oc">
                                 <div class="image">
@@ -1321,6 +1303,28 @@
                                 </div>
                                 <span class="more">
                                     <a href="https://www.bigscity.com/jingyuan-wang/" target="_blank">Homepage
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="right-menu active" id="registration">
+                            <h2>Registration Chair</h2>
+                            <div class="oc">
+                                <div class="image">
+                                    <img src="elements/oc/ChuanShi.jpg" alt=" ">
+                                </div>
+                                <div class="desc">
+                                    <h3>Chuan Shi</h3>
+                                    <div class="status">
+
+                                        <div>Beijing University of Posts and Telecommunications</div>
+                                        <a href="mailto:shichuan@bupt.edu.cn "
+                                            target="_parent">shichuan@bupt.edu.cn </a>
+                                    </div>
+                                </div>
+                                <span class="more">
+                                    <a href="http://www.shichuan.org" target="_blank">Homepage
                                         <i class="fa fa-angle-right" aria-hidden="true"></i>
                                     </a>
                                 </span>
