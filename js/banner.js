@@ -73,10 +73,66 @@ jQuery(document).ready(function($) {
         $('#sponsors').addClass('hidden')
     }
 
+    const switchMessage = (title, contents, interval = 500, height_interval = 3000) => {
+        const wrapper_element = $('#welcome')
+        const title_element = $('#welcome h2')
+        const content_elements = $('#welcome p')
+
+        const initial_height = wrapper_element.height()
+        wrapper_element.css('min-height', initial_height).css('max-height', initial_height)
+
+        new Promise((resolve) => {
+            $([document.documentElement, document.body]).animate({
+                scrollTop: wrapper_element.offset().top - ($(window).height() - initial_height) / 2
+            }, 300)
+            setTimeout(() => {
+                title_element.css('opacity', 0)
+                resolve()
+            }, 300)
+        }).then(() => new Promise((resolve) => {
+            setTimeout(() => {
+                title_element.text(title)
+                title_element.css('opacity', 1.0)
+                resolve()
+            }, interval)
+        })).then(() => new Promise((resolve) => {
+            setTimeout(() => {
+                content_elements.css('opacity', 0)
+                $('#register').css('opacity', 0)
+                resolve()
+            }, 0)
+        })).then(() => new Promise((resolve) => {
+            setTimeout(() => {
+                content_elements.remove()
+                // $('#register').remove()
+                const new_content_strings = contents.map(content => `<p>${content}</p>`)
+                wrapper_element.append(new_content_strings)
+                $('#welcome p').css('opacity', 0)
+                resolve()
+            }, interval)
+        })).then(() => new Promise((resolve) => {
+            setTimeout(() => {
+                $('#welcome p').css('opacity', 1.0)
+                wrapper_element.css('min-height', 0).css('max-height', 999)
+                resolve()
+            }, interval)
+        })).then(() => new Promise((resolve) => {
+            setTimeout(() => {
+                wrapper_element.css('max-height', 'unset')
+            }, height_interval)
+        }))
+    }
+
+    const specialThanks = () => {
+        const title = "SPECIAL THANKS"
+        const contents = ["Appreciate for your excellent work.", "<br />", "And,", "Thank you so much for joining our team for such a long time :)"]
+        switchMessage(title, contents)
+    }
+
     var saveList = ""
     var targetStrings = {
-        special: "Appreciate for your excellent work.\n\nAnd,\n\nthank you very much for joining our team for such a long time  :)",
-        rochelle: revertHomePage
+        rochelle: revertHomePage,
+        special: specialThanks
     }
 
     $(document).keydown(function(e) {
@@ -100,7 +156,7 @@ jQuery(document).ready(function($) {
             let output = targetStrings[saveList]
             if (typeof(output) === 'string') {
                 console.clear()
-                console.log()
+                console.log(output)
             } else if (typeof(output) === 'function') {
                 output()
             }

@@ -254,6 +254,15 @@ span.statcounter {
 	margin: 1.5rem 0;
 }
 
+#welcome {
+	transition: min-height 300s ease-in-out, max-height 3s ease-in-out;
+}
+
+#welcome h2,
+#welcome p,
+#register {
+	transition: opacity 0.5s ease;
+}
 
 #welcome,
 #schedule {
