@@ -77,7 +77,7 @@ jQuery(document).ready(function($) {
         const wrapper_element = $('#welcome')
         const title_element = $('#welcome h2')
         const content_elements = $('#welcome p')
-        const register_element = $('#register')
+        // const register_element = $('#register')
 
         const initial_height = wrapper_element.height()
         wrapper_element.css('min-height', initial_height).css('max-height', initial_height)
@@ -99,13 +99,13 @@ jQuery(document).ready(function($) {
         })).then(() => new Promise((resolve) => {
             setTimeout(() => {
                 content_elements.css('opacity', 0)
-                register_element.css('opacity', 0)
+                // register_element.css('opacity', 0)
                 resolve()
             }, 0)
         })).then(() => new Promise((resolve) => {
             setTimeout(() => {
                 content_elements.remove()
-                register_element.css('max-height', 0)
+                // register_element.css('max-height', 0)
                 const new_content_strings = contents.map(content => `<p>${content}</p>`)
                 wrapper_element.append(new_content_strings)
                 $('#welcome p').css('opacity', 0)
