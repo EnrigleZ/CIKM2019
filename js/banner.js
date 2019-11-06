@@ -65,9 +65,12 @@ jQuery(document).ready(function($) {
     openSingleKeydate('#keydate_papers', '#a_papers');
 
     const revertHomePage = () => {
-        alert('Sorry for your home page :(')
+        const conf_first_load = localStorage.getItem('conf_first_load')
+        if (!conf_first_load) alert('Sorry for your home page :(')
+        localStorage.setItem('conf_first_load', 'true')
         $('#myCarousel').removeClass('hidden')
         $('#register').addClass('hidden')
+        $('#tips').addClass('hidden')
         $('#keynotespeakers').addClass('hidden')
         $('#industrial').addClass('hidden')
         $('#sponsors').addClass('hidden')
