@@ -76,7 +76,7 @@ jQuery(document).ready(function($) {
         $('#sponsors').addClass('hidden')
     }
 
-    const switchMessage = (title, contents, interval = 500, height_interval = 3000) => {
+    const switchMessage = (title, contents, interval = 500, height_interval = 1024) => {
         const wrapper_element = $('#welcome')
         const title_element = $('#welcome h2')
         const content_elements = $('#welcome p')
@@ -106,20 +106,19 @@ jQuery(document).ready(function($) {
                 resolve()
             }, 0)
         })).then(() => new Promise((resolve) => {
+            const new_content_strings = contents.map(content => `<p style="opacity: 0">${content}</p>`)
+            for (let i = 0; i < new_content_strings.length; ++i) {
+                setTimeout(() => {
+                    if (i === 0) content_elements.remove()
+                    else $('#welcome p:last-of-type').css('opacity', 1.0)
+                    wrapper_element.append(new_content_strings[i])
+                }, interval * (i + 1))
+            }
             setTimeout(() => {
-                content_elements.remove()
-                // register_element.css('max-height', 0)
-                const new_content_strings = contents.map(content => `<p>${content}</p>`)
-                wrapper_element.append(new_content_strings)
-                $('#welcome p').css('opacity', 0)
-                resolve()
-            }, interval)
-        })).then(() => new Promise((resolve) => {
-            setTimeout(() => {
-                $('#welcome p').css('opacity', 1.0)
+                $('#welcome p:last-of-type').css('opacity', 1.0)
                 wrapper_element.css('min-height', 0).css('max-height', 999)
                 resolve()
-            }, interval)
+            }, interval * (new_content_strings.length + 1))
         })).then(() => new Promise((resolve) => {
             setTimeout(() => {
                 wrapper_element.css('max-height', 'unset')
@@ -129,7 +128,7 @@ jQuery(document).ready(function($) {
 
     const specialThanks = () => {
         const title = "SPECIAL THANKS"
-        const contents = ["Appreciate for your excellent work.", "<br />", "And", "Thank you so much for joining our team for such a long time :)"]
+        const contents = ["Appreciate for your excellent work.", "<br />", "And", "Thank you so much for joining our team for such a long time"]
         switchMessage(title, contents)
     }
 

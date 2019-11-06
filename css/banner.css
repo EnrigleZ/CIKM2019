@@ -256,7 +256,7 @@ span.statcounter {
 
 #welcome,
 #register {
-	transition: min-height 300s ease-in-out, max-height 3s ease-in-out;
+	transition: min-height 1.5s ease-in-out, max-height 1.5s ease-in-out;
 }
 
 #welcome h2,
