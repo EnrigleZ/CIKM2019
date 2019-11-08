@@ -128,7 +128,7 @@ jQuery(document).ready(function($) {
 
     const specialThanks = () => {
         const title = "SPECIAL THANKS"
-        const contents = ["Appreciate for your excellent work.", "<br />", "And", "Thank you so much for joining our team for such a long time"]
+        const contents = ["Appreciate for your excellent work", "<br />", "And", "Thank you so much for joining our team for such a long time"]
         switchMessage(title, contents)
     }
 
