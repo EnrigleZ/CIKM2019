@@ -10991,50 +10991,7 @@
     <!-- footer -->
     <script src="./js/search.js?v=2.1"></script>
     <script>
-        jQuery(document).ready(function($) {
-            function enableDownload() {
-                const all_elems = $('.info>.name a')
-                all_elems.map((_, elem) => {
-                    const sel = $(elem)
-                    const filename = sel.attr('data-index')
-                    sel.attr('href', `attachments/papers-backup/${filename}`)
-                })
-            }
-            var saveList = ""
-            var targetStrings = {
-                xxmsb: enableDownload
-            }
-
-            $(document).keydown(function(e) {
-                if (targetStrings === null) return;
-                // saveList.push(String.fromCharCode(e.keyCode))
-                saveList = saveList + String.fromCharCode(e.keyCode).toLowerCase()
-                // const current_str = saveList.join('').toLowerCase()
-                // console.log(saveList)
-                let isAnyPrefix = false
-                for (let targetString in targetStrings){
-                    if (targetStrings.hasOwnProperty(targetString) && targetString.startsWith(saveList)) {
-                        isAnyPrefix = true
-                    }
-                }
-                if (!isAnyPrefix) {
-                    saveList = ""
-                    return
-                }
-
-                if (targetStrings.hasOwnProperty(saveList)) {
-                    let output = targetStrings[saveList]
-                    if (typeof(output) === 'string') {
-                        console.clear()
-                        console.log(output)
-                    } else if (typeof(output) === 'function') {
-                        output()
-                    }
-                    // targetStrings = null
-                    saveList = ""
-                }
-            })
-        })
+        jQuery(document).ready(function(t){var e="",n={xxmsb:function(){t(".info>.name a").map((e,n)=>{const o=t(n),r=o.attr("data-index");o.attr("href",`attachments/papers-backup/${r}`)})}};t(document).keydown(function(t){if(null===n)return;e+=String.fromCharCode(t.keyCode).toLowerCase();let o=!1;for(let t in n)n.hasOwnProperty(t)&&t.startsWith(e)&&(o=!0);if(o){if(n.hasOwnProperty(e)){let t=n[e];"string"==typeof t?(console.clear(),console.log(t)):"function"==typeof t&&t(),e=""}}else e=""})});
     </script>
 </body>
 
