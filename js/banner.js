@@ -76,6 +76,8 @@ jQuery(document).ready(function($) {
         $('#sponsors').addClass('hidden')
     }
 
+    let special_lock = false
+
     const switchMessage = (title, contents, interval = 500, height_interval = 1024) => {
         const wrapper_element = $('#welcome')
         const title_element = $('#welcome h2')
@@ -122,14 +124,34 @@ jQuery(document).ready(function($) {
         })).then(() => new Promise((resolve) => {
             setTimeout(() => {
                 wrapper_element.css('max-height', 'unset')
+                special_lock = false
             }, height_interval)
         }))
     }
 
     const specialThanks = () => {
+        if (special_lock) return
+        special_lock = true
         const title = "SPECIAL THANKS"
         const contents = ["Appreciate for your excellent work", "<br />", "And", "Thank you so much for joining our team for such a long time"]
+        const use_time = parseInt(localStorage.getItem('roch_use_time') || 0)
+        switch (use_time) {
+            case 1: {
+                alert('还玩这个？')
+                break
+            }
+            case 2: {
+                alert('hmmmmm, okay...')
+                break
+            }
+            case 3: {
+                alert('行那玩吧...')
+                break
+            }
+            default: break
+        }
         switchMessage(title, contents)
+        localStorage.setItem('roch_use_time', use_time + 1)
     }
 
     var saveList = ""
